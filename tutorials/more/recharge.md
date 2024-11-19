@@ -53,3 +53,14 @@ If there is any content that can be accessed by more than one type of membership
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-11-08 at 10.01.36 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Feel free to ask questions if you're having any issues with any of that!** We can be contacted via email at team@uselocksmith.com**.**
+
+## Related articles:
+
+{% content-ref url="../selling-digital-content-on-shopify.md" %}
+[selling-digital-content-on-shopify.md](../selling-digital-content-on-shopify.md)
+{% endcontent-ref %}
+
+{% content-ref url="use-locksmith-and-paywhirl-together-to-grant-access-based-on-subscriptions.md" %}
+[use-locksmith-and-paywhirl-together-to-grant-access-based-on-subscriptions.md](use-locksmith-and-paywhirl-together-to-grant-access-based-on-subscriptions.md)
+{% endcontent-ref %}
+
