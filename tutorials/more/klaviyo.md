@@ -43,3 +43,18 @@ Once your Locksmith configuration is to your liking (don't forget to customize t
 {% hint style="info" %}
 **Note**: any customers who are already in your list will be seamlessly granted access when they enter their email address, and will not be added as a duplicate.
 {% endhint %}
+
+## Related articles:
+
+{% content-ref url="customizing-the-email-list-signup-form.md" %}
+[customizing-the-email-list-signup-form.md](customizing-the-email-list-signup-form.md)
+{% endcontent-ref %}
+
+{% content-ref url="use-klaviyo-as-an-access-control-list.md" %}
+[use-klaviyo-as-an-access-control-list.md](use-klaviyo-as-an-access-control-list.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../keys/more/newsletter-keys.md" %}
+[newsletter-keys.md](../../keys/more/newsletter-keys.md)
+{% endcontent-ref %}
+
