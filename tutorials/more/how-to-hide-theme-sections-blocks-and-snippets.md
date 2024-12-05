@@ -2,6 +2,7 @@
 description: >-
   Create a theme hiding profile to lock specific parts of your Shopify themes
   according to your Locksmith lock conditions
+hidden: true
 ---
 
 # How to hide theme sections, blocks, and snippets
@@ -12,7 +13,7 @@ By default, when you create a lock on a resource in your Shopify store, Locksmit
 * Search results. [More information here](https://www.locksmith.guide/faqs/can-locksmith-hide-content-from-my-in-store-search).
 * For products: product and collection grids/lists. [More information here](https://www.locksmith.guide/tutorials/more/hiding-products-from-product-grids).
 
-If you are wanting to hiding anything beyond the above, or just want more granular control over what is hidden, you can use our "Theme hiding profile" feature.
+If you are wanting to hiding anything beyond the above, or just want more granular control over what is hidden, you can use our "theme hiding profile" feature.
 
 ## 1. Accessing theme hiding profiles
 
@@ -23,8 +24,6 @@ Because each theme is different, hiding profiles are added **per theme**. So, th
 {% hint style="info" %}
 You can also edit hiding profiles for unpublished themes by using the ellipses ("...")  button next to each unpublished theme shown.
 {% endhint %}
-
-
 
 ## 2. Adding a hiding definition
 
@@ -45,11 +44,9 @@ A hiding definition hides a section, block, or snippet in your theme. One of the
 If your theme is one of the free themes made by Shopify from the Shopify theme store, **and you are wanting to use this feature for price hiding or buy buttons hiding**, try the "theme hiding presets". Instead of choosing "Add by name" under "Selection method", choose "Add from theme presets", then choose either "Price" or "Buy buttons" and press "Add presets". You'll need to add add both preset if you are hiding both prices and buy buttons! Please note that presets will only match newer versions of these themes.
 {% endhint %}
 
-
-
 ## 3. What to use for "Liquid variable"
 
-Locksmith's locks work by looking at a specific variable in the theme and checking to see if that variable contains something that you've placed a lock on. "Liquid variable" is how you specify which Liquid object in the theme Locksmith should base the hiding on. Most use-cases for this feature are geared towards products and _most of the time_, theme developers simply use `product`. However, there are some exceptions. A "card product" file might assign to a variable called `card_product`, or a "featured product" file might use `featured_product`. \
+"Liquid variable" is how you specify which Liquid object in the theme Locksmith should base the hiding on. Most use-cases for this feature are geared towards products and _most of the time_, theme developers simply use `product`. However, there are some exceptions. A "card product" file might assign to a variable called `card_product`, or a "featured product" file might use `featured_product`. \
 \
 If you are not locking a product, you'll want to use the applicable variable (`collection`, `cart`, `blog`, `shop`, etc).
 
