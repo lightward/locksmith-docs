@@ -33,7 +33,7 @@ In addition to Google Sheets, sources may be of the following formats:
 {% hint style="warning" %}
 **Important**: The source file must be either unauthenticated OR must be a Google Sheet or Google Doc that has been shared with the following email address: **input-lists@locksmith-app.iam.gserviceaccount.com.** \
 \
-_If you send a notification directly to this email address, it may bounce. However, as long as the document is properly shared with that email address, Locksmith will be able to access it._
+&#xNAN;_&#x49;f you send a notification directly to this email address, it may bounce. However, as long as the document is properly shared with that email address, Locksmith will be able to access it._
 {% endhint %}
 
 ## Step 2: Locksmith Configuration
@@ -117,8 +117,8 @@ This means that you may form your shared URLs in any of the following ways, usin
 
 Feel free to combine either option with other query parameters, like so:
 
-* [https://example.com/?foobar\&utm\_source=baz&..](https://example.com/?foobar\&utm\_source=baz&..).
-* [https://example.com/?ls=foobar\&utm\_source=baz&..](https://example.com/?ls=foobar\&utm\_source=baz&..).
+* [https://example.com/?foobar\&utm\_source=baz&..](https://example.com/?foobar\&utm_source=baz&..).
+* [https://example.com/?ls=foobar\&utm\_source=baz&..](https://example.com/?ls=foobar\&utm_source=baz&..).
 
 As with Locksmith's other secret link condition, you may configure this condition to "remember" returning customers who are logged in. If this option is enabled, Locksmith will compare previously-accepted secret link codes from the customer's records with  _current_ items in the selected input list. This means that _removing_ previously-used items from the input list will result in the relevant returning customers being "forgotten".
 

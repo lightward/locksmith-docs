@@ -1,7 +1,7 @@
 # Locking the customer registration form
 
 {% hint style="info" %}
-**Locking the default registration page with Locksmith will **_**only**_** work with Classic Customer Accounts.** \
+**Locking the default registration page with Locksmith will&#x20;**_**only**_**&#x20;work with Classic Customer Accounts.** \
 \
 **The New Customer Account system creates an account as soon as the customer uses the login form, and so registration cannot be locked.** \
 \

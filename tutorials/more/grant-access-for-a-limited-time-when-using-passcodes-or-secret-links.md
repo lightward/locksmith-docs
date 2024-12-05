@@ -6,7 +6,7 @@ description: How to use Locksmith's 'timeout' feature to limit access time
 
 This feature is available only when using "[passcode](../../keys/passcode-keys.md)" or "[secret link](../../keys/secret-link-keys.md)" key conditions. In specific, the following key conditions types:\
 \
-_Permit if the customer..._
+&#xNAN;_&#x50;ermit if the customer..._
 
 * gives the passcode
 * gives one of many passcodes

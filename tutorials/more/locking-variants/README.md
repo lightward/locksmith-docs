@@ -15,7 +15,7 @@ With variant locking, you can:
 * ... allocate your inventory by distribution center, and restrict access regionally.
 * ... add bulk quantities for your trade customers, only allowing pre-approved customers to access it.
 
-**Note: This feature may conflict with other apps. See the **_**Incompatibilities**_** section below for more.**
+**Note: This feature may conflict with other apps. See the&#x20;**_**Incompatibilities**_**&#x20;section below for more.**
 
 ### Creating a variant lock
 

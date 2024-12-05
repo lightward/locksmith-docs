@@ -10,7 +10,7 @@ This is a straightforward key condition that allows access solely based on if th
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-03-18 at 15.17.27.png" alt=""><figcaption></figcaption></figure>
 
-To use, simply choose the key condition labelled "Permit if the customer confirms the prompt_":_
+To use, simply choose the key condition labelled "Permit if the customer confirms the promp&#x74;_":_
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-03-18 at 15.14.16.png" alt=""><figcaption><p>Choose the condition from the list, or type "confirm" - which will filter the list to only show the confirmation condition.</p></figcaption></figure>
 

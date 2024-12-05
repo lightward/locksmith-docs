@@ -52,7 +52,7 @@ If there is any content that can be accessed by more than one type of membership
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-11-08 at 10.01.36 PM.png" alt=""><figcaption></figcaption></figure>
 
-**Feel free to ask questions if you're having any issues with any of that!** We can be contacted via email at team@uselocksmith.com**.**
+**Feel free to ask questions if you're having any issues with any of that!** We can be contacted via email at team@uselocksmith.co&#x6D;**.**
 
 ## Related articles:
 

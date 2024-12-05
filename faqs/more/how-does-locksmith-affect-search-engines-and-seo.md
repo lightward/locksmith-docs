@@ -10,7 +10,7 @@ Locksmith works hard to fully protect anything you lock, in as many ways as poss
 
 ## "Robots" tags
 
-By default, Locksmith automatically adds the following [robots meta tag](https://developers.google.com/webmasters/control-crawl-index/docs/robots\_meta\_tag?csw=1) for **all of your locked resources:**
+By default, Locksmith automatically adds the following [robots meta tag](https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?csw=1) for **all of your locked resources:**
 
 ```
 <meta name="robots" content="noindex">
@@ -28,7 +28,7 @@ If you do not want Locksmith to add this metatag to your locked pages, you can t
 
 Some locks in Locksmith support an extra advanced setting, called "Hide product from sitemaps". Enable this setting to have Locksmith ask Shopify to exclude your locked resource from sitemaps, and from storefront searches.&#x20;
 
-**When this setting is enabled, the locked resource will **_**never**_** show up in store search, even when the lock is opened.**
+**When this setting is enabled, the locked resource will&#x20;**_**never**_**&#x20;show up in store search, even when the lock is opened.**
 
 This setting is not strictly necessary for hiding your content from search engines, if you already have the "Add the noindex metatag..." setting turned on. However, this setting can be useful to more completely signal your intent to search engines.\
 \

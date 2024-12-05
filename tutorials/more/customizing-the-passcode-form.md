@@ -190,7 +190,7 @@ body {
 
 ***
 
-### **Add a background image to only the **_**form**_** area**
+### **Add a background image to only the&#x20;**_**form**_**&#x20;area**
 
 ```
 #locksmith-content {

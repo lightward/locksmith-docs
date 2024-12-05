@@ -58,7 +58,7 @@ Done with step one!
 
 You'll now need to add the code to your theme to let Locksmith know which parts need to be hidden.
 
-**Because each theme is a bit different, this feature **_**does**_** require manual coding.** If you install a new theme down the road, these changes will need to be re-applied.
+**Because each theme is a bit different, this feature&#x20;**_**does**_**&#x20;require manual coding.** If you install a new theme down the road, these changes will need to be re-applied.
 
 The rest of this guide gets a bit technical, we'll happily to the coding portion for you! If you've already created the lock described in step 1, simply write us a message at **team@uselocksmith.com** to request help.
 

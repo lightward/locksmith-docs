@@ -20,7 +20,7 @@ You'll start by locking your product. You can search for it by name in the Locks
 Next, you'll need to set a key with two different conditions:&#x20;
 
 * **Permit if the customer is signed in, and**
-* **permit **_**unless**_** the customer has purchased "\*"**
+* **permit&#x20;**_**unless**_**&#x20;the customer has purchased "\*"**
 
 For Locksmith to determine whether a customer has made a previous purchase, you must require  customers be signed in to access this product. This is done by adding an "**is signed in**" key condition to your key.
 

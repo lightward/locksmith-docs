@@ -19,7 +19,7 @@ These are all the key conditions that Locksmith supports:
 * **is signed in**\
   This condition requires all customers to log in with a customer account. Once they're logged in, they'll be granted access to the locked resource. (When inverted: **unless the customer is signed in**)
 * **is tagged with…**\
-  This condition _first_ requires all visitors to log in with a customer account, by presenting your store's usual login form. (If that login form includes a link to customer registration, it'll be included here, too.) Once the customer has logged into their account, they'll be granted access _if_ their customer account has the tag you've chosen in Locksmith. (When inverted: _**unless**_** the customer is tagged with..., or is **_**not**_** signed in**)
+  This condition _first_ requires all visitors to log in with a customer account, by presenting your store's usual login form. (If that login form includes a link to customer registration, it'll be included here, too.) Once the customer has logged into their account, they'll be granted access _if_ their customer account has the tag you've chosen in Locksmith. (When inverted: _**unless**_**&#x20;the customer is tagged with..., or is&#x20;**_**not**_**&#x20;signed in**)
 * **gives the passcode…**\
   This condition prompts the visitor to enter a passcode, which must match the passcode you configure. If they don't enter a matching passcode, they'll be given the same prompt again.
 * **gives one of many passcodes…**\

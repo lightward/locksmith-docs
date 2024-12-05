@@ -70,7 +70,7 @@ _New to manual locking?_ [_Check out our general introduction_](../../keys/more/
 Some modifications to your shop's theme will need to be done to protect just the checkout button.
 
 {% hint style="info" %}
-**Because each theme is a bit different, this feature **_**does**_** require manual coding.** If you install a new theme down the road, these changes will need to be re-applied.
+**Because each theme is a bit different, this feature&#x20;**_**does**_**&#x20;require manual coding.** If you install a new theme down the road, these changes will need to be re-applied.
 {% endhint %}
 
 The rest of this guide gets a bit technical! We can take care of adding the code for you for you, no problem, so if you're interested, get ahold of us.

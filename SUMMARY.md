@@ -70,6 +70,7 @@
   * [Automatically managing the seo.hidden metafield using Locksmith](tutorials/more/automatically-hide-from-sitemaps-and-manage-seo-metafield.md)
   * [Locking the home page](tutorials/more/locking-the-home-page.md)
   * [Setting up checkout validation with Locksmith](tutorials/more/setting-up-checkout-validation-with-locksmith.md)
+  * [How to hide theme sections, blocks, and snippets](tutorials/more/how-to-hide-theme-sections-blocks-and-snippets.md)
 
 ## 🔑 Keys: Access methods in Locksmith <a href="#keys" id="keys"></a>
 

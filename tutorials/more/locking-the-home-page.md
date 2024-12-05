@@ -14,7 +14,7 @@ Locksmith gives you the ability to lock your entire store, which you can select 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-03-21 at 11.31.17.png" alt=""><figcaption></figcaption></figure>
 
-Once the lock for your entire store is created, you'll see an option labelled _"_Allow access to the home page"**. It is unchecked by default** - **leave it that way to ensure that the home page is locked.**
+Once the lock for your entire store is created, you'll see an option labelled _"_&#x41;llow access to the home page"**. It is unchecked by default** - **leave it that way to ensure that the home page is locked.**
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-03-21 at 11.34.34.png" alt=""><figcaption></figcaption></figure>
 
