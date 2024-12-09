@@ -7,7 +7,7 @@ hidden: true
 
 # How to hide theme sections, blocks, and snippets
 
-By default, when you create a lock on a resource in your Shopify store, Locksmith prevents access to the direct URL for that resource only. E.g. creating a lock on a product prevents access to the content on the product page. For most locks, you can also directly toggle hiding inside of:
+By default, when you create a lock on a resource in your Shopify store, Locksmith prevents access to the direct URL for that resource only. For most locks, you can also toggle hiding for:
 
 * Navigation menu links. [More information here](https://www.locksmith.guide/tutorials/more/hiding-navigation-links-for-locked-resources).
 * Search results. [More information here](https://www.locksmith.guide/faqs/can-locksmith-hide-content-from-my-in-store-search).
@@ -41,7 +41,7 @@ A hiding definition hides a section, block, or snippet in your theme. One of the
 <figure><img src="../../.gitbook/assets/Screenshot 2024-12-05 at 15.21.24.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-If your theme is one of the free themes made by Shopify from the Shopify theme store, **and you are wanting to use this feature for price hiding or buy buttons hiding**, try the "theme hiding presets". Instead of choosing "Add by name" under "Selection method", choose "Add from theme presets", then choose either "Price" or "Buy buttons" and press "Add presets". You'll need to add add both preset if you are hiding both prices and buy buttons! Please note that presets will only match newer versions of these themes.
+If your theme is one of the free themes made by Shopify from the Shopify theme store, **and you are wanting to use this feature for price hiding or buy buttons hiding**, try the "theme hiding presets". Instead of choosing "Add by name" under "Selection method", choose "Add from theme presets", then choose either "Price" or "Buy buttons" and press "Add presets". You'll need to add add both presets if you are hiding both prices and buy buttons! Please note that presets will only match newer versions of these themes.
 {% endhint %}
 
 ## 3. What to use for "Liquid variable"
