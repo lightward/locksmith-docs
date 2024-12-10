@@ -32,12 +32,6 @@ The Online Store theme – the place where Locksmith operates – generally only
 
 Second (third?) verse, same as the first. Custom search and filtering apps tend to pull in data in a way that does not pass through the Online Store theme, thus preventing Locksmith from enforcing protection on the contents they retrieve. (If you're working on such an app, check out [our storefront API](https://docs.uselocksmith.com/article/459-the-locksmith-storefront-api) for integration.)
 
-### Apps like Locksmith render stores ineligible for the Shop app.
-
-[The merchant requirements for the Shop app](https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility#merchant-requirements) explicitly require (as of 2021-07-16) that merchants "not \[use] any password control, or age verification apps such as Advanced Registration, B2B Login Access Management, Locksmith, Login to View Price and MagicPass Deal Club, Wholesale".
-
-It's our interpretation that Shopify intends product availability on the Shop app to mirror availability via the Online Store channel. Apps like Locksmith _change_ product variability in a way that can't be mirrored on the Shop app. So, if a store uses an app like Locksmith (or like the ones listed above), Shopify will consider that store ineligible for the Shop app, entirely.
-
 ## Locksmith’s pricing is Pay What Feels Good. <a href="#locksmiths-pricing-is-a-conversation" id="locksmiths-pricing-is-a-conversation"></a>
 
 ### We’ll auto-suggest a price based on your store’s Shopify plan.
