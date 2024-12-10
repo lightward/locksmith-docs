@@ -6,8 +6,6 @@ Having said that, there are a few places where there are specific points of comp
 
 ## Officially unsupported apps
 
-* The [Shop app](https://apps.shopify.com/shop) - Shopify's official Shop app is NOT compatible in any way with Locksmith! This is true for any other access control apps out there as well. Unfortunately, Shopify has drawn a pretty clear line here so there is no wiggle room: the two apps simply cannot be used on the same store at the same time. Even just installing Locksmith to your store will immediately affect your products in the Shop app, so please be aware of this if you use the Shop app heavily.
-
 The following apps have known compatibility issues with Locksmith - although they _may_ work in some cases, with the correct settings.
 
 * Any other **access control apps** that work in a similar way to Locksmith will almost certainly not work well alongside Locksmith, as they tend to inject code into the same areas of your theme.
