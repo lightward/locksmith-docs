@@ -56,6 +56,16 @@ Ultimately, what you put here depends on what is used in the theme, and if you w
 
 If the "Replace" checkbox is toggled on, instead of just hiding the content, Locksmith will replace it with the access denied message or access prompt. These messages can be customized in your locks. [More information about customizing messages here](https://www.locksmith.guide/tutorials/more/customizing-messages).
 
+{% hint style="info" %}
+For conditions requiring a customer login, the following is used as the default replacement to render a "Login to purchase" button that links to the login page. You can copy/paste this to your "Guest message content" and customize it as needed:
+
+{% code overflow="wrap" %}
+```html
+<p><a href="/account/login?return_url=<div data-gb-custom-block data-tag="if">/collections/{{ collection.handle }}</div>/products/{{ product.handle }}" class="btn button button button--full-width button--secondary">Log in to purchase</a></p>
+```
+{% endcode %}
+{% endhint %}
+
 ## 5. Save and test!
 
 Once you've added all of your hiding definitions, save your hiding profile. Locksmith will perform an installation to the theme. Once the installation finishes, make sure to verify that everything is working as expected on the frontend of your store!&#x20;
