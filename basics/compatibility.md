@@ -2,7 +2,17 @@
 
 Locksmith works in and around the online storefront theme layer – an arena shared by many, many other apps. Locksmith's interoperability is excellent; its internal Liquid engine is very good at injecting its code in the right places, without causing issues for themes or apps. Because of this, **in the vast majority of cases, you won't need to worry about Locksmith's compatibility**.
 
-Having said that, there are a few places where there are specific points of compatibility or incompatibility.
+Having said that, there are a few places where there are specific points of compatibility or incompatibility.\
+\
+**Locksmith and the Shop App**
+
+We're pleased to announce that Locksmith is now compatible with the Shop app. Shopify has updated its policies to allow stores using Locksmith to remain eligible for the Shop app, provided all other Shop app eligibility requirements are met.
+
+Shopify's policies prohibit the use of password control and age verification apps, such as Advanced Registration, B2B Login Access Management, Login to View Price, and MagicPass Wholesale, for stores wishing to use the Shop app. However, Locksmith is now explicitly listed as an exception to this rule.
+
+When you use Locksmith to lock certain products, your store will still remain eligible to display on Shop, and your locked products will not be included in your Shop Store. This ensures that merchants can maintain the control Locksmith provides while remaining eligible for the Shop app.
+
+For more details on Shop app eligibility requirements, including prohibited product types or other restrictions, please refer to Shopify's [Shop app eligibility requirements](https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements).
 
 ## Officially unsupported apps
 
