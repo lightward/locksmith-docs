@@ -76,7 +76,7 @@ You can head back to the themes tab to check the status of a specific installati
 
 ## How is this different from Locksmith's "manual locking"
 
-Hiding profiles are intended to work alongside, or in many cases as a replacement, for [manual locking](manual-mode.md), which is when Locksmith code is manually added to the theme. Hiding profiles function in almost the exact same way on the backend. Some differences are:
+Hiding profiles are intended to work alongside - or in many cases as a replacement for - [manual locking](manual-mode.md). Hiding profiles function in almost the exact same way on the backend. Some differences are:
 
 * Hiding profiles are easier to setup
 * Hiding profiles don't need manual removal from your theme, they remove themselves when Locksmith is disabled/uninstalled.
