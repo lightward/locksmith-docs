@@ -71,7 +71,7 @@ For conditions requiring a customer login, the following is used as the default 
 Once you've added all of your hiding definitions, save your hiding profile. Locksmith will perform an installation to the theme. Once the installation finishes, make sure to verify that everything is working as expected on the frontend of your store!&#x20;
 
 {% hint style="info" %}
-You can head back to the themes tab to check the status of a specific installation, whether it be for a published theme or not. Additionally, on the Themes tab, you can preview unpublished themes by pressing "Preview" under the ellipses ("...")  button.
+You can head back to the themes tab to check the status of a specific installation, whether it be for a published theme or not.&#x20;
 {% endhint %}
 
 ## How is this different from Locksmith's "manual locking"
