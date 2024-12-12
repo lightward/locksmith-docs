@@ -74,3 +74,25 @@ Additionally, you can customize the submit buttons and loading text. To do this,
 ![](<../../.gitbook/assets/Screenshot 2024-02-19 at 12.07.40 PM.png>)
 
 Locksmith will use the values you customize here when displaying content to your visitors.
+
+## Related articles:
+
+{% content-ref url="customizing-the-customer-login-page.md" %}
+[customizing-the-customer-login-page.md](customizing-the-customer-login-page.md)
+{% endcontent-ref %}
+
+{% content-ref url="customizing-the-passcode-form.md" %}
+[customizing-the-passcode-form.md](customizing-the-passcode-form.md)
+{% endcontent-ref %}
+
+{% content-ref url="customizing-the-email-list-signup-form.md" %}
+[customizing-the-email-list-signup-form.md](customizing-the-email-list-signup-form.md)
+{% endcontent-ref %}
+
+{% content-ref url="adding-translations-to-your-locksmith-messages.md" %}
+[adding-translations-to-your-locksmith-messages.md](adding-translations-to-your-locksmith-messages.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../faqs/more/how-do-i-add-a-hero-banner-image-to-locksmiths-access-messages.md" %}
+[how-do-i-add-a-hero-banner-image-to-locksmiths-access-messages.md](../../faqs/more/how-do-i-add-a-hero-banner-image-to-locksmiths-access-messages.md)
+{% endcontent-ref %}
