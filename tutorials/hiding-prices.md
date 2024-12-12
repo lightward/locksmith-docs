@@ -142,7 +142,9 @@ Find the product-template or product-form file in your theme, and locate the cod
 
 This results in the add-to-cart button being replaced, in cases where the customer doesn't have access. What is shown depends on what is added above. Just make sure your key conditions on the lock match the conditions that you want your customers to meet before being able to purchase.
 
-If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited):
+#### For stores using Shopify's [legacy customer account system](https://help.shopify.com/en/manual/customers/customer-accounts/legacy-customer-accounts) (formerly "Classic customer accounts"):&#x20;
+
+If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button includes a redirect to return customers after login:
 
 ```
 <a href="/account/login?return_url={% raw %}
@@ -150,11 +152,57 @@ If you need to render a "Login to purchase" button, use the following code (the 
 {% endraw %}/products/{{ product.handle }}">Log in to purchase</a>
 ```
 
+#### For stores using Shopify's [customer account](https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts) system (formerly "New customer accounts":
+
+If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button will return customers after login:
+
+```
+<a href="/customer_identity/sso_hint" class="btn button" data-locksmith>Log in to purchase</a>
+```
+
+#### For locks using passcode keys:
+
 If you need to render a passcode prompt button, use the following code (the button classes may need to be edited):
 
 ```
 <button class="locksmith-manual-trigger btn button">Enter passcode to purchase</button>
 ```
+
+#### For locks using location keys:
+
+You can add an access denied message of location keys by adding paragraph tags and some text within the Liquid "else" statement, for example:
+
+```
+<p><strong>Product not available in your country.</strong></p>
+```
+
+#### When using the "is tagged with..." key condition you can display a "Login to purchase" button _or_ an access denied message depending on visitors access:
+
+<details>
+
+<summary>Click here for an example</summary>
+
+The following example includes an "else" statement that will:
+
+* display an access denied message to customers who _are_ signed in and _don't_ have access to the lock.&#x20;
+* or a "Login to purchase" button for customers who aren't signed in.
+
+<pre><code><strong>{% if locksmith_access_granted %}
+</strong>  &#x3C;button type="submit">
+    Add to cart button example
+  &#x3C;/button>
+{% else %}
+  {% if customer %}
+    &#x3C;p style="font-weight: bold; padding-top:20px; padding-bottom:20px;">You do not have access to this resource.&#x3C;/p>
+  {% else %}  
+    &#x3C;a style="width: 100%;" href="/customer_identity/sso_hint" class="btn button" data-locksmith>Log in to purchase&#x3C;/a>
+  {% endif %}  
+{% endif %}
+</code></pre>
+
+**Note:** The above example uses a "Login to purchase" button for Shopify's [standard customer accounts](hiding-prices.md#for-stores-using-shopifys-customer-account-system-formerly-new-customer-accounts) system.
+
+</details>
 
 ### Here are some visual examples of the result
 
