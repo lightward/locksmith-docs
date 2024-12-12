@@ -65,3 +65,6 @@ Shopify has some documentation on uploading and managing files here: [https://he
 [customizing-the-passcode-form.md](../../tutorials/more/customizing-the-passcode-form.md)
 {% endcontent-ref %}
 
+{% content-ref url="../../tutorials/more/customizing-the-email-list-signup-form.md" %}
+[customizing-the-email-list-signup-form.md](../../tutorials/more/customizing-the-email-list-signup-form.md)
+{% endcontent-ref %}
