@@ -89,6 +89,10 @@ Locksmith will use the values you customize here when displaying content to your
 [customizing-the-email-list-signup-form.md](customizing-the-email-list-signup-form.md)
 {% endcontent-ref %}
 
+{% content-ref url="customizing-the-registration-form.md" %}
+[customizing-the-registration-form.md](customizing-the-registration-form.md)
+{% endcontent-ref %}
+
 {% content-ref url="adding-translations-to-your-locksmith-messages.md" %}
 [adding-translations-to-your-locksmith-messages.md](adding-translations-to-your-locksmith-messages.md)
 {% endcontent-ref %}
