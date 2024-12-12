@@ -176,7 +176,7 @@ You can add an access denied message of location keys by adding paragraph tags a
 <p><strong>Product not available in your country.</strong></p>
 ```
 
-#### When using the "is tagged with..." key condition you can display a "Login to purchase" button _or_ an access denied message depending on visitors access:
+#### When using the "is tagged with..." key condition you can display a "Login to purchase" button _or_ an access denied message depending on a visitors access:
 
 <details>
 
