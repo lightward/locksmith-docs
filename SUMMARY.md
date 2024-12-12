@@ -120,6 +120,7 @@
   * [How do I hide menu navigation links to my locked resources](faqs/more/how-do-i-hide-menu-navigation-links-to-my-locked-resources.md)
   * [The thing I want to lock isn't showing up in the Locksmith search](faqs/more/the-thing-i-want-to-lock-isnt-showing-up-in-the-locksmith-search.md)
   * [I am getting an "already taken" error when trying to create a metafield definition for seo.hidden](faqs/more/i-am-getting-an-already-taken-error-when-trying-to-create-a-metafield-definition-for-seo.hidden.md)
+  * [How do I add a hero banner image to Locksmith's access messages](faqs/more/how-do-i-add-a-hero-banner-image-to-locksmiths-access-messages.md)
 
 ## 📒 Policies
 
