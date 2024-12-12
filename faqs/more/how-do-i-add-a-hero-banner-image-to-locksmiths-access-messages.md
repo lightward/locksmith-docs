@@ -95,7 +95,7 @@ It’s possible to add some Liquid code if you would like to display a collectio
     <figure><img src="../../.gitbook/assets/Screenshot 2024-12-12 at 4.41.12 pm.png" alt=""><figcaption></figcaption></figure>
 6.  **Editing the default message content:**
 
-    Locksmith’s default access messages are located in the Locksmith app’s Settings tab. By adding this modified hero banner image code to a message field in Locksmith’s settings—instead of a specific lock’s settings page—the code will apply to any lock that is using the default message.
+    [Locksmith’s default access messages](../../tutorials/more/customizing-messages.md#default-messages) are located in the Locksmith app’s Settings tab. By adding this modified hero banner image code to a message field in Locksmith’s settings—instead of a specific lock’s settings page—the code will apply to any lock that is using the default message.
 
 #### **(Optional) Limiting the scope of the hero banner code to collection and product pages:**
 
@@ -117,7 +117,7 @@ Shopify has some documentation on uploading and managing files here: [https://he
 
 
 
-## Related guides:
+## Related articles:
 
 {% content-ref url="../../tutorials/more/customizing-messages.md" %}
 [customizing-messages.md](../../tutorials/more/customizing-messages.md)
