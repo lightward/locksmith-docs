@@ -60,6 +60,8 @@ These are all the key conditions that Locksmith supports:
   This condition checks the current time, and grants access if it's after the time that you specify.
 * **is visiting a certain domain**\
   This condition checks the domain of your store, and grants access if the visitors domains matches up . This is useful if you have multiple domains on your store that might be scoped to different regions of the world (or any other reason you have for creating multiple domains.
+* **the customer confirms the prompt**\
+  This is a straightforward key condition that allows access solely based on if the customer confirms the prompt that you set.
 * **(always permit)**\
   This is a special condition! It's useful when "forcing open" a lock, under some certain circumstances. To learn more about this, see: [excluding-content-from-locks.md](../keys/more/excluding-content-from-locks.md "mention")
 * **(custom Liquid)**\
