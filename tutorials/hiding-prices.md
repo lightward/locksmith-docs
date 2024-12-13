@@ -1,7 +1,7 @@
 ---
 description: >-
-  How to use the Locksmith app to hide specific page content on your Shopify
-  Online Store
+  How to use the Locksmith app to hide or "lock" specific page content on your
+  Shopify Online Store
 ---
 
 # Hiding product prices and/or the add to cart button
