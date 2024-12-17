@@ -1,11 +1,14 @@
 ---
 description: >-
-  Learn how to set up checkout validation in Shopify using Locksmith. This
-  feature ensures that products tagged with a specific product tag cannot be
-  purchased without a specific customer tag.
+  Protect against bots, cart permalink exploits, and other unauthorized orders
+  using our checkout validation feature.
 ---
 
 # Setting up checkout validation with Locksmith
+
+{% hint style="info" %}
+If you're seeing fraudulent orders on your free items, or challenges selling high-demand products to only approved customers, this is the solution for you!
+{% endhint %}
 
 ## Prerequisites:
 
