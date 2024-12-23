@@ -22,6 +22,7 @@ You'll find this option on locks for the following resource types:
 
 * Using **third party apps** to create your navigation will likely prevent Locksmith from being able to correctly hide your navigation links.
 * Locksmith is generally not able to hide navigation menu links that are a part of a **mega menu**, whether via third party apps or a theme setting.&#x20;
+* Locksmith is not able to hide empty navigation links that don't point to any resource.&#x20;
 * This setting can only be turned on via your lock settings. This means that links pointing outside of your Online Store cannot be hidden through Locksmith.
 
 ## Having issues with links not getting hidden?
