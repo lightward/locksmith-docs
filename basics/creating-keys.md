@@ -81,7 +81,7 @@ Remember that all key conditions can be **inverted!**
 [inverting-conditions-in-locksmith.md](../keys/more/inverting-conditions-in-locksmith.md)
 {% endcontent-ref %}
 
-Having issues with **locks overlapping**? Perhaps the "master key" settings is for you:
+Having issues with **locks overlapping**? Perhaps the "Force open other locks" setting is for you:
 
 {% content-ref url="../keys/more/using-the-force-open-other-locks-setting.md" %}
 [using-the-force-open-other-locks-setting.md](../keys/more/using-the-force-open-other-locks-setting.md)
