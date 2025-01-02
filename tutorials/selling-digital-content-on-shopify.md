@@ -78,7 +78,7 @@ You may wish to direct customers to the content that they just purchased.&#x20;
 
 We can use some custom code to conditionally add a link to your locked content if the customer has purchased the right product.
 
-To set this up, head to Settings -> Notifications in your Shopify admin, then scroll down and click the link for "Order confirmation". Insert this code and adjust as appropriate:
+To set this up: head to **Settings -> Notifications** in your Shopify admin, then select  "**Customer notifications**" and click the link for "**Order confirmation**". To edit the code for this email, you'll need to click the "**Edit code**" button in the top right of the page. Insert this code and adjust as needed:
 
 ```
 {% raw %}
