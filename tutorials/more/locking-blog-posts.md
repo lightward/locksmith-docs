@@ -14,3 +14,9 @@ For more about how to add tags to blog posts, please visit Shopify's guide, belo
 {% hint style="info" %}
 After adding tags to your blog posts, if the tag doesn't show up right away when searching for it in-app, click on the "Update Locksmith" button on the _Help_ page in the app. It should sync up in a minute or so.
 {% endhint %}
+
+
+
+{% hint style="danger" %}
+Locksmith _**cannot**_ block RSS feeds from locked blogs.
+{% endhint %}
