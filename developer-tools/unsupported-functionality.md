@@ -78,7 +78,7 @@ Second example: Do the same thing, but add the "secret" part of the secret link 
 <script>
   window.addEventListener('load', () => {
     if (Locksmith.params.secret_link) {
-      $.post('/cart/update.json', { attributes: { passcode: Locksmith.params.passcode } })
+      $.post('/cart/update.json', { attributes: { secret-link: Locksmith.params.secret_link } })
     }
   });
 </script>
