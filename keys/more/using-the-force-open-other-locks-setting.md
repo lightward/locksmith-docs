@@ -12,12 +12,12 @@ To turn on the "Force open other locks" setting, go to **each applicable (overla
 
 It is found directly under your keys in the section labelled "**Key options**":
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-11-02 at 10.55.48 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.23.09 PM.png" alt=""><figcaption></figcaption></figure>
 
 You'll also notice that the the key shows a message telling you which keys are forcing open other locks.\
 
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-24 at 10.23.45 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.23.55 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**: Since this is a key-specific setting, if you have multiple keys, make sure it is turned on for each key. Each key has its own key icon, so that's a quick way to tell if you have multiple keys.
