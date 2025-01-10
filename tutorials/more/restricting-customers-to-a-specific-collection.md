@@ -7,25 +7,25 @@ With Locksmith, it is simple to lock down a specific collection, so that it can 
 Add a lock to the collection that you want these customers to access. Use the search bar in Locksmith to search for the collection by name:\
 
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-11-08 at 10.36.03 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.17.27 PM.png" alt=""><figcaption></figcaption></figure>
 
 Under "Keys", choose how these customers will gain access. You can use whatever method of access you want. The most common way of granting access in this scenario is to use "customer tags" to grant access:
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-11-08 at 10.38.18 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.18.44 PM.png" alt=""><figcaption></figcaption></figure>
 
 Make sure the "Force open other locks" setting is turned on for this lock. Use the following guide to do this: [Using the "Force open other locks" setting](../../keys/more/using-the-force-open-other-locks-setting.md) . **This setting is important.**
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2023-11-04 at 12.15.56.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.19.26 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Part 2: Create a lock covering the rest of the store
 
-In order to make sure that these customers can't see the rest of your store, you need to actually add a lock to your "entire shop":
+In order to make sure that these customers can't see the rest of your store, you need to actually add a lock to your "entire store":
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5f7e3a434cedfd0017dcf76a/file-OjwqsyxcSB.png)
+![](<../../.gitbook/assets/Screenshot 2025-01-10 at 2.20.04 PM.png>)
 
 For your key condition, you need to use the "invert" option to obtain the opposite of the first key condition:
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2023-11-04 at 12.39.17.png" alt=""><figcaption><p>The invert option in the context of the rest of the key condition settings.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.21.32 PM.png" alt=""><figcaption><p>The invert option in the context of the rest of the key condition settings.</p></figcaption></figure>
 
 Use the guide here if you need more guidance on how to invert your key condition:
 
