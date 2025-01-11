@@ -1,6 +1,6 @@
 # Limiting the scope of variant locks using the product tag key condition
 
-By default, Locksmith's variant locks apply to all matching option/value combinations. For example, you'll typically see something like this:\
+By default, Locksmith's [variant locks](../../tutorials/more/locking-variants/) apply to all matching option/value combinations. For example, you'll typically see something like this:\
 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-31 at 15.38.03.png" alt=""><figcaption></figcaption></figure>
