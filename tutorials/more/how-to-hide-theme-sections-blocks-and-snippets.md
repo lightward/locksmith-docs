@@ -2,7 +2,6 @@
 description: >-
   Create a theme hiding profile to lock specific parts of your Shopify themes
   according to your Locksmith lock conditions
-hidden: true
 ---
 
 # How to hide theme sections, blocks, and snippets
