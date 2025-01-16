@@ -2,9 +2,9 @@
 
 Locksmith works in and around the online storefront theme layer – an arena shared by many, many other apps. Locksmith's interoperability is excellent; its internal Liquid engine is very good at injecting its code in the right places, without causing issues for themes or apps. Because of this, **in the vast majority of cases, you won't need to worry about Locksmith's compatibility**.
 
-Having said that, there are a few places where there are specific points of compatibility or incompatibility.\
-\
-**Locksmith and the Shop App**
+Having said that, there are a few places where there are specific points of compatibility or incompatibility.
+
+### Locksmith and the Shop App
 
 We're pleased to announce that Locksmith is now compatible with the Shop app. Shopify has updated its policies to allow stores using Locksmith to remain eligible for the Shop app, provided all other Shop app eligibility requirements are met.
 
@@ -12,7 +12,21 @@ Shopify's policies prohibit the use of password control and age verification app
 
 When you use Locksmith to lock certain products, your store will still remain eligible to display on Shop, and your locked products will not be included in your Shop Store. This ensures that merchants can maintain the control Locksmith provides while remaining eligible for the Shop app.
 
-For more details on Shop app eligibility requirements, including prohibited product types or other restrictions, please refer to Shopify's [Shop app eligibility requirements](https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements).
+For more details on Shop app eligibility requirements, including prohibited product types or other restrictions, please refer to Shopify's [Shop app eligibility requirements](https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements).\
+\
+**Variant Locks and the Shop App**
+
+Locksmith’s variant-level locks don’t automatically remove locked variants from the Shop app, as the app manages visibility at the product level. While Locksmith adds a metafield to exclude locked products or collections from the Shop app, Shopify doesn’t support sales channel visibility controls for individual variants.
+
+If a product includes locked variants, the Shop app will flag it with a warning (“This product is hidden by a third-party app”) and prevent it from being listed.
+
+**Workaround for Variant Visibility on the Shop App**\
+To keep unlocked variants available while hiding locked ones, you can create duplicate products:
+
+* One product with only unlocked variants, published to the Shop app.
+* Another product with locked variants, excluded from the Shop app.
+
+This solution offers greater control but may increase inventory management complexity. For guidance on using duplicate products, refer to our tutorial on [price tiers](https://www.locksmith.guide/tutorials/more/price-tiers#using-product-duplicates-1). You can also explore [inventory management tips](https://www.locksmith.guide/tutorials/more/price-tiers#inventory).
 
 ## Officially unsupported apps
 
