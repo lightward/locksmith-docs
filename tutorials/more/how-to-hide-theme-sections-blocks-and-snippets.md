@@ -55,15 +55,23 @@ Ultimately, what you put here depends on what is used in the theme, and if you w
 
 If the "Replace" checkbox is toggled on, instead of just hiding the content, Locksmith will replace it with the access denied message or access prompt. These messages can be customized in your locks. [More information about customizing messages here](https://www.locksmith.guide/tutorials/more/customizing-messages).
 
-{% hint style="info" %}
-For conditions requiring a customer login, the following is used as the default replacement to render a "Login to purchase" button that links to the login page. You can copy/paste this to your "Guest message content" and customize it as needed:
+### Login to purchase button
+
+For conditions requiring a customer login, the following is used as the default replacement to render a "Login to purchase" button that links to the login page. You can copy/paste the code to your "Guest message content" and customize it as needed. It differs slightly depending on if you're using legacy customer accounts or standard.
+
+**Standard customer accounts:**
+
+<pre class="language-html" data-overflow="wrap"><code class="lang-html"><strong>&#x3C;p>&#x3C;a href="/customer_authentication/login?locale={{ request.locale.iso_code }}&#x26;?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase&#x3C;/a>&#x3C;/p>
+</strong><strong>
+</strong></code></pre>
+
+**Legacy customer accounts:**
 
 {% code overflow="wrap" %}
 ```html
-<p><a href="/account/login?return_url=<div data-gb-custom-block data-tag="if">/collections/{{ collection.handle }}</div>/products/{{ product.handle }}" class="btn button button button--full-width button--secondary">Log in to purchase</a></p>
+<p><a href="/account/login?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase</a></p>
 ```
 {% endcode %}
-{% endhint %}
 
 ## 5. Save and test!
 
