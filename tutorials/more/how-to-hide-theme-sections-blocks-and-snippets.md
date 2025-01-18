@@ -57,7 +57,7 @@ If the "Replace" checkbox is toggled on, instead of just hiding the content, Loc
 
 ### Login to purchase button
 
-For conditions requiring a customer login, the following is used as the default replacement to render a "Login to purchase" button that links to the login page. You can copy/paste the code to your "Guest message content" and customize it as needed. It differs slightly depending on if you're using legacy customer accounts or standard.
+For conditions requiring a customer login, the following is used as the default replacement to render a "Login to purchase" button that links to the login page. If you wish to customize the appearance of the button, you can copy/paste this code to your "Guest message content" and edit it as needed. It differs slightly depending on if you're using legacy customer accounts or standard.
 
 **Standard customer accounts:**
 
