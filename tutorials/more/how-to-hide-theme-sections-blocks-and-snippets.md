@@ -40,7 +40,7 @@ A hiding definition hides a section, block, or snippet in your theme. One of the
 <figure><img src="../../.gitbook/assets/Screenshot 2024-12-05 at 15.21.24.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-If your theme is one of the free themes made by Shopify from the Shopify theme store, **and you are wanting to use this feature for price hiding or buy buttons hiding**, try the "theme hiding presets". Instead of choosing "Add by name" under "Selection method", choose "Add from theme presets", then choose either "Price" or "Buy buttons" and press "Add presets". You'll need to add add both presets if you are hiding both prices and buy buttons! Please note that presets will only match newer versions of these themes.
+If your theme is one of the free themes made by Shopify from the Shopify theme store, **and you are wanting to use this feature for price hiding or buy buttons hiding**, try the "theme hiding presets". Instead of choosing "Add by name" under "Selection method", choose "Add from theme presets", then choose either "Price" or "Buy buttons" and press "Add presets". You'll need to add add both presets if you are hiding both prices and buy buttons! Please note that presets will only match newer versions of these themes. **Note**: Because it is built in a way that doesn't use sections/blocks for price/cart buttons, the "Trade" theme is an exception (you won't find presets for it).
 {% endhint %}
 
 ## 3. What to use for "Liquid variable"
