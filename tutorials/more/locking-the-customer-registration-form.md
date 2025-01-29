@@ -12,7 +12,7 @@
 
 To try this out, open up Locksmith, and start typing "registration", like so:
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5e27858f2c7d3a7e9ae68e46/5e27858f1bbeb.png)
+![](<../../.gitbook/assets/Screenshot 2025-01-29 at 11.11.23 AM.png>)
 
 Click on the "Customer Registration" result and then click "Save." Locksmith will create a lock that covers your shop's registration page. From there, feel free to add whatever keys you like!
 
