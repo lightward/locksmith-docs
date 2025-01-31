@@ -28,7 +28,7 @@ You will need to create three separate keys for your cart lock. Our guide on add
 
 1. You’ll need a key that grants access if a customer _does_ have products tagged with the "wholesale" products tag (for example) in the cart, but only if the customer doesn't have any products tagged with "retail" in the cart.
    * Create a key and then select the "has a certain product in their cart" key condition and add “tag:wholesale” to the "Look for products matching…" field on the condition.
-   *   Then combine a second "has a certain product in their cart" key condition with the first, add “tag:retail” to the "Look for products matching…" field on the condition, and then invert the condition.\
+   *   Then [_combine_](../../keys/more/combining-key-conditions.md) a second "has a certain product in their cart" key condition with the first, add “tag:retail” to the "Look for products matching…" field on the condition, and then [_invert_](../../keys/more/inverting-conditions-in-locksmith.md) the condition.\
        \
        [Combining Key Conditions\
        ](../../keys/more/combining-key-conditions.md)[Inverting conditions in Locksmith\
