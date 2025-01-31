@@ -219,5 +219,15 @@ The following example includes an "else" statement that will:
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/600d05bf1c64ad47e4b724f9/file-tT77eLbVWn.png)
 
 {% hint style="warning" %}
-Please note: since the custom liquid code is added manually to the store theme, anytime you switch to a _new_ theme the custom code has to be manually added again to the new theme.
+Please note: since the custom liquid code is added manually to the store theme, anytime you switch to a _new_ or _updated_ theme the custom code has to be manually added again to the new theme. We're always happy to add code to new or updated themes if you write into [team@uselocksmith.com](../policies/contact.md)\
+\
+We recommend leaving the new theme unpublshed while you wait for the code to be added, so that nothing is exposed in the meantime. :)
+{% endhint %}
+
+
+
+{% hint style="info" %}
+If Locksmith's manual locking code is added to an _**unpublished**_ theme, please be sure to visit our guide below for instructions on testing:\
+\
+[testing-locksmith-on-unpublished-themes.md](more/testing-locksmith-on-unpublished-themes.md "mention")
 {% endhint %}
