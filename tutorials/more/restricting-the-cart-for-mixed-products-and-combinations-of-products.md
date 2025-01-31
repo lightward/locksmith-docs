@@ -31,9 +31,9 @@ You will need to create three separate keys for your cart lock. Our guide on add
    *   Then combine a second "has a certain product in their cart" key condition with the first, add “tag:retail” to the "Look for products matching…" field on the condition, and then invert the condition.\
        \
        [Combining Key Conditions\
-       ](https://docs.uselocksmith.com/article/495-combining-key-conditions)[Inverting conditions in Locksmith\
+       ](../../keys/more/combining-key-conditions.md)[Inverting conditions in Locksmith\
        \
-       ](https://docs.uselocksmith.com/article/483-inverting-key-conditions-in-locksmith)You should have a key that looks like the following image.\
+       ](../../keys/more/inverting-conditions-in-locksmith.md)You should have a key that looks like the following image.\
 
 
        <figure><img src="../../.gitbook/assets/Screenshot 2023-11-07 at 9.37.20 pm.png" alt=""><figcaption><p>Image 1. Key with key condition combination to allow access for wholesale products with no retail.</p></figcaption></figure>
