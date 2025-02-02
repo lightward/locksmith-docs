@@ -89,7 +89,7 @@ If you've got several secret link keys, across different locks, any keys that re
 
 ### Using a vendor's referral link as a secret code
 
-If you're using a referral service (or any other service that generates a URL with a specific code at the end), you can use the referral URL's "querystring" as the secret code for your key.
+If you're using a referral service (or any other service that generates a URL with a specific code at the end), you can use the referral URL's "query string" as the secret code for your key.
 
 For example, if you're using a referral URL that looks like https://example.com/?rfsn=abc123, you may set your secret link code to "rfsn=abc123", and your Locksmith key will just work:
 
