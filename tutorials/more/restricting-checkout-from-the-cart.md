@@ -11,7 +11,7 @@ Locksmith allows you to restrict checkout by using a lock on the cart page in yo
 ### **Limitations:**
 
 * The method locks down the cart page only. The cart page is always found at the '.../cart' link in your store (e.g. www.example-store.com/cart). Using other types of carts (slider, dropdown, dynamic/ajax, etc.) or adding "Buy Now" links to your store (which point the customer directly to checkout without going through the cart page) will not work with this method.
-* Locking the checkout area itself is not possible using Locksmith. So any check out links that lead straight to checkout including "Buy Now" button, upsell links, or abandoned cart links can't be used with this method.
+* Locking the checkout area itself is not possible using Locksmith. So any check out links that lead straight to checkout including "Buy Now" button, upsell links, or abandoned cart links can't be used with this method. Please see: [setting-up-checkout-validation-with-locksmith.md](setting-up-checkout-validation-with-locksmith.md "mention")
 
 \
 Moving on, this is the checkout page without any locks in effect:
