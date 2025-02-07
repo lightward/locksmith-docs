@@ -8,6 +8,6 @@ If you are having issues with your lock message being overridden, this can easil
 
 For more general information on editing messages, check out our guide here:
 
-{% content-ref url="../../tutorials/more/customizing-messages.md" %}
-[customizing-messages.md](../../tutorials/more/customizing-messages.md)
+{% content-ref url="../../tutorials/more/customizing-messages/" %}
+[customizing-messages](../../tutorials/more/customizing-messages/)
 {% endcontent-ref %}

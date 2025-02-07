@@ -44,8 +44,8 @@ When this is all set, the customer will be prompted to log in when they try to a
 
 You can edit the access messages on the Locksimth app's settings page, or editi the access messages for specific locks on the lock's settings page. Our guide on edditing access messages is linked below.
 
-{% content-ref url="customizing-messages.md" %}
-[customizing-messages.md](customizing-messages.md)
+{% content-ref url="customizing-messages/" %}
+[customizing-messages](customizing-messages/)
 {% endcontent-ref %}
 
 ## Related articles:

@@ -55,16 +55,16 @@ Here are a few more links to guides that you might find useful as you set up Loc
 [approving-customer-registrations.md](../tutorials/approving-customer-registrations.md)
 {% endcontent-ref %}
 
-{% content-ref url="../tutorials/more/customizing-the-customer-login-page.md" %}
-[customizing-the-customer-login-page.md](../tutorials/more/customizing-the-customer-login-page.md)
+{% content-ref url="../tutorials/more/customizing-messages/customizing-the-customer-login-page.md" %}
+[customizing-the-customer-login-page.md](../tutorials/more/customizing-messages/customizing-the-customer-login-page.md)
 {% endcontent-ref %}
 
-{% content-ref url="../tutorials/more/customizing-the-registration-form.md" %}
-[customizing-the-registration-form.md](../tutorials/more/customizing-the-registration-form.md)
+{% content-ref url="../tutorials/more/customizing-messages/customizing-the-registration-form.md" %}
+[customizing-the-registration-form.md](../tutorials/more/customizing-messages/customizing-the-registration-form.md)
 {% endcontent-ref %}
 
-{% content-ref url="../tutorials/more/customizing-messages.md" %}
-[customizing-messages.md](../tutorials/more/customizing-messages.md)
+{% content-ref url="../tutorials/more/customizing-messages/" %}
+[customizing-messages](../tutorials/more/customizing-messages/)
 {% endcontent-ref %}
 
 As always, please feel free to reach out to us directly via email at **team@uselocksmith.com** if you have any questions!

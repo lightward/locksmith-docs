@@ -28,8 +28,8 @@ The team over at Helium apps have written blog post on how to change that locati
 
 The access message and content that Locksmith presents for customer account key conditions can be modified to include a login and registration form on the same page. See our Customizing the customer login page guide:
 
-{% content-ref url="../../tutorials/more/customizing-the-customer-login-page.md" %}
-[customizing-the-customer-login-page.md](../../tutorials/more/customizing-the-customer-login-page.md)
+{% content-ref url="../../tutorials/more/customizing-messages/customizing-the-customer-login-page.md" %}
+[customizing-the-customer-login-page.md](../../tutorials/more/customizing-messages/customizing-the-customer-login-page.md)
 {% endcontent-ref %}
 
 We don't officially have support for a return redirect after customer registration, but it should be possible to achieve that using Helium's redirect script from the [above section](how-do-i-change-where-customers-are-redirected-to-after-registration-on-shopify.md#changing-the-default-location-customers-are-redirected-to-after-registration) and modifying that script a little.
@@ -53,8 +53,8 @@ The above modification should only work to redirect customers to locked content 
 
 ## Related articles
 
-{% content-ref url="../../tutorials/more/customizing-the-registration-form.md" %}
-[customizing-the-registration-form.md](../../tutorials/more/customizing-the-registration-form.md)
+{% content-ref url="../../tutorials/more/customizing-messages/customizing-the-registration-form.md" %}
+[customizing-the-registration-form.md](../../tutorials/more/customizing-messages/customizing-the-registration-form.md)
 {% endcontent-ref %}
 
 {% content-ref url="../../tutorials/approving-customer-registrations.md" %}

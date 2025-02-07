@@ -57,8 +57,8 @@ Shopify does NOT send registration notifications. If this is important to you tr
 
 #### If you need to collect additional information from customers in your registration form...
 
-{% content-ref url="more/customizing-the-registration-form.md" %}
-[customizing-the-registration-form.md](more/customizing-the-registration-form.md)
+{% content-ref url="more/customizing-messages/customizing-the-registration-form.md" %}
+[customizing-the-registration-form.md](more/customizing-messages/customizing-the-registration-form.md)
 {% endcontent-ref %}
 
 ### Option 2: Create pre-approved customer accounts, and send email invitations.

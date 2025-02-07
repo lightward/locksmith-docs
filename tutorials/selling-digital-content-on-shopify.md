@@ -68,7 +68,7 @@ You can do that with either of the following ways:
 
 **Make customer accounts required for your entire store**: This means that everyone must be signed into your store when they check out. [More information from Shopify on doing this](https://help.shopify.com/en/manual/checkout-settings/customer-accounts#set-your-customer-account-preferences). This might be considered overkill for some merchants, so if that's the case, use the next option.
 
-**Use Locksmith to require that a customer is signed in when purchasing your "access product"**: Pretty simple - just add a lock directly to the "access product" and use "Permit if customer is signed in" as the key condition. You can [edit the locked landing page for this product](more/customizing-messages.md) by editing the "Guest message content" message to let the customer know that they need to sign in before access. Or, if you prefer, you can even [employ manual locking](hiding-prices.md) if you just want to hide the add-to-cart button instead of the whole page.
+**Use Locksmith to require that a customer is signed in when purchasing your "access product"**: Pretty simple - just add a lock directly to the "access product" and use "Permit if customer is signed in" as the key condition. You can [edit the locked landing page for this product](more/customizing-messages/) by editing the "Guest message content" message to let the customer know that they need to sign in before access. Or, if you prefer, you can even [employ manual locking](hiding-prices.md) if you just want to hide the add-to-cart button instead of the whole page.
 
 ## Optional: Directing customers to your content after purchase
 

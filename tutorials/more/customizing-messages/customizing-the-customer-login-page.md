@@ -29,7 +29,9 @@ There are many ways to customize this page which the rest of this guide will cov
 
 ## 1. Customizing the login form itself
 
-Since Locksmith is just grabbing the login template directly from your theme, you'll need to head into your theme to edit it. Shopify has [a guide dedicated to doing this here](https://help.shopify.com/themes/development/templates/customers-login). Using that guide you can do things like remove the "Register" link from your login form or edit the styling in other ways.
+Since Locksmith is just grabbing the login template directly from your theme, you'll need to head into your theme to edit it. Shopify has [a guide dedicated to doing this here](https://shopify.dev/docs/storefronts/themes/architecture/templates/customers-login). Using that guide you can do things like remove the "Register" link from your login form or edit the styling in other ways.\
+\
+If you have a theme from a third-party developer, feel free to contact them for more personalized guidance on your specific theme's login template.
 
 {% hint style="warning" %}
 **Important:** Anytime you edit the login template in your theme, you'll want to make sure that Locksmith is using the updated version of it. To do this, go to the Help area within the Locksmith app and press the "Update Locksmith" button there.
@@ -99,8 +101,8 @@ If you've removed the beginning \<p> tag, just add a new one :) And, of course, 
 
 If you have multiple key condition types on the same lock, it might be useful to include other form types within the prompt, so that they display on the same page. We have a guide on doing this here:
 
-{% content-ref url="showing-multiple-prompts-on-the-same-page.md" %}
-[showing-multiple-prompts-on-the-same-page.md](showing-multiple-prompts-on-the-same-page.md)
+{% content-ref url="../showing-multiple-prompts-on-the-same-page.md" %}
+[showing-multiple-prompts-on-the-same-page.md](../showing-multiple-prompts-on-the-same-page.md)
 {% endcontent-ref %}
 
 ## 8. Placing the lock message within the login form itself

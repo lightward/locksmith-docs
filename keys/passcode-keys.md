@@ -65,10 +65,10 @@ When the customer clicks that button, they'll be presented with the passcode pro
 
 ## Related articles
 
-{% content-ref url="../tutorials/more/customizing-messages.md" %}
-[customizing-messages.md](../tutorials/more/customizing-messages.md)
+{% content-ref url="../tutorials/more/customizing-messages/" %}
+[customizing-messages](../tutorials/more/customizing-messages/)
 {% endcontent-ref %}
 
-{% content-ref url="../tutorials/more/customizing-the-passcode-form.md" %}
-[customizing-the-passcode-form.md](../tutorials/more/customizing-the-passcode-form.md)
+{% content-ref url="../tutorials/more/customizing-messages/customizing-the-passcode-form.md" %}
+[customizing-the-passcode-form.md](../tutorials/more/customizing-messages/customizing-the-passcode-form.md)
 {% endcontent-ref %}

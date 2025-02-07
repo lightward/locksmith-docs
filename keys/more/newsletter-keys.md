@@ -56,8 +56,8 @@ When set up, this will present the customer will the regular prompt to sign in (
 
 If desired, you can adjust your message prompt to direct your customers to the page footer(in most stores) to subscribe to your newsletter. More information on editing messages here:
 
-{% content-ref url="../../tutorials/more/customizing-messages.md" %}
-[customizing-messages.md](../../tutorials/more/customizing-messages.md)
+{% content-ref url="../../tutorials/more/customizing-messages/" %}
+[customizing-messages](../../tutorials/more/customizing-messages/)
 {% endcontent-ref %}
 
 ## Using other mail services

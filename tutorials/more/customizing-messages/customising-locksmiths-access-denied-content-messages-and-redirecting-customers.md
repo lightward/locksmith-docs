@@ -12,16 +12,16 @@ Locksmith access denied content is presented to customers who are signed in, but
 * has purchased…
 * (custom Liquid) in some cases
 
-{% content-ref url="../../keys/customer-account-keys.md" %}
-[customer-account-keys.md](../../keys/customer-account-keys.md)
+{% content-ref url="../../../keys/customer-account-keys.md" %}
+[customer-account-keys.md](../../../keys/customer-account-keys.md)
 {% endcontent-ref %}
 
 ## 1. Modifying the default message
 
 The "Access denied content" message field can be modified in the same way as Locksmith’s other access messages, including using code to modify the appearance and functionality of the message.
 
-{% content-ref url="customizing-messages.md" %}
-[customizing-messages.md](customizing-messages.md)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}
 
 ### The following code can be used in this field:
@@ -81,12 +81,12 @@ Simply add the following code to the "Access denied content" message field and m
 
 
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-05 at 1.31.39 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-08-05 at 1.31.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Related articles:&#x20;
 
-{% content-ref url="adding-translations-to-your-locksmith-messages.md" %}
-[adding-translations-to-your-locksmith-messages.md](adding-translations-to-your-locksmith-messages.md)
+{% content-ref url="../adding-translations-to-your-locksmith-messages.md" %}
+[adding-translations-to-your-locksmith-messages.md](../adding-translations-to-your-locksmith-messages.md)
 {% endcontent-ref %}
 
 {% content-ref url="customizing-the-customer-login-page.md" %}
@@ -97,20 +97,20 @@ Simply add the following code to the "Access denied content" message field and m
 [customizing-the-registration-form.md](customizing-the-registration-form.md)
 {% endcontent-ref %}
 
-{% content-ref url="../selling-digital-content-on-shopify.md" %}
-[selling-digital-content-on-shopify.md](../selling-digital-content-on-shopify.md)
+{% content-ref url="../../selling-digital-content-on-shopify.md" %}
+[selling-digital-content-on-shopify.md](../../selling-digital-content-on-shopify.md)
 {% endcontent-ref %}
 
-{% content-ref url="recharge.md" %}
-[recharge.md](recharge.md)
+{% content-ref url="../recharge.md" %}
+[recharge.md](../recharge.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../keys/more/newsletter-keys.md" %}
-[newsletter-keys.md](../../keys/more/newsletter-keys.md)
+{% content-ref url="../../../keys/more/newsletter-keys.md" %}
+[newsletter-keys.md](../../../keys/more/newsletter-keys.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../faqs/more/how-do-i-change-where-customers-are-redirected-to-after-registration-on-shopify.md" %}
-[how-do-i-change-where-customers-are-redirected-to-after-registration-on-shopify.md](../../faqs/more/how-do-i-change-where-customers-are-redirected-to-after-registration-on-shopify.md)
+{% content-ref url="../../../faqs/more/how-do-i-change-where-customers-are-redirected-to-after-registration-on-shopify.md" %}
+[how-do-i-change-where-customers-are-redirected-to-after-registration-on-shopify.md](../../../faqs/more/how-do-i-change-where-customers-are-redirected-to-after-registration-on-shopify.md)
 {% endcontent-ref %}
 
 ### Something else not covered here?
