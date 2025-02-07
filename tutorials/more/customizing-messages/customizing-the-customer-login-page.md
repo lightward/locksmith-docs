@@ -29,7 +29,7 @@ There are many ways to customize this page which the rest of this guide will cov
 
 ## 1. Customizing the login form itself
 
-Since Locksmith is just grabbing the login template directly from your theme, you'll need to head into your theme to edit it. Shopify has [a guide dedicated to doing this here](https://shopify.dev/docs/storefronts/themes/architecture/templates/customers-login). Using that guide you can do things like remove the "Register" link from your login form or edit the styling in other ways.\
+Since Locksmith is just grabbing the login template directly from your theme, you'll need to head into your theme to edit it. Shopify has [a guide dedicated to doing this here](https://shopify.dev/docs/storefronts/themes/architecture/templates/customers-login) _**(please note: this is for Legacy customer accounts only )**_. Using that guide you can do things like remove the "Register" link from your login form or edit the styling in other ways.\
 \
 If you have a theme from a third-party developer, feel free to contact them for more personalized guidance on your specific theme's login template.
 
