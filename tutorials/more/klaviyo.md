@@ -46,8 +46,8 @@ Once your Locksmith configuration is to your liking (don't forget to customize t
 
 ## Related articles:
 
-{% content-ref url="customizing-messages/customizing-the-email-list-signup-form.md" %}
-[customizing-the-email-list-signup-form.md](customizing-messages/customizing-the-email-list-signup-form.md)
+{% content-ref url="customizing-the-email-list-signup-form.md" %}
+[customizing-the-email-list-signup-form.md](customizing-the-email-list-signup-form.md)
 {% endcontent-ref %}
 
 {% content-ref url="use-klaviyo-as-an-access-control-list.md" %}

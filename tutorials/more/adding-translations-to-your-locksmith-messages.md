@@ -8,7 +8,7 @@ description: >-
 
 ## Step 1 - Edit your Locksmith message
 
-Start by adding something like the following to one of your Locksmith messages. [More info on Locksmith messages here](customizing-messages/). You can use whatever keys you like, as long as it's prefixed with **locksmith:**
+Start by adding something like the following to one of your Locksmith messages. [More info on Locksmith messages here](customizing-messages.md). You can use whatever keys you like, as long as it's prefixed with **locksmith:**
 
 ```
 {{ "locksmith.foo.bar" | t }}

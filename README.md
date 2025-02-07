@@ -74,8 +74,8 @@ Or, if you chose a passcode-only entry method, you'll see a different prompt:
 
 Each key condition type will have a slightly different landing page, the above two examples are not a complete list. The messages displayed on these pages can be customized as much as you need:
 
-{% content-ref url="tutorials/more/customizing-messages/" %}
-[customizing-messages](tutorials/more/customizing-messages/)
+{% content-ref url="tutorials/more/customizing-messages.md" %}
+[customizing-messages.md](tutorials/more/customizing-messages.md)
 {% endcontent-ref %}
 
 {% hint style="danger" %}

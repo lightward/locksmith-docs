@@ -84,8 +84,8 @@ Now that you have a wholesale collection set up, you will want give your wholesa
 
 Locksmith will automatically use the login template and style from your theme. The message is easily customizable:
 
-{% content-ref url="customizing-messages/" %}
-[customizing-messages](customizing-messages/)
+{% content-ref url="customizing-messages.md" %}
+[customizing-messages.md](customizing-messages.md)
 {% endcontent-ref %}
 
 ### Optional: Hiding wholesale product prices

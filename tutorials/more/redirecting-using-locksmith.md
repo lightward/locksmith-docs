@@ -16,8 +16,8 @@ While that is the default behavior, you also have the ability to send customers 
 
 To redirect customers this way, you'll simply use a regular Javascript redirect script, and enter it into the "Messages" area in Locksmith. More information on the messages area here:
 
-{% content-ref url="customizing-messages/" %}
-[customizing-messages](customizing-messages/)
+{% content-ref url="customizing-messages.md" %}
+[customizing-messages.md](customizing-messages.md)
 {% endcontent-ref %}
 
 This is an example of a simple redirect script:
@@ -103,8 +103,8 @@ This redirect is useful for merchants who would like to ensure customers land on
 
 To redirect customers in this way, you can use some Liquid code to check if a customer is on a product page and then include a regular JavaScript redirect script within that Liquid. This code can be entered into the "Guest message content" field or "Passcode prompt" area on the collection lock's settings page. More information on the messages area here:
 
-{% content-ref url="customizing-messages/" %}
-[customizing-messages](customizing-messages/)
+{% content-ref url="customizing-messages.md" %}
+[customizing-messages.md](customizing-messages.md)
 {% endcontent-ref %}
 
 The following code provides an example of some Liquid and a JavaScript redirect that automatically redirects customers to a collection page from a product page in a Shopify store. The Liquid code checks for the default product template to prevent the script from running on the collection page. This script includes the URL that can be modified to redirect customers to the collection page for the locked collection.
@@ -132,6 +132,6 @@ This script can be pasted into the "Guest message content" field or "Passcode pr
 [passcode-specific-redirects.md](passcode-specific-redirects.md)
 {% endcontent-ref %}
 
-{% content-ref url="customizing-messages/customising-locksmiths-access-denied-content-messages-and-redirecting-customers.md" %}
-[customising-locksmiths-access-denied-content-messages-and-redirecting-customers.md](customizing-messages/customising-locksmiths-access-denied-content-messages-and-redirecting-customers.md)
+{% content-ref url="customising-locksmiths-access-denied-content-messages-and-redirecting-customers.md" %}
+[customising-locksmiths-access-denied-content-messages-and-redirecting-customers.md](customising-locksmiths-access-denied-content-messages-and-redirecting-customers.md)
 {% endcontent-ref %}

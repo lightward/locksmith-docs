@@ -35,15 +35,15 @@ Simply use \{{ locksmith\_passcode\_form \}} to denote where the form itself wil
 
 This is not done in the Locksmith app, but rather in the theme's "Edit default theme content" settings:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 1.22.30 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-11-14 at 1.22.30 PM.png" alt=""><figcaption></figcaption></figure>
 
 Once in the "Theme content" settings, you'll need to go to the "Locksmith" tab, which is typically not visible right away:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 1.23.24 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-11-14 at 1.23.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 So then finally, you can edit the text itself, under the Locksmith tab:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 1.24.25 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-11-14 at 1.24.25 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Note**: This step only changes the wording for your default language. If you are using multiple languages in your store, you'll also need to go through the "Localize" step. Check out [Shopify's guide on doing that](https://help.shopify.com/en/manual/markets/languages/manage-languages) here.
@@ -55,11 +55,11 @@ So then finally, you can edit the text itself, under the Locksmith tab:
 
 Locksmith's manual mode can be used to hide specific parts of your theme, such as the add-to-cart button, instead of hiding the entire product page. In this case, the passcode form needs to be 'manually triggered' to present the form to customers, using a custom passcode button.&#x20;
 
-This is covered in our price hiding guide here: [Hiding product prices and/or the add to cart button](../../hiding-prices.md)
+This is covered in our price hiding guide here: [Hiding product prices and/or the add to cart button](../hiding-prices.md)
 
 The manually triggered passcode form includes a 'Cancel' button that can be used to close the passcode form, revealing the product page again.
 
-<img src="../../../.gitbook/assets/Passcode-manual-trigger-form-cancel-btn.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/Passcode-manual-trigger-form-cancel-btn.png" alt="" data-size="original">
 
 To edit the text for this button, some CSS will need to be added to the 'Passcode prompt' message field. The following example code can be used for that, replacing the 'Close' text with your own.
 
@@ -88,8 +88,8 @@ To edit the text for this button, some CSS will need to be added to the 'Passcod
 
 If you have multiple key condition types on the same lock, it might be useful to include other form types within the prompt, so that they display on the same page. We have a guide on doing this here:
 
-{% content-ref url="../showing-multiple-prompts-on-the-same-page.md" %}
-[showing-multiple-prompts-on-the-same-page.md](../showing-multiple-prompts-on-the-same-page.md)
+{% content-ref url="showing-multiple-prompts-on-the-same-page.md" %}
+[showing-multiple-prompts-on-the-same-page.md](showing-multiple-prompts-on-the-same-page.md)
 {% endcontent-ref %}
 
 Please note that this is NOT compatible with replacing/editing the form itself (as detailed in the next section).&#x20;

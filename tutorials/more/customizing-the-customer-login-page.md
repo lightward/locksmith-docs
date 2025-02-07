@@ -101,8 +101,8 @@ If you've removed the beginning \<p> tag, just add a new one :) And, of course, 
 
 If you have multiple key condition types on the same lock, it might be useful to include other form types within the prompt, so that they display on the same page. We have a guide on doing this here:
 
-{% content-ref url="../showing-multiple-prompts-on-the-same-page.md" %}
-[showing-multiple-prompts-on-the-same-page.md](../showing-multiple-prompts-on-the-same-page.md)
+{% content-ref url="showing-multiple-prompts-on-the-same-page.md" %}
+[showing-multiple-prompts-on-the-same-page.md](showing-multiple-prompts-on-the-same-page.md)
 {% endcontent-ref %}
 
 ## 8. Placing the lock message within the login form itself
