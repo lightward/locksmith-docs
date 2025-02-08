@@ -12,7 +12,7 @@ This is a simple solution to the issue and does work for some merchants. Use the
 
 ### 2. Edit the registration form in your theme directly
 
-Shopify has a guide that will walk you through doing this. You can [view that here](https://help.shopify.com/themes/customization/forms/get-more-information-with-customer-registration-form).&#x20;
+Shopify has a guide that will walk you through doing this. You can [view that here](https://shopify.dev/docs/storefronts/themes/architecture/templates/customers-register).&#x20;
 
 #### Pros:
 
