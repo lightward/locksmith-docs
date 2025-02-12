@@ -40,7 +40,7 @@ You'll see different options depending on what type of resource you’ve locked.
 A **key** permits access to the locked resource based on your criteria. They are created on the lock page using the "+ Add key" button:\
 
 
-<figure><img src="../.gitbook/assets/2022-11-08 20.01.43.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2025-02-12 15.32.53.gif" alt=""><figcaption></figcaption></figure>
 
 Keys allow you to specify the exact conditions that give your customers access to the locked resource.
 
@@ -66,7 +66,7 @@ This allows you to specify multiple different conditions that a customer can use
 
 Notice that there are **multiple key symbols**, and each key is preceded by "Permit if the customer..." text:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-11-08 at 8.06.21 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-12 at 3.34.17 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### AND
 
@@ -75,7 +75,7 @@ Notice that there are **multiple key symbols**, and each key is preceded by "Per
 
 Notice that there is **only one key symbol for each key**, and each condition is inset under the symbol and text:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-11-08 at 8.09.10 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-12 at 3.34.57 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% content-ref url="../keys/more/combining-key-conditions.md" %}
 [combining-key-conditions.md](../keys/more/combining-key-conditions.md)
