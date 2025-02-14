@@ -53,3 +53,7 @@ On collection locks, as long as the '_protect products in this collection_' opti
 {% content-ref url="more/how-does-locksmith-affect-search-engines-and-seo.md" %}
 [how-does-locksmith-affect-search-engines-and-seo.md](more/how-does-locksmith-affect-search-engines-and-seo.md)
 {% endcontent-ref %}
+
+{% content-ref url="../tutorials/more/automatically-hide-from-sitemaps-and-manage-seo-metafield.md" %}
+[automatically-hide-from-sitemaps-and-manage-seo-metafield.md](../tutorials/more/automatically-hide-from-sitemaps-and-manage-seo-metafield.md)
+{% endcontent-ref %}
