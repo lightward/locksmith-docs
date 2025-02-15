@@ -63,6 +63,12 @@ The classes may need editing to match your theme.
 
 When the customer clicks that button, they'll be presented with the passcode prompt as normal. If they enter the correct passcode and submit, the page will reload but this time showing your locked content.&#x20;
 
+{% hint style="danger" %}
+Passcode keys are _**not**_ compatible with variant locks.
+{% endhint %}
+
+
+
 ## Related articles
 
 {% content-ref url="../tutorials/more/customizing-messages.md" %}
