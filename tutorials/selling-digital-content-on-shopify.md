@@ -112,4 +112,15 @@ Use this code:
 
 ... adjusting the "Some Product" for your actual product title, and "/pages/some-locked-page" part for the address to your locked content.
 
-Feel free to add multiple copies of this code, if you need to send the customer to one of several pages.
+Feel free to add multiple copies of this code, if you need to send the customer to one of several pages.\
+
+
+## Use Case: Defer access for some time before granting access to the restricted product.
+
+Let's say you want to grant access based on the purchase, but not immediately. You can grant access later using two conditions in your key.\
+\
+For example, this key will grant access 12 weeks (84 days) after the purchase of the Starter Pack:&#x20;
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 1.52.38 PM.png" alt=""><figcaption></figcaption></figure>
+
+Notice the "unless" in the first condition. That's the result of using the [invert](../keys/more/inverting-conditions-in-locksmith.md) option. :)
