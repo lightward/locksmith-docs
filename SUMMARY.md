@@ -22,7 +22,7 @@
   * [Customizing the customer login page](tutorials/more/customizing-the-customer-login-page.md)
   * [Customizing the registration form](tutorials/more/customizing-the-registration-form.md)
   * [Customizing the passcode form](tutorials/more/customizing-the-passcode-form.md)
-  * [Customising Locksmith’s "Access denied content" messages, and redirecting customers](tutorials/more/customising-locksmiths-access-denied-content-messages-and-redirecting-customers.md)
+  * [Customizing Locksmith’s "Access denied content" messages, and redirecting customers](tutorials/more/customising-locksmiths-access-denied-content-messages-and-redirecting-customers.md)
   * [Customizing the email list signup form](tutorials/more/customizing-the-email-list-signup-form.md)
   * [Showing content only to specific Markets](tutorials/more/shopify-markets.md)
   * [Input lists](tutorials/more/input-lists.md)
