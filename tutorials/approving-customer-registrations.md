@@ -65,7 +65,7 @@ Shopify does NOT send registration notifications. If this is important to you tr
 
 If you already have the email addresses of those to whom you'd like to grant access, you can use Locksmith's customer import/creation tool to create their accounts. The customer import tool allows you to pre-tag any customer accounts that you create this way, so they'll automatically be granted access once they begin using your site.&#x20;
 
-You also have the ability to place a lock on the registration form directly, so that customers cannot register their own accounts. **Note that this will only work with Classic Customer Accounts:**
+You also have the ability to place a lock on the registration form directly, so that customers cannot register their own accounts. **Note that this will only work with** [**Legacy Customer Accounts**](https://help.shopify.com/en/manual/customers/customer-accounts)**:**
 
 {% content-ref url="more/locking-the-customer-registration-form.md" %}
 [locking-the-customer-registration-form.md](more/locking-the-customer-registration-form.md)
