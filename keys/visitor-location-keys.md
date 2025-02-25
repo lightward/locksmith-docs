@@ -63,3 +63,8 @@ If you have different versions for different countries: You can create separate 
 ## Shipping Address Limitations
 
 Locksmith can only protect the frontend of your Online Store, and cannot extend its protections to Checkout. So, this does not prevent customers who have IP addresses located in an allowed location from choosing a specific shipping address that is in a blocked location at checkout. Locksmith is not able to control shipping destinations during checkout. For this, [check out Shopify's Shipping Profiles feature](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/shipping-profiles).
+
+{% content-ref url="../faqs/more/why-isnt-my-remote-key-condition-working.md" %}
+[why-isnt-my-remote-key-condition-working.md](../faqs/more/why-isnt-my-remote-key-condition-working.md)
+{% endcontent-ref %}
+
