@@ -1,6 +1,8 @@
 # Importing customers in bulk
 
+{% hint style="info" %}
 Just a quick note: **Locksmith does not create a separate database of customers**. Any customers that you import here are imported as regular Shopify customers and will appear in your Shopify [Customers area](https://help.shopify.com/en/manual/customers/manage-customers). Our bulk import is simply an additional tool with a couple extra options to create/import customers.&#x20;
+{% endhint %}
 
 To get started using Locksmith's Customers area, use the "Customers" button, found in the footer navigation on any page of the app:
 
