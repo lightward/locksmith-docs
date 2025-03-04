@@ -14,8 +14,6 @@ If you enter the same URL for the redirect as any of the lock's contents, then w
 
 ## Related articles
 
-A more generalized guide on using redirects in Locksmith can be found here:
+{% embed url="https://www.locksmith.guide/tutorials/more/redirecting-using-locksmith" fullWidth="false" %}
 
-{% content-ref url="redirecting-using-locksmith.md" %}
-[redirecting-using-locksmith.md](redirecting-using-locksmith.md)
-{% endcontent-ref %}
+{% embed url="https://www.locksmith.guide/keys/passcode-keys" %}
