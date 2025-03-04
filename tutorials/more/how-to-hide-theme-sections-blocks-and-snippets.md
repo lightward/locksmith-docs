@@ -14,6 +14,10 @@ By default, when you create a lock on a resource in your Shopify store, Locksmit
 
 If you are wanting to hiding anything beyond the above, or just want more granular control over what is hidden, you can use our "theme hiding profile" feature.
 
+{% hint style="success" %}
+The lock setting to **"Enable manual locking"** must be enabled to apply Locksmith’s theme hiding rules properly. You can find this option under your lock's **Advanced Settings.**
+{% endhint %}
+
 ## 1. Accessing theme hiding profiles
 
 Because each theme is different, hiding profiles are added **per theme**. So, this feature is accessed via the Themes tab. Once there, press the "Edit theme hiding profile" button.&#x20;
@@ -81,7 +85,7 @@ Once you've added all of your hiding definitions, save your hiding profile. Lock
 You can head back to the themes tab to check the status of a specific installation, whether it be for a published theme or not.&#x20;
 {% endhint %}
 
-## How is this different from Locksmith's "manual locking"
+## How is this different from Locksmith's standard "manual locking"
 
 Hiding profiles are intended to work alongside - or in many cases as a replacement for - [manual locking](manual-mode.md). Hiding profiles function in almost the exact same way on the backend. Some differences are:
 
