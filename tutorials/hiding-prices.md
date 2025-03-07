@@ -147,9 +147,7 @@ This results in the add-to-cart button being replaced, in cases where the custom
 If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button includes a redirect to return customers after login:
 
 ```
-<a href="/account/login?return_url={% raw %}
-{% if collection %}/collections//{{ collection.handle }}{% endif %}
-{% endraw %}/products/{{ product.handle }}">Log in to purchase</a>
+<a href="/account/login?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase</a>
 ```
 
 #### For stores using Shopify's [customer account](https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts) system (formerly "New customer accounts":
@@ -157,7 +155,7 @@ If you need to render a "Login to purchase" button, use the following code (the 
 If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button will return customers after login:
 
 ```
-<a href="/customer_identity/sso_hint" class="btn button" data-locksmith>Log in to purchase</a>
+<a href="/customer_authentication/login?locale={{ request.locale.iso_code }}&?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase</a>
 ```
 
 #### For locks using passcode keys:
