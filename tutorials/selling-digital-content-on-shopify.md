@@ -115,7 +115,7 @@ Use this code:
 Feel free to add multiple copies of this code, if you need to send the customer to one of several pages.\
 
 
-## Use Case: Defer access for some time before granting access to the restricted product.
+## Use Case: Defer access to the restricted product until some time after the required product is purchased.
 
 Let's say you want to grant access based on the purchase, but not immediately. You can grant access later using two conditions in your key.\
 \
