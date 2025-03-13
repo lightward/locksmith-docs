@@ -108,7 +108,54 @@ Locksmith adds information as a cart attribute when using remote keys. You can c
 </script>
 ```
 
-##
+## Responsive background image for the passcode form
+
+This code is designed to be added to the "Passcode prompt" field in Locksmith's settings, or the "Passcode prompt" field on a lock's settings page.
+
+* Update `background-image:` attribute with the URL for your image
+* Make sure you update the `padding-top:` attribute with your images aspect ratio. For example, calculate the aspect ratio of an image of size 1080\*1920 pixles like this: ((1080 / 1920) \* 100)% = 56.25%
+
+```
+<style>
+    .locksmith-passcode-container {
+        content: "";
+        display: block;
+        padding-top: 56.25%; /* Adjust this value based on the actual aspect ratio of your background image. For example, here is a calculation of the aspect ratio for an image of size 1080*1920 pixles: ((1080 / 1920) * 100)% = 56.25% */
+        flex-direction: column;
+        justify-content: center; /* Aligns content vertically center */
+        align-items: center; /* Aligns content horizontally center */
+        height: 100%; /* Ensures the container takes full height of its parent */
+    }
+    #locksmith-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https:// your image source here');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    #locksmith-content {
+        position: relative;
+    }
+
+    #locksmith-passcode-form {
+        position: absolute;
+        top: 50%; /* Aligns content vertically center */
+        left: 50%; /* Aligns content vertically center */
+        transform: translate(-50%, -50%); /* Adjusts the position of the passcode from so that its center aligns with the center of the div. */
+        box-sizing: inherit;
+        max-width: 475px; /* Sets the maximum width of the passcode form */
+        width: 100%;
+        padding: 20px 25.45px;
+        z-index: 1;
+    }
+</style>
+```
 
 ## Redirecting after customer registration
 
