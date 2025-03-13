@@ -92,8 +92,6 @@ When you've set an expiration time in the passcode or secret link keys, you can 
 
 The number before the "-" is the key id that was used to open the lock. What's after the colon is not valuable.&#x20;
 
-
-
 ## Clearing the Locksmith cart attribute
 
 Locksmith adds information as a cart attribute when using remote keys. You can clear that manually with something like this. This triggers when the page loads:&#x20;
@@ -113,14 +111,14 @@ Locksmith adds information as a cart attribute when using remote keys. You can c
 This code is designed to be added to the "Passcode prompt" field in Locksmith's settings, or the "Passcode prompt" field on a lock's settings page.
 
 * Update `background-image:` attribute with the URL for your image
-* Make sure you update the `padding-top:` attribute with your images aspect ratio. For example, calculate the aspect ratio of an image of size 1080\*1920 pixles like this: ((1080 / 1920) \* 100)% = 56.25%
+* Make sure you update the `padding-top:` attribute with your images aspect ratio. For example, calculate the aspect ratio of an image of size 1080\*1920 pixels like this: ((1080 / 1920) \* 100)% = 56.25%
 
 ```
 <style>
     .locksmith-passcode-container {
         content: "";
         display: block;
-        padding-top: 56.25%; /* Adjust this value based on the actual aspect ratio of your background image. For example, here is a calculation of the aspect ratio for an image of size 1080*1920 pixles: ((1080 / 1920) * 100)% = 56.25% */
+        padding-top: 56.25%; /* Adjust this value based on the actual aspect ratio of your background image. For example, here is a calculation of the aspect ratio for an image of size 1080*1920 pixeles: ((1080 / 1920) * 100)% = 56.25% */
         flex-direction: column;
         justify-content: center; /* Aligns content vertically center */
         align-items: center; /* Aligns content horizontally center */
