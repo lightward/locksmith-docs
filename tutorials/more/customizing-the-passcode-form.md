@@ -208,7 +208,7 @@ body {
 
 <summary>How to set up:</summary>
 
-* Update `background-image:` attribute with the URL for your image
+* Update the `background-image:` attribute with the URL for your image
 * Make sure you update the `padding-top:` attribute with your images aspect ratio. For example, to calculate the aspect ratio of an image of size 1080\*1920 pixels like this: ((1080 / 1920) \* 100)% = 56.25%
 
 ```
