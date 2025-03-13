@@ -4,7 +4,7 @@ description: Locksmith gives you flexibility in how you can customize the passco
 
 # Customizing the passcode form
 
-Here are some of the many different ways you can edit the passcode form!
+Responsive background image for the passcode formResponsive background image for the passcode formResponsive background image for the passcode formHere are some of the many different ways you can edit the passcode form!
 
 ## Add content that is displayed before the form.
 
@@ -201,6 +201,57 @@ body {
 ```
 
 ***
+
+### **Add a r**esponsive background image to the entire page
+
+<details>
+
+<summary>How to set up:</summary>
+
+* Update `background-image:` attribute with the URL for your image
+* Make sure you update the `padding-top:` attribute with your images aspect ratio. For example, to calculate the aspect ratio of an image of size 1080\*1920 pixels like this: ((1080 / 1920) \* 100)% = 56.25%
+
+```
+.locksmith-passcode-container {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* Adjust this value based on the actual aspect ratio of your background image. For example, here is a calculation of the aspect ratio for an image of size 1080*1920 pixeles: ((1080 / 1920) * 100)% = 56.25% */
+    flex-direction: column;
+    justify-content: center; /* Aligns content vertically center */
+    align-items: center; /* Aligns content horizontally center */
+    height: 100%; /* Ensures the container takes full height of its parent */
+}
+#locksmith-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https:// your image source here');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#locksmith-content {
+    position: relative;
+}
+
+#locksmith-passcode-form {
+    position: absolute;
+    top: 50%; /* Aligns content vertically center */
+    left: 50%; /* Aligns content vertically center */
+    transform: translate(-50%, -50%); /* Adjusts the position of the passcode from so that its center aligns with the center of the div. */
+    box-sizing: inherit;
+    max-width: 475px; /* Sets the maximum width of the passcode form */
+    width: 100%;
+    padding: 20px 25.45px;
+    z-index: 1;
+}
+```
+
+</details>
 
 ### **Add placeholder text to the passcode entry field using javascript**
 
