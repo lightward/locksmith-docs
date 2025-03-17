@@ -204,12 +204,21 @@ body {
 
 ### **Add a r**esponsive background image to the entire page
 
+```
+  #MainContent {
+    background: url(//https://YOUR-URL-HERE') center bottom no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    max-width: 100%;
+  }
+```
+
 <details>
 
-<summary>How to set up:</summary>
+<summary>If the above CSS doesn't work for #MainContent, try the following</summary>
 
-* Update the `background-image:` attribute with the URL for your image
-* Make sure you update the `padding-top:` attribute with your images aspect ratio. For example, to calculate the aspect ratio of an image of size 1080\*1920 pixels like this: ((1080 / 1920) \* 100)% = 56.25%
+* Use the following CSS instead
 
 ```
 .locksmith-passcode-container {
@@ -250,6 +259,9 @@ body {
     z-index: 1;
 }
 ```
+
+* Update the `background-image:` attribute with the URL for your image
+* Make sure you update the `padding-top:` attribute with your images aspect ratio. For example, to calculate the aspect ratio of an image of size 1080\*1920 pixels like this: ((1080 / 1920) \* 100)% = 56.25%
 
 </details>
 
