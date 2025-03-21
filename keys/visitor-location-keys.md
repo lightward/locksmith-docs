@@ -26,15 +26,15 @@ Locksmith can help you restrict access by _automatically_ detecting the location
 
 Once you've created your lock, choose the Location key:
 
-<figure><img src="../.gitbook/assets/locationKeySelect.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-03-20 at 4.59.38 PM.png" alt=""><figcaption></figcaption></figure>
 
 Next, in the key configuration box,  search for the location:&#x20;
 
-<figure><img src="../.gitbook/assets/locationKeySelectLocation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-03-20 at 5.01.15 PM.png" alt=""><figcaption></figcaption></figure>
 
 Click the name of the area to add it to the key. Feel free to add additional locations:&#x20;
 
-<figure><img src="../.gitbook/assets/locationKeyMultipleLocations.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-03-20 at 5.01.56 PM.png" alt=""><figcaption></figcaption></figure>
 
 \
 Save the key, and you're all set. Those locations will be given access to your locked content, but everyone else around the world won't.
@@ -46,7 +46,7 @@ To make sure some locations _don't_ see your locked content, you'll use the same
 
 Add your location(s) to the key like normal, but this time click the "invert" box in the lower left of the key box:&#x20;
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-11-28 at 7.47.02 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-03-20 at 5.02.53 PM.png" alt=""><figcaption></figcaption></figure>
 
 The result here is that customers around the world can get access to your locked content, all except for those in that location.&#x20;
 
