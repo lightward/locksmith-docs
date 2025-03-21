@@ -63,7 +63,9 @@ You'll now need to add the code to your theme to let Locksmith know which parts 
 The rest of this guide gets a bit technical, we'll happily to the coding portion for you! If you've already created the lock described in step 1, simply write us a message at **team@uselocksmith.com** to request help.
 
 {% hint style="danger" %}
-**Note:** Locksmith's manual locking feature generally can _**not**_ hide elements or sections that are being managed or displayed by other third-party apps, including page builder apps.&#x20;
+**Note:** Locksmith's manual locking feature generally can _**not**_ hide elements or sections that are being managed or displayed by other third-party apps, including page builder apps. \
+\
+Manual locking is only compatible with full-page locks, and is _**not**_ compatible with variant locks.
 {% endhint %}
 
 If you are a developer type, and prefer to do the coding portion yourself, read on...\
