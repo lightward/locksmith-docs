@@ -166,3 +166,7 @@ The code above assumes that you've already exported the `locksmith_access_grante
 {% include 'locksmith-variables' %}
 {% endraw %}
 ```
+
+{% hint style="danger" %}
+Manual locking is _**not**_ compatible with [variant locks](locking-variants/).
+{% endhint %}
