@@ -32,7 +32,7 @@ Next, select the variant and click Save. You may then add your keys.
 
 That's it! :)
 
-### Compatibility with other apps
+### Compatibility with other apps and features
 
 Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way. To learn more about this, see the page here:
 
@@ -45,3 +45,7 @@ Variant locking is _not_ compatible with page builder apps. To learn more about 
 {% content-ref url="../../../faqs/locksmith-is-not-working-with-my-page-builder-app.md" %}
 [locksmith-is-not-working-with-my-page-builder-app.md](../../../faqs/locksmith-is-not-working-with-my-page-builder-app.md)
 {% endcontent-ref %}
+
+{% hint style="danger" %}
+Variant locks are **not** compatible with Locksmith's [manual locking](../manual-mode.md) feature.&#x20;
+{% endhint %}
