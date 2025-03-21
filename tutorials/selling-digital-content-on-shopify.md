@@ -40,7 +40,7 @@ If your content must live elsewhere, consider using iframes to embed your conten
 
 You'll need to have at least one product that is clearly marked as the product that customers will purchase, in order to gain access to the locked content. Something like this:
 
-![](<../.gitbook/assets/Screen Shot 2022-08-08 at 7.18.04 PM.png>)
+![](../.gitbook/assets/image.png)
 
 ### Requiring a recurring subscription charge for access
 
@@ -54,7 +54,7 @@ You'll need to **use a third party app** to set up the subscription service. We 
 
 [Create a lock](../basics/creating-locks.md) on your subscription product (the one created in the previous step). For your key, use the condition labelled **"has purchased...**" to create a key condition that permits access if the customer has purchased the appropriate product:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-11-08 at 8.43.31 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-03-20 at 5.24.25 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**: You can also specify a time window, using the option labelled "_Only look for orders in the last..._". With this, you could require - for example - that the customer has made the purchase within the last 365 days. This is a good way to limit the access period time, but you should still [use a recurring subscription app](selling-digital-content-on-shopify.md#requiring-a-recurring-subscription-charge-for-access) if you want an automatically recurring charge.

@@ -114,7 +114,7 @@ Next, **create a variant lock in the Locksmith app**:
 
 **Create a key**. If you are using customer tags to grant access, that will look like this:
 
-<figure><img src="../../.gitbook/assets/isTaggedWithWholesale.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-20 at 5.44.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 Additionally, **create a corresponding lock for the retail variant**. You should end up with two locks:
 

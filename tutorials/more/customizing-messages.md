@@ -20,7 +20,7 @@ In general, your messages can be edited in two places...
 \
 To customize your messages for one lock only, go to the lock page and scroll down to the "Messages" area.
 
-<figure><img src="../../.gitbook/assets/customizingMessages.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-20 at 5.46.05 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Default messages:
 
@@ -57,7 +57,7 @@ For merchants that have multiple passcode or newsletter conditions _in one lock_
 
 **In most cases, you won't need to set the prompt at the condition level - simply use the lock level messages, as shown above - this is a convenience feature for when it's needed**.
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-11-08 at 9.05.16 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-20 at 5.48.03 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Important**: If a message is set at this level, it will override any messages set at the other levels. If this is the case, you'll see a warning, just to let you know what's going on:
 
