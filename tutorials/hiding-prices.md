@@ -81,21 +81,25 @@ Each theme is very different, so those are simply examples. You'll need to go to
 
 1.  Open up the Liquid file, and add this to the very top of the file:
 
-    ```
+    {% code overflow="wrap" %}
+    ```liquid
     {% raw %}
     {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
     {% endraw %}
     ```
+    {% endcode %}
 2.  Find the code you want to hide from unauthorized viewers, and wrap it with:
 
-    ```
+    {% code overflow="wrap" %}
+    ```liquid
     {% raw %}
     {% if locksmith_access_granted %}...{% endif %}
     {% endraw %}
     ```
+    {% endcode %}
 3.  To hide prices, you'll be looking for elements like:
 
-    ```
+    ```liquid
     {{ product.price }}
     ```
 
@@ -128,7 +132,8 @@ Step 1 is exactly the same, but the code you add in step 2 will be slightly diff
 
 Find the product-template or product-form file in your theme, and locate the code that generates the "add-to-cart" button. This is different for all themes, so it won't be possible to give you an exact location for this. Then, add the code that you want to render, inside of a Liquid "else" statement. For example:
 
-```
+{% code overflow="wrap" %}
+```liquid
 {% raw %}
 {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
 
@@ -141,6 +146,7 @@ Find the product-template or product-form file in your theme, and locate the cod
 {% endif %}
 {% endraw %}
 ```
+{% endcode %}
 
 This results in the add-to-cart button being replaced, in cases where the customer doesn't have access. What is shown depends on what is added above. Just make sure your key conditions on the lock match the conditions that you want your customers to meet before being able to purchase.
 
@@ -148,31 +154,37 @@ This results in the add-to-cart button being replaced, in cases where the custom
 
 If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button includes a redirect to return customers after login:
 
-```
+{% code overflow="wrap" %}
+```html
 <a href="/account/login?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase</a>
 ```
+{% endcode %}
 
 #### For stores using Shopify's [customer account](https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts) system (formerly "New customer accounts":
 
 If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button will return customers after login:
 
-```
+{% code overflow="wrap" %}
+```html
 <a href="/customer_authentication/login?locale={{ request.locale.iso_code }}&?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase</a>
 ```
+{% endcode %}
 
 #### For locks using passcode keys:
 
 If you need to render a passcode prompt button, use the following code (the button classes may need to be edited):
 
-```
+{% code overflow="wrap" %}
+```html
 <button class="locksmith-manual-trigger btn button">Enter passcode to purchase</button>
 ```
+{% endcode %}
 
 #### For locks using location keys:
 
 You can add an access denied message of location keys by adding paragraph tags and some text within the Liquid "else" statement, for example:
 
-```
+```html
 <p><strong>Product not available in your country.</strong></p>
 ```
 
