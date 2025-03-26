@@ -77,6 +77,16 @@ For conditions requiring a customer login, the following is used as the default 
 ```
 {% endcode %}
 
+### Passcode button
+
+If you are using a passcode key and need to render a passcode prompt button, use the following code (the button classes may need to be edited):
+
+{% code overflow="wrap" %}
+```html
+<p><button class="locksmith-manual-trigger btn button">Enter passcode to purchase</button></p>
+```
+{% endcode %}
+
 ## 5. Save and test!
 
 Once you've added all of your hiding definitions, save your hiding profile. Locksmith will perform an installation to the theme. Once the installation finishes, make sure to verify that everything is working as expected on the frontend of your store!&#x20;
