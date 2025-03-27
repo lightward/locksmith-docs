@@ -24,11 +24,7 @@ Additionally, when this key condition is used, Locksmith will automatically prom
 
 Once you [create a lock](../../basics/creating-locks.md) that covers the content that you want to require a purchase for, click the "+ Add key" button. In the condition selector that appears, select "if the customer has purchased...".
 
-<div data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2024-05-29 at 2.28.28 PM.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/Screenshot 2024-05-29 at 2.28.28 PM.png" alt=""><figcaption></figcaption></figure></div>
 
 Locksmith will examine the customer's order history for products matching what you enter.
 
@@ -70,6 +66,12 @@ Like all key conditions, this one can be inverted. This is useful to verify that
 
 {% content-ref url="inverting-conditions-in-locksmith.md" %}
 [inverting-conditions-in-locksmith.md](inverting-conditions-in-locksmith.md)
+{% endcontent-ref %}
+
+On its own, the inverted "_**unless**_ the customer has purchased..." key will grant access to anyone who has not purchased the product, including non-signed in customers. To require customers sign in, you'll want to _combine_ the "_**unless**_ the customer has purchased..." key with the "is signed in" key:
+
+{% content-ref url="combining-key-conditions.md" %}
+[combining-key-conditions.md](combining-key-conditions.md)
 {% endcontent-ref %}
 
 ## Limitations
