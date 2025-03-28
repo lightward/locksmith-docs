@@ -42,7 +42,18 @@ The following apps have known compatibility issues with Locksmith - although the
 ## Other areas of incompatibility
 
 * Predictive searches - Locksmith generally cannot remove products from searches that dynamically show search results as you type. This includes built-in theme searches, and most apps that add predictive searches to your theme. That being said, it is possible to manage the appearance of specific products in store searches using product metafields: [more information on that here](https://community.shopify.com/c/ecommerce-marketing/hiding-a-product-from-search-engine/td-p/484788).
-* [The Checkout area](https://help.shopify.com/en/manual/checkout-settings) - Apps are pretty heavily limited in their ability to make changes to the checkout area, for security reasons. This means that Locksmith cannot restrict access to payment methods, shipping methods, shipping addresses, or anything else that is shown during the checkout process. If you wish to use Locksmith to restrict customers ability to check out, this would be done on the cart page _before_ checkout begins. [More information on that here](../tutorials/more/restricting-checkout-from-the-cart.md).
-* Protecting against bot/resellers - **Locksmith cannot protect against purchases done by bots**! Direct-to-checkout links, which allow products to be purchased without even visiting the Online Store, exist within the Shopify platform, and Locksmith cannot get involved with this layer. That being said, there is a strategy that you can employ, that doesn't use Locksmith directly, to help you protect against bots. [More information on that here](../tutorials/more/protecting-against-bots.md).
+*   [The Checkout area](https://help.shopify.com/en/manual/checkout-settings) - Apps are pretty heavily limited in their ability to make changes to the checkout area, for security reasons. This means that Locksmith cannot restrict access to payment methods, shipping methods, shipping addresses, or anything else that is shown during the checkout process. If you wish to use Locksmith to restrict customers ability to check out,&#x20;
+
+    you now have two options:
+
+    1. **Use Locksmith on the cart page**, before checkout begins. This is the traditional approach—more on that [here](https://www.locksmith.guide/tutorials/more/protecting-against-bots).
+    2. **Use our checkout validation feature**, which allows you to set up a single rule: products with a specific tag can only be purchased by customers who have a specific customer tag. This can help block unauthorized purchases—_without_ modifying the checkout UI itself. Learn how to set that up [here](https://www.locksmith.guide/tutorials/more/setting-up-checkout-validation-with-locksmith).
+* Protecting against bot/resellers - Locksmith can’t fully prevent purchases made by bots or resellers—especially when they’re using direct-to-checkout links, which bypass the Online Store entirely. Since Locksmith works within the Online Store channel, it can’t intervene at the checkout layer directly.\
+  \
+  However, we _do_ now offer a **checkout validation** feature, which can help you block unwanted purchases **after** a customer reaches checkout. This is a powerful way to add another layer of control over who gets to buy what. Learn how to set it up here:\
+  [Setting up checkout validation with Locksmith](https://www.locksmith.guide/tutorials/more/setting-up-checkout-validation-with-locksmith)\
+  \
+  There are also other strategies you can use alongside Locksmith to reduce the risk of bot purchases. While these aren't built into Locksmith itself, we've outlined a helpful approach here:\
+  [Protecting against bots (without using Locksmith directly)](https://www.locksmith.guide/tutorials/more/protecting-against-bots)
 * Locksmith cannot block RSS feeds from locked blogs.
 * Locksmith can only hide products published to the **Online Store** sales channel, and absolutely cannot help with protecting, hiding, or restricting purchases on other channels.
