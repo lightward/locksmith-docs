@@ -9,7 +9,7 @@ By default, Locksmith will only automatically install itself to and update itsel
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-11-09 at 9.09.02 PM copy.png" alt=""><figcaption></figcaption></figure>
 
-4. To preview the lock configuration you just installed, click the **three-dot menu** (⋮) next to the theme name, and select **Preview**:
+4. To preview the lock configuration you just installed, click the **three-dot menu** (…) next to the theme name, and select **Preview**:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-11-09 at 9.20.48 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -36,7 +36,7 @@ To update the unpublished theme after making changes in-app, just click the "Ins
 Locksmith supports setting a **Secondary theme**, which receives automatic updates along with your published theme when changes are made in Locksmith.
 
 1. In the **Unpublished themes** section, locate the theme you want to set as a secondary theme.
-2. Click the **three-dot menu** (⋮) next to the theme name.
+2. Click the **three-dot menu** (…) next to the theme name.
 3. Select **Set as secondary theme**:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-11-09 at 9.20.07 PM.png" alt=""><figcaption></figcaption></figure>
