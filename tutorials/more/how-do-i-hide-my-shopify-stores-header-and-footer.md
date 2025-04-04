@@ -4,8 +4,8 @@ The Locksmith can be used to lock most resources in your store, preventing their
 
 It's worth noting that some locks have an option that can be used to conditionally hide specific menu navigation links for locked resources. More on that in our guide below:
 
-{% content-ref url="../../faqs/more/how-do-i-hide-menu-navigation-links-to-my-locked-resources.md" %}
-[how-do-i-hide-menu-navigation-links-to-my-locked-resources.md](../../faqs/more/how-do-i-hide-menu-navigation-links-to-my-locked-resources.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Custom options
