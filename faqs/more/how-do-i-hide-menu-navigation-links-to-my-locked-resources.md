@@ -1,5 +1,6 @@
 ---
 hidden: true
+noIndex: true
 ---
 
 # How do I hide menu navigation links to my locked resources
