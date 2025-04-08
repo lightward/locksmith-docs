@@ -26,7 +26,7 @@ If you are choosing a more granular approach, you will need to create multiple l
 
 Once the lock is created, you'll want to create the key next. When setting up an approval process, the simplest way to do it is to use the key condition labelled "**Permit if customer is tagged with...**". This means that only accounts that have the specific tag can gain access to the locked content. That will look like this:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-11-08 at 8.24.01 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-04-08 at 4.30.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**: You can use whatever tag you prefer here! Using **approved** here is just an example, but will be referred to in the rest of the guide.
