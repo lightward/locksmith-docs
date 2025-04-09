@@ -60,11 +60,9 @@ If you want a persistent message, that isn't directly connected to, managed by, 
 \
 Again, the difference with this approach to the above, is that Locksmith will not automatically edit your locale files, it will all need to be done on your end.
 
-To start, head into the language "locale" file you'd like to update in your theme, and then add a new entry at the bottom. You might see one Locksmith entry already - **do not add it to that one**. Just create a new one. It can be called anything that works for you, such as"locksmith\_messages", with "passcode" inside of that entry. That looks like this: \
-\
-![](<../../.gitbook/assets/Screenshot 2024-01-22 at 4.33.42 PM.png>)
+To start, head into the language "locale" file you'd like to update in your theme, and then add a new entry at the bottom. You might see one "locksmith" entry already - **do not add it to that one**. Just create a new one. Use whatever label schema works for you (as long as the first label isn't "locksmith"). It can contain the word locksmith in it, just can't be an exact match. For example:
 
-
+<figure><img src="../../.gitbook/assets/Screenshot 2024-01-22 at 4.33.42 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Add this same entry into all desired locales files**, and update the "Enter Passcode" to the specific language.\
 \
