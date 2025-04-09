@@ -56,7 +56,9 @@ Then, similarly to above, you'll see a Locksmith section that you are free to ed
 
 The messages added with the above method are managed by Locksmith. If you delete the declaration in your messages (the `{{ "locksmith.foo.bar" | t }}` part), the corresponding messages will be deleted from (all of) your locale files.
 
-If you want a persistent message, that isn't directly connected to, managed by, or deleted by Locksmith. You'll need to go with a more manual approach. Additionally, there are apps out there that can manage this kind of thing automatically.&#x20;
+If you want a persistent message, that isn't directly connected to, managed by, or deleted by Locksmith. You'll need to go with a more manual approach. Additionally, there are apps out there that can manage this kind of thing automatically.\
+\
+Again, the difference with this approach to the above, is that Locksmith will not automatically edit your locale files, it will all need to be done on your end.
 
 To start, head into the language "locale" file you'd like to update in your theme, and then add a new entry at the bottom. You might see one Locksmith entry already - **do not add it to that one**. Just create a new one. It can be called anything that works for you, such as"locksmith\_messages", with "passcode" inside of that entry. That looks like this: \
 \
