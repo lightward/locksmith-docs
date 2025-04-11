@@ -52,6 +52,22 @@ create_key_payload = {
 
 ## Working with passcodes and secret links
 
+{% hint style="info" %}
+**Note:** The examples below use jQuery. If jQuery isn’t already included in your theme, you’ll need to load it first.&#x20;
+{% endhint %}
+
+<details>
+
+<summary>Including jQuery </summary>
+
+To include jQuery you. can add the following script right before the example scripts in this section: &#x20;
+
+```
+ < script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+```
+
+</details>
+
 The passcode and secret link can be extracted using the following:&#x20;
 
 `Locksmith.params.passcode`
