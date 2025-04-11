@@ -21,7 +21,7 @@ You'll find this option on locks for the following resource types:
 ## Limitations
 
 * Using **third party apps** to create your navigation will likely prevent Locksmith from being able to correctly hide your navigation links.
-* Locksmith is generally not able to hide navigation menu links that are a part of a **mega menu**, whether via third party apps or a theme setting.&#x20;
+* Locksmith is generally not able to hide navigation menu links that are a part of a **mega menu**, whether via third party apps or a theme setting. These generally rely on AJAX/Javascript, which Locksmith cannot filter.
 * Locksmith is not able to hide empty navigation links that don't point to any resource.&#x20;
 * This setting can only be turned on via your lock settings. This means that links pointing outside of your Online Store cannot be hidden through Locksmith.
 * This setting cannot hide filtering options in your theme's filter menu, as filter items are displayed differently from product grids and navigation menus.
