@@ -32,7 +32,7 @@ This will generate a single secret link for you that can immediately copy and us
 
 #### **Secret links from an input list**
 
-It is also possible to use secret links in conjunction with our input list feature. Input lists allow you to store a list of links in a google sheet or other outside file source. This is great for merchants that want to easily create a large list of unique secret links that can be used. [Go here for information on setting up input lists](https://docs.uselocksmith.com/article/469-input-lists). To use the input list version, select it instead of the regular secret link key condition type.
+It is also possible to use secret links in conjunction with our input list feature. Input lists allow you to store a list of links in a google sheet or other outside file source. This is great for merchants that want to easily create a large list of unique secret links that can be used. [Go here for information on setting up input lists](../tutorials/more/input-lists.md). To use the input list version, select it instead of the regular secret link key condition type.
 
 Input lists also allow you to create **usage limits on your secret links** (usage limits are not possible for the single secret link option). So, for example, you could create a large list of secret links that could each only be used one(the input list guide, link just above, gives more information on setting this up). Or, you could simply add in a single secret link with a large usage limit.
 
