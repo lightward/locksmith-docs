@@ -63,7 +63,7 @@ create_key_payload = {
 To include jQuery you. can add the following script right before the example scripts in this section: &#x20;
 
 ```
- < script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
 ```
 
 </details>
