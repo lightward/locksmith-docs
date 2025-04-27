@@ -1,6 +1,6 @@
 # Locking products by tag
 
-Locksmith won't lock by tag using the Locksmith search bar. The good news is that you can make this happen with an automated collection in Shopify.
+Locksmith won't lock by tag using the Locksmith search bar. The good news is that you can make this happen with an [automated collection in Shopify](https://help.shopify.com/en/manual/products/collections/automated-collections/auto-select).
 
 1\. In your Shopify Admin, click on _Products_ then _Collections_
 
