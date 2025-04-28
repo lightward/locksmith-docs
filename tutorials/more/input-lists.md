@@ -54,9 +54,7 @@ An input list has four options:
 * **Source URL**&#x20;
 * Input values are **case-sensitive** (enable to require an exact case match)
 * **Default usage limit per input list item** - allows you to specify a default usage limit for any items that you add to the list. This is a great way to add **unique inputs** - simply enter **1** as the usage limit and each input can only be used once.
-* **Partial match** - when this option is enabled, Locksmith will accept submissions that **contain** an input list value, rather than requiring an exact match.\
-  This is useful for matching part of an email address, domain name, or other partial string.\
-  Partial matching is available for all input lists, but for performance reasons, can only be used with input lists that have **fewer than 1000 values**.
+* **Partial match** - when this option is enabled, Locksmith will accept submissions that **contain** an input list value, rather than requiring an exact match. This is useful for matching part of an email address ( e.g. the domain of the email address) or other partial string. Partial matching is available for any input list (including when they are used for passcodes, secret links, and email addresses) but for performance reasons, can only be used with input lists that have **fewer than 1000 values**. If you need to grant access to a larger list of values, and then a few partial matches, you can create two separate input lists and two separate keys.
 
 ### Syncing <a href="#syncing" id="syncing"></a>
 
