@@ -47,5 +47,5 @@ Variant locking is _not_ compatible with page builder apps. To learn more about 
 {% endcontent-ref %}
 
 {% hint style="danger" %}
-Variant locks are **not** compatible with Locksmith's [manual locking](../manual-mode.md) feature or the passcode key.&#x20;
+Variant locks are **not** compatible with Locksmith's [manual locking](../manual-mode.md) feature or the [passcode key](../../../keys/passcode-keys.md).&#x20;
 {% endhint %}
