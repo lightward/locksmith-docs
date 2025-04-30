@@ -156,7 +156,7 @@ Here are a few examples of how you might use CSS to style your passcode messages
 ### **Target the input field by class**
 
 ```
-#locksmith_passcode { border 1px solid red; }
+#locksmith_passcode { border: 1px solid red; }
 ```
 
 ***
