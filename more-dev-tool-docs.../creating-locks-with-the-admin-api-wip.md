@@ -1,8 +1,3 @@
----
-hidden: true
-noIndex: true
----
-
 # Using the Admin API with Locks
 
 {% hint style="warning" %}

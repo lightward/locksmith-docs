@@ -141,7 +141,7 @@
 ***
 
 * [More dev tool docs...](more-dev-tool-docs.../README.md)
-  * [Using the Admin API with Locks](more-dev-tool-docs.../using-the-admin-api-with-locks.md)
+  * [Using the Admin API with Locks](more-dev-tool-docs.../creating-locks-with-the-admin-api-wip.md)
 
 ## App Integrations
 
