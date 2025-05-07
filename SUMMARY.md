@@ -140,7 +140,7 @@
 
 ***
 
-* [More developer docs](more-developer-docs/README.md)
+* [More developer docs...](more-developer-docs/README.md)
   * [Using the Admin API with Locks](more-developer-docs/using-the-admin-api-with-locks.md)
 
 ## App Integrations
