@@ -38,24 +38,24 @@ curl \
 
 All requests should be prefixed with **https://uselocksmith.com/api/:version**
 
-### Input lists
+#### Input lists
 
 * <mark style="color:green;">`POST`</mark> `/input-lists/:id/sync` \
   Requests an input list sync for the input list indicated by the ID
 
-### Installs
+#### Installs
 
 * <mark style="color:green;">`POST`</mark> `/install` \
   Requests a full Locksmith installation to the _currently published_ theme
 
-### Locks
+#### Locks
 
 * <mark style="color:purple;">`GET`</mark> `/locks.json` \
   Returns an array of all locks in your Locksmith account
 * <mark style="color:purple;">`GET`</mark> `/locks/:id.json` \
   Returns data for a single lock in your Locksmith account
 
-### Shop
+#### Shop
 
 * <mark style="color:purple;">`GET`</mark> `/shop.json` \
   Returns Locksmith's entire configuration for your store
