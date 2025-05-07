@@ -79,5 +79,5 @@ Each key condition type will have a slightly different landing page, the above t
 {% endcontent-ref %}
 
 {% hint style="danger" %}
-**Important**: The Locksmith app only restricts content inside the "Online Store" sales channel. It won't work inside of other sales channels such as the Buy Button or the Wholesale sales channel. Additionally, Locksmith and the Shop App sales channel are incompatible and cannot be used at the same time.
+**Important**: The Locksmith app only restricts content inside the "Online Store" sales channel. It won't work inside of other sales channels such as the Buy Button or the Wholesale sales channel.
 {% endhint %}

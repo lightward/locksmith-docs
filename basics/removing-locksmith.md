@@ -41,6 +41,6 @@ Delete Locksmith from your apps list in the standard way. Namely, from your Shop
 
 ### Cancelling your Locksmith subscription
 
-**Important:** If you have decided to NOT delete the Locksmith app from your apps lists, as outlined above, please make sure to cancel your subscription manually, to avoid being charged unexpectedly:
+**If you have decided to NOT delete the Locksmith app** from your apps lists, as outlined above, please make sure to cancel your subscription manually, to avoid being charged unexpectedly:
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-07 at 1.02.21 PM.png" alt=""><figcaption></figcaption></figure>
