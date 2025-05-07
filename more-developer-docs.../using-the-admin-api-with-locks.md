@@ -10,7 +10,9 @@ Locks can be created via our Admin API using the following endpoint:
 
 This guide covers information specific to creating locks. See our general Admin API guide for more general information on forming these requests (including headers and authentication):
 
-[locksmith-admin-api.md](../developer-tools/locksmith-admin-api.md "mention")
+{% content-ref url="../developer-tools/locksmith-admin-api.md" %}
+[locksmith-admin-api.md](../developer-tools/locksmith-admin-api.md)
+{% endcontent-ref %}
 
 ## Body Parameters
 
@@ -35,10 +37,10 @@ Add these to the end of the /lock endpoint. For example:
 
 `https://uselocksmith.com/api/unstable/lock?dryrun=true`
 
-| Name      | Type    | Description                                                                               | Extra info                                                                    |
-| --------- | ------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `install` | boolean | If true, a theme install on your published theme is performed (if request is successful). | An install can also be requested separately via the `POST /install` endpoint. |
-| `dryrun`  | boolean | If true, changes are not persisted, but a success/error response is still returned.       | Useful for testing/debugging.                                                 |
+| Name      | Type    | Description                                                                               | Extra info                                                                                     |
+| --------- | ------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `install` | boolean | If true, a theme install on your published theme is performed (if request is successful). | Recommended unless you are manually triggering an install later! See `POST /install` endpoint. |
+| `dryrun`  | boolean | If true, changes are not persisted, but a success/error response is still returned.       | Useful for testing/debugging.                                                                  |
 
 ## Keys
 
@@ -53,6 +55,10 @@ If using multiple keys, make sure to create a valid JSON array and use it as the
 * `200` Success - the response body will contain the json representation of the newly created lock
 * `400` Error - Post payload incorrectly formed
 * `404` Error - Post URL incorrectly formed
+
+{% hint style="danger" %}
+Using bad input while creating locks with this endpoint may occasionally result in invalid locks being created, which can in turn result in install failures for your store. It is your responsibility to test your storefront and delete any locks that aren't working as expected.
+{% endhint %}
 
 ## Notes
 

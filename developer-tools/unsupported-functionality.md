@@ -6,50 +6,6 @@ description: >-
 
 # Unsupported functionality
 
-## Create locks via the API
-
-Example API payload:&#x20;
-
-```
-https://uselocksmith.com/api/unstable/lock
-
-payload:
-
-create_key_payload = {
-"resource_id": shopify_product_id,
-"resource_type": "product",
-"resource_options": {},
-"enabled": True,
-"options": {
-"hide_links_to_resource": False,
-"hide_resource": False,
-"hide_resource_from_sitemaps": False,
-"manual": False,
-"noindex": True
-},
-"keys": [
-{
-"options": {
-"customer_autotag": "",
-"force_open": False,
-"redirect_url": "",
-"inverse": False
-},
-"conditions": [
-{
-"type": "secret_link",
-"inverse": False,
-"options": {
-"customer_remember": True,
-"secret_link_code": secret_link_code
-}
-}
-]
-}
-]
-}
-```
-
 ## Working with passcodes and secret links
 
 {% hint style="info" %}
