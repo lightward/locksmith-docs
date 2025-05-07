@@ -6,7 +6,7 @@ Locksmith's Admin API can be used to query Locksmith to get information about yo
 Locksmith's Admin API is not intended for use in themes or user-facing browser experiences. For that, use Locksmith's [Storefront API](locksmith-storefront-api.md). Any client-side browser Javascript calling the Admin API will encounter [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) errors.
 {% endhint %}
 
-### Versions
+## Versions
 
 We maintain a 1-to-1 relationship with Shopify's API versions. Any [current and valid Shopify API versions](https://app.shopify.com/services/apis.json) are also current and valid Locksmith versions.
 
@@ -16,7 +16,7 @@ Read more about [Shopify's versioning philosophy](https://shopify.dev/docs/api/u
 For simplicity, the use of `unstable` as the version when calling this API will work for most use-cases.
 {% endhint %}
 
-### Authentication
+## Authentication
 
 There are two required headers:
 
@@ -60,11 +60,11 @@ All requests should be prefixed with **https://uselocksmith.com/api/:version**
 * <mark style="color:purple;">`GET`</mark> `/shop.json` \
   Returns Locksmith's entire configuration for your store
 
-### Conventions
+## Conventions
 
 * Do not rely upon data keys that are prefixed with an underscore (e.g. "\_foobar"). They are subject to change or removal at any time.
 
-### Generating an access token
+## Generating an access token
 
 To access this API, generate an access token. You can find these toward the end of your settings area:
 
