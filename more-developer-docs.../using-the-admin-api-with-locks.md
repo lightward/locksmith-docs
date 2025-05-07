@@ -6,7 +6,7 @@
 
 Locks can be created via our Admin API using the following endpoint:
 
-<mark style="color:green;">`POST`</mark> `/lock/`&#x20;
+<mark style="color:green;">`POST`</mark> `/lock`&#x20;
 
 This guide covers information specific to creating locks. See our general Admin API guide for more general information on forming these requests (including headers and authentication):
 
@@ -44,7 +44,7 @@ Add these to the end of the /lock endpoint. For example:
 
 ## Keys
 
-Locksmith has a large variety of key conditions types and their corresponding options. The easiest way to create a valid key condition config is doing it **right inside the Locksmith app on a lock page**. Once created, the key config can be copy-pasted directly from the Locksmith app:
+Locksmith has a large variety of key conditions types and their corresponding options. The easiest way to create a valid key config is doing it **right inside the Locksmith app on a lock page**. Once created, the key config can be copy-pasted directly from the Locksmith app:
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-05-07 at 15.01.50.png" alt=""><figcaption></figcaption></figure>
 
@@ -93,7 +93,7 @@ curl -X POST https://uselocksmith.com/api/unstable/lock \
 ```
 
 ```bash
-# Create a product-level lock. Ooptional parameters included without keys.
+# Create a product-level lock. Optional parameters included. without keys.
 curl -X POST https://uselocksmith.com/api/unstable/lock \
   -H "x-shopify-shop-domain: example-store.myshopify.com" \
   -H "x-locksmith-access-token: abcd1234" \
@@ -114,7 +114,7 @@ curl -X POST https://uselocksmith.com/api/unstable/lock \
 ```
 
 ```bash
-# minimal product level lock WITH keys
+# minimal product level lock. WITH keys
 curl -X POST "https://uselocksmith.com/api/unstable/lock" \
   -H "x-shopify-shop-domain: example-store.myshopify.com" \
   -H "x-locksmith-access-token: abcd1234" \
