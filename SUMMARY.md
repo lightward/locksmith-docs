@@ -138,6 +138,11 @@
 * [Unsupported functionality](developer-tools/unsupported-functionality.md)
 * [Requests from Locksmith](developer-tools/requests-from-locksmith.md)
 
+***
+
+* [More dev tool docs...](more-dev-tool-docs.../README.md)
+  * [Creating locks with the Admin API (WIP)](more-dev-tool-docs.../creating-locks-with-the-admin-api-wip.md)
+
 ## App Integrations
 
 * [Easy Appointment Booking](app-integrations/easy-appointment-booking.md)
