@@ -2,24 +2,28 @@
 
 Locksmith's Admin API can be used to query Locksmith to get information about your locks, keys, and settings. As a REST API, it closely resembles [Shopify's own REST Admin API](https://shopify.dev/docs/api/admin-rest).
 
-{% hint style="info" %}
-Unlike Locksmith's [Storefront API](locksmith-storefront-api.md), the Admin API is intended for use by other application code. It is not intended to be built into a user-facing browser experience. This mirrors Shopify's own published APIs: Shopify's Admin API is meant for apps, whereas Shopify's Storefront API is meant for user-facing browser experiences.
-
-Because of this, Locksmith's Admin API does not include [CORS support](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). This means that client-side browser JavaScript (e.g. JavaScript code added directly to the theme) will encounter CORS errors if it tries to call this API.
+{% hint style="warning" %}
+Locksmith's Admin API is not intended for use in themes or user-facing browser experiences. For that, use Locksmith's [Storefront API](locksmith-storefront-api.md). Any client-side browser Javascript calling the Admin API will encounter [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) errors.
 {% endhint %}
 
 ### Versions
 
-Locksmith's API versions correspond directly with Shopify's API versions, and are supported in the same way. [Read more about Shopify's API versioning](https://shopify.dev/concepts/about-apis/versioning)
+We maintain a 1-to-1 relationship with Shopify's API versions. Any [current and valid Shopify API versions](https://app.shopify.com/services/apis.json) are also current and valid Locksmith versions.
 
-To retrieve a list of current Shopify API versions – and therefore a list of Locksmith API versions – see [https://app.shopify.com/services/apis.json](https://app.shopify.com/services/apis.json).
+Read more about [Shopify's versioning philosophy](https://shopify.dev/docs/api/usage/versioning).
+
+{% hint style="success" %}
+For simplicity, the use of `unstable` as the version when calling this API will work for most use-cases.
+{% endhint %}
 
 ### Authentication
 
-Accessing Locksmith's API requires two headers:
+There are two required headers:
 
-* `x-shopify-shop-domain` – must be of the format "example.myshopify.com"
-* `x-locksmith-access-token` – must be an enabled access token, generated in your Locksmith settings
+| Header                     | Description                                                            |
+| -------------------------- | ---------------------------------------------------------------------- |
+| `x-shopify-shop-domain`    | Must be of the format "example.myshopify.com"                          |
+| `x-locksmith-access-token` | Must be an enabled access token, generated in your Locksmith settings. |
 
 Using cURL, one might access the API this way:
 
@@ -30,16 +34,31 @@ curl \
    https://uselocksmith.com/api/unstable/shop.json
 ```
 
-### Endpoints
+## Endpoints
 
-* **GET https://uselocksmith.com/api/:version/shop.json**\
-  Returns Locksmith's entire configuration for your store
-* **GET https://uselocksmith.com/api/:version/locks.json**\
+All requests should be prefixed with **https://uselocksmith.com/api/:version**
+
+### Input lists
+
+* <mark style="color:green;">`POST`</mark> `/input-lists/:id/sync` \
+  Requests an input list sync for the input list indicated by the ID
+
+### Installs
+
+* <mark style="color:green;">`POST`</mark> `/install` \
+  Requests a full Locksmith installation to the _currently published_ theme
+
+### Locks
+
+* <mark style="color:purple;">`GET`</mark> `/locks.json` \
   Returns an array of all locks in your Locksmith account
-* **GET https://uselocksmith.com/api/:version/locks/:id.json**\
+* <mark style="color:purple;">`GET`</mark> `/locks/:id.json` \
   Returns data for a single lock in your Locksmith account
-* **POST https://uselocksmith.com/api/:version/install**\
-  Requests a full Locksmith installation, in the currently published theme
+
+### Shop
+
+* <mark style="color:purple;">`GET`</mark> `/shop.json` \
+  Returns Locksmith's entire configuration for your store
 
 ### Conventions
 
