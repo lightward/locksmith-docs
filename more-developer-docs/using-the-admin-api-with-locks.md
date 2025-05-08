@@ -57,7 +57,7 @@ If using multiple keys, make sure to create a valid JSON array and use it as the
 * `404` Error - Post URL incorrectly formed
 
 {% hint style="danger" %}
-Using bad input while creating locks with this endpoint may occasionally result in invalid locks being created, which can in turn result in install failures for your store. It is your responsibility to test your storefront and delete any locks that aren't working as expected.
+Creating locks using invalid input may occasionally create malfunctioning locks. It is important that you test your storefront and delete any locks that aren't working as expected.
 {% endhint %}
 
 ## Notes
