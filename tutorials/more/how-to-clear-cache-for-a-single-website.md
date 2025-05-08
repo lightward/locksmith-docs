@@ -42,7 +42,7 @@ Following the steps in this guide will help you clear the cache for a single web
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5e641fc82c7d3a7e9ae8d82c/file-pe35Od54lZ.gif)
 
-1\. Go to Safari > Preferences > Privacy
+1\. Go to Safari > Settings > Privacy
 
 2\. Search for your website.
 
