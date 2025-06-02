@@ -3,9 +3,9 @@
 Locksmith includes a JavaScript-friendly Storefront API, embedded in your online store. This API can be used to check the current visitor's current authorization status for the resources that you name. For example, a search app could use this API to make sure a visitor has access to each of the resources that are in a set of search results, before showing those results to the visitor.
 
 {% hint style="info" %}
-Locksmith's Storefront API is meant to facilitate user-facing browser experiences. Use the [Admin API](locksmith-admin-api.md) when building application code that manages Locksmith configurations.
+Locksmith's Storefront API is meant to facilitate user-facing browser experiences _within the Online Store channel's_ _storefront_. It cannot return authorization status for remote environments.
 
-This mirrors Shopify's own published APIs: Shopify's Admin API is meant for apps, whereas Shopify's Storefront API is meant for user-facing browser experiences.
+If you are wanting to query or update your Locksmith configuration from application code, use the [Admin API](locksmith-admin-api.md) when building. This mirrors Shopify's own published APIs: Shopify's Admin API is meant for apps, whereas Shopify's Storefront API is meant for user-facing browser experiences.
 {% endhint %}
 
 ### Usage
@@ -21,7 +21,7 @@ When calling this path, include a series of `urls[]` query parameters, naming th
 Note: In some cases, using repeated `urls[]` query parameters can cause problems with API clients, and in some cases, Shopify may drop repeated query parameters with the same key. In these cases, use the querystring form  `?urls[0]=/path1&urls[1]=/path2` instead.
 
 {% hint style="danger" %}
-There are limits to how many requests can be made per page load, since this is a storefront tool that uses Shopify's own Liquid engine. Product urls have a limit of 20 per page since they use the [all\_products liquid object ](https://shopify.dev/docs/api/liquid/objects/all\_products)behind the scenes.
+There are limits to how many requests can be made per page load, since this is a storefront tool that uses Shopify's own Liquid engine. Product urls have a limit of 20 per page since they use the [all\_products liquid object ](https://shopify.dev/docs/api/liquid/objects/all_products)behind the scenes.
 {% endhint %}
 
 #### Responses
