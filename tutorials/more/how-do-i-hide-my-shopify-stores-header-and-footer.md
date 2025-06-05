@@ -4,8 +4,8 @@ The Locksmith can be used to lock most resources in your store, preventing their
 
 It's worth noting that some locks have an option that can be used to conditionally hide specific menu navigation links for locked resources. More on that in our guide below:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="hiding-navigation-links-for-locked-resources.md" %}
+[hiding-navigation-links-for-locked-resources.md](hiding-navigation-links-for-locked-resources.md)
 {% endcontent-ref %}
 
 ## Custom options
@@ -73,6 +73,32 @@ We have some more information on Locksmith's manual code in the guide here:
 {% content-ref url="manual-mode.md" %}
 [manual-mode.md](manual-mode.md)
 {% endcontent-ref %}
+
+## Locksmith's automated section hiding
+
+Locksmith has a new experimental feature that can automatically hide sections, blocks, and snippets in Shopify 2.0 themes.
+
+You can find our guide to using this feature at the link below:
+
+{% content-ref url="how-to-hide-theme-sections-blocks-and-snippets.md" %}
+[how-to-hide-theme-sections-blocks-and-snippets.md](how-to-hide-theme-sections-blocks-and-snippets.md)
+{% endcontent-ref %}
+
+In some themes, this can be used to hide the header and footer sections. To set this up:
+
+1.  Navigate to the Theme tab in Locksmith, and click the Edit theme hiding profile button for the theme you’d like to configure.\
+
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2025-06-05 at 5.12.45 pm.png" alt=""><figcaption></figcaption></figure>
+2. Click the Add new definition button at the bottom of the page. In the Name of section, block, or snippet field, search for header.
+3. From the dropdown results, select the theme’s section file for the header, then click Add.
+4. Repeat steps 2 and 3 for the footer.
+5. In the Liquid variable field for each definition, enter "item".
+6. When you’re done, click the Save button at the top of the page.
+
+{% hint style="info" %}
+**Note:** This may not work for all themes, and will only hide the header and footer when a user is viewing a locked resource. This makes it best suited for store-wide locks that cover the entire storefront.
+{% endhint %}
 
 ## Need something custom set up for your store?
 
