@@ -34,11 +34,11 @@ Here's what that should look like:\
 \
 
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-01-09 at 2.18.23 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-06-12 at 6.37.08 PM.png" alt=""><figcaption></figcaption></figure>
 
 When the full key is created, your key should look like this:&#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-01-09 at 2.19.54 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-06-12 at 6.38.09 PM.png" alt=""><figcaption></figcaption></figure>
 
 When this is all set, the customer will be prompted to log in when they try to access the product. If they already have a purchase in their history, they'll see the Access Denied message.&#x20;
 
