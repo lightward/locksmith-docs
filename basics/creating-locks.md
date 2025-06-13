@@ -8,7 +8,7 @@ Locksmith uses the idea of _locks_ to restrict access to specific content in you
 
 Use the search bar within Locksmith to place a lock on any content within your Shopify "Online Store". To use it, search for your resource by name:
 
-![](../.gitbook/assets/creatingLocks-Add\_new\_lock\_search.png)
+![](../.gitbook/assets/creatingLocks-Add_new_lock_search.png)
 
 {% hint style="info" %}
 **Hint:** Use specific search terms such as "Long Sleeved T-shirt". Pasting in URLs won't work in most cases.
@@ -98,7 +98,7 @@ If you've created something recently and it's not showing up, an update to Locks
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 8.24.28 AM.png" alt=""><figcaption></figcaption></figure>
 
-3\. When the green bar at the bottom of the screen disappears, the update is finished. This should only take a handful of seconds.
+3\. When the blue bar at the bottom of the screen disappears, the update is finished. This should only take a handful of seconds.
 
 ### A note about Liquid locks
 
