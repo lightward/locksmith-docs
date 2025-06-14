@@ -8,7 +8,7 @@ This is an advanced guide that requires knowledge of [Shopify's Liquid language]
 
 Moving on - to begin, click in the "Add a new lock" search field and select "Start a Liquid lock", or type "Liquid" in the search field:
 
-![](../../.gitbook/assets/liquidLockingBasics-start\_a\_liquid\_lock.png)
+![](../../.gitbook/assets/liquidLockingBasics-start_a_liquid_lock.png)
 
 Then click "Start a new lock":
 
@@ -88,8 +88,8 @@ This would result in all "Pages" in your store that contain "member" or "secret"
 
 You can also create Liquid keys! While the function of Liquid keys is fundamentally different than what is covered on this page, the concepts while setting them up are very similar:
 
-{% content-ref url="../../keys/more/liquid-key-basics.md" %}
-[liquid-key-basics.md](../../keys/more/liquid-key-basics.md)
+{% content-ref url="../../keys/more/custom-liquid-key-condition-basics.md" %}
+[custom-liquid-key-condition-basics.md](../../keys/more/custom-liquid-key-condition-basics.md)
 {% endcontent-ref %}
 
 {% content-ref url="locking-multiple-pages-at-once.md" %}

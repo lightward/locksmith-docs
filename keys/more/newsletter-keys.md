@@ -42,8 +42,8 @@ Shopify ships out of the box with a marketing mailing list service. If you would
 
 This is slightly different than the above options, in that **it will only grant access to a signed in customers - if the customer is already subscribed**! To start, check out our guide on this here:
 
-{% content-ref url="liquid-key-basics.md" %}
-[liquid-key-basics.md](liquid-key-basics.md)
+{% content-ref url="custom-liquid-key-condition-basics.md" %}
+[custom-liquid-key-condition-basics.md](custom-liquid-key-condition-basics.md)
 {% endcontent-ref %}
 
 The condition you're looking for is:

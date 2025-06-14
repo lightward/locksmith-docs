@@ -1,6 +1,10 @@
-# Liquid key basics
+---
+description: How to create customer liquid key conditions in Locksmith
+---
 
-Locksmith allows you to create a custom keys that use Liquid to determine whether or not the current visitor has access. This gives you a few more options than what comes with Locksmith's out-of-the-box key conditions.
+# Custom Liquid key-condition basics
+
+Locksmith allows you to create a custom key conditions that use Liquid to determine whether or not the current visitor has access. This gives you a few more options than what comes with Locksmith's out-of-the-box key conditions.
 
 Before continuing on, you may want to [check out Shopify's Liquid reference](https://shopify.dev/api/liquid), as that will give you a good idea of the kinds of things you can use when creating Liquid key conditions. Keep in mind that while Liquid key conditions can add more versatility, they are still limited to the scope of what's already available inside of Shopify's Liquid engine for the Online Store channel.&#x20;
 
@@ -53,7 +57,7 @@ For most themes, this should match any collection pages unless you've created cu
 `{% if canonical_url contains "/special-product-handle" %}`
 
 {% hint style="info" %}
-The **canonical\_url** global Liquid object is accessible anywhere in the theme and always contains the entire URL of the current page, but does NOT contain any URL parameters. [More information from Shopify on it here](https://shopify.dev/api/liquid/objects#canonical\_url).
+The **canonical\_url** global Liquid object is accessible anywhere in the theme and always contains the entire URL of the current page, but does NOT contain any URL parameters. [More information from Shopify on it here](https://shopify.dev/api/liquid/objects#canonical_url).
 {% endhint %}
 
 #### To check for some attribute of the request object

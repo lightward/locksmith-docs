@@ -23,8 +23,8 @@ If this technique isn't working, it's possible that your theme uses a non-standa
 
 #### If you would like more information on Liquid key conditions, checkout the guide linked below.
 
-{% content-ref url="../../keys/more/liquid-key-basics.md" %}
-[liquid-key-basics.md](../../keys/more/liquid-key-basics.md)
+{% content-ref url="../../keys/more/custom-liquid-key-condition-basics.md" %}
+[custom-liquid-key-condition-basics.md](../../keys/more/custom-liquid-key-condition-basics.md)
 {% endcontent-ref %}
 
 ## Something else not covered here?&#x20;

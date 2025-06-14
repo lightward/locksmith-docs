@@ -43,8 +43,8 @@ If the list above does not include the exact customer attribute that you are wan
 
 Most notably, **this would allow you to use customer metafields** in order to grant access.  More complete information on custom liquid key conditions - including setup guide - here:
 
-{% content-ref url="more/liquid-key-basics.md" %}
-[liquid-key-basics.md](more/liquid-key-basics.md)
+{% content-ref url="more/custom-liquid-key-condition-basics.md" %}
+[custom-liquid-key-condition-basics.md](more/custom-liquid-key-condition-basics.md)
 {% endcontent-ref %}
 
 ## More information related to customer accounts

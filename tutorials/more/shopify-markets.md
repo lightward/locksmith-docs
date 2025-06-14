@@ -30,7 +30,7 @@ When setting this up, Locksmith will automatically show you suggestions for whic
 
 ## When using locale + country subfolders
 
-This will usually look something like www.my-store.com/en-us or www.my-store.com/fr-ca. In this case, your key conditions will look slightly different. Start by selecting the ["custom Liquid" key condition](../../keys/more/liquid-key-basics.md):
+This will usually look something like www.my-store.com/en-us or www.my-store.com/fr-ca. In this case, your key conditions will look slightly different. Start by selecting the ["custom Liquid" key condition](../../keys/more/custom-liquid-key-condition-basics.md):
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-11-08 at 9.19.28 PM.png" alt=""><figcaption></figcaption></figure>
 

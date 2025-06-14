@@ -85,7 +85,7 @@
   * [Combining key conditions](keys/more/combining-key-conditions.md)
   * ["Has purchased..." key](keys/more/has-purchased.md)
   * [Using the "Force open other locks" setting](keys/more/using-the-force-open-other-locks-setting.md)
-  * [Liquid key basics](keys/more/liquid-key-basics.md)
+  * [Custom Liquid key-condition basics](keys/more/custom-liquid-key-condition-basics.md)
   * [Manual mode](keys/more/manual-mode.md)
   * [Excluding content from locks](keys/more/excluding-content-from-locks.md)
   * [IP address keys](keys/more/ip-address-keys.md)
