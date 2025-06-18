@@ -34,7 +34,7 @@ Use the following two steps to set it all up:
 
 The first step to hiding your prices using Locksmith is to create a lock that covers the products that you would like to hide prices on. To do this, open up Locksmith and use the search bar on the main page of the app. If this is all of your products (most common), you can simply search for "all" and choose the "All Products" collection:
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/623f906c2ce7ed0fb0919f4b/file-RqX2ulFZmm.png)
+![](<../.gitbook/assets/Screenshot 2025-06-18 at 4.50.31 PM.png>)
 
 {% hint style="warning" %}
 **Warning**: make sure to choose "Collection: All" and **not** "Collections Listing"
@@ -44,13 +44,13 @@ If you are only wanting to apply pricing hiding to some of your products, you ca
 
 Once you've created the lock, you'll choose the conditions for access. Many merchants use the "Permit if customer is tagged with..." key condition, which lets you manually approve accounts for price access by adding a customer tag:
 
-<figure><img src="../.gitbook/assets/isTaggedWithApproved.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-06-18 at 4.49.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 That's the most common way to set it up, but you have the freedom to choose whatever key conditions work for your setup.
 
 Before saving, turn on "Enable manual mode" right there in the lock (Clicking "Advanced" will show the option):
 
-![](../.gitbook/assets/manualLockingEnabled.png)
+![](<../.gitbook/assets/manualLockingEnabled (2).png>)
 
 Done with step one!
 
