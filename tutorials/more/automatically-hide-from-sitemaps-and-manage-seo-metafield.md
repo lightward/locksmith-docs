@@ -16,11 +16,7 @@ More complete information about the seo.hidden metafield, directly from Shopify,
 
 Locksmith will automatically **add** this metafield if you turn on the 'Hide from sitemaps' in your lock settings (found under Advanced):
 
-<div align="center">
-
-<figure><img src="../../.gitbook/assets/Screenshot 2024-01-10 at 16.33.59.png" alt="" width="350"><figcaption><p>The exact label will be slightly different depending on your resource type.</p></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../../.gitbook/assets/Screenshot 2025-06-19 at 1.13.44 PM.png" alt=""><figcaption><p>The exact label will be slightly different depending on your resource type.</p></figcaption></figure></div>
 
 Locksmith will **remove** this metafield if you:
 
