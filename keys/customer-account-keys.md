@@ -3,7 +3,7 @@
 Many of Locksmith's key conditions use the customer account system that comes by default with all Shopify stores to check for specific customer attributes before granting access. These are detailed below.
 
 {% hint style="info" %}
-**Note**: Locksmith does not create a separate account system or customer database! In order to use customer accounts with Locksmith, you'll first need to [make sure that customer accounts are activated in your store](https://help.shopify.com/en/manual/customers/customer-accounts#set-your-customer-account-preferences).
+**Note**: Locksmith does **not** create a separate account system or customer database! In order to use customer accounts with Locksmith, you'll first need to [make sure that customer accounts are activated in your store](https://help.shopify.com/en/manual/customers/customer-accounts#set-your-customer-account-preferences).
 {% endhint %}
 
 When these key conditions are used, **Locksmith will ask that a customer signs in first**, whenever a customer tries to access the locked content in your store. Locksmith does so by automatically displaying the login template from your theme:

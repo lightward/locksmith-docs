@@ -1,6 +1,8 @@
 # Passcode keys
 
-Passcode keys are a simple way to grant access to content without needing to require sign in or registration. After you use the Locksmith search bar to create a lock on the product or collection that you want to lock, choose one of the passcode conditions from the conditions list under "Keys":
+Passcode keys are a simple way to grant access to content **without** needing to require sign in or registration. They work completely independent of the Shopify customer account system.&#x20;
+
+After you use the Locksmith search bar to create a lock on the product or collection that you want to lock, choose one of the passcode conditions from the conditions list under "Keys":
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-02-25 at 21.08.52.png" alt=""><figcaption><p>Typing in "passcode" into the input will filter the list to only show passcode key condition types.</p></figcaption></figure>
 
