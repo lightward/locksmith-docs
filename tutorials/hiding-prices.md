@@ -56,9 +56,26 @@ Done with step one!
 
 ## 2. Updating your theme for manual locking
 
-You'll now need to add the code to your theme to let Locksmith know which parts need to be hidden.
+You'll now need to let Locksmith know which parts of the page should be hidden. There are two methods to handling this:\
 
-**Because each theme is a bit different, this feature&#x20;**_**does**_**&#x20;require manual coding.** If you install a new theme down the road, these changes will need to be re-applied.
+
+### Theme hiding profiles:
+
+This method allows you define sections, blocks, or snippets which Locksmith will hide based on locks that have the Manual Locking option enabled.&#x20;
+
+This method shouldn't require any coding in your theme, _if_ your theme is fully compatible. (Most modern themes are.) We recommend trying this method first.
+
+Here's a complete guide to setting this up:
+
+{% embed url="https://www.locksmith.guide/tutorials/more/how-to-hide-theme-sections-blocks-and-snippets" %}
+Theme hiding profiles: Hide prices without coding.
+{% endembed %}
+
+### &#x20;Using manual locking code in your theme:
+
+**Because each theme is a bit different, adding manual locking code will require manually editing your theme to hide your pricing or add to cart buttons.**&#x20;
+
+**If you install a new theme down the road, these changes will need to be re-applied.** Try the the Theme Hiding Profiles method first (outlined above), to avoid these limitations.
 
 The rest of this guide gets a bit technical, we'll happily to the coding portion for you! If you've already created the lock described in step 1, simply write us a message at **team@uselocksmith.com** to request help.
 
@@ -83,18 +100,14 @@ Each theme is very different, so those are simply examples. You'll need to go to
 
     {% code overflow="wrap" %}
     ```liquid
-    {% raw %}
     {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
-    {% endraw %}
     ```
     {% endcode %}
 2.  Find the code you want to hide from unauthorized viewers, and wrap it with:
 
     {% code overflow="wrap" %}
     ```liquid
-    {% raw %}
     {% if locksmith_access_granted %}...{% endif %}
-    {% endraw %}
     ```
     {% endcode %}
 3.  To hide prices, you'll be looking for elements like:
@@ -134,7 +147,6 @@ Find the product-template or product-form file in your theme, and locate the cod
 
 {% code overflow="wrap" %}
 ```liquid
-{% raw %}
 {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
 
 {% if locksmith_access_granted %}
@@ -144,7 +156,6 @@ Find the product-template or product-form file in your theme, and locate the cod
 {% else %}
   <p><strong>Product not available</strong></p>
 {% endif %}
-{% endraw %}
 ```
 {% endcode %}
 
