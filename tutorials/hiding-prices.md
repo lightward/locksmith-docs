@@ -63,7 +63,7 @@ You'll now need to let Locksmith know which parts of the page should be hidden. 
 
 This method allows you define sections, blocks, or snippets which Locksmith will hide based on locks that have the Manual Locking option enabled.&#x20;
 
-This method shouldn't require any coding in your theme, _if_ your theme is fully compatible. (Most modern themes are.) We recommend trying this method first.
+This method shouldn't require any coding in your theme, _if_ your theme is fully compatible. (Most modern themes are.) This is a newer feature, and we recommend trying this method first.&#x20;
 
 Here's a complete guide to setting this up:
 
