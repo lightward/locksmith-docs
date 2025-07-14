@@ -178,6 +178,14 @@ form.locksmith-authorization-failed::before {
 
 ***
 
+### Add a basic image
+
+```
+<img src="https:// your image source here" alt="Your image description">
+```
+
+***
+
 ### **Add a background image to the entire page**
 
 ```
@@ -263,6 +271,8 @@ body {
 
 </details>
 
+***
+
 ### **Add placeholder text to the passcode entry field using javascript**
 
 With jquery:
@@ -276,6 +286,8 @@ With vanilla javascript:
 ```
 <script>document.querySelector('#locksmith_passcode').setAttribute('placeholder', 'Enter password');</script>
 ```
+
+***
 
 ## Related Guides:
 
