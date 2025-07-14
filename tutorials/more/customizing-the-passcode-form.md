@@ -4,7 +4,7 @@ description: Locksmith gives you flexibility in how you can customize the passco
 
 # Customizing the passcode form
 
-Responsive background image for the passcode formResponsive background image for the passcode formResponsive background image for the passcode formHere are some of the many different ways you can edit the passcode form!
+Here are some of the many different ways you can edit the passcode form!
 
 ## Add content that is displayed before the form.
 
@@ -106,9 +106,7 @@ To do this, simply use the "Passcode prompt" area to put in your new form. Since
 <div class="locksmith-passcode-container container page-width">
   <form id="locksmith_passcode_form">
     <p>Enter the passcode to continue: </p>
-    <p><input autofocus id="locksmith_passcode" class="locksmith-passcode {% raw %}
-{% if locksmith_passcode_attempted %}failed{% endif %}
-{% endraw %}"></p>
+    <p><input autofocus id="locksmith_passcode" class="locksmith-passcode {% if locksmith_passcode_attempted %}failed{% endif %}"></p>
     <p><button type="submit" class="button button-primary btn btn-primary action-button action_button">CONTINUE</button></p>
   </form>
 </div>
