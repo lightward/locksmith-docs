@@ -277,6 +277,24 @@ With vanilla javascript:
 <script>document.querySelector('#locksmith_passcode').setAttribute('placeholder', 'Enter password');</script>
 ```
 
+## Related Guides:
+
+{% content-ref url="customizing-messages.md" %}
+[customizing-messages.md](customizing-messages.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../faqs/more/how-do-i-add-a-hero-banner-image-to-locksmiths-access-messages.md" %}
+[how-do-i-add-a-hero-banner-image-to-locksmiths-access-messages.md](../../faqs/more/how-do-i-add-a-hero-banner-image-to-locksmiths-access-messages.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../keys/passcode-keys.md" %}
+[passcode-keys.md](../../keys/passcode-keys.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../faqs/more/why-isnt-my-remote-key-condition-working.md" %}
+[why-isnt-my-remote-key-condition-working.md](../../faqs/more/why-isnt-my-remote-key-condition-working.md)
+{% endcontent-ref %}
+
 ***
 
 While we cannot make extensive custom edits to your form for you, if you have any questions you can contact us via email at **team@uselocksmith.com**
