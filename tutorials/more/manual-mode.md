@@ -62,22 +62,18 @@ The variable names that may be exported match Locksmith's standard list of varia
 To access any supported variable, use this approach:
 
 ```
-{% raw %}
 {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}
 {% if var == 'true' %}
   {% assign locksmith_access_granted = true %}
 {% else %}
   {% assign locksmith_access_granted = false %}
 {% endif %}
-{% endraw %}
 ```
 
 For variants, one additional argument is required for the render tag: `subject_parent`, defining the product that contains the variant you're checking in on.
 
 ```
-{% raw %}
 {% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject_parent: product, subject: variant %}
-{% endraw %}
 ```
 
 Feel free to adjust this code to taste. Only the capture and render tags need to be used exactly as written; process the rendered value string in whatever way you need to. Use the support button in the corner if you've got any questions. :)
@@ -96,11 +92,9 @@ For (unprefixed) variable names and definitions, see [Locksmith variables](https
 After loading the Locksmith variables, wrap the code you'd like to conditionally hide like this:
 
 ```
-{% raw %}
 {% if locksmith_access_granted %}
   You've got access!
 {% endif %}
-{% endraw %}
 ```
 
 ### Interactions with remote keys <a href="#interactions-with-server-keys" id="interactions-with-server-keys"></a>
@@ -127,7 +121,6 @@ To explain by example: in cases like[ price hiding](../hiding-prices.md), this m
 To accomplish this, adapt this code for your own purposes:
 
 ```
-{% raw %}
 {% if locksmith_access_granted %}
   <!-- the original add-to-cart button code -->
 {% elsif locksmith_initialized %}
@@ -138,13 +131,11 @@ To accomplish this, adapt this code for your own purposes:
     Locksmith.on('initialize', function () { window.location.reload(); });
   </script>
 {% endif %}
-{% endraw %}
 ```
 
 The code above assumes that you've already exported the `locksmith_access_granted` and `locksmith_initialized` variables. Use one of these options to export those variables, making sure to do so _before_ making any content decisions:
 
 ```
-{% raw %}
 {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}
 {% if var == 'true' %}
   {% assign locksmith_access_granted = true %}
@@ -158,13 +149,10 @@ The code above assumes that you've already exported the `locksmith_access_grante
 {% else %}
   {% assign locksmith_initialized = false %}
 {% endif %}
-{% endraw %}
 ```
 
 ```
-{% raw %}
 {% include 'locksmith-variables' %}
-{% endraw %}
 ```
 
 {% hint style="danger" %}

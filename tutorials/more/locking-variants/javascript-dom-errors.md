@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Handling JavaScript DOM errors caused by variant locks
 
 Locksmith enforces variant locks at the Liquid level, which can result in a different set of DOM elements being present than the theme expects. For example, a list of product images might be filtered down to omit images belonging to protected variants; this could result in a DOM error when the theme tries to address an image that Locksmith has prevented from appearing.

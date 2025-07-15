@@ -29,9 +29,7 @@ All liquid objects in Shopify are fair game here, [more info on Liquid objects h
 Any condition that evaluates to true will result in a locked page. So, imagine if you created a lock with this condition:
 
 ```
-{% raw %}
 {% if true %}
-{% endraw %}
 ```
 
 That would result in every single page in your store becoming locked. This isn't advisable, it's just a proof of concept :)
@@ -41,9 +39,7 @@ That would result in every single page in your store becoming locked. This isn't
 One of the most useful variables that you can use is the **canonical\_url** variable. This variable contains the full url of the current page, so it is a good way to lock pages that aren't usually searchable. For example you have an app that lives at _my-store.myshopify.com/apps/bulk-order-form-app_, you could lock it with the following condition:
 
 ```
-{% raw %}
 {% if canonical_url contains "apps/bulk-order-form-app" %}
-{% endraw %}
 ```
 
 ***
@@ -51,9 +47,7 @@ One of the most useful variables that you can use is the **canonical\_url** vari
 Another useful variable is the **template** variable. For example, an easy way to lock _only_ the home page would be:
 
 ```
-{% raw %}
 {% if template == "index" %}
-{% endraw %}
 ```
 
 If your home page template is called something else, you have the flexibility to lock it by adjusting the condition above.
@@ -77,9 +71,7 @@ In your Liquid **prelude**:
 In your Liquid **condition**:
 
 ```
-{% raw %}
 {% if page_is_locked %}
-{% endraw %}
 ```
 
 This would result in all "Pages" in your store that contain "member" or "secret" in the title becoming locked.

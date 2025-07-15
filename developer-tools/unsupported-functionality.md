@@ -133,9 +133,7 @@ This code is designed to be added to the "Passcode prompt" field in Locksmith's 
 <script>
   (function() {
     var current_url = window.location.href;
-    var REDIRECT_PATH = '{{ current_url }}{% raw %}
-{% if collection %}/collections/{{ collection.handle }}{% endif %}
-{% endraw %}/products/{{ product.handle }}';
+    var REDIRECT_PATH = '{{ current_url }}{% if collection %}/collections/{{ collection.handle }}{% endif %}/products/{{ product.handle }}';
 
     var selector = '#create_customer, form[action$="/account"][method="post"]',
         $form = document.querySelectorAll(selector)[0];
@@ -161,7 +159,6 @@ Sometimes, Shopify Analytics, Google Analytics, or Web Pixels can leave bits of 
 Here's an example of how that might work with Shopify Analytics scripts:&#x20;
 
 ```
-{% raw %}
 {% comment %}
   Find Shopify's analytics code and replace it with something free of
   potentially-sensitive details, if Locksmith thinks access should be denied.
@@ -185,6 +182,5 @@ Here's an example of how that might work with Shopify Analytics scripts:&#x20;
     {% break -%}
   {% endfor -%}
 {% endif -%}
-{% endraw %}
 
 ```

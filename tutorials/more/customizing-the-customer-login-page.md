@@ -62,11 +62,9 @@ This will determine the placement of your login form and you're then free to add
 If you don't want your customers to see the login form on this page for whatever reason, you can remove it by just adding this to your "Guest message content":
 
 ```
-{% raw %}
 {% comment %}
   {{ locksmith_customer_login_form }}
 {% endcomment %}
-{% endraw %}
 ```
 
 You can then add the rest of your message alongside that code.&#x20;
@@ -114,8 +112,7 @@ _This gets a bit technical, so if you need a hand, just hit that message button 
 To customize where your guest content message appears, open up the code editor for your Shopify theme ( [here's how!](https://help.shopify.com/themes/customization#view-the-edit-code-page)), and open the file **templates/customers/login.liquid**. You might see something like this:
 
 ```
-<h1>Login</h1><br><br>{% raw %}
-{% form 'customer_login' %}<br>  {{ form.errors | default_errors }}
+<h1>Login</h1><br><br>{% form 'customer_login' %}<br>  {{ form.errors | default_errors }}
 
   <label for="customer_email">Email Address</label>
   <input type="email" name="customer[email]">
@@ -123,7 +120,6 @@ To customize where your guest content message appears, open up the code editor f
   <input type="password" name="customer[password]">
   <input type="submit" value="Sign In">
 {% endform %}
-{% endraw %}
 ```
 
 Add the code `<!-- locksmith-message -->` wherever you'd like your guest message to appear, like so:
@@ -133,7 +129,6 @@ Add the code `<!-- locksmith-message -->` wherever you'd like your guest message
 
 <!-- locksmith-message -->
 
-{% raw %}
 {% form 'customer_login' %}
   {{ form.errors | default_errors }}
 
@@ -144,15 +139,12 @@ Add the code `<!-- locksmith-message -->` wherever you'd like your guest message
   <input type="password" name="customer[password]">
   <input type="submit" value="Sign In">
 {% endform %}
-{% endraw %}
 ```
 
 Next, head to the "Settings" tab of your Locksmith account, and scroll down to the "Guest message content" field. Use a value like the example below to (a) customize your guest message, and (b) have Locksmith display your login template with your custom message injected into it:
 
 ```
-{% raw %}
-{% capture locksmith_message %}<br>  <p>Please login below! :)</p><br>{% endcapture %}
-{% endraw %}<br><br>{{ locksmith_customer_login_form | replace: '<!-- locksmith-message -->', locksmith_message }}
+{% capture locksmith_message %}<br>  <p>Please login below! :)</p><br>{% endcapture %}<br><br>{{ locksmith_customer_login_form | replace: '<!-- locksmith-message -->', locksmith_message }}
 ```
 
 That's it! :D You've just customized the login form's display using pure Liquid - congratulations, and feel free to experiment until the result is just right for your shop. :)

@@ -11,17 +11,13 @@ Start by opening the **sections/featured-collection.liquid** file in the theme e
 Before:
 
 ```
-{% raw %}
 {% assign featured = section.settings.featured_collection %}
-{% endraw %}
 ```
 
 After:
 
 ```
-{% raw %}
 {% assign featured_collection = section.settings.featured_collection %}
-{% endraw %}
 ```
 
 ### Line 28
@@ -29,17 +25,13 @@ After:
 Before:
 
 ```
-{% raw %}
 {% for product in collections[featured].products limit: total_products %}
-{% endraw %}
 ```
 
 After:
 
 ```
-{% raw %}
 {% for product in collections[featured_collection].products limit: total_products %}
-{% endraw %}
 ```
 
 ### Line 30
@@ -47,17 +39,13 @@ After:
 Before:
 
 ```
-{% raw %}
-{%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: product, locksmith_subject_parent: collections[featured] %}
-{% endraw %} ...
+{%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: product, locksmith_subject_parent: collections[featured] %} ...
 ```
 
 After:
 
 ```
-{% raw %}
-{%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: product, locksmith_subject_parent: collections[featured_collection] %}
-{% endraw %} ...
+{%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: product, locksmith_subject_parent: collections[featured_collection] %} ...
 ```
 
 \

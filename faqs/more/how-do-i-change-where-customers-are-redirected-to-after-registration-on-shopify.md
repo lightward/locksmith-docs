@@ -44,9 +44,7 @@ With this code:
 
 ```
 var current_url = window.location.href;
-var REDIRECT_PATH = '{{ current_url }}{% raw %}
-{% if collection %}/collections/{{ collection.handle }}/products/{{ product.handle }}{% elsif product %}/products/{{ product.handle }}{% elsif page %}/pages/{{ page.handle }}{% else %}{% endif %}
-{% endraw %}';
+var REDIRECT_PATH = '{{ current_url }}{% if collection %}/collections/{{ collection.handle }}/products/{{ product.handle }}{% elsif product %}/products/{{ product.handle }}{% elsif page %}/pages/{{ page.handle }}{% else %}{% endif %}';
 ```
 
 The above modification should only work to redirect customers to locked content if the registration form was submitted from the access message Locksmith presents, for product, collection and page locks. For other parts of the store, customers will be returned to the homepage.

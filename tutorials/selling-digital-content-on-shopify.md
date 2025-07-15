@@ -81,13 +81,11 @@ We can use some custom code to conditionally add a link to your locked content i
 To set this up: head to **Settings -> Notifications** in your Shopify admin, then select  "**Customer notifications**" and click the link for "**Order confirmation**". To edit the code for this email, you'll need to click the "**Edit code**" button in the top right of the page. Insert this code and adjust as needed:
 
 ```
-{% raw %}
 {% for line_item in line_items %}
   {% if line_item.title == "Some Product" %}
     <p>Thank you for your purchase! You may now access <a href="https://awesomeco.myshopify.com/pages/some-locked-page">this locked page</a>.</p>
   {% endif %}
 {% endfor %}
-{% endraw %}
 ```
 
 Feel free to add multiple copies of this code, if you need to send the customer to one of several pages.
@@ -101,13 +99,11 @@ To set this up, locate the "Additional content and scripts" box, near the end of
 Use this code:
 
 ```
-{% raw %}
 {% for line_item in order.line_items %}
   {% if line_item.title == "Some Product" %}
     <p>Thank you for your purchase! You may now access <a href="https://awesomeco.myshopify.com/pages/some-locked-page">this locked page</a>.</p>
   {% endif %}
 {% endfor %}
-{% endraw %}
 ```
 
 ... adjusting the "Some Product" for your actual product title, and "/pages/some-locked-page" part for the address to your locked content.

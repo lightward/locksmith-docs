@@ -12,7 +12,7 @@ To get started, you'll need to begin a "Liquid lock:
 
 To lock all pages containing a certain word in the title, fill out the Liquid lock form like so:
 
-![](../../.gitbook/assets/liquidLockingBasics-page\_title\_contains.png)
+![](../../.gitbook/assets/liquidLockingBasics-page_title_contains.png)
 
 Example code for "Liquid condition" from above image:
 
@@ -26,7 +26,7 @@ Submit the form to create your lock, then proceed by configuring keys as appropr
 
 To lock all pages that use a certain custom template, use this:
 
-![](../../.gitbook/assets/liquidLockingBasics-page\_template.png)
+![](../../.gitbook/assets/liquidLockingBasics-page_template.png)
 
 Example code for "Liquid condition" from above image:
 
@@ -61,13 +61,11 @@ page_is_locked
 Example code for the "Liquid prelude" from above image:
 
 ```
-{% raw %}
 {% assign page_is_locked = false %}
 {% assign page_handles = "first-handle,second-handle,third-handle" | split: "," %}
 {% if scope == "page" and page_handles contains page.handle %}
   {% assign page_is_locked = true %}
 {% endif %}
-{% endraw %}
 ```
 
 Submit the form to create your lock, then proceed by configuring keys as appropriate.

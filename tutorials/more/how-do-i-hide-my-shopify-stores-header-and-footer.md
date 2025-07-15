@@ -29,21 +29,17 @@ In the example below the Dawn theme has been used and the header section is titl
 #### Hiding the header unless a customer is signed in
 
 ```
-{% raw %}
 {% if customer %}
     {% sections 'header-group' %}
 {% endif %}
-{% endraw %}
 ```
 
 #### Hiding the header unless a customer's account has a specific customer tag
 
 ```
-{% raw %}
 {% if customer.tags contains "example-tag" %}
     {% sections 'header-group' %}
 {% endif %}
-{% endraw %}
 ```
 
 #### Hiding the header using some of Locksmith's manual code
@@ -53,19 +49,15 @@ Locksmith has "manual code" that can sometimes be used to hide the store's heade
 The following code can be added to the top of the theme.liquid layout file to include Locksmith's variables that will support the function of Locksmith's manual code:
 
 ```
-{% raw %}
 {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
-{% endraw %}
 ```
 
 The `{% sections 'header-group' %}` can be wrapped in Locksmith's manual code to show the header, if the resource that's currently being viewed isn't locked:
 
 ```
-{% raw %}
 {% if locksmith_access_granted %}
     {% sections 'header-group' %}
-{% endif %}
-{% endraw %}  
+{% endif %}  
 ```
 
 We have some more information on Locksmith's manual code in the guide here:

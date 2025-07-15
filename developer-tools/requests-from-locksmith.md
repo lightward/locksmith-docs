@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Requests from Locksmith
 
 Locksmith occasionally makes requests to a shop's Online Store, starting with the shop's `myshopify.com` subdomain and then following redirects as necessary. (For example, Locksmith might request `https://lightward.myshopify.com/`, and then follow the redirect to `https://lightward.shop/`.)

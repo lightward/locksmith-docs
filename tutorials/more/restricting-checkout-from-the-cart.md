@@ -89,20 +89,17 @@ Before:
 ```
 <input type="submit" name="checkout" class="btn" value="{{ 'cart.general.checkout' | t }}">
 
-{% raw %}
 {% if additional_checkout_buttons %}
   
  <div>
   {{ content_for_additional_checkout_buttons }}
  </div>
 {% endif %}
-{% endraw %}
 ```
 
 After:
 
 ```
-{% raw %}
 {% if locksmith_access_granted %}
   <input type="submit" name="checkout" class="btn" value="{{ 'cart.general.checkout' | t }}">
 
@@ -115,7 +112,6 @@ After:
 {% else %}
   <p>Please add at least $50 to your cart to check out.</p>
 {% endif %}
-{% endraw %}
 ```
 
 Save the template, and you're done! :)

@@ -102,11 +102,9 @@ It’s possible to add some Liquid code if you would like to display a collectio
 The banner code can be wrapped in some Liquid so that it runs only on collection and product pages. Here’s an example of Liquid for this purpose:
 
 ```
-{% raw %}
 {% if template == "collection" or "product" %}
   banner code goes here
 {% endif %}
-{% endraw %}
 ```
 
 </details>

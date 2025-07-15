@@ -15,13 +15,11 @@ Out of the box, this lock _only_ protects the /search url of your shop (as in [h
 To hide the search boxes that your theme may include elsewhere in your shop, open up the Liquid file that contains the search form in question, and locate the actual search form. Wrap it with Liquid that looks like this:
 
 ```
-{% raw %}
 {% include 'locksmith-variables', locksmith_scope: 'search' %}
 
 {% if locksmith_access_granted %}  
   <!-- your search form here! -->
 {% endif %}
-{% endraw %}
 ```
 
 As you can see, this _does_ require manual coding. If you need a hand with this, let us know! :)
