@@ -8,7 +8,7 @@ description: >-
 
 Locksmith allows you to hide _locked products_ from products grids across your store - including other collections and search result pages - only showing them to visitors that have gained access to the appropriate lock(s). This is turned on in your lock settings on your lock page:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-07-15 at 14.54.06.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-15 at 15.05.43 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Limitations
 
