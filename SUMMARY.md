@@ -66,7 +66,7 @@
   * [Locking products by vendor](tutorials/more/locking-products-by-vendor.md)
   * [How do I hide my Shopify store's header and footer](tutorials/more/how-do-i-hide-my-shopify-stores-header-and-footer.md)
   * [Hiding navigation links for locked resources](tutorials/more/hiding-navigation-links-for-locked-resources.md)
-  * [Hiding products from product grids and lists](tutorials/more/hiding-products-from-product-grids-and-lists.md)
+  * [Hiding products and other content from lists in your online store](tutorials/more/hiding-products-and-other-content-from-lists-in-your-online-store.md)
   * [Restricting a product so that it can only be purchased by new customers](tutorials/more/restricting-a-product-so-that-it-can-only-be-purchased-by-new-customers.md)
   * [Automatically managing the seo.hidden metafield using Locksmith](tutorials/more/automatically-hide-from-sitemaps-and-manage-seo-metafield.md)
   * [Locking the home page](tutorials/more/locking-the-home-page.md)
