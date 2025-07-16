@@ -57,3 +57,4 @@ The following apps have known compatibility issues with Locksmith - although the
   [Protecting against bots (without using Locksmith directly)](https://www.locksmith.guide/tutorials/more/protecting-against-bots)
 * Locksmith cannot block RSS feeds from locked blogs.
 * Locksmith can only hide products published to the **Online Store** sales channel, and absolutely cannot help with protecting, hiding, or restricting purchases on other channels.
+* Locksmith is _**not**_ compatible with [**headless or custom storefronts**](https://www.shopify.com/plus/solutions/headless-commerce) (e.g. sites built with Next.js, Hydrogen, custom frontend frameworks). Locksmith relies on Shopify's Liquid rendering engine and only works within the Online Store sales channel. In fully custom storefronts, there is no theme for Locksmith to work with, and no way for it to insert or enforce access logic.
