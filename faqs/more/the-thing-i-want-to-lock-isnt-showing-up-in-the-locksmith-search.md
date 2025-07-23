@@ -6,6 +6,7 @@ If a collection, product, page (etc) isn't showing up in the search results when
 * collection:tops
 * page:sales
 * product:blue
+* vendor:brandname
 
 {% hint style="info" %}
 Learn more: [Specifying a resource type when searching](../../basics/creating-locks.md#specifying-a-resource-type-when-searching)
