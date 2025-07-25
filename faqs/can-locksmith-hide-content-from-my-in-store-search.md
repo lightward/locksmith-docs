@@ -12,9 +12,9 @@ Locksmith includes a checkbox inside of the "Settings" area, on lock pages, that
 **Note**: Locksmith can NOT remove products from display **in other apps**, nor can it remove products from **dynamic (shows results as you type) searches**. In these cases, see suggestions below...
 {% endhint %}
 
-You'll find the hide-from-search setting on each of your lock pages, like so:
+You'll find the hide-from-lists setting on each of your lock pages, like so:
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-04-18 at 1.07.26 AM.png" alt="" width="328"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-07-25 at 3.03.57 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Suggestions for third-party or dynamic searches
 
