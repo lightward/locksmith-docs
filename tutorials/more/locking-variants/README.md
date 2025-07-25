@@ -32,6 +32,14 @@ Next, select the variant and click Save. You may then add your keys.
 
 That's it! :)
 
+### Limiting the scope of a variant lock
+
+It's possible to limit the scope of products the variant is hidden on using the product tag key condition. To learn more, please visit:
+
+{% content-ref url="../../../keys/more/limiting-the-scope-of-variant-locks-using-the-product-tag-key-condition.md" %}
+[limiting-the-scope-of-variant-locks-using-the-product-tag-key-condition.md](../../../keys/more/limiting-the-scope-of-variant-locks-using-the-product-tag-key-condition.md)
+{% endcontent-ref %}
+
 ### Compatibility with other apps and features
 
 Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way. To learn more about this, see the page here:
