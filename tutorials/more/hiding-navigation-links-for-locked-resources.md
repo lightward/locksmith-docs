@@ -8,7 +8,7 @@ description: >-
 
 Locksmith allows you to hide _navigation links that point to locked resources_ - only showing them to visitors with access to your locks. This is turned on via the settings on your lock page:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-02-20 at 12.26.19 PM.png" alt=""><figcaption><p>The label may look slightly different depending on which resource type you are locking.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-28 at 3.38.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 You'll find this option on locks for the following resource types:
 
