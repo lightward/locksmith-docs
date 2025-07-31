@@ -31,6 +31,10 @@ However, one IMPORTANT detail is, if you are using segments, you need to make su
 
 ## Setup
 
+Take note of these settings:
+
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 13.00.44.png" alt=""><figcaption></figcaption></figure></div>
+
 ### List or segment
 
 You can choose between a list or a segment. They function the same in practice, in that Locksmith asks Klaviyo directly whether or not the supplied email address is on the list or segment
@@ -41,11 +45,11 @@ This setting changes the behavior of this key condition significantly!
 
 If left off (the default), Locksmith will prompt the visitor to enter their email address. The email address is the ONLY thing the customer needs to enter in this case, there is no requirement to sign in. This is what that would look like in your storefront:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 13.11.20.png" alt=""><figcaption><p>This is the default input prompt message displayed to customers, but - like all of our default message prompt - can be customized as needed.</p></figcaption></figure>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 13.11.20.png" alt=""><figcaption><p>This is the default input prompt message displayed to customers, but - like all of our default message prompt - can be customized as needed.</p></figcaption></figure></div>
 
 If turned ON, customers will be required to sign in. Then, once signed in, Locksmith will either grant or deny access depending on if the customer is found in the configured list or segment. Here is an example of Locksmith's sign in page:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 13.14.42 (1).png" alt=""><figcaption><p>The login button in this case brings the customer to the customer sign in page for your store. If you are using Shopify's Legacy customer account system, the customer will instead be presented with the entire customer login form right on the page.</p></figcaption></figure>
+<div align="left" data-full-width="false"><figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 13.14.42 (1).png" alt=""><figcaption><p>The login button in this case brings the customer to the customer sign in page for your store. If you are using Shopify's Legacy customer account system, the customer will instead be presented with the entire customer login form right on the page.</p></figcaption></figure></div>
 
 {% hint style="info" %}
 **Tip**: Have multiple Klaviyo lists that you want to check? You can add separate keys to represent each list you'd like to check. To do this, after creating your first key and closing the configuration popup, click the "+ Add another key" button, and you can do it all over again, selecting a different Klaviyo list.
