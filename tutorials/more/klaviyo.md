@@ -11,7 +11,7 @@ To get started, create a new lock or navigate to the lock you'd like to use, the
 <figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 11.59.02.png" alt=""><figcaption><p>You can optionally filter the list by typing "klaviyo" as the filter.</p></figcaption></figure>
 
 {% hint style="info" %}
-You'll notice that Locksmith also supports _only_ checking if a customer is already on a list (as opposed to subscribing them). The "Klaviyo member" key condition also supports checking segments! [We have a dedicated guide on that here](use-klaviyo-as-an-access-control-list.md).
+You'll notice that Locksmith also supports _only_ checking if a customer is already on a list (as opposed to subscribing them). This is a separate key condition, and it also supports checking segments! [We have a dedicated guide on that here](use-klaviyo-as-an-access-control-list.md).
 {% endhint %}
 
 You'll need to create a Klaviyo API key and give it to Locksmith (see below). Once you do that, you'll be presented with your Klaviyo lists, and you'll be able to choose which one to use like so:
