@@ -32,8 +32,8 @@ If using Klaviyo, you have the option to simply request that visitors subscribe 
 
 Or, you can also use Klaviyo to grant access only to those who are _already_ subscribed to a specific list in your Klaviyo account:
 
-{% content-ref url="../../tutorials/more/use-klaviyo-as-an-access-control-list.md" %}
-[use-klaviyo-as-an-access-control-list.md](../../tutorials/more/use-klaviyo-as-an-access-control-list.md)
+{% content-ref url="../../tutorials/more/use-a-klaviyo-list-or-segment-as-an-access-control-list.md" %}
+[use-a-klaviyo-list-or-segment-as-an-access-control-list.md](../../tutorials/more/use-a-klaviyo-list-or-segment-as-an-access-control-list.md)
 {% endcontent-ref %}
 
 ## Using your default Shopify mailing list

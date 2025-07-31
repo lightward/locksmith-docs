@@ -36,7 +36,7 @@
   * [Restricting customers to a specific collection](tutorials/more/restricting-customers-to-a-specific-collection.md)
   * [Passcode-specific redirects](tutorials/more/passcode-specific-redirects.md)
   * [Grow your subscriber lists with Klaviyo](tutorials/more/klaviyo.md)
-  * [Use Klaviyo as an access control list](tutorials/more/use-klaviyo-as-an-access-control-list.md)
+  * [Use a Klaviyo list or segment as an access control list](tutorials/more/use-a-klaviyo-list-or-segment-as-an-access-control-list.md)
   * [Use Mailchimp to collect customer emails](tutorials/more/mailchimp.md)
   * [Hiding out-of-stock products](tutorials/more/hiding-out-of-stock-products.md)
   * [How to use a private browsing session](tutorials/more/how-to-use-a-private-browsing-session.md)
