@@ -1,22 +1,34 @@
 # Grow your subscriber lists with Klaviyo
 
+Locksmith allows you to present your customers with a form to subscribe to a Klaviyo email list, which the customer must enter before they gain access to the locked content:
+
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 11.55.24.png" alt=""><figcaption></figcaption></figure></div>
+
+## Setup
+
+To get started, create a new lock or navigate to the lock you'd like to use, then add the key condition labelled "if the customer subscribes to a Klaviyo list".
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 11.59.02.png" alt=""><figcaption><p>You can optionally filter the list by typing "klaviyo" as the filter.</p></figcaption></figure>
+
 {% hint style="info" %}
-**Note**: Klaviyo has their own policies regarding double opt in, and it is typically enabled by default. This setting is adjusted in your Klaviyo dashboard - it is not a setting that is controlled by Locksmith.
+You'll notice that Locksmith also supports _only_ checking if a customer is already on a list (as opposed to subscribing them). The "Klaviyo member" key condition also supports checking segments! [We have a dedicated guide on that here](use-klaviyo-as-an-access-control-list.md).
 {% endhint %}
 
-To get started, navigate to the lock you'd like to use in Locksmith, then add the Klaviyo key, like so:
+You'll need to create a Klaviyo API key and give it to Locksmith (see below). Once you do that, you'll be presented with your Klaviyo lists, and you'll be able to choose which one to use like so:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-04-03 at 2.45.45 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 12.23.54 (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+As noted within the key condition setup, Klaviyo has their own policies regarding double opt in, and it is typically enabled by default. This setting is adjusted in your Klaviyo dashboard - it is not a setting that is controlled by Locksmith.
+{% endhint %}
 
+### Klaviyo API Access
 
 The first time you select this, Locksmith will prompt you for a Klaviyo API key:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-04-03 at 2.47.34 PM.png" alt=""><figcaption></figcaption></figure>
 
-
-
-Use the "from your Klaviyo account" link under the text box to open up the API Keys area of your Klaviyo account:
+In your Klaviyo dashboard, go to Settings > Account > API Keys. You can also use the "from your Klaviyo account" link within Locksmith to go directly there:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-11-03 at 7.17.58 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -38,7 +50,7 @@ Copy the API key:
 
 Then, head back to Locksmith, where you'll be able to paste in the key. Click "Continue", and Locksmith will present you with a list of Klaviyo lists, to which your new subscribers will be saved.
 
-Once your Locksmith configuration is to your liking (don't forget to customize the prompt!), hit the "Save" button. From here on out, new visitors to your locked resource will be required to subscribe before proceeding.
+Once your Locksmith configuration is to your liking, hit the "Save" button. From here on out, new visitors to your locked resource will be required to subscribe before proceeding.
 
 {% hint style="info" %}
 **Note**: any customers who are already in your list will be seamlessly granted access when they enter their email address, and will not be added as a duplicate.
