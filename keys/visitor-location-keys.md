@@ -64,7 +64,26 @@ If you have different versions for different countries: You can create separate 
 
 Locksmith can only protect the frontend of your Online Store, and cannot extend its protections to Checkout. So, this does not prevent customers who have IP addresses located in an allowed location from choosing a specific shipping address that is in a blocked location at checkout. Locksmith is not able to control shipping destinations during checkout. For this, [check out Shopify's Shipping Profiles feature](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/shipping-profiles).
 
+### Testing the location key:
+
+When testing, the browser may cache your access and continue showing you the same version of that page. So, to test the location key you'll want to:
+
+1\. Connect to a VPN for a specific location.
+
+2\. Open up a **new** private browsing session (sometimes called 'incognito mode').
+
+3\. Visit the locked collection/page/product etc. using the private browsing session.
+
+4\. Close **all** of your private browsing windows when you're done testing a single location.
+
+5\. Repeat the steps 1-4 for each new location.
+
+You'll want to make sure you use a brand new private browsing session _each time_ you test a location, as Locksmith uses the same mechanism as the browser and Shopify to remember previously stored access.
+
 {% content-ref url="../faqs/more/why-isnt-my-remote-key-condition-working.md" %}
 [why-isnt-my-remote-key-condition-working.md](../faqs/more/why-isnt-my-remote-key-condition-working.md)
 {% endcontent-ref %}
 
+{% content-ref url="../tutorials/more/how-to-use-a-private-browsing-session.md" %}
+[how-to-use-a-private-browsing-session.md](../tutorials/more/how-to-use-a-private-browsing-session.md)
+{% endcontent-ref %}
