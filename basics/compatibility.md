@@ -41,7 +41,7 @@ The following apps have known compatibility issues with Locksmith - although the
 
 ## Other areas of incompatibility
 
-* Predictive searches - Locksmith generally cannot remove products from searches that dynamically show search results as you type. This includes built-in theme searches, and most apps that add predictive searches to your theme. That being said, it is possible to manage the appearance of specific products in store searches using product metafields: [more information on that here](https://community.shopify.com/c/ecommerce-marketing/hiding-a-product-from-search-engine/td-p/484788).
+* **Predictive searches** - Locksmith generally cannot remove products from searches that dynamically show search results as you type. This includes built-in theme searches, and most apps that add predictive searches to your theme. That being said, it is possible to manage the appearance of specific products in store searches using product metafields: [more information on that here](https://community.shopify.com/c/ecommerce-marketing/hiding-a-product-from-search-engine/td-p/484788).
 *   [The Checkout area](https://help.shopify.com/en/manual/checkout-settings) - Apps are pretty heavily limited in their ability to make changes to the checkout area, for security reasons. This means that Locksmith cannot restrict access to payment methods, shipping methods, shipping addresses, or anything else that is shown during the checkout process. If you wish to use Locksmith to restrict customers ability to check out,&#x20;
 
     you now have two options:
@@ -57,5 +57,5 @@ The following apps have known compatibility issues with Locksmith - although the
   [Protecting against bots (without using Locksmith directly)](https://www.locksmith.guide/tutorials/more/protecting-against-bots)
 * Locksmith cannot block RSS feeds from locked blogs.
 * Locksmith can only hide products published to the **Online Store** sales channel, and absolutely cannot help with protecting, hiding, or restricting purchases on other channels.
-* Locksmith generally can't hide elements or filter locked content in areas controlled by other third-party apps, especially if those apps render their content outside the theme files where Locksmith injects its code.
+* Locksmith generally cannot hide elements or filter locked content in areas controlled by other third-party apps, especially if those apps render their content outside the theme files where Locksmith injects its code.
 * Locksmith is **not** compatible with [**headless or custom storefronts**](https://www.shopify.com/plus/solutions/headless-commerce) (e.g. sites built with Next.js, Hydrogen, custom frontend frameworks). Locksmith relies on Shopify's Liquid rendering engine and only works within the Online Store sales channel. In fully custom storefronts, there is no theme for Locksmith to work with, and no way for it to insert or enforce access logic.
