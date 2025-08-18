@@ -6,9 +6,9 @@ Locksmith supports permitting visitors based on their IP address.
 
 Start by opening the settings for a lock you've created. Then, follow the steps shown to add a key that permits "if the customer has a certain IP address", as shown below:
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5f876c4b52faff0016aeffbc/file-HFtQQBMQWa.png)
+![](<../../.gitbook/assets/Screenshot 2025-08-18 at 11.44.42 AM.png>)
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5f876c804cedfd0017dd1d1a/file-nuEZeD6x1D.png)
+![](<../../.gitbook/assets/Screenshot 2025-08-18 at 11.45.56 AM.png>)
 
 This key can be configured with a series of IP addresses, one given per line. It can also be configured with CIDR definitions, allowing you to specify entire subnet ranges.
 
@@ -18,7 +18,7 @@ This key condition can be inverted, resulting in a condition that permits _unles
 
 To accomplish this, invert the key condition, as shown below by clicking on the checkbox next to "invert". (To learn more about inverting conditions, see [Inverting keys in Locksmith](inverting-conditions-in-locksmith.md).)
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/607f7188e0324b5fdfd0ced0/file-84QaCMgM9m.png)
+![](<../../.gitbook/assets/Screenshot 2025-08-18 at 11.46.23 AM.png>)
 
 Because of the way IP address detection works, a IP address key on your entire store will show _everyone_ a spinner graphic for a moment, before your store's content is loaded. This will only happen once, if the visitor has an accepted IP address.
 
