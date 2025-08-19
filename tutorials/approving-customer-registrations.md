@@ -44,8 +44,8 @@ The above two steps outline how you use Locksmith to approve customer access to 
 
 You have some options:
 
-1. Allow customers to register their own accounts, then approve as appropriate.
-2. Create preapproved customer accounts, and send email invitations.
+1. Allow customers to create the accounts on their own
+2. Create pre-approved customer accounts, and send email invitations.
 
 ### Option 1: Allow customers to register their own accounts, then approve as appropriate.
 
@@ -65,12 +65,6 @@ Shopify does NOT send registration notifications. If this is important to you tr
 
 If you already have the email addresses of those to whom you'd like to grant access, you can use Locksmith's customer import/creation tool to create their accounts. The customer import tool allows you to pre-tag any customer accounts that you create this way, so they'll automatically be granted access once they begin using your site.&#x20;
 
-You also have the ability to place a lock on the registration form directly, so that customers cannot register their own accounts. **Note that this will only work with** [**Legacy Customer Accounts**](https://help.shopify.com/en/manual/customers/customer-accounts)**:**
-
-{% content-ref url="more/locking-the-customer-registration-form.md" %}
-[locking-the-customer-registration-form.md](more/locking-the-customer-registration-form.md)
-{% endcontent-ref %}
-
 A complete guide on the importing tools is here:
 
 {% content-ref url="more/importing-customers-in-bulk.md" %}
@@ -80,3 +74,11 @@ A complete guide on the importing tools is here:
 Beyond entering the customers' email addresses, make sure to use the "Customer tags" field and enter "**approved**" as the tag, so that all of the customers imported this way are tagged. There are also some other options worth taking a look at:
 
 <figure><img src="../.gitbook/assets/import-customers-page2.png" alt=""><figcaption></figcaption></figure>
+
+#### Optional: Lock the registration page
+
+If you are using [**Legacy Customer Accounts**](https://help.shopify.com/en/manual/customers/customer-accounts)**,** you also have the ability to place a lock on the registration form directly, so that customers cannot register their own accounts.
+
+{% content-ref url="more/locking-the-customer-registration-form.md" %}
+[locking-the-customer-registration-form.md](more/locking-the-customer-registration-form.md)
+{% endcontent-ref %}
