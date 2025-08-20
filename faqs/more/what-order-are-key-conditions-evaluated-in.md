@@ -46,9 +46,8 @@ When you create a key with multiple conditions, the display order will automatic
 The evaluation order is important because:
 
 1. **User Experience**: Conditions with less user control (like IP address) are checked first, so users aren't prompted for passcodes only to be denied by location.
-2. **Performance**: Simple checks (like customer tags) are performed before complex ones (like API calls to external services).
-3. **Logic Flow**: The order ensures that fundamental access rights are established before checking more specific conditions.
-4. **Fail-Fast Principle**: If a user will be denied access regardless of their input, they find out immediately rather than after entering information.
+2. **Performance**: Local checks (like customer tags) are performed before remote ones (like API calls to external services).
+3. **Fail-Fast Principle**: If a user will be denied access regardless of their input, they find out immediately rather than after entering information.
 
 ### Multiple Keys on a Lock
 
