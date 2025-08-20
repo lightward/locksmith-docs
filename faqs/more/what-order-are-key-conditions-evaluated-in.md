@@ -38,7 +38,7 @@ Key conditions are evaluated in the following order:
 30. **the customer confirms the prompt**
 
 {% hint style="info" %}
-This order is _not_ the same as the display order when creating new conditions. The display order is based on convenience, with more popular conditions showing first.
+When you create a key with multiple conditions, the display order will automatically update to reflect the above, _after you save the lock._ However, this is not the same as the display order when choosing new key conditions, which is simply organized so the more frequently-used key conditions appear near the top.
 {% endhint %}
 
 ### Why This Order Matters
@@ -52,7 +52,7 @@ The evaluation order is important because:
 
 ### Multiple Keys on a Lock
 
-When a lock has multiple keys, each key is evaluated independently. Access is granted if **any** key's conditions are all met. Within each key, **all** conditions must be satisfied for that key to grant access.
+When a lock has multiple keys, each key is evaluated independently. Access is granted if **any** key's conditions are all met. Within each key, **all** conditions must be satisfied for that key to grant access.&#x20;
 
 ### Related Topics
 
