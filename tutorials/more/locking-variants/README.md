@@ -48,7 +48,7 @@ Because this feature allows you to filter out variants from view, it's likely th
 [compatibility.md](../../../basics/compatibility.md)
 {% endcontent-ref %}
 
-Variant locking is _not_ compatible with page builder apps. To learn more about this, see the page here:
+Variant locking is _not_ compatible with variants being displayed by other third-party apps, including page builder apps. To learn more about this, see the page here:
 
 {% content-ref url="../../../faqs/locksmith-is-not-working-with-my-page-builder-app.md" %}
 [locksmith-is-not-working-with-my-page-builder-app.md](../../../faqs/locksmith-is-not-working-with-my-page-builder-app.md)
