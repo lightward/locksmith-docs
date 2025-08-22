@@ -18,7 +18,9 @@ The most straightforward way to do it is to simply use Google sheets:\
 \
 [https://www.google.com/sheets](https://www.google.com/sheets)
 
-**Google Sheets** must be formatted as a document having a single column of input values, one value per row.
+**Google Sheets** must be formatted as a document having a single column of input values, one value per row:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-22 at 11.44.48 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Supported file formats
 
