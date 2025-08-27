@@ -16,7 +16,7 @@ Disabling Locksmith is done from with the **Disable Locksmith** button on the Se
 
 There are two lock settings known in Locksmith to _potentially_ cause speed issues in certain circumstances:
 
-<p align="center"><img src="../.gitbook/assets/Screen Shot 2022-08-02 at 7.12.45 PM (1).png" alt=""></p>
+<figure><img src="../.gitbook/assets/Screenshot 2025-08-27 at 15.32.48 (1).png" alt=""><figcaption></figcaption></figure>
 
 _The exact labels might differ slightly depending on if this is a product lock, collection lock, page lock etc._
 
