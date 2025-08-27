@@ -6,7 +6,7 @@ Start by using the following troubleshooting steps:
 
 ## 1. Temporarily disable Locksmith
 
-If your site is still performing poorly after disabling Locksmith, it's probable that the issue lies elsewhere, and you will need to continue your search for the culprit outside of Locksmith.
+This will help you figure out if Locksmith is actually causing your issue. If your site is still performing poorly after disabling Locksmith, it's probable that the issue lies elsewhere, and you will need to continue your search for the culprit outside of Locksmith.
 
 Disabling Locksmith is done from with the **Disable Locksmith** button on the Settings page:
 
@@ -16,7 +16,7 @@ Disabling Locksmith is done from with the **Disable Locksmith** button on the Se
 
 There are two lock settings known in Locksmith to _potentially_ cause speed issues in certain circumstances:
 
-![](<../.gitbook/assets/Screen Shot 2022-08-02 at 7.12.45 PM (1).png>)
+<p align="center"><img src="../.gitbook/assets/Screen Shot 2022-08-02 at 7.12.45 PM (1).png" alt=""></p>
 
 _The exact labels might differ slightly depending on if this is a product lock, collection lock, page lock etc._
 
