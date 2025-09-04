@@ -18,7 +18,7 @@ By default, **Locksmith only shows one entry method at a time to customers**. In
 
 To include a specific form for a key condition that you're using, you can mix and match the following liquid variable outputs in your Locksmith messages:
 
-<table><thead><tr><th width="267">Form/condition type</th><th>Liquid code used to include the form</th></tr></thead><tbody><tr><td>passcode</td><td><code>{{ locksmith_passcode_form }}</code></td></tr><tr><td>mailing list signup (i.e. Klaviyo or Mailchimp)</td><td><code>{{ locksmith_email_form }}</code></td></tr><tr><td>confirmation</td><td><code>{{ locksmith_confirmation_form }}</code></td></tr><tr><td>login (for store customer accounts)</td><td><code>{{ locksmith_customer_login_form }}</code></td></tr><tr><td>registration (for store customer accounts)</td><td><code>{{ locksmith_customer_registration_form }}</code></td></tr></tbody></table>
+<table><thead><tr><th width="267">Form/condition type</th><th>Liquid code used to include the form</th></tr></thead><tbody><tr><td>passcode</td><td><code>{{ locksmith_passcode_form }}</code></td></tr><tr><td>mailing list signup (i.e. Klaviyo or Mailchimp)</td><td><code>{{ locksmith_email_form }}</code></td></tr><tr><td>confirmation</td><td><code>{{ locksmith_confirmation_form }}</code></td></tr><tr><td>login - for store accounts. If you are not using legacy customer accounts, this is just a button pointing to the sign in page</td><td><code>{{ locksmith_customer_login_form }}</code></td></tr><tr><td>registration -  for store accounts. only applicable if you are using the legacy customer account system</td><td><code>{{ locksmith_customer_registration_form }}</code></td></tr></tbody></table>
 
 ## Example
 
