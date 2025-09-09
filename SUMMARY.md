@@ -72,6 +72,7 @@
   * [Locking the home page](tutorials/more/locking-the-home-page.md)
   * [Setting up checkout validation with Locksmith](tutorials/more/setting-up-checkout-validation-with-locksmith.md)
   * [How to hide theme sections, blocks, and snippets](tutorials/more/how-to-hide-theme-sections-blocks-and-snippets.md)
+  * [Creating weekly schedules](tutorials/more/creating-weekly-schedules.md)
 
 ## 🔑 Keys: Access methods in Locksmith <a href="#keys" id="keys"></a>
 
