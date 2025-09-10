@@ -30,6 +30,7 @@
   * [Protecting against bots](tutorials/more/protecting-against-bots.md)
   * [Earn recurring revenue on your exclusive content using ReCharge](tutorials/more/recharge.md)
   * [Use Locksmith and PayWhirl together to grant access based on subscriptions](tutorials/more/use-locksmith-and-paywhirl-together-to-grant-access-based-on-subscriptions.md)
+  * [Use Locksmith and Seal Subscriptions to grant access based on subscriptions](tutorials/more/use-locksmith-and-seal-subscriptions-to-grant-access-based-on-subscriptions.md)
   * [Liquid locking basics](tutorials/more/liquid-locking-basics.md)
   * [Restricting checkout from the cart](tutorials/more/restricting-checkout-from-the-cart.md)
   * [Confirmation key condition](tutorials/more/editing-the-confirmation-message.md)
