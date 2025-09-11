@@ -66,7 +66,7 @@ The classes may need editing to match your theme.
 When the customer clicks that button, they'll be presented with the passcode prompt as normal. If they enter the correct passcode and submit, the page will reload but this time showing your locked content.&#x20;
 
 {% hint style="danger" %}
-Passcode keys are _**not**_ compatible with variant locks by default. Please see:&#x20;
+Passcode keys are _**not**_ compatible with variant locks by default. Please see: [https://www.locksmith.guide/tutorials/more/locking-variants#using-passcodes-with-variant-locks](https://www.locksmith.guide/tutorials/more/locking-variants#using-passcodes-with-variant-locks)
 {% endhint %}
 
 
