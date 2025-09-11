@@ -40,6 +40,17 @@ It's possible to limit the scope of products the variant is hidden on using the 
 [limiting-the-scope-of-variant-locks-using-the-product-tag-key-condition.md](../../../keys/more/limiting-the-scope-of-variant-locks-using-the-product-tag-key-condition.md)
 {% endcontent-ref %}
 
+### Using passcodes with variant locks
+
+Passcode keys don’t work by default when placed directly on a variant lock. This is because variants don’t have their own pages, and Locksmith only shows the passcode prompt by replacing full page content.
+
+If you’d like customers to use a passcode to unlock specific variants, you’ll need to pair the variant lock with a separate landing page:
+
+1. Create a new page in your Shopify admin (this can be a simple landing page).
+2. Add a lock to that page using the passcode key you want.
+3. Apply the same passcode key to your variant lock.
+4. Direct customers to the landing page, where they’ll be prompted to enter the passcode. Once entered, they’ll have access to the locked variants.
+
 ### Compatibility with other apps and features
 
 Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way. To learn more about this, see the page here:
@@ -55,5 +66,5 @@ Variant locking is _not_ compatible with variants being displayed by other third
 {% endcontent-ref %}
 
 {% hint style="danger" %}
-Variant locks are **not** compatible with Locksmith's [manual locking](../manual-mode.md) feature or the [passcode key](../../../keys/passcode-keys.md).&#x20;
+Variant locks are **not** compatible with Locksmith's [manual locking](../manual-mode.md) feature.
 {% endhint %}
