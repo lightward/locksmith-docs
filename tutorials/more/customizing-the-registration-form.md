@@ -10,22 +10,7 @@ Many merchants want to collect more information from a customer when they regist
 
 This is a simple solution to the issue and does work for some merchants. Use the Locksmith access-denied "Messages" area, which you can customize in the app, to let your customers know the contact email.
 
-### 2. Edit the registration form in your theme directly
-
-Shopify has a guide that will walk you through doing this. You can [view that here](https://shopify.dev/docs/storefronts/themes/architecture/templates/customers-register).&#x20;
-
-#### Pros:
-
-* &#x20;Editing your own theme is free
-
-#### Cons:
-
-* Requires coding knowledge. (But, If you don't have coding knowledge, you can still [hire an expert](https://experts.shopify.com/)!)
-* Extra fields in the registration form end up as customer "notes". Saving unique customer data to the customer note doesn’t allow much flexibility for using that data, or segmenting customers accordingly.
-* Changes the registration form for _everyone_ which means that your different types of customers(I.e. wholesale and retail, if applicable) would be using the same registration form. You can still make the form usable for everyone by making the extra fields optional.
-* There is **not** an option to get notified when customers register.
-
-### 3. Use a dedicated Shopify app
+### 2. Use a dedicated Shopify app
 
 [The Customer Fields app](https://app.customerfields.com/billing/referral?code=LOCKSMITH) lets you create unique registration forms and add fields in an easy way. You can enable account approval, auto-tag customers, and receive email notifications when customers create or update their accounts. The Customer Fields app is not created by us, but we have had merchants have a lot of success with it!
 
@@ -42,7 +27,7 @@ Shopify has a guide that will walk you through doing this. You can [view that he
 
 * It is, naturally, a paid app
 
-### 4. Use a third party form-creating service
+### 3. Use a third party form-creating service
 
 If you just need to collect information, and don't need to automatically do anything with it, it is always an option to use Google forms, Wufoo, or other online forms. There are some other great services out there that let you create a fully customized HTML form.
 
@@ -55,3 +40,18 @@ If you just need to collect information, and don't need to automatically do anyt
 #### Cons:
 
 * The accounts are not automatically created which means you'll need to manually move the information over to Shopify from the third party app
+
+### Legacy Option 4: Edit the registration form in your theme directly
+
+If you are using Shopify's Legacy account system with a Legacy theme, your theme will have a built-in registration form which you can edit as needed. Shopify has a guide that will walk you through doing this. You can [view that here](https://shopify.dev/docs/storefronts/themes/architecture/templates/customers-register).&#x20;
+
+#### Pros:
+
+* &#x20;Editing your own theme is free
+
+#### Cons:
+
+* Requires coding knowledge. (But, If you don't have coding knowledge, you can still [hire an expert](https://experts.shopify.com/)!)
+* Extra fields in the registration form end up as customer "notes". Saving unique customer data to the customer note doesn’t allow much flexibility for using that data, or segmenting customers accordingly.
+* Changes the registration form for _everyone_ which means that your different types of customers(I.e. wholesale and retail, if applicable) would be using the same registration form. You can still make the form usable for everyone by making the extra fields optional.
+* There is **not** an option to get notified when customers register.
