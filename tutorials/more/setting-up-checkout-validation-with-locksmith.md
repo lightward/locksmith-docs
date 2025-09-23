@@ -29,16 +29,16 @@ If you're seeing fraudulent orders on your free items, or challenges selling hig
 
 ## Step 2: Add rule:
 
-1. From the dropdown list, select **Require customer tag to purchase specific products**. This rule will restrict purchases based on product and customer tags.
+1. From the "Add a checkout rule" dropdown list, select **Require customer tag to purchase specific products**. This rule will restrict purchases based on product and customer tags.
 2. In the **Product tag** field, add the product tag you want to use (e.g., `nobots`).
 3. In the **Customer tag** field, add the customer tag that will allow the product to be purchased (e.g., `notabot`).
 4. **Save** your changes:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-09-20 at 4.05.47 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-23 at 11.42.31 AM.png" alt=""><figcaption></figcaption></figure>
 
 5. Click the **Turn on** button to enable the rule:
 
-<figure><img src="../../.gitbook/assets/2024-09-20 16.11.27.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2025-09-23 11.49.58.gif" alt=""><figcaption></figcaption></figure>
 
 You should be all set. :)\
 \
