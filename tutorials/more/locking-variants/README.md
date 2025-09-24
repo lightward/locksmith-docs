@@ -53,7 +53,11 @@ If you’d like customers to use a passcode to unlock specific variants, you’l
 
 ### Compatibility with other apps and features
 
-Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way. To learn more about this, see the page here:
+Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way. \
+\
+For **products** that are locked with Locksmith, we add a metafield to prevent them from being included on the Shop app sales channel. However, this automatic protection only applies at the **product** level. When **variants** are locked, Locksmith doesn’t add the metafield automatically, which means variant visibility on the Shop app needs to be managed manually by merchants.\
+\
+To learn more about this, see the page here:
 
 {% content-ref url="../../../basics/compatibility.md" %}
 [compatibility.md](../../../basics/compatibility.md)
