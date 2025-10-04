@@ -74,7 +74,10 @@ Additionally, you can customize the submit buttons and loading text. To do this,
 ![](<../../.gitbook/assets/Screenshot 2024-02-19 at 12.07.40 PM.png>)
 
 Locksmith will use the values you customize here when displaying content to your visitors.\
-\
+
+
+***
+
 While we cannot make extensive custom edits to your form for you, if you have any questions you can contact us via email at **team@uselocksmith.com**
 
 ## Related articles:
