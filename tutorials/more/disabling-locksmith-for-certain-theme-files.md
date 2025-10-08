@@ -6,15 +6,15 @@ description: How to tell Locksmith to completely ignore specific files in your t
 
 Locksmith does its work by adding its code to your theme's files. Sometimes you may want to keep Locksmith from modifying a file in particular, whether it's for a customization, or some other reason.
 
-To support this, Locksmith has a "Liquid assets to ignore" option.&#x20;
+To support this, Locksmith has a "Liquid assets to ignore" option. Configure it like so:
 
-To configure it, head to the "Settings" page:
+1. From within the Locksmith application, click "Settings".
+2. Scroll to the bottom of the screen to the "Advanced" section.
+3. For each Liquid asset you'd like to have Locksmith ignore, add its filename to the "Liquid asset blacklist" box.
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-09 at 2.12.34 PM.png" alt=""><figcaption></figcaption></figure>
+That will look like this:
 
-And then edit the file list under Advanced > Liquid assets to ignore:
-
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-09 at 2.01.30 PM.png" alt=""><figcaption><p>You'll notice that some files are added by default.</p></figcaption></figure>
+![](<../../.gitbook/assets/Screen Shot 2022-08-02 at 7.25.25 PM.png>)
 
 {% hint style="info" %}
 **Note**: Use full file names. (e.g. "sections/collection-list.liquid" or "templates/gift\_card.liquid"), and enter them **one per line**.
