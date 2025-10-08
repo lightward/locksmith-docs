@@ -13,7 +13,7 @@ Shopify's policies prohibit the use of password control and age verification app
 When you use Locksmith to lock certain products, your store will still remain eligible to display on Shop, and your locked products will not be included in your Shop Store. This ensures that merchants can maintain the control Locksmith provides while remaining eligible for the Shop app.
 
 {% hint style="warning" %}
-Locksmith can only manage visibility in the Shop app at the **product level**. Variants locked by Locksmith will still be visible and purchasable in the Shop app. It is your responsibility to manage desired visibility for your individual variants on the Shop app.
+Locksmith can only manage visibility in the Shop app at the **product level**. Products locked by product and collection locks will automatically be removed from the Shop app. However, variants locked by variant locks will still be purchasable in the Shop app. It is therefore your responsibility to manage desired visibility for your variants in the Shop app.
 {% endhint %}
 
 For more details on Shop app eligibility requirements, including prohibited product types or other restrictions, please refer to Shopify's [Shop app eligibility requirements](https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements).\
