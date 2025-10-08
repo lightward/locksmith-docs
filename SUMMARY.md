@@ -57,7 +57,6 @@
   * [Locking the customer registration form](tutorials/more/locking-the-customer-registration-form.md)
   * [Locking the search results page in your store](tutorials/more/locking-the-search-results-page-in-your-store.md)
   * [How to clear cache for a single website](tutorials/more/how-to-clear-cache-for-a-single-website.md)
-  * [Disabling Locksmith for certain theme files](tutorials/more/disabling-locksmith-for-certain-theme-files-1.md)
   * [🛠️ Manual mode](tutorials/more/manual-mode.md)
   * [Grant access for a limited time when using passcodes or secret links](tutorials/more/grant-access-for-a-limited-time-when-using-passcodes-or-secret-links.md)
   * [Testing Locksmith on unpublished themes](tutorials/more/testing-locksmith-on-unpublished-themes.md)
