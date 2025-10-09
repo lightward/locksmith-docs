@@ -89,7 +89,12 @@ If you are using a passcode key and need to render a passcode prompt button, use
 
 ## 5. Save and test!
 
-Once you've added all of your hiding definitions, save your hiding profile. Locksmith will perform an installation to the theme. Once the installation finishes, make sure to verify that everything is working as expected on the frontend of your store!&#x20;
+Once you've added all of your hiding definitions, save your hiding profile. Locksmith will perform an installation to the theme. Once the installation finishes, make sure to verify that everything is working as expected on the frontend of your store! \
+\
+Make sure you have the setting checked to "Enable manual locking" before testing:\
+
+
+<figure><img src="../../.gitbook/assets/manualLockingEnabled (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You can head back to the themes tab to check the status of a specific installation, whether it be for a published theme or not.&#x20;
@@ -97,15 +102,15 @@ You can head back to the themes tab to check the status of a specific installati
 
 ## How is this different from Locksmith's standard "manual locking"
 
-Hiding profiles are intended to work alongside - or in many cases as a replacement for - [manual locking](manual-mode.md). Hiding profiles function in almost the exact same way on the backend. Some differences are:
+Hiding profiles are intended to work alongside - or in many cases as a replacement for manually adding code for [manual locking](manual-mode.md). Hiding profiles function in almost the exact same way on the backend. Some differences are:
 
-* Hiding profiles are easier to setup
+* Hiding profiles are easier to setup.
 * Hiding profiles don't need manual removal from your theme, they remove themselves when Locksmith is disabled/uninstalled.
-* Hiding profiles rely on the modularity of Online Store 2.0 themes, so manual locking will still be necessary for legacy themes
-* If the hiding target is not contained within a section, block, or snippet, manual locking will still be necessary\
+* Hiding profiles rely on the modularity of Online Store 2.0 themes, so adding code manually will still be necessary for legacy or highly customized themes.
+* If the hiding target is not contained within a section, block, or snippet, manual locking will still be necessary.\
 
 
 {% hint style="warning" %}
-**Note**: While this method does hide elements like prices visually, it may still be possible for someone viewing the source (or interacting with the browser console) to see the price. This is because of the presence of things like Google Analytics and other tools, which reproduce the price in the source - but not visually on the page - for their own usage. These are out of control of the Locksmith app.
+**Note**: While this method does hide elements like prices visually, it may still be possible for someone viewing the source (or interacting with the browser console) to see the price. This is because of the presence of things like Google Analytics and other tools, which reproduce the price in the source - but not visually on the page - for their own usage. **These are out of control of the Locksmith app.**&#x20;
 {% endhint %}
 
