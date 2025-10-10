@@ -46,7 +46,7 @@ Don't forget to test using a private browsing session to ensure the rule is work
 [how-to-use-a-private-browsing-session.md](how-to-use-a-private-browsing-session.md "mention")
 
 {% hint style="info" %}
-**Please note:** Currently, it's only possible to set up one checkout validation rule per store that allows a specific customer tag to purchase products that have a specific product tag.\
+**Please note:** Currently, it's only possible to set up **one checkout validation rule** per store that allows a specific customer tag to purchase products that have a specific product tag.\
 \
 This means that if you have multiple requirements for different products or customer tags, you'll need to prioritize which rule is most important or add global product tag that can be used on all products you want to require validation for.&#x20;
 {% endhint %}
