@@ -107,7 +107,7 @@ The result: your secret link key will continue to work normally, but the access 
 
 ## Some things to be mindful of when sending customers secret links
 
-* It "ls=" hasn't been included at the beginning of the secret link code. A secret link code can still work without this, but if a customer is visiting your store for the first time, Shopify may be unsure of what the code at the end of the URL is doing and could redirect customers to the homepage before the lock is opened.\
+* If "ls=" hasn't been included at the beginning of the secret link code. A secret link code can still work without this, but if a customer is visiting your store for the first time, Shopify may be unsure of what the code at the end of the URL is doing and could redirect customers to the homepage before the lock is opened.\
   \
   This might make it appear as though the secret link isn't working. However, a second attempt usually succeeds. Including "ls=" at the beginning of the secret link code should prevent this issue.\
 
