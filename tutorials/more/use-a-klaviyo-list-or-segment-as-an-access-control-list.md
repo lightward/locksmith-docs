@@ -29,6 +29,8 @@ However, one IMPORTANT detail is, if you are using segments, you need to make su
 * Segments
 * Subscriptions
 
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-27 at 12.52.02 PM.png" alt=""><figcaption></figcaption></figure>
+
 ## Setup
 
 Take note of these settings:
