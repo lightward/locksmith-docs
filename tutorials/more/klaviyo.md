@@ -36,7 +36,7 @@ In your Klaviyo dashboard, go to Settings > Account > API Keys. You can also use
 
 Click the  "Create Private API Key" button to create a key for Locksmith. You'll see the new key on the next screen.&#x20;
 
-The scopes that Locksmith needs _full access_ to from the Klaviyo API key are "List", "Profiles", "Segments" "Subscriptions":
+The scopes that Locksmith needs _full access_ to from the Klaviyo API key are "List", "Profiles", "Segments", and "Subscriptions":
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-10-27 at 12.52.02 PM.png" alt=""><figcaption></figcaption></figure>
 
