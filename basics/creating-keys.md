@@ -67,6 +67,36 @@ These are all the key conditions that Locksmith supports:
 * **(custom Liquid)**\
   This condition allows you to write custom Liquid code, granting access if your Liquid condition evaluates to "true". This is the most powerful key condition, because it allows you to grant access under _any_ circumstances that you can determine using Liquid.
 
+## Copying keys between locks
+
+If you need to reuse a key setup from one lock in another, Locksmith includes a handy copy and paste feature for keys. This makes it easy to duplicate your key structure without recreating it from scratch.
+
+**Here’s how it works:**
+
+1.  Find the key you want to copy
+
+    On any existing lock, locate the key you’d like to reuse.
+
+    Click the copy icon to the right of the key nam&#x65;_:_
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-10-28 at 3.29.52 PM.png" alt=""><figcaption></figcaption></figure>
+
+2. Navigate to your new lock\
+   Open the lock where you’d like to reuse that key.
+3.  Paste the key
+
+    Click the paste icon beside “Add key.”
+
+    Locksmith will automatically add the copied key to your new lock:
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-10-28 at 3.30.36 PM.png" alt=""><figcaption></figcaption></figure>
+
+You can repeat this as many times as needed to reuse key configurations across multiple locks.
+
+If your keys include product- or time-specific conditions, be sure to update those details after pasting.
+
+***
+
 ## Related articles
 
 More information on how to **combine key conditions together** is covered in our "Overview" guide here:
