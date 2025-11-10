@@ -65,9 +65,11 @@ For conditions requiring a customer login, the following is used as the default 
 
 **Standard customer accounts:**
 
-<pre class="language-html" data-overflow="wrap"><code class="lang-html"><strong>&#x3C;p>&#x3C;a href="/customer_authentication/login?locale={{ request.locale.iso_code }}&#x26;?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase&#x3C;/a>&#x3C;/p>
-</strong><strong>
-</strong></code></pre>
+{% code overflow="wrap" %}
+```html
+<p><a href="/customer_authentication/login?locale={{ request.locale.iso_code }}&return_to={{ request.path | url_encode }}" class="btn button button--full-width button--secondary">Log in to purchase</a></p>
+```
+{% endcode %}
 
 **Legacy customer accounts:**
 

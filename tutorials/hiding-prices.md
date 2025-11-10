@@ -177,7 +177,7 @@ If you need to render a "Login to purchase" button, use the following code (the 
 
 {% code overflow="wrap" %}
 ```html
-<a href="/customer_authentication/login?locale={{ request.locale.iso_code }}&?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase</a>
+<a href="/customer_authentication/login?locale={{ request.locale.iso_code }}&return_to={{ request.path | url_encode }}" class="btn button button--full-width button--secondary">Log in to purchase</a>
 ```
 {% endcode %}
 
