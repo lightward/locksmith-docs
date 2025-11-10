@@ -22,6 +22,7 @@ Two important notes:
 Use these if you already know that you're using manual locking for one of the following:
 
 * [Hiding product prices and/or the add to cart button](../hiding-prices.md)
+* [How to hide theme sections, blocks, and snippets](how-to-hide-theme-sections-blocks-and-snippets.md)
 * [Restricting checkout from the cart](restricting-checkout-from-the-cart.md)
 
 ## General guide
