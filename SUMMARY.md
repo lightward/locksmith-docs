@@ -130,6 +130,7 @@
 * [Locksmith's pricing policy: Pay what feels good](policies/pricing.md)
 * [Privacy policy](policies/privacy.md)
 * [Data policy](policies/data.md)
+* [Data Processing Agreement](policies/data-processing-agreement.md)
 * [Contact us](policies/contact.md)
 
 ## 🔦 Developer Tools
