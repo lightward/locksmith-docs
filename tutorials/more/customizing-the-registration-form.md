@@ -2,6 +2,14 @@
 
 First thing to know is that Locksmith uses the [built in customer account system that comes with your store](https://help.shopify.com/manual/customers/customer-accounts)! This means it doesn't create a separate registration form, sign-in form, or customer database.
 
+{% hint style="danger" %}
+Important: This guide applies only to **Legacy** Customer Accounts.
+
+Shopify’s New Customer Accounts don’t use a traditional registration page — an account is created automatically when someone signs in. Because of this, the registration form can’t be locked or customized in the same way.
+
+If your store is using **New** Customer Accounts, we recommend using customer tags to approve or review new customers after their account is created instead.
+{% endhint %}
+
 All Shopify themes come with a registration form that includes Name, E-mail, and Password fields.
 
 Many merchants want to collect more information from a customer when they register. Although **Locksmith doesn't get involved directly with this process**, you do have options here.
