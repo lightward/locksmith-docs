@@ -16,8 +16,6 @@ Some of the options available to you include checking **if the customer**...
   This condition requires all customers to log in. Once they're logged in, they'll be granted access to the locked resource.
 * **is tagged with…**\
   This condition _first_ requires all visitors to log in with a customer account. Once the customer has logged into their account, they'll be granted access _if_ their customer account has the tag you've chosen in Locksmith. (When inverted: _**unless**_**&#x20;the customer is tagged with..., or is&#x20;**_**not**_**&#x20;signed in**)
-* **is not tagged with…**\
-  This condition grants access if the visitor is _not_ signed in with a customer account, _or_ if they are signed in with a customer account that does not have the specified tag.
 * **has placed at least x orders**\
   This condition requires the visitor to be logged in with their customer account. If their lifetime order count is at least the number that you specify, they'll be granted access.
 * **has purchased…**\
