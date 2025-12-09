@@ -32,8 +32,8 @@ If you recently switched to a new theme or published an updated version of your 
 
 If you were relying on:
 
-* Manual Locking Liquid code inserted directly into templates (for example, to hide prices, add-to-cart buttons, or sections etc)
-* A theme hiding profile that references your theme’s specific section or block structure
+* [Manual Locking](../tutorials/more/manual-mode.md) Liquid code inserted directly into templates (for example, to hide prices, add-to-cart buttons, or sections etc)
+* A [theme hiding profile](../tutorials/more/how-to-hide-theme-sections-blocks-and-snippets.md) that references your theme’s specific section or block structure
 * Custom CSS added for supplemental hiding
 * Any other theme-specific customization using Locksmith manual locking code made outside of Locksmith’s automatic installation
 
