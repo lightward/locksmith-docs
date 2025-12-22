@@ -16,7 +16,7 @@ For more information, from the sources, on how to use "private session" (sometim
 * [Safari on iOS](https://support.apple.com/en-us/HT203036)
 * [Firefox (desktop)](https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history)
 * [Firefox (mobile)](https://support.mozilla.org/en-US/kb/private-browsing-firefox-android)
-* [Edge](https://support.microsoft.com/en-us/help/4026200/microsoft-edge-browse-inprivate)
+* [Edge](https://support.microsoft.com/en-us/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
 
 
 
