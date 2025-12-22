@@ -11,10 +11,11 @@ All major web browsers support private browsing. Here's how to start a session, 
 
 For more information, from the sources, on how to use "private session" (sometimes called an incognito window), use the following links:
 
-* [Chrome](https://support.google.com/chrome/answer/95464)
+* [Chrome (desktop & mobile)](https://support.google.com/chrome/answer/95464)
 * [Safari on Mac](https://support.apple.com/guide/safari/browse-in-private-ibrw1069/mac)
 * [Safari on iOS](https://support.apple.com/en-us/HT203036)
-* [Firefox](https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history)
+* [Firefox (desktop)](https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history)
+* [Firefox (mobile)](https://support.mozilla.org/en-US/kb/private-browsing-firefox-android)
 * [Edge](https://support.microsoft.com/en-us/help/4026200/microsoft-edge-browse-inprivate)
 
 
