@@ -73,24 +73,21 @@ It’s possible to add some Liquid code if you would like to display a collectio
 
     Images stored with Shopify will have a file path similar to the following example, where the image is titled **collection-a**:
 
-    `https://cdn.shopify.com/s/files/1/1234/5678/9012/files/collection-a.jpeg`\
-
+    `https://cdn.shopify.com/s/files/1/1234/5678/9012/files/collection-a.jpeg`<br>
 
     This path should remain the same for all your images, except for the image title.
 4.  **Modifying the image link:**
 
     You can modify a link for one of your images by replacing the image title with the following Liquid:
 
-    `{{ collection.handle }}`\
-
+    `{{ collection.handle }}`<br>
 
     This will give you URL like this:
 
     `https://cdn.shopify.com/s/files/1/1234/5678/9012/files/{{ collection.handle }}.jpeg`
 5.  **Updating the style code:**
 
-    The URL can then be added to the background-image style element’s URL.\
-
+    The URL can then be added to the background-image style element’s URL.<br>
 
     <figure><img src="../../.gitbook/assets/Screenshot 2024-12-12 at 4.41.12 pm.png" alt=""><figcaption></figcaption></figure>
 6.  **Editing the default message content:**

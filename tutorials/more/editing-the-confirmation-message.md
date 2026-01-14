@@ -34,8 +34,7 @@ You can also add messages directly to the condition setup if you need unique mes
 
 ## Changing the button text
 
-If you need to use something other than "Confirm" as your button text, this is done through your theme. \
-
+If you need to use something other than "Confirm" as your button text, this is done through your theme. <br>
 
 1. Go to Online Store > Themes > "Edit default theme content". [More info on that, from Shopify, here](https://help.shopify.com/en/manual/online-store/themes/customizing-themes/language/change-wording).
 2. Find the Locksmith tab, and edit the button as needed:

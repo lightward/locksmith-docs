@@ -108,8 +108,7 @@ Use this code:
 
 ... adjusting the "Some Product" for your actual product title, and "/pages/some-locked-page" part for the address to your locked content.
 
-Feel free to add multiple copies of this code, if you need to send the customer to one of several pages.\
-
+Feel free to add multiple copies of this code, if you need to send the customer to one of several pages.<br>
 
 ## Use Case: Defer access to the restricted product until some time after the required product is purchased.
 

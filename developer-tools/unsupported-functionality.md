@@ -153,8 +153,7 @@ This code is designed to be added to the "Passcode prompt" field in Locksmith's 
 
 ## Removing product information from Shopify Analytics in the page source
 
-Sometimes, Shopify Analytics, Google Analytics, or Web Pixels can leave bits of information about your locked products in the page source. Locksmith can't filter that, since it's outside of your theme, but you may be able to replace the content with null values for just your locked resources. \
-
+Sometimes, Shopify Analytics, Google Analytics, or Web Pixels can leave bits of information about your locked products in the page source. Locksmith can't filter that, since it's outside of your theme, but you may be able to replace the content with null values for just your locked resources. <br>
 
 Here's an example of how that might work with Shopify Analytics scripts:&#x20;
 

@@ -78,8 +78,7 @@ You can find our guide to using this feature at the link below:
 
 In some themes, this can be used to hide the header and footer sections. To set this up:
 
-1.  Navigate to the Theme tab in Locksmith, and click the Edit theme hiding profile button for the theme you’d like to configure.\
-
+1.  Navigate to the Theme tab in Locksmith, and click the Edit theme hiding profile button for the theme you’d like to configure.<br>
 
     <figure><img src="../../.gitbook/assets/Screenshot 2025-06-05 at 5.12.45 pm.png" alt=""><figcaption></figcaption></figure>
 2. Click the Add new definition button at the bottom of the page. In the Name of section, block, or snippet field, search for header.

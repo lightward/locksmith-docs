@@ -14,8 +14,7 @@ If you haven't already, install the PayWhirl app and use their instructions to s
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-19 at 7.45.13 PM.png" alt=""><figcaption></figcaption></figure>
 
-Next, click on "Tag active subscribers", and then "Create and activate workflow". Your setup should look something like this on the Workflows screen when you're done:\
-
+Next, click on "Tag active subscribers", and then "Create and activate workflow". Your setup should look something like this on the Workflows screen when you're done:<br>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-06-19 at 7.45.49 PM.png" alt=""><figcaption></figcaption></figure>
 

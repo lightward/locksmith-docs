@@ -22,8 +22,7 @@ Reference: [https://www.sealsubscriptions.com/articles/frequently-asked-question
    * Save the lock. You now have a single combo key that requires both conditions at once. See: \
      [combining-key-conditions.md](../../keys/more/combining-key-conditions.md "mention")\
      [inverting-conditions-in-locksmith.md](../../keys/more/inverting-conditions-in-locksmith.md "mention")
-5. Result: customers must have the **active** tag, and must **not** have the **inactive** tag, to get access. The keys should look like the following example once setup:\
-
+5. Result: customers must have the **active** tag, and must **not** have the **inactive** tag, to get access. The keys should look like the following example once setup:<br>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-09-10 at 12.30.24 PM.png" alt=""><figcaption></figcaption></figure>
 

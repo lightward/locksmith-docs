@@ -4,8 +4,7 @@ With Locksmith, it is simple to lock down a specific collection, so that it can 
 
 ### Part 1: Create the collection lock
 
-Add a lock to the collection that you want these customers to access. Use the search bar in Locksmith to search for the collection by name:\
-
+Add a lock to the collection that you want these customers to access. Use the search bar in Locksmith to search for the collection by name:<br>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.17.27 PM.png" alt=""><figcaption></figcaption></figure>
 

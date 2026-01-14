@@ -31,8 +31,7 @@ The second condition checks the customer's order history to see if they've made 
 {% endcontent-ref %}
 
 Here's what that should look like:\
-\
-
+<br>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-06-12 at 6.37.08 PM.png" alt=""><figcaption></figcaption></figure>
 

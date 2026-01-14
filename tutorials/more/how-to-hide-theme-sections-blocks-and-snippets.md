@@ -93,8 +93,7 @@ If you are using a passcode key and need to render a passcode prompt button, use
 
 Once you've added all of your hiding definitions, save your hiding profile. Locksmith will perform an installation to the theme. Once the installation finishes, make sure to verify that everything is working as expected on the frontend of your store! \
 \
-Make sure you have the setting checked to "Enable manual locking" before testing:\
-
+Make sure you have the setting checked to "Enable manual locking" before testing:<br>
 
 <figure><img src="../../.gitbook/assets/manualLockingEnabled (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -109,8 +108,7 @@ Hiding profiles are intended to work alongside - or in many cases as a replaceme
 * Hiding profiles are easier to setup.
 * Hiding profiles don't need manual removal from your theme, they remove themselves when Locksmith is disabled/uninstalled.
 * Hiding profiles rely on the modularity of Online Store 2.0 themes, so adding code manually will still be necessary for legacy or highly customized themes.
-* If the hiding target is not contained within a section, block, or snippet, manual locking will still be necessary.\
-
+* If the hiding target is not contained within a section, block, or snippet, manual locking will still be necessary.<br>
 
 {% hint style="warning" %}
 **Note**: While this method does hide elements like prices visually, it may still be possible for someone viewing the source (or interacting with the browser console) to see the price. This is because of the presence of things like Google Analytics and other tools, which reproduce the price in the source - but not visually on the page - for their own usage. **These are out of control of the Locksmith app.**&#x20;

@@ -14,4 +14,4 @@ To manage these settings, find the "Online Store" navigation category, in your S
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5f1b4f7304286306f8076075/file-uF6CWuMvgY.png)
 
-If you have more questions about how these work, [contact Shopify support](https://help.shopify.com/en/questions).\
+If you have more questions about how these work, [contact Shopify support](https://help.shopify.com/en/questions).<br>

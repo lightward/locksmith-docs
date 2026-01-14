@@ -11,7 +11,7 @@ Use the following steps:
 3. Paste `template == "product"` into the "Liquid condition" box
 4. Make sure the "hide this product from search results and other lists" option is checked!
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-12-07 at 11.47.59 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-01-14 at 1.34.03 PM.png" alt=""><figcaption></figcaption></figure>
 
 You're done :)
 

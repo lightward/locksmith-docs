@@ -109,10 +109,8 @@ The result: your secret link key will continue to work normally, but the access 
 
 * If "ls=" hasn't been included at the beginning of the secret link code. A secret link code can still work without this, but if a customer is visiting your store for the first time, Shopify may be unsure of what the code at the end of the URL is doing and could redirect customers to the homepage before the lock is opened.\
   \
-  This might make it appear as though the secret link isn't working. However, a second attempt usually succeeds. Including "ls=" at the beginning of the secret link code should prevent this issue.\
-
-* If you're sending out a marketing email or similar communication, make sure to test the email first. Sometimes the wrong or incomplete secret link can be added, or the marketing email can unexpectedly modify or add additional information to the URL.\
-
+  This might make it appear as though the secret link isn't working. However, a second attempt usually succeeds. Including "ls=" at the beginning of the secret link code should prevent this issue.<br>
+* If you're sending out a marketing email or similar communication, make sure to test the email first. Sometimes the wrong or incomplete secret link can be added, or the marketing email can unexpectedly modify or add additional information to the URL.<br>
 * If additional information is being added to the URL, ensure that it is separated from the secret link code using an ampersand (&). This allows Locksmith to differentiate the secret link code from other information. See the [Secret link formatting section](secret-link-keys.md#secret-link-formatting) of this guide for more information.
 
 ### Related pages:

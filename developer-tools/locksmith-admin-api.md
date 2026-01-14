@@ -76,4 +76,4 @@ To access this API, generate an access token. You can find these toward the end 
 
 Use the "Add access token" link to add your first token.
 
-Once created, an access token may be edited to enable/disable it, or to change its name. It may also be deleted.\
+Once created, an access token may be edited to enable/disable it, or to change its name. It may also be deleted.<br>

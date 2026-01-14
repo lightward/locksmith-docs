@@ -56,8 +56,7 @@ Done with step one!
 
 ## 2. Updating your theme for manual locking
 
-You'll now need to let Locksmith know which parts of the page should be hidden. There are two methods to handling this:\
-
+You'll now need to let Locksmith know which parts of the page should be hidden. There are two methods to handling this:<br>
 
 ### Theme hiding profiles:
 
@@ -98,18 +97,12 @@ Each theme is very different, so those are simply examples. You'll need to go to
 
 1.  Open up the Liquid file, and add this to the very top of the file:
 
-    {% code overflow="wrap" %}
-    ```liquid
-    {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
-    ```
-    {% endcode %}
+    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
+    </code></pre>
 2.  Find the code you want to hide from unauthorized viewers, and wrap it with:
 
-    {% code overflow="wrap" %}
-    ```liquid
-    {% if locksmith_access_granted %}...{% endif %}
-    ```
-    {% endcode %}
+    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% if locksmith_access_granted %}...{% endif %}
+    </code></pre>
 3.  To hide prices, you'll be looking for elements like:
 
     ```liquid

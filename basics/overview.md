@@ -37,8 +37,7 @@ You'll see different options depending on what type of resource you’ve locked.
 
 ## Keys
 
-A **key** permits access to the locked resource based on your criteria. They are created on the lock page using the "+ Add key" button:\
-
+A **key** permits access to the locked resource based on your criteria. They are created on the lock page using the "+ Add key" button:<br>
 
 <figure><img src="../.gitbook/assets/2025-02-12 15.32.53.gif" alt=""><figcaption></figcaption></figure>
 

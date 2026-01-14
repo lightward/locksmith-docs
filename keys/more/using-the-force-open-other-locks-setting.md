@@ -14,8 +14,7 @@ It is found directly under your keys in the section labelled "**Key options**":
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.23.09 PM.png" alt=""><figcaption></figcaption></figure>
 
-You'll also notice that the the key shows a message telling you which keys are forcing open other locks.\
-
+You'll also notice that the the key shows a message telling you which keys are forcing open other locks.<br>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-01-10 at 2.23.55 PM.png" alt=""><figcaption></figcaption></figure>
 

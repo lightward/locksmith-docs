@@ -74,8 +74,7 @@ Once you've created at least one input list, you may use it when configuring a n
 
 ### Email Addresses&#x20;
 
-When configuring your key condition, select the "Permit if the customer has an email address from an input list…" option to have Locksmith compare customer inputs with items in your input list:\
-
+When configuring your key condition, select the "Permit if the customer has an email address from an input list…" option to have Locksmith compare customer inputs with items in your input list:<br>
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-11-08 at 9.39.11 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -88,8 +87,7 @@ More information on using customer account key conditions here:
 ### Passcodes
 
 When configuring your key condition, select the "Permit if the customer gives a passcode from an input list…" option to have Locksmith compare customer input with items in your input list\
-\
-
+<br>
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-11-08 at 9.41.27 PM.png" alt=""><figcaption></figcaption></figure>
 

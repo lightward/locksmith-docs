@@ -31,11 +31,8 @@ You will need to create three separate keys for your cart lock. Our guide on add
 * Create a key and then select the "has a certain product in their cart" key condition and add “tag:wholesale” to the "Look for products matching…" field on the condition.
 *   Then [_combine_](../../keys/more/combining-key-conditions.md) a second "has a certain product in their cart" key condition with the first, add “tag:retail” to the "Look for products matching…" field on the condition, and then [_invert_](../../keys/more/inverting-conditions-in-locksmith.md) the condition.\
     \
-    [Combining Key Conditions\
-    ](../../keys/more/combining-key-conditions.md)[Inverting conditions in Locksmith\
-    \
-    ](../../keys/more/inverting-conditions-in-locksmith.md)You should have a key that looks like the following image.\
-
+    [Combining Key Conditions<br>](../../keys/more/combining-key-conditions.md)[Inverting conditions in Locksmith\
+    <br>](../../keys/more/inverting-conditions-in-locksmith.md)You should have a key that looks like the following image.<br>
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-11-07 at 9.37.20 pm.png" alt=""><figcaption><p>Image 1. Key with key condition combination to allow access for wholesale products with no retail.</p></figcaption></figure>
 
@@ -46,8 +43,7 @@ You will need to create three separate keys for your cart lock. Our guide on add
 * Create a new key by clicking the “+Add key” button and then select the "has a certain product in their cart" key condition and add “tag:retail” to the "Look for products matching…" field on this condition.
 *   Then combine a second "has a certain product in their cart" key condition with the first, add “tag:wholesale” to the "Look for products matching…" field on the condition, and then invert this condition.\
     \
-    You should have a key that looks like the following image.\
-
+    You should have a key that looks like the following image.<br>
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-11-07 at 9.39.21 pm.png" alt=""><figcaption><p> Image 2. Key with key condition combination to allow access for retail products with no wholesale.</p></figcaption></figure>
 
