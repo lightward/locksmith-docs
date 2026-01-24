@@ -59,15 +59,15 @@ Locksmith’s variant locks match variant option values exactly. This means the 
 
 In multi-language stores, Shopify often translates variant option values per language. For example, a variant option value like:
 
-**480 packs**
+**Large**
 
 may become:
 
-**480 doosjes**
+**Groot**
 
-**480 paquets**
+**Grand**
 
-**480 paquetes**
+**Grande**
 
 \
 Although these variants appear equivalent to shoppers, they are different option value strings in Shopify’s data. When the option value changes due to translation, an existing variant lock targeting the original value will no longer match on the translated version.
