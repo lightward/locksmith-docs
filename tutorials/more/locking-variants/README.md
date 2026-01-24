@@ -51,6 +51,40 @@ If you’d like customers to use a passcode to unlock specific variants, you’l
 3. Apply the same passcode key to your variant lock.
 4. Direct customers to the landing page, where they’ll be prompted to enter the passcode. Once entered, they’ll have access to the locked variants.
 
+### Variant locks in multi-language stores
+
+If your store uses multiple languages, it’s important to understand how Shopify translations can affect variant locking.
+
+Locksmith’s variant locks match variant option values exactly. This means the lock checks the underlying option value string (for example, “480 packs” or “Large”), not just the variant’s position or how it appears visually on the page.
+
+In multi-language stores, Shopify often translates variant option values per language. For example, a variant option value like:
+
+**480 packs**
+
+may become:
+
+**480 doosjes**
+
+**480 paquets**
+
+**480 paquetes**
+
+\
+Although these variants appear equivalent to shoppers, they are different option value strings in Shopify’s data. When the option value changes due to translation, an existing variant lock targeting the original value will no longer match on the translated version.
+
+This can make it appear as though a variant lock works in one language but not another, even though the lock is behaving as designed.
+
+#### **To support multi-language stores, there are two recommended approaches:**
+
+1. **Create language-specific variant locks**\
+   Create additional variant locks for each translated option value, using the same key conditions. This allows variant labels to remain translated while ensuring the correct variants are locked in every language.<br>
+2. **Keep variant option values consistent across languages**\
+   Alternatively, configure translations so the variant option values themselves remain identical across languages. When the option value string is the same in every language, a single variant lock will apply consistently regardless of which language the customer is viewing.
+
+{% hint style="info" %}
+When troubleshooting language-specific variant locking issues, checking the variant option values shown on the translated product page (or in the product’s [product JSON](https://help.shopify.com/en/manual/shopify-admin/using-json)) is the fastest way to confirm whether translations are affecting the lock.
+{% endhint %}
+
 ### Compatibility with other apps and features
 
 Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way. \
