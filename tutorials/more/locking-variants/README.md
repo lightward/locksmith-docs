@@ -74,12 +74,22 @@ Although these variants appear equivalent to shoppers, they are different option
 
 This can make it appear as though a variant lock works in one language but not another, even though the lock is behaving as designed.
 
-#### **To support multi-language stores, there are two recommended approaches:**
+#### **How to handle translated variants**
 
-1. **Create language-specific variant locks**\
-   Create additional variant locks for each translated option value, using the same key conditions. This allows variant labels to remain translated while ensuring the correct variants are locked in every language.<br>
-2. **Keep variant option values consistent across languages**\
-   Alternatively, configure translations so the variant option values themselves remain identical across languages. When the option value string is the same in every language, a single variant lock will apply consistently regardless of which language the customer is viewing.
+There are a couple supported ways to handle variant locking in multi-language stores, depending on how your translations are managed.
+
+**If your store uses Shopify Translate & Adapt (or another translation app)**
+
+When editing a variant lock, Locksmith provides fields where you can manually enter translated variant option names and variant option values for each language.
+
+You can use these fields to tell Locksmith how the same variant appears in other languages, without needing to create separate variant locks. When these translation fields are filled in, a single variant lock can correctly match the variant across all supported languages.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-01-26 at 1.12.35 PM.png" alt="Variant lock settings showing language-specific “Variant option name” and “Variant option value” fields (for example, Size → Talla / Taille / Maat, and Large → Grande / Groot)."><figcaption></figcaption></figure>
+
+\
+**If your store uses duplicated variants per language**
+
+If translated variants are managed as separate variants (for example, one variant per language with different option value strings), you will need to create _separate_ variant locks for each translated option value, using the same key conditions. This allows variant labels to remain translated while ensuring the correct variants are locked in every language.
 
 {% hint style="info" %}
 When troubleshooting language-specific variant locking issues, checking the variant option values shown on the translated product page (or in the product’s [product JSON](https://help.shopify.com/en/manual/shopify-admin/using-json)) is the fastest way to confirm whether translations are affecting the lock.
