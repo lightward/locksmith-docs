@@ -59,7 +59,7 @@ Locksmith gives you flexibility to add multiple keys and logically combine them 
 ### OR
 
 * When you set up your key, you can create another key right away, by clicking on Add Another Key. This button allows you to add another separate key to your lock.
-* Keys connected by the OR operator can individually open your lock whether or not the conditions on the other keys are met.
+* Keys connected by the OR operator can **individually** open your lock whether or not the conditions on the other keys are met.
 
 This allows you to specify multiple different conditions that a customer can use to access. When used, a customer only needs to meet one of the conditions in order to access.&#x20;
 
@@ -70,7 +70,7 @@ Notice that there are **multiple key symbols**, and each key is preceded by "Per
 ### AND
 
 * Adds another condition to the current key. Choose your first key, and click on the "**+ add key condition**" below the condition. You'll see another selector to add your _next_ condition.
-* If you connect key conditions with AND, all of those conditions must be met before the visitor gets access.
+* If you connect key conditions with AND, **all** of those conditions must be met before the visitor gets access.
 
 Notice that there is **only one key symbol for each key**, and each condition is inset under the symbol and text:
 
