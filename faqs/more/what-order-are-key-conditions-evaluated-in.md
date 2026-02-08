@@ -55,6 +55,6 @@ When a lock has multiple keys, each key is evaluated independently. Access is gr
 
 ### Related Topics
 
-* [Combining key conditions](../keys/more/combining-key-conditions.md)
-* [Inverting conditions in Locksmith](../keys/more/inverting-conditions-in-locksmith.md)
-* [About key conditions](../keys/about-key-conditions.md)
+* [Combining key conditions](https://www.locksmith.guide/keys/more/combining-key-conditions)
+* [Inverting conditions in Locksmith](https://www.locksmith.guide/keys/more/inverting-conditions-in-locksmith)
+* [About key conditions](https://www.locksmith.guide/keys/about-key-conditions)
