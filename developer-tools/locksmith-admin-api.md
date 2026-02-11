@@ -59,6 +59,10 @@ All requests should be prefixed with **https://uselocksmith.com/api/:version**
 * <mark style="color:red;">`DELETE`</mark> `/locks/:id` \
   Deletes the lock indicated by the ID
 
+{% hint style="warning" %}
+There is **not** currently a supported way to update already-existing locks. Using the POST endpoint with a resource ID that already has a lock on it may results in data loss.
+{% endhint %}
+
 #### Shop
 
 * <mark style="color:purple;">`GET`</mark> `/shop.json` \
