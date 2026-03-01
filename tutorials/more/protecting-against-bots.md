@@ -14,7 +14,7 @@ description: >-
 
 Many merchants that sell collectors items, limited edition items, or other types of highly exclusive items are plagued by bots purchasing their products, and come to Locksmith for help.
 
-**Without using a checkout rule, Locksmith is NOT able to prevent bots and other unapproved resellers from purchasing from your store**.
+**Without using a** [**checkout rule**](setting-up-checkout-validation-with-locksmith.md)**, Locksmith is NOT able to prevent bots and other unapproved resellers from purchasing from your store**.
 
 This is because direct-to-checkout links, which allow products to be purchased without even visiting the Online Store, exist within the Shopify platform, and it's not possible for apps to get involved with this layer.
 
