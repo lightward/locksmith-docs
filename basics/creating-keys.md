@@ -116,3 +116,9 @@ Having issues with **locks overlapping**? Perhaps the "Force open other locks" s
 {% content-ref url="../keys/more/using-the-force-open-other-locks-setting.md" %}
 [using-the-force-open-other-locks-setting.md](../keys/more/using-the-force-open-other-locks-setting.md)
 {% endcontent-ref %}
+
+More information on customer account keys:
+
+{% content-ref url="../keys/customer-account-keys.md" %}
+[customer-account-keys.md](../keys/customer-account-keys.md)
+{% endcontent-ref %}
