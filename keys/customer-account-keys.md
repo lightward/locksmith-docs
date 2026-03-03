@@ -27,6 +27,14 @@ Some of the options available to you include checking **if the customer**...
 * **has an email from an input list**\
   This condition requires the visitor to be logged in with their customer account. If their email address is on the list that you specify, they'll be granted access. This key condition is different than the above, in that it leverages [Locksmith's input list feature](../tutorials/more/input-lists.md), which lets you use a very large number of of email addresses. While not hard to set up, it does require a few more steps than the one-of-many-email-addresses key condition above.
 
+## Creating keys
+
+The guide linked below covers adding a key to a lock and selecting a key condition:
+
+{% content-ref url="../basics/creating-keys.md" %}
+[creating-keys.md](../basics/creating-keys.md)
+{% endcontent-ref %}
+
 ## Inverting key conditions
 
 Don't forget that all key conditions can be inverted! Which just means that Locksmith will check for _the opposite of_ the original condition. More info on that here:
