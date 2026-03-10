@@ -104,7 +104,7 @@
 * [More FAQs...](faqs/more/README.md)
   * [I'm having trouble using Locksmith with a site speed optimization app.](faqs/more/site-speed-apps.md)
   * [The app isn't loading. What do I do?](faqs/more/app-not-loading.md)
-  * [Can Locksmith protect shipping methods, billing methods, or coupon codes?](faqs/more/can-locksmith-protect-shipping-methods-billing-methods-or-coupon-codes.md)
+  * [Can Locksmith protect shipping methods, billing methods, or discount codes?](faqs/more/can-locksmith-protect-shipping-methods-billing-methods-or-coupon-codes.md)
   * [I switched themes, and Locksmith isn't working](faqs/more/i-switched-themes-and-locksmith-isnt-working.md)
   * [Why isn't my passcode, secret link, newsletter, or location key working?](faqs/more/why-isnt-my-remote-key-condition-working.md)
   * [Can Locksmith lock Shopify's public JSON API for my online store?](faqs/more/can-locksmith-lock-shopifys-public-json-api-for-my-online-store.md)

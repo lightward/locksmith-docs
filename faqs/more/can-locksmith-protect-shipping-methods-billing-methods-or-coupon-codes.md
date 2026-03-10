@@ -1,6 +1,6 @@
-# Can Locksmith protect shipping methods, billing methods, or coupon codes?
+# Can Locksmith protect shipping methods, billing methods, or discount codes?
 
-**No - It's not possible to protect shipping methods, billing methods, or coupon codes.**
+**No - It's not possible to protect shipping methods, billing methods, or discount codes.**
 
 Shopify keeps a pretty tight leash on the checkout process itself, and third-party apps aren't permitted to get involved here at this time.
 
