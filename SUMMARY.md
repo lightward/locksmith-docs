@@ -71,6 +71,7 @@
   * [Automatically managing the seo.hidden metafield using Locksmith](tutorials/more/automatically-hide-from-sitemaps-and-manage-seo-metafield.md)
   * [Locking the home page](tutorials/more/locking-the-home-page.md)
   * [Setting up checkout validation with Locksmith](tutorials/more/setting-up-checkout-validation-with-locksmith.md)
+  * [Hiding payment methods by customer tag](tutorials/more/hiding-payment-methods-by-customer-tag.md)
   * [How to hide theme sections, blocks, and snippets](tutorials/more/how-to-hide-theme-sections-blocks-and-snippets.md)
   * [Creating weekly schedules](tutorials/more/creating-weekly-schedules.md)
   * [Using date and time key conditions](tutorials/more/using-date-and-time-key-conditions.md)
