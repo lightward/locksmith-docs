@@ -82,9 +82,8 @@ Set up two keys:
 
 * **Key 1:** Permit if it's **before** March 10 at 9:00 AM
 * **Key 2:** **OR**, Permit if it's **after** March 17 at 9:00 AM
-*
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2026-03-11 at 3.14.05 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-03-11 at 3.14.05 PM.png" alt=""><figcaption></figcaption></figure>
 
 Before March 10, Key 1 grants access. After March 17, Key 2 grants access. During the window, neither key passes.
 
