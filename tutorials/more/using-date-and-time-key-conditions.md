@@ -28,7 +28,7 @@ This grants access once the date and time has passed. Before that moment, access
 
 You're launching a collection on March 15 at 9:00 AM. Add a key that permits access _after_ that time:<br>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-03-11 at 2.54.42 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-03-11 at 3.18.50 PM.png" alt=""><figcaption></figcaption></figure>
 
 Before 9:00 AM, visitors see your lock's denial message. After 9:00 AM, the collection opens automatically.
 
