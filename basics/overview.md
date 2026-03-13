@@ -1,114 +1,86 @@
 # A Locksmith Overview
 
-Locksmith is a simple yet powerful tool to help you make sure the right people see the right things in your Shopify store. In the spirit of the name of our app - :sparkles: Locksmith :sparkles: - you'll be using "locks" to determine _what content_ in your store is restricted and using "keys" to denote _how, when, and who_ gets access.
+Locksmith is a simple yet powerful tool to help you make sure the right people see the right things in your Shopify store. In the spirit of the name of our app - ✨ Locksmith ✨ - you'll be using "locks" to determine what content in your store is restricted and using "keys" to denote how, when, and who gets access.
 
-## Locks
+### Locks
 
-Locks are created using the search bar within our Locksmith app. You can search for most resources in your store by name. More in depth information on the in-app search bar here:
+Locks are created using the search bar within our Locksmith app. You can search for most resources in your store by name. More in-depth information on the in-app search bar here:
 
-{% content-ref url="creating-locks.md" %}
-[creating-locks.md](creating-locks.md)
-{% endcontent-ref %}
+[Creating locks →](https://www.locksmith.guide/basics/creating-locks)
 
-A **lock** restricts access to something on your shop.
-
-You can lock:
+A **lock** restricts access to something on your shop. You can lock:
 
 * Your entire shop
 * Pages
 * Products
 * Collections
-* Prices - [more information here](../tutorials/hiding-prices.md).
-* The shopping cart
+* Prices  [more information here](https://www.locksmith.guide/tutorials/hiding-prices)
+* The shopping cart (useful for preventing checkout until a condition is met)
 * The login page
 * The registration page (type 'register' into the Locksmith search bar)
-* [Product variants](../tutorials/more/locking-variants/)
-* And more, with custom Liquid locks: Create a custom lock by clicking the _Start a Liquid Lock_ link above the Locksmith search bar..
+* Product variants
 
-After searching, once you **select the search result you want to hide and click Save**. You'll see some useful options, such as:
+For more advanced use cases, you can also create **custom Liquid locks** — these let you lock content based on any condition you can express in Liquid. Create one by clicking the _Start a Liquid Lock_ link above the Locksmith search bar.
 
-* Is the lock currently active?
-* Should it also protect the products in this collection? (Disabling this means only the collection page itself will be locked.)
-* Should it hide the collection, and it's products, from search results and other lists?
-* Should it hide links to this resource from navigation?
-* Under Advanced: Is this a manual lock? (More on that [here](../keys/more/manual-mode.md).)
+#### Lock options
 
-You'll see different options depending on what type of resource you’ve locked.
+After selecting a resource and clicking Save, you'll see a set of options for that lock. The most commonly used ones are:
 
-## Keys
+* **Is the lock currently active?**  Toggle the lock on or off without deleting it.
+* **Should it also protect the products in this collection?**  Disabling this means only the collection page itself will be locked, not the individual product pages within it.
+* **Should it hide the collection, and its products, from search results and other lists?**
+* **Should it hide links to this resource from navigation?**
 
-A **key** permits access to the locked resource based on your criteria. They are created on the lock page using the "+ Add key" button:<br>
+You'll see different options depending on what type of resource you've locked. There are also additional options available under the **Advanced** section, including manual locking mode  [more on that here](https://www.locksmith.guide/keys/more/manual-mode).
 
-<figure><img src="../.gitbook/assets/2025-02-12 15.32.53.gif" alt=""><figcaption></figcaption></figure>
+### Keys
 
-Keys allow you to specify the exact conditions that give your customers access to the locked resource.
+A **key** permits access to the locked resource based on your criteria. Keys are created on the lock page using the "+ Add key" button.
 
-* Check out the full list of keys in the dropdown menu on a lock page.
-* You can also create your own custom keys with Liquid. Create a custom key by choosing _custom Liquid_ from the keys menu.
+Keys allow you to specify the exact conditions that give your customers access to the locked resource. There are over 20 built-in key conditions to choose from. You can also create your own **custom Liquid keys** by choosing _custom Liquid_ from the keys menu.
 
 More information on creating keys here:
 
-{% content-ref url="creating-keys.md" %}
-[creating-keys.md](creating-keys.md)
-{% endcontent-ref %}
+[Creating keys →](https://www.locksmith.guide/basics/creating-keys)
 
-## Chaining (Combining) conditions together: OR versus AND
+#### Combining conditions: OR versus AND
 
-Locksmith gives you flexibility to add multiple keys and logically combine them together to create unique unlock conditions.
+Locksmith gives you the flexibility to add multiple keys and logically combine them to create unique access scenarios.
 
-### OR
+**OR** — Add another separate key to your lock by clicking _Add Another Key_. Keys connected by OR can individually open your lock, regardless of whether the other keys' conditions are met. A customer only needs to satisfy one condition to gain access.
 
-* When you set up your key, you can create another key right away, by clicking on Add Another Key. This button allows you to add another separate key to your lock.
-* Keys connected by the OR operator can **individually** open your lock whether or not the conditions on the other keys are met.
+You can tell you're looking at OR keys because there are **multiple key symbols**, each preceded by "Permit if the customer..." text.
 
-This allows you to specify multiple different conditions that a customer can use to access. When used, a customer only needs to meet one of the conditions in order to access.&#x20;
+**AND** — Add another condition to the _same_ key by clicking _+ add key condition_ below an existing condition. When conditions are connected by AND, **all** of them must be met before access is granted.
 
-Notice that there are **multiple key symbols**, and each key is preceded by "Permit if the customer..." text:
+You can tell you're looking at AND conditions because there is **only one key symbol**, with each condition inset beneath it.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-02-12 at 3.34.17 PM.png" alt=""><figcaption></figcaption></figure>
+[Combining key conditions →](https://www.locksmith.guide/keys/more/combining-key-conditions)
 
-### AND
+#### Inverting keys
 
-* Adds another condition to the current key. Choose your first key, and click on the "**+ add key condition**" below the condition. You'll see another selector to add your _next_ condition.
-* If you connect key conditions with AND, **all** of those conditions must be met before the visitor gets access.
+All key conditions can be inverted — meaning Locksmith will check for the _opposite_ of the original condition. To invert a key, click the "invert" box in the upper right of the key.
 
-Notice that there is **only one key symbol for each key**, and each condition is inset under the symbol and text:
+For example, using inversion on a location key gives you: _Permit if the customer is **not** visiting from the United States._
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-02-12 at 3.34.57 PM.png" alt=""><figcaption></figcaption></figure>
+[Inverting conditions in Locksmith →](https://www.locksmith.guide/keys/more/inverting-conditions-in-locksmith)
 
-{% content-ref url="../keys/more/combining-key-conditions.md" %}
-[combining-key-conditions.md](../keys/more/combining-key-conditions.md)
-{% endcontent-ref %}
+### Other useful settings
 
-## Inverting Keys
+#### The "force open other locks" setting
 
-Use the inverse of a key for added flexibility.
+If you have several locks covering overlapping content (e.g. locked collections that share some of the same products), you may want to enable the **"force open other locks"** setting on a key. This tells Locksmith to grant access to all content covered by the current lock, even if other locks might otherwise apply.
 
-* In the key, click the "invert" box in the upper right.&#x20;
-* This creates the opposite effect for the key.&#x20;
-* For example: _Permit if the customer is **not** visiting from the United States_. --When used on the Locations key.
+[Using the "Force open other locks" setting →](https://www.locksmith.guide/keys/more/using-the-force-open-other-locks-setting)
 
-Our guide that explains this a bit more is here:
+#### Cart and checkout validation
 
-{% content-ref url="../keys/more/inverting-conditions-in-locksmith.md" %}
-[inverting-conditions-in-locksmith.md](../keys/more/inverting-conditions-in-locksmith.md)
-{% endcontent-ref %}
+Locksmith also has a checkout validation feature, which lets you create a rule ensuring that products with a specific product tag can only be purchased by customers with a specific customer tag — without modifying the checkout UI itself.
 
-## The "force open other locks" setting
+[Setting up checkout validation with Locksmith →](https://www.locksmith.guide/tutorials/more/setting-up-checkout-validation-with-locksmith)
 
-If you have created several locks that cover overlapping content (e.g. locked collections with some of the same products inside), you may want to turn ON the "force open other locks" key setting. This setting tells Locksmith to grant access to **all of the content covered by the current lock**, even if other locks might apply:
+***
 
-{% content-ref url="../keys/more/using-the-force-open-other-locks-setting.md" %}
-[using-the-force-open-other-locks-setting.md](../keys/more/using-the-force-open-other-locks-setting.md)
-{% endcontent-ref %}
+### Questions?
 
-## Setting up cart/checkout validation
-
-Locksmith has a feature you can use to create a checkout rule that ensures that products tagged with a specific _product_ tag cannot be purchased without a specific _customer_ tag:
-
-{% content-ref url="../tutorials/more/setting-up-checkout-validation-with-locksmith.md" %}
-[setting-up-checkout-validation-with-locksmith.md](../tutorials/more/setting-up-checkout-validation-with-locksmith.md)
-{% endcontent-ref %}
-
-\
-Let us know if you have any questions for us! You can contact us via email at **team@uselocksmith.com**.
+Feel free to reach out at any time. You can contact us via email at [**team@uselocksmith.com**](mailto:team@uselocksmith.com).
