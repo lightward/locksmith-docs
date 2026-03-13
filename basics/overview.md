@@ -39,6 +39,8 @@ A **key** permits access to the locked resource based on your criteria. Keys are
 
 Keys allow you to specify the exact conditions that give your customers access to the locked resource. There are over 20 built-in key conditions to choose from. You can also create your own **custom Liquid keys** by choosing _custom Liquid_ from the keys menu.
 
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 More information on creating keys here:
 
 [Creating keys →](https://www.locksmith.guide/basics/creating-keys)
@@ -51,9 +53,13 @@ Locksmith gives you the flexibility to add multiple keys and logically combine t
 
 You can tell you're looking at OR keys because there are **multiple key symbols**, each preceded by "Permit if the customer..." text.
 
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 **AND** — Add another condition to the _same_ key by clicking _+ add key condition_ below an existing condition. When conditions are connected by AND, **all** of them must be met before access is granted.
 
 You can tell you're looking at AND conditions because there is **only one key symbol**, with each condition inset beneath it.
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 [Combining key conditions →](https://www.locksmith.guide/keys/more/combining-key-conditions)
 
