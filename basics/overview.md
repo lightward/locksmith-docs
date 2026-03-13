@@ -39,7 +39,7 @@ A **key** permits access to the locked resource based on your criteria. Keys are
 
 Keys allow you to specify the exact conditions that give your customers access to the locked resource. There are over 20 built-in key conditions to choose from. You can also create your own **custom Liquid keys** by choosing _custom Liquid_ from the keys menu.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces%2F-MUeGWHuijBPr8Og1Gta%2Fuploads%2FDUbHqg5YxcGUzOmOH3Di%2F2025-02-12%2015.32.53.gif" alt=""><figcaption></figcaption></figure>
 
 More information on creating keys here:
 
