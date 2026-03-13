@@ -151,3 +151,7 @@
 ## App Integrations
 
 * [Easy Appointment Booking](app-integrations/easy-appointment-booking.md)
+
+***
+
+* [Shopify's New Customer Accounts and Locksmith](shopifys-new-customer-accounts-and-locksmith.md)
