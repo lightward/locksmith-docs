@@ -79,6 +79,7 @@ You can still customize Locksmith's landing page — the page a visitor sees whe
 | Login form displayed inside your theme   | ✅ Works         | ❌ Not applicable      |
 | Locking the registration form            | ✅ Works         | ❌ Not applicable      |
 | Customizing the login template via theme | ✅ Works         | ❌ Not applicable      |
+| "Forgot password?" link                  | ✅ Works         | ❌ Not applicable      |
 
 ***
 
