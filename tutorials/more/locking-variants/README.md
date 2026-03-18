@@ -10,10 +10,10 @@ _New to product variants? Learn more here:_ [_help.shopify.com/manual/products/v
 
 With variant locking, you can:
 
-- ... set up wholesale pricing on your existing products without creating duplicate products, then ensure that only your wholesalers can view those prices.
-- ... reserve a certain amount of stock for a particular customer.
-- ... allocate your inventory by distribution center, and restrict access regionally.
-- ... add bulk quantities for your trade customers, only allowing pre-approved customers to access it.
+* ... set up wholesale pricing on your existing products without creating duplicate products, then ensure that only your wholesalers can view those prices.
+* ... reserve a certain amount of stock for a particular customer.
+* ... allocate your inventory by distribution center, and restrict access regionally.
+* ... add bulk quantities for your trade customers, only allowing pre-approved customers to access it.
 
 **Note: This feature may conflict with other apps. See the&#x20;**_**Incompatibilities**_**&#x20;section below for more.**
 
@@ -25,7 +25,7 @@ Then, open Locksmith, and search for the name of your variant:
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5e27859104286364bc9436df/5e278590ee4e7.png)
 
-**Note:** if you don't see your variant in the search results, try opening up the "Help" page in Locksmith and pressing the \
+**Note:** if you don't see your variant in the search results, try opening up the "Help" page in Locksmith and pressing the\
 Update Locksmith button there, and try your search again. This is sometimes necessary if you've very recently created your variant.
 
 Next, select the variant and click Save. You may then add your keys.
@@ -57,15 +57,11 @@ If your store uses multiple languages, it’s important to understand how Shopif
 
 Locksmith’s variant locks match variant option values exactly. This means the lock checks the underlying option value string (for example, “480 packs” or “Large”), not just the variant’s position or how it appears visually on the page.
 
-In multi-language stores, Shopify often translates variant option values per language. For example, a variant option value like:
+In multi-language stores, Shopify allows you to translate variant option values per language. For exmaple, you'll get something like this:\
+\
+&#x20;**Large** becomes **Groot**, **Grand**, **Grande**_**,**_ etc.
 
-**Large**
-
-may become:
-
-**Groot**, **Grand**, **Grande**
-
-Although these variants appear equivalent to shoppers, they are different strings in Shopify's data. When the option value changes due to translation, an existing variant lock targeting the original value will no longer match on the translated version — making it appear as though a variant lock works in one language but not another.
+Although these variants appear equivalent to shoppers, they are rendered as different strings in your Online Storefront. Because of this, all of the translations need to be entered into Locksmith so that Locksmith knows when to look for when hiding variants. Without this, it may appear as though a variant lock works in one language but not another.
 
 #### **How to handle translated variants**
 
@@ -73,7 +69,7 @@ There are a couple supported ways to handle variant locking in multi-language st
 
 **If your store uses Shopify Translate & Adapt (or another translation app)**
 
-When you create a variant lock, Locksmith automatically fetches translated option names and values from Shopify. These appear in a separate **Translations** section below the main lock settings, already filled in — no manual entry required. A single variant lock can then correctly match the variant across all of your store’s supported languages.
+When you create a variant lock, Locksmith automatically fetches translated option names and values from Shopify. Translations appear in a separate **Translations** section below the main lock settings, already filled in — no manual entry required (as long as translation permissions are approved). A single variant lock can then correctly match the variant across all of your store’s supported languages.
 
 **Approving translation permissions**
 
@@ -85,26 +81,22 @@ Once permissions are approved, any new variant lock you create will have the **T
 
 If you update variant translations in Shopify after a lock already exists, open the lock and use the button at the top of the **Translations** section:
 
-- **Auto-fill from Shopify** — shown when no translations are saved yet; fetches and fills all fields.
-- **Refresh translations from Shopify** — shown when translations are already saved; overwrites all fields with the latest data from Shopify.
+* **Auto-fill from Shopify** — shown when no translations are saved yet; fetches and fills all fields.
+* **Refresh translations from Shopify** — shown when translations are already saved; overwrites all fields with the latest data from Shopify.
 
 After using either button, make sure to save the lock to persist the updated translations.
 
+{% hint style="info" %}
+If multiple products have conflicting translations for the same option name or value, Locksmith will use the first one it finds. If you need to use a different translation, you will need to manually edit the fields in the **Translations** section of the lock.
+{% endhint %}
+
 **If your store uses duplicated variants per language**
 
-If translated variants are managed as separate variants (for example, one variant per language with different option value strings), you will need to create _separate_ variant locks for each translated option value, using the same key conditions. This allows variant labels to remain translated while ensuring the correct variants are locked in every language.
-
-{% hint style="info" %}
-When troubleshooting language-specific variant locking issues, checking the variant option values shown on the translated product page (or in the product’s [product JSON](https://help.shopify.com/en/manual/shopify-admin/using-json)) is the fastest way to confirm whether translations are affecting the lock.
-{% endhint %}
-
-{% hint style="info" %}
-If multiple products have conflicting translations for the same option name or value, Locksmith will use the first one it finds. If you need to use a different translation, you can manually edit the fields in the **Translations** section of the lock.
-{% endhint %}
+Some merchants choose to create separate variants for their translations (for example, one variant per language with different option value strings). If this is you, you will need to create _separate_ variant locks for each translated option value, using the same key conditions. This allows variant labels to remain translated while ensuring the correct variants are locked in every language.
 
 ### Compatibility with other apps and features
 
-Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way. \
+Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way.\
 \
 For **products** that are locked with Locksmith, we add a metafield to prevent them from being included on the Shop app sales channel. However, this automatic protection only applies at the **product** level. When **variants** are locked, Locksmith doesn’t add the metafield automatically, which means variant visibility on the Shop app needs to be managed manually by merchants.\
 \
