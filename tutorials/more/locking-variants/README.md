@@ -17,7 +17,7 @@ With variant locking, you can:
 
 **Note: This feature may conflict with other apps. See the&#x20;**_**Incompatibilities**_**&#x20;section below for more.**
 
-### Creating a variant lock
+## Creating a variant lock
 
 Start by ensuring you've got at least one product variant set up in your catalog. (Learn how to set these up [for new products](https://help.shopify.com/manual/products/variants#creating-variants-for-a-new-product), and [for existing products](https://help.shopify.com/manual/products/variants#creating-additional-variants-of-an-existing-product).)
 
@@ -32,7 +32,7 @@ Next, select the variant and click Save. You may then add your keys.
 
 That's it! :)
 
-### Limiting the scope of a variant lock
+## Limiting the scope of a variant lock
 
 It's possible to limit the scope of products the variant is hidden on using the product tag key condition. To learn more, please visit:
 
@@ -40,7 +40,7 @@ It's possible to limit the scope of products the variant is hidden on using the 
 [limiting-the-scope-of-variant-locks-using-the-product-tag-key-condition.md](../../../keys/more/limiting-the-scope-of-variant-locks-using-the-product-tag-key-condition.md)
 {% endcontent-ref %}
 
-### Using passcodes with variant locks
+## Using passcodes with variant locks
 
 Passcode keys don’t work by default when placed directly on a variant lock. This is because variants don’t have their own pages, and Locksmith only shows the passcode prompt by replacing full page content.
 
@@ -51,7 +51,7 @@ If you’d like customers to use a passcode to unlock specific variants, you’l
 3. Apply the same passcode key to your variant lock.
 4. Direct customers to the landing page, where they’ll be prompted to enter the passcode. Once entered, they’ll have access to the locked variants.
 
-### Variant locks in multi-language stores
+## Variant locks in multi-language stores
 
 If your store uses multiple languages, it’s important to understand how Shopify translations can affect variant locking.
 
@@ -63,11 +63,11 @@ In multi-language stores, Shopify allows you to translate variant option values 
 
 Although these variants appear equivalent to shoppers, they are rendered as different strings in your Online Storefront. Because of this, all of the translations need to be entered into Locksmith so that Locksmith knows when to look for when hiding variants. Without this, it may appear as though a variant lock works in one language but not another.
 
-#### **How to handle translated variants**
+### **How to handle translated variants**
 
 There are a couple supported ways to handle variant locking in multi-language stores, depending on how your translations are managed.
 
-**If your store uses Shopify Translate & Adapt (or another translation app)**
+#### **If your store uses Shopify Translate & Adapt (or another translation app)**
 
 When you create a variant lock, Locksmith automatically fetches translated option names and values from Shopify. Translations appear in a separate **Translations** section below the main lock settings, already filled in — no manual entry required (as long as translation permissions are approved). A single variant lock can then correctly match the variant across all of your store’s supported languages.
 
@@ -90,11 +90,11 @@ After using either button, make sure to save the lock to persist the updated tra
 If multiple products have conflicting translations for the same option name or value, Locksmith will use the first one it finds. If you need to use a different translation, you will need to manually edit the fields in the **Translations** section of the lock.
 {% endhint %}
 
-**If your store uses duplicated variants per language**
+#### **If your store uses duplicated variants per language**
 
 Some merchants choose to create separate variants for their translations (for example, one variant per language with different option value strings). If this is you, you will need to create _separate_ variant locks for each translated option value, using the same key conditions. This allows variant labels to remain translated while ensuring the correct variants are locked in every language.
 
-### Compatibility with other apps and features
+## Compatibility with other apps and features
 
 Because this feature allows you to filter out variants from view, it's likely that it will conflict with any other apps that _also_ operate in this way.\
 \
