@@ -4,9 +4,9 @@ description: How to use Locksmith's in-app search bar to create a lock
 
 # Creating locks
 
-Locks are how Locksmith controls access to content in your store. To create a lock, simply search for the resource you want to protect, select it, and then configure your access conditions (keys). This guide walks you through everything you need to know to get started.\
-\
-**What is searchable**
+Locks are how Locksmith controls access to content in your store. To create a lock, simply search for the resource you want to protect, select it, and then configure your access conditions (keys). This guide walks you through everything you need to know to get started.
+
+### **What Is Searchable**
 
 Use the search bar within Locksmith to find and lock any of the following resource types:
 
