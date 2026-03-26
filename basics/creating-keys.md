@@ -62,12 +62,13 @@ Locksmith supports two secret link conditions:
 * **has a certain IP address** — grants access if the visitor's IP address matches an address or range you specify.
 * **is visiting from a certain location (city, country, etc.)** — uses the visitor's IP address to estimate their location via [GeoIP by MaxMind](https://www.maxmind.com/en/geoip2-services-and-databases) , granting access if it matches a location you define.
 * **confirms the prompt** — grants access based solely on the visitor confirming a prompt that you configure.
+* **is visiting a certain domain** — grants access if the visitor's domain matches a specific domain on your store. This is useful if your store has multiple domains scoped to different regions or audiences.
 
-#### _Based on time or domain_
+#### _Based on time_
 
 * **is visiting before a certain date and time** — grants access if the current time is before a date and time you specify.
 * **is visiting after a certain date and time** — grants access if the current time is after a date and time you specify.
-* **is visiting a certain domain** — grants access if the visitor's domain matches a specific domain on your store. This is useful if your store has multiple domains scoped to different regions or audiences.
+* **if it's during a weekly schedule** — configure different schedules for each day with multiple time periods.
 
 #### _Special conditions_
 
