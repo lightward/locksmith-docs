@@ -12,9 +12,9 @@ Keys are added inside the "Keys" section on the lock page. Click "+ Add key" to 
 
 Locksmith offers a wide range of key conditions, grouped below by type to help you find the right one.
 
-**Permit if...**
+## **Permit if...**
 
-_The customer... (conditions requiring a customer account)_
+#### _The customer... (conditions requiring a customer account)_
 
 These conditions require the visitor to be logged into a customer account. If they aren't already signed in, they'll be prompted to do so before access is granted.
 
@@ -26,7 +26,7 @@ These conditions require the visitor to be logged into a customer account. If th
 * **has purchased...** — grants access if the customer's last 50 orders include a specific product, identified by SKU, title, or product tag.
 * **has placed at least x orders** — grants access if the customer's lifetime order count meets a minimum number you set.
 
-_The visitor... (conditions that apply to any visitor)_
+#### _The visitor... (conditions that apply to any visitor)_
 
 These conditions do not require a customer account.
 
@@ -62,13 +62,13 @@ Locksmith supports two secret link conditions:
 * **is visiting from a certain location (city, country, etc.)** — uses the visitor's IP address to estimate their location via [GeoIP by MaxMind](https://www.maxmind.com/en/geoip2-services-and-databases) , granting access if it matches a location you define.
 * **confirms the prompt** — grants access based solely on the visitor confirming a prompt that you configure.
 
-_Based on time or domain_
+#### _Based on time or domain_
 
 * **is visiting before a certain date and time** — grants access if the current time is before a date and time you specify.
 * **is visiting after a certain date and time** — grants access if the current time is after a date and time you specify.
 * **is visiting a certain domain** — grants access if the visitor's domain matches a specific domain on your store. This is useful if your store has multiple domains scoped to different regions or audiences.
 
-_Special conditions_
+#### _Special conditions_
 
 * **(always permit)** — forces a lock open under specific circumstances, regardless of other conditions. This is most commonly used when you need to exclude certain content from a lock. For more detail, see: [Excluding Content from Locks](https://www.locksmith.guide/keys/more/excluding-content-from-locks) .
 * **(custom Liquid)** — allows you to write custom Liquid code that grants access when your condition evaluates to true. This is the most flexible key condition available, and is useful when no standard condition fits your needs. For more detail, see our guide on custom [Liquid Keys](https://www.locksmith.guide/keys/more/custom-liquid-key-condition-basics).
