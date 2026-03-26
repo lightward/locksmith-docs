@@ -4,69 +4,61 @@ description: How to use Locksmith's in-app search bar to create a lock
 
 # Creating locks
 
-Locksmith uses the idea of _locks_ to restrict access to specific content in your store. You can granularly control which content is restricted by adding a lock to the applicable resource.
+Locks are how Locksmith controls access to content in your store. To create a lock, simply search for the resource you want to protect, select it, and then configure your access conditions (keys). This guide walks you through everything you need to know to get started.\
+\
+**What is searchable**
 
-Use the search bar within Locksmith to place a lock on any content within your Shopify "Online Store". To use it, search for your resource by name:
+Use the search bar within Locksmith to find and lock any of the following resource types:
+
+* **Products**
+* **Collections**
+* **Pages** — more info on Shopify pages here: [Pages](https://help.shopify.com/en/manual/online-store/os/pages)
+* **Variants** — more info on Shopify product variants here: [Variants](https://help.shopify.com/en/manual/products/variants)
+* **Blogs** — more info on Shopify blogs here: [Blogs](https://help.shopify.com/en/manual/online-store/os/blogs)
+* **Blog posts** (also called articles) — articles must be tagged first; the tag is then searchable. More info on blog posts here: [Articles](https://help.shopify.com/en/manual/online-store/os/blogs/writing-blogs)
+* **Product vendors**
+
+To search, type the name of your resource into the search bar. Use specific terms. For example, "Long Sleeved T-shirt" rather than a broad term like "shirt".
 
 ![](../.gitbook/assets/creatingLocks-Add_new_lock_search.png)
 
-{% hint style="info" %}
-**Hint:** Use specific search terms such as "Long Sleeved T-shirt". Pasting in URLs won't work in most cases.
-{% endhint %}
+### What is not searchable
 
-### What is searchable
+The following cannot be directly locked via search:
 
-Here are the types of resources that you are able to lock (and search for) from within Locksmith:
-
-* Products
-* Collections
-* Pages: [more info on Shopify pages here](https://help.shopify.com/en/manual/online-store/os/pages)
-* Variants: [more info on Shopify product variants here](https://help.shopify.com/en/manual/products/variants)
-* Blogs: [more info on Shopify blogs here](https://help.shopify.com/en/manual/online-store/os/blogs)
-* Blog posts (also called articles): You must tag an article first, and then the article _tag_ will be searchable. [More info on blog posts here](https://help.shopify.com/en/manual/online-store/os/blogs/writing-blogs)
-* Product vendors
+* **Product tags** — to lock products that share a tag, create an Automated Collection and lock that instead.
+* **Third-party app pages —** sometimes, a liquid lock can handle this, using the canonical\_url object.
+* **Any page outside of your Online Store**
+* **Menus and menu links** — menu links aren't directly lockable, but links pointing to lockable resources (such as products or collections) can be hidden from unauthorized visitors. To enable this, turn on the "Hide any links to this \[resource] in your shop's navigation menus" option under the lock's Settings.
 
 ### Specifying a resource type when searching
 
-Locksmith allows you to specify the resource type to search for. This is helpful when you get many results from search term, but they aren't what you're looking for.&#x20;
+If a search returns too many results, or returns an error, you can narrow things down by specifying the resource type using this syntax:
 
-Try this syntax in the search bar:&#x20;
-
-* product:snowboard
-* collection:snowboards
-* page:about snowboards
-* blog:life is snowboarding
+* `product:snowboard`
+* `collection:snowboards`
+* `page:about snowboards`
+* `blog:life is snowboarding`
 
 {% hint style="info" %}
-**Hint**: If you are attempting to search for one of the above resources, and it doesn't show up, the first thing to do is to update Locksmith(see "Updating Locksmith" below), which will update Locksmith's list of searchable resources in your store.
+**Hint**: If you're searching for a resource, but not getting the result you're looking for, try updating Locksmith to re-sync. Head over to the Help page in the app, and click the Update Locksmith button.
 {% endhint %}
-
-### What is not searchable
-
-* Product tags: to lock a group of products with the same tag create an [Automated Collection](https://help.shopify.com/en/manual/products/collections/automated-collections), and then lock the collection using Locksmith.&#x20;
-* Third party apps
-* Any page that is not located inside of your Online Store
-* Menus and menu links: Menu links are not directly searchable, but they can still be hidden from unauthorized access, as long as they point to one of the resource types in the list at the top of this page. In this case, just make sure the option to "Hide any links to this \[resource] in your shop’s navigation menus" is turned on (under Settings) for the corresponding lock.
 
 ### Locking your entire store
 
-Simply click into the search bar:
-
-![](<../.gitbook/assets/Screenshot 2024-05-01 at 7.03.12 PM.png>)
-
-Once you do that, you'll see "**Entire store**" show up in the dropdown as an option to lock:
+Click into the search bar and select "Entire store" from the dropdown.
 
 ![](<../.gitbook/assets/Screenshot 2024-05-01 at 7.03.58 PM.png>)
 
 #### Excluding resources form the store lock
 
-The store lock's settings page has a few options for excluding resources from the store lock, so they remain accessible to everyone. Those options include:
+The store lock's settings page includes options to keep certain areas accessible to everyone:
 
 * Allow access to the home page
 * Allow access to policy pages
 * Allow access to customer areas
 
-For resources that you would like to exclude form the store lock that aren't covered by those lock options, we have guide on excluding content from locks here:
+For anything not covered by those options, see our guide on excluding content from locks:
 
 {% content-ref url="../keys/more/excluding-content-from-locks.md" %}
 [excluding-content-from-locks.md](../keys/more/excluding-content-from-locks.md)
@@ -74,45 +66,47 @@ For resources that you would like to exclude form the store lock that aren't cov
 
 ### Locking all products in your store
 
-By default, Shopify stores feature an 'All' collection that automatically encompasses all products in the store. Locking this collection offers an efficient method to secure all products in your Shopify store simultaneously, without the need to lock the entire store.\
-\
+By default, Shopify stores feature an 'All' collection that automatically encompasses all products in the store. Locking this collection offers an efficient method to secure all products in your Shopify store simultaneously, without the need to lock the entire store.
+
 This collection can be locked just like any other collection. Search for the collection title 'all', select 'Collection: All' from the list of results, and follow the steps to create your lock.
 
 <figure><img src="../.gitbook/assets/2024-05-01 19.07.23 (1).gif" alt=""><figcaption></figcaption></figure>
 
-### Still having trouble?
-
-If you are searching for something like a product or a collection (or something else that is definitely searchable), and it just isn't showing up, you may just need to switch up your search terms.&#x20;
-
-* Try using fewer (but more specific) search terms.&#x20;
-* Keep in mind that pasting in the URL of the item you are trying to search will not work in most cases, you will need to search by name.
-* For variants that aren't appearing in search results, try including some information about the variant option. For example: "Color" equals "blue".
-
-### Updating Locksmith
-
-If you've created something recently and it's not showing up, an update to Locksmith can help.
-
-1\. Open the Locksmith app and navigate to the "Help" page\
-\
-2\. Click on the "Update Locksmith" button:
-
-<figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 8.24.28 AM.png" alt=""><figcaption></figcaption></figure>
-
-3\. When the blue bar at the bottom of the screen disappears, the update is finished. This should only take a handful of seconds.
-
 ### A note about Liquid locks
 
-Locksmith also gives you the ability to create "Liquid locks". This can allow you to target nonstandard resources or groups of pages in your store with Locksmith locks that are otherwise not directly searchable. You can start a Liquid lock by clicking into the search bar and selecting "**Start a Liquid Lock**":
+For resources that aren't searchable through the standard search bar, Locksmith offers "Liquid locks" — a more flexible option that lets you target nonstandard resources or custom groups of pages.
+
+To start a Liquid lock, click into the search bar and select "Start a Liquid Lock".
 
 <figure><img src="../.gitbook/assets/2024-05-01 19.12.16.gif" alt=""><figcaption></figcaption></figure>
 
-If you think a Liquid lock could help you, try your hand at [some Liquid code](https://shopify.dev/docs/themes/liquid/reference), or you can always write in to us for any questions about a specific use case.
-
-Our more in depth guide on that is here:
+For more detail, see our guide on Liquid locking basics:
 
 {% content-ref url="../tutorials/more/liquid-locking-basics.md" %}
 [liquid-locking-basics.md](../tutorials/more/liquid-locking-basics.md)
 {% endcontent-ref %}
+
+### Troubleshooting
+
+_My resource isn't showing up in search_
+
+If something isn't appearing in search results, try the following:
+
+* Use fewer, more specific search terms.
+* Search by name rather than pasting in a URL — URLs won't work in most cases.
+* For variants, include the variant option in your search. For example: "Color" equals "blue".
+* If you've recently created the resource, it may not yet be indexed — try updating Locksmith (see below).
+
+_Updating Locksmith_
+
+Updating Locksmith refreshes its index of your store's resources, which can resolve search issues.
+
+1. Open the Locksmith app and navigate to the "Help" page.
+2. Click on the "Update Locksmith" button. \[screenshot]
+3.
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 8.24.28 AM.png" alt=""><figcaption></figcaption></figure>
+4. When the blue bar at the bottom of the screen disappears, the update is complete. This should only take a few seconds.
 
 \
 As always, if you have questions or issues **please feel free to get in touch with us** at team@uselocksmith.com.
