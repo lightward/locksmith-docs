@@ -1,99 +1,98 @@
 ---
-description: Explore the types of key conditions that Locksmith makes available to you!
+description: Explore the types of key conditions that Locksmith makes available to you.
 ---
 
 # Creating keys
 
 Once you [create a lock](creating-locks.md), you'll need to create _keys_ – simple statements that describe the conditions for access. For example, one might have a key that says "Permit if the customer is signed in". In this example, the _key condition_ is "if the customer is signed in".
 
-Keys are added, unsurprisingly, inside of the "Keys" section on the lock page:
+Keys are added inside the "Keys" section on the lock page. Click "+ Add key" to see the full list of available key conditions.
 
 <figure><img src="../.gitbook/assets/creatingKeys1.png" alt=""><figcaption></figcaption></figure>
 
-Press that "Add the first key" button, and you'll be presented with the full list of key conditions that are available to you. There are quite a few options here!
+Locksmith offers a wide range of key conditions, grouped below by type to help you find the right one.
 
-These are all the key conditions that Locksmith supports:
+**Permit if...**
 
-**Permit if the customer...**
+_The customer... (conditions requiring a customer account)_
 
-* **is signed in**\
-  This condition requires all customers to log in with a customer account. Once they're logged in, they'll be granted access to the locked resource. (When inverted: **unless the customer is signed in**)
-* **is tagged with…**\
-  This condition _first_ requires all visitors to log in with a customer account, by presenting your store's usual login form. (If that login form includes a link to customer registration, it'll be included here, too.) Once the customer has logged into their account, they'll be granted access _if_ their customer account has the tag you've chosen in Locksmith. (When inverted: _**unless**_**&#x20;the customer is tagged with..., or is&#x20;**_**not**_**&#x20;signed in**)
-* **gives the passcode…**\
-  This condition prompts the visitor to enter a passcode, which must match the passcode you configure. If they don't enter a matching passcode, they'll be given the same prompt again.
-* **gives one of many passcodes…**\
-  This condition allows you to configure a group of passcodes, and will grant access if the visitor is able to provide one of the passcodes on that list.
-* **gives a passcode from an input list…**\
-  This condition works the same way as the other passcode conditions, except that it uses an input list as the passcode source, making this key condition suitable for bulk passcodes. ([For more on this, see Input lists.](../tutorials/more/input-lists.md))
-* **arrives via a secret link…**\
-  This condition generates a "secret" URL for the locked resource, containing a secret code. If the visitor arrives via that link, they'll be granted access. If they use any other link, they will be denied access.
-* **arrives using a secret link code from an input list…**\
-  This condition works the same way as the other secret link key condition, except that it uses an input list as the passcode source, making this key condition suitable for bulk passcodes. ([For more on this, see Input lists.](../tutorials/more/input-lists.md))
-* **is visiting from a certain location (city, country, etc)**\
-  This condition uses the visitor's IP address to estimate their location, matching it with a location that you define ahead of time. (Under the hood, this condition uses [GeoIP by MaxMind](https://www.maxmind.com/en/geoip2-services-and-databases) to estimate visitor locations.)
-* **subscribes to your Mailchimp list**\
-  This condition connects to your Mailchimp account, and grants access once a visitor has provided their email address, adding that address to your Mailchimp list.
-* **subscribes to your Klaviyo list**\
-  This condition connects to your Klaviyo account, and grants access once a visitor has provided their email address, adding that address to your Klaviyo list. This option can be configured to only allow access if the submitted email address is _already_ on that Klaviyo list.
-* **has one of many email addresses**\
-  This condition requires the visitor to be logged in with their customer account, prompting them to log in if they aren't already. If their email address is on the list that you specify, they'll be granted access.
-* **has an email address from an input list…**\
-  This condition requires the visitor to be logged in with their customer account, prompting them to log in if they aren't already. If their email address is on the input-list that’s specified on the key condition and has been previously synced with Locksmith, they'll be granted access.
-* **the customer's email contains…**\
-  This condition requires the visitor to be logged in with their customer account, prompting them to log in if they aren't already. If their email address matches some text that you specify (say, "@mycompany.com"), they'll be granted access.
-* **has purchased…**\
-  This condition requires the visitor to be logged in with their customer account, prompting them to log in if they aren't already. If their last 50 orders contain a certain product (identified by SKU, title, or by product tag), they'll be granted access.
-* **has placed at least x orders**\
-  This condition requires the visitor to be logged in with their customer account, prompting them to log in if they aren't already. If their lifetime order count is at least the number that you specify, they'll be granted access.
-* **has a certain product in their cart**\
-  This condition scans the visitor's current cart, and grants access if a certain product is found.
-* **has a certain variant in their cart**\
-  This condition scans the visitor's current cart, and grants access if a certain product variant is found.
-* **has at least $x in their cart**\
-  This condition checks the subtotal of the visitor's current cart, and grants access if the total is at least a certain amount.
-* **has a certain IP address**\
-  This condition checks the visitor's IP address. If it matches the address or range that you specify, they'll be granted access.
-* **is visiting before a certain date and time**\
-  This condition checks the current time, and grants access if it's before the time that you specify.
-* **is visiting after a certain date and time**\
-  This condition checks the current time, and grants access if it's after the time that you specify.
-* **is visiting a certain domain**\
-  This condition checks the domain of your store, and grants access if the visitors domains matches up . This is useful if you have multiple domains on your store that might be scoped to different regions of the world (or any other reason you have for creating multiple domains.
-* **the customer confirms the prompt**\
-  This is a straightforward key condition that allows access solely based on if the customer confirms the prompt that you set.
-* **(always permit)**\
-  This is a special condition! It's useful when "forcing open" a lock, under some certain circumstances. To learn more about this, see: [excluding-content-from-locks.md](../keys/more/excluding-content-from-locks.md "mention")
-* **(custom Liquid)**\
-  This condition allows you to write custom Liquid code, granting access if your Liquid condition evaluates to "true". This is the most powerful key condition, because it allows you to grant access under _any_ circumstances that you can determine using Liquid.
+These conditions require the visitor to be logged into a customer account. If they aren't already signed in, they'll be prompted to do so before access is granted.
+
+* **is signed in** — grants access to any visitor with a customer account, once logged in.
+* **is tagged with...** — grants access if the customer's account carries a specific tag. If your store's login form includes a registration link, that will be shown too.
+* **has one of many email addresses** — grants access if the customer's email address matches one from a list you specify.
+* **has an email address from an input list** — works the same way, but draws from an input list that has been synced with Locksmith. (For more on this, see [Input Lists](../tutorials/more/input-lists.md).)
+* **their email contains...** — grants access if the customer's email address contains specific text you define — for example, "@mycompany.com".
+* **has purchased...** — grants access if the customer's last 50 orders include a specific product, identified by SKU, title, or product tag.
+* **has placed at least x orders** — grants access if the customer's lifetime order count meets a minimum number you set.
+
+_The visitor... (conditions that apply to any visitor)_
+
+These conditions do not require a customer account.
+
+**Passcodes**
+
+Locksmith supports three passcode conditions, covering single, multiple, and bulk use cases:
+
+* **gives the passcode...** — prompts the visitor to enter a passcode matching the one you configure. If the passcode is incorrect, they'll be prompted again.
+* **gives one of many passcodes...** — grants access if the visitor provides any passcode from a list you configure.
+* **gives a passcode from an input list...** — works the same way, but draws passcodes from an input list, making it suitable for bulk use. ([Input Lists](../tutorials/more/input-lists.md))
+
+**Secret links**
+
+Locksmith supports two secret link conditions:
+
+* **arrives via a secret link...** — generates a secret URL for the locked resource. Visitors arriving via that link are granted access; visitors using any other link will be denied.
+* **arrives using a secret link code from an input list...** — works the same way, but draws secret codes from an input list, making it suitable for bulk use. ([Input Lists](../tutorials/more/input-lists.md))
+
+**Cart contents**
+
+* **has a certain product in their cart** — grants access if a specific product is present in the visitor's current cart.
+* **has a certain variant in their cart** — grants access if a specific product variant is present in the visitor's current cart.
+* **has at least $x in their cart** — grants access if the subtotal of the visitor's current cart meets a minimum amount you set.
+
+**Email subscriptions**
+
+* **subscribes to your Mailchimp list** — connects to your Mailchimp account and grants access once a visitor provides their email address, adding it to your list.
+* **subscribes to your Klaviyo list** — connects to your Klaviyo account and grants access once a visitor provides their email address. This can optionally be configured to only grant access if the email address is already on the list.
+
+**Other visitor conditions**
+
+* **has a certain IP address** — grants access if the visitor's IP address matches an address or range you specify.
+* **is visiting from a certain location (city, country, etc.)** — uses the visitor's IP address to estimate their location via [GeoIP by MaxMind](https://www.maxmind.com/en/geoip2-services-and-databases) , granting access if it matches a location you define.
+* **confirms the prompt** — grants access based solely on the visitor confirming a prompt that you configure.
+
+_Based on time or domain_
+
+* **is visiting before a certain date and time** — grants access if the current time is before a date and time you specify.
+* **is visiting after a certain date and time** — grants access if the current time is after a date and time you specify.
+* **is visiting a certain domain** — grants access if the visitor's domain matches a specific domain on your store. This is useful if your store has multiple domains scoped to different regions or audiences.
+
+_Special conditions_
+
+* **(always permit)** — forces a lock open under specific circumstances, regardless of other conditions. This is most commonly used when you need to exclude certain content from a lock. For more detail, see: [Excluding Content from Locks](https://www.locksmith.guide/keys/more/excluding-content-from-locks) .
+* **(custom Liquid)** — allows you to write custom Liquid code that grants access when your condition evaluates to true. This is the most flexible key condition available, and is useful when no standard condition fits your needs. For more detail, see our guide on custom [Liquid Keys](https://www.locksmith.guide/keys/more/custom-liquid-key-condition-basics).
 
 ## Copying keys between locks
 
-If you need to reuse a key setup from one lock in another, Locksmith includes a handy copy and paste feature for keys. This makes it easy to duplicate your key structure without recreating it from scratch.
+If you need to reuse a key setup across multiple locks, Locksmith includes a copy and paste feature for keys.
 
 **Here’s how it works:**
 
-1.  Find the key you want to copy
-
-    On any existing lock, locate the key you’d like to reuse.
-
-    Click the copy icon to the right of the key nam&#x65;_:_
+1. **Find the key you want to copy.** On any existing lock, locate the key you'd like to reuse and click the copy icon to the right of the key name.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-10-28 at 3.29.52 PM.png" alt=""><figcaption></figcaption></figure>
 
-2. Navigate to your new lock\
-   Open the lock where you’d like to reuse that key.
-3.  Paste the key
-
-    Click the paste icon beside “Add key.”
-
-    Locksmith will automatically add the copied key to your new lock:
+2. **Navigate to your new lock.** Open the lock where you'd like to apply that key.
+3. **Paste the key.** Click the paste icon beside "Add key." Locksmith will automatically add the copied key to your new lock.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-10-28 at 3.30.36 PM.png" alt=""><figcaption></figcaption></figure>
 
 You can repeat this as many times as needed to reuse key configurations across multiple locks.
 
-If your keys include product- or time-specific conditions, be sure to update those details after pasting.
+{% hint style="info" %}
+**Note:** If your keys include product- or time-specific conditions, be sure to update those details after pasting.
+{% endhint %}
 
 ***
 
