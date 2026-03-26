@@ -30,7 +30,7 @@ These conditions require the visitor to be logged into a customer account. If th
 
 These conditions do not require a customer account, and apply to anyone visiting your store.
 
-**Passcodes**
+**Gives passcodes**
 
 Locksmith supports three passcode conditions, covering single, multiple, and bulk use cases:
 
@@ -38,7 +38,7 @@ Locksmith supports three passcode conditions, covering single, multiple, and bul
 * **gives one of many passcodes...** — grants access if the visitor provides any passcode from a list you configure.
 * **gives a passcode from an input list...** — works the same way, but draws passcodes from an input list, making it suitable for bulk use. ([Input Lists](../tutorials/more/input-lists.md))
 
-**Secret links**
+**Follows secret links**
 
 Locksmith supports two secret link conditions:
 
