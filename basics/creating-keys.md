@@ -22,13 +22,13 @@ These conditions require the visitor to be logged into a customer account. If th
 * **is tagged with...** — grants access if the customer's account carries a specific tag. If your store's login form includes a registration link, that will be shown too.
 * **has one of many email addresses** — grants access if the customer's email address matches one from a list you specify.
 * **has an email address from an input list** — works the same way, but draws from an input list that has been synced with Locksmith. (For more on this, see [Input Lists](../tutorials/more/input-lists.md).)
-* **their email contains...** — grants access if the customer's email address contains specific text you define — for example, "@mycompany.com".
+* **email contains...** — grants access if the customer's email address contains specific text you define — for example, "@mycompany.com".
 * **has purchased...** — grants access if the customer's last 50 orders include a specific product, identified by SKU, title, or product tag.
 * **has placed at least x orders** — grants access if the customer's lifetime order count meets a minimum number you set.
 
-#### _The visitor... (conditions that apply to any visitor)_
+#### _The visitor..._&#x20;
 
-These conditions do not require a customer account.
+These conditions do not require a customer account, and apply to anyone visiting your store.
 
 **Passcodes**
 
@@ -54,7 +54,8 @@ Locksmith supports two secret link conditions:
 **Email subscriptions**
 
 * **subscribes to your Mailchimp list** — connects to your Mailchimp account and grants access once a visitor provides their email address, adding it to your list.
-* **subscribes to your Klaviyo list** — connects to your Klaviyo account and grants access once a visitor provides their email address. This can optionally be configured to only grant access if the email address is already on the list.
+* **subscribes to your Klaviyo list** — connects to your Klaviyo account and grants access once a visitor provides their email address.&#x20;
+* **if the customer is a member of a Klaviyo list or segment** — grants access only if the email address is _already_ on the list.&#x20;
 
 **Other visitor conditions**
 
@@ -70,7 +71,7 @@ Locksmith supports two secret link conditions:
 
 #### _Special conditions_
 
-* **(always permit)** — forces a lock open under specific circumstances, regardless of other conditions. This is most commonly used when you need to exclude certain content from a lock. For more detail, see: [Excluding Content from Locks](https://www.locksmith.guide/keys/more/excluding-content-from-locks) .
+* **(always permit)** — forces a lock open, regardless of other conditions. This is most commonly used when you need to exclude certain content from another lock. For more detail, see: [Excluding Content from Locks](https://www.locksmith.guide/keys/more/excluding-content-from-locks) .
 * **(custom Liquid)** — allows you to write custom Liquid code that grants access when your condition evaluates to true. This is the most flexible key condition available, and is useful when no standard condition fits your needs. For more detail, see our guide on custom [Liquid Keys](https://www.locksmith.guide/keys/more/custom-liquid-key-condition-basics).
 
 ## Copying keys between locks
