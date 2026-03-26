@@ -52,7 +52,7 @@ Click into the search bar and select "Entire store" from the dropdown.
 
 #### Excluding resources from the store lock
 
-The store lock's settings page includes options to keep certain areas accessible to everyone:
+The store lock settings page includes options to keep certain areas accessible to everyone:
 
 * Allow access to the home page
 * Allow access to policy pages
@@ -102,11 +102,9 @@ _Updating Locksmith_
 Updating Locksmith refreshes its index of your store's resources, which can resolve search issues.
 
 1. Open the Locksmith app and navigate to the "Help" page.
-2. Click on the "Update Locksmith" button. \[screenshot]
-3.
-
-    <figure><img src="../.gitbook/assets/Screenshot 2024-11-12 at 8.24.28 AM.png" alt=""><figcaption></figcaption></figure>
-4. When the blue bar at the bottom of the screen disappears, the update is complete. This should only take a few seconds.
+2. Click on the "Update Locksmith" button. \
+   ![](../.gitbook/assets/image.png)
+3. When the blue bar at the bottom of the screen disappears, the update is complete. This should only take a few seconds.
 
 \
 As always, if you have questions or issues **please feel free to get in touch with us** at team@uselocksmith.com.

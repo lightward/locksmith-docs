@@ -40,7 +40,7 @@ If your content must live elsewhere, consider using iframes to embed your conten
 
 You'll need to have at least one product that is clearly marked as the product that customers will purchase, in order to gain access to the locked content. Something like this:
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 ### Requiring a recurring subscription charge for access
 

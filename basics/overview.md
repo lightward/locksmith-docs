@@ -53,7 +53,7 @@ Locksmith gives you the flexibility to add multiple keys and logically combine t
 
 You can tell you're looking at OR keys because there are **multiple key symbols**, each preceded by "Permit if the customer..." text.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **AND** — Add another condition to the _same_ key by clicking _+ add key condition_ below an existing condition. When conditions are connected by AND, **all** of them must be met before access is granted.
 
