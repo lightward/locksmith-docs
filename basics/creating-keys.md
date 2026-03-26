@@ -14,7 +14,7 @@ Locksmith offers a wide range of key conditions, grouped below by type to help y
 
 ## **Permit if...**
 
-#### _The customer... (conditions requiring a customer account)_
+#### _The customer..._
 
 These conditions require the visitor to be logged into a customer account. If they aren't already signed in, they'll be prompted to do so before access is granted.
 
