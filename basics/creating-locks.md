@@ -50,7 +50,7 @@ Click into the search bar and select "Entire store" from the dropdown.
 
 ![](<../.gitbook/assets/Screenshot 2024-05-01 at 7.03.58 PM.png>)
 
-#### Excluding resources form the store lock
+#### Excluding resources from the store lock
 
 The store lock's settings page includes options to keep certain areas accessible to everyone:
 
