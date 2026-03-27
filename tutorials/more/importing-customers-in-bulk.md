@@ -6,7 +6,7 @@ Just a quick note: **Locksmith does not create a separate database of customers*
 
 To get started using Locksmith's Customers area, use the "Customers" button, found in the footer navigation on any page of the app:
 
-<figure><img src="../../.gitbook/assets/Importing_customers_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Importing_customers_2.png" alt=""><figcaption></figcaption></figure>
 
 There are two options for importing your customers: using a plain list of email addresses, or by loading in a CSV file that you create with your spreadsheet application.
 
