@@ -18,7 +18,7 @@ A few other things worth knowing about the new system:
 
 * **Accounts are created automatically.** There's no longer a traditional registration form. When a customer checks out or enters their email on the login page, an account is created for them automatically upon email verification.
 * **Login is hosted by Shopify, not your theme.** The sign-in page lives on Shopify's infrastructure (on a subdomain like `account.yourstore.com`), separate from your Online Store theme.
-* **Legacy accounts are being deprecated.** Shopify has announced that legacy customer accounts will eventually be sunset. A final date will be announced later in 2026. It's worth planning your migration sooner rather than later.
+* **Legacy accounts are being deprecated.** [Shopify has announced that legacy customer accounts will eventually be sunset.](https://changelog.shopify.com/posts/legacy-customer-accounts-are-now-deprecated) A final date will be announced later in 2026. It's worth planning your migration sooner rather than later.
 
 For a full comparison of the two systems, refer to [Shopify's official documentation](https://help.shopify.com/en/manual/customers/customer-accounts).
 
