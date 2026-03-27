@@ -1,10 +1,10 @@
 ---
 description: >-
-  Restrict which payment methods are available at checkout based on customer
+  Specify which payment methods are available at checkout based on customer
   tags, using Shopify's native payment customization functions.
 ---
 
-# Hiding payment methods by customer tag
+# Restricting access to payment methods with Locksmith
 
 Locksmith's payment customization feature lets you hide specific payment methods from customers who don't have a designated tag. For example, you could hide a "Net 30 / Invoice" payment option from regular customers, while making it available only to customers tagged as `wholesale`.
 
