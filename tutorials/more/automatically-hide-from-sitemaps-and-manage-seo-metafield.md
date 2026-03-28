@@ -60,9 +60,9 @@ Keep in mind that turning this setting OFF does not result in your locked conten
 **This setting overlaps with the hide-from-sitemaps setting**. This setting does not add any metafields to your Shopify resources, but since the seo.hidden metafield already results in the "noindex" meta-tag being added to the resource page by Shopify, **the add-noindex-metatag setting is automatically toggled on when you turn on the hide-from-sitemaps setting.**
 
 {% hint style="info" %}
-Note: If you duplicate products that have the SEO:hidden metafield from Locksmith, they **will** stick around, and you'll need to remove the metafield from those products manually. \
+Note: If you duplicate a product that is locked with the "Hide from Sitemaps" option enabled, that SEO:hidden metafield _**will**_ be on that new product, and you'll need to remove it manually. \
 \
-To avoid this, disable the "Hide from Sitemaps" option before duplicating those products. Then, re-enable after.&#x20;
+To avoid this, disable the "Hide from Sitemaps" option before duplicating products. Then, re-enable after.&#x20;
 {% endhint %}
 
 ## Related
