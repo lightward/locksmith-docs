@@ -114,3 +114,7 @@ Hiding profiles are intended to work alongside - or in many cases as a replaceme
 **Note**: While this method does hide elements like prices visually, it may still be possible for someone viewing the source (or interacting with the browser console) to see the price. This is because of the presence of things like Google Analytics and other tools, which reproduce the price in the source - but not visually on the page - for their own usage. **These are out of control of the Locksmith app.**&#x20;
 {% endhint %}
 
+{% hint style="danger" %}
+**Also note:** Locksmith's manual locking feature generally can _**not**_ hide elements or sections that are being managed or displayed by other third-party apps, including page builder apps. Manual locking is only compatible with full-page locks, and is _**not**_ compatible with variant locks.
+{% endhint %}
+
