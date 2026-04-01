@@ -26,6 +26,8 @@ These conditions require the visitor to be logged into a customer account. If th
 * **has purchased...** — grants access if the customer's last 50 orders include a specific product, identified by SKU, title, or product tag.
 * **has placed at least x orders** — grants access if the customer's lifetime order count meets a minimum number you set.
 
+[customer-account-keys.md](../keys/customer-account-keys.md "mention")
+
 #### _The visitor..._&#x20;
 
 These conditions do not require a customer account, and apply to anyone visiting your store.
@@ -38,12 +40,16 @@ Locksmith supports three passcode conditions, covering single, multiple, and bul
 * **gives one of many passcodes...** — grants access if the visitor provides any passcode from a list you configure.
 * **gives a passcode from an input list...** — works the same way, but draws passcodes from an input list, making it suitable for bulk use. ([Input Lists](../tutorials/more/input-lists.md))
 
+[passcode-keys.md](../keys/passcode-keys.md "mention")
+
 **Follows secret links**
 
 Locksmith supports two secret link conditions:
 
 * **arrives via a secret link...** — generates a secret URL for the locked resource. Visitors arriving via that link are granted access; visitors using any other link will be denied.
 * **arrives using a secret link code from an input list...** — works the same way, but draws secret codes from an input list, making it suitable for bulk use. ([Input Lists](../tutorials/more/input-lists.md))
+
+[secret-link-keys.md](../keys/secret-link-keys.md "mention")
 
 **Cart contents**
 
@@ -57,6 +63,8 @@ Locksmith supports two secret link conditions:
 * **subscribes to your Klaviyo list** — connects to your Klaviyo account and grants access once a visitor provides their email address.&#x20;
 * **if the customer is a member of a Klaviyo list or segment** — grants access only if the email address is _already_ on the list.&#x20;
 
+[newsletter-keys.md](../keys/more/newsletter-keys.md "mention")
+
 **Other visitor conditions**
 
 * **has a certain IP address** — grants access if the visitor's IP address matches an address or range you specify.
@@ -64,16 +72,30 @@ Locksmith supports two secret link conditions:
 * **confirms the prompt** — grants access based solely on the visitor confirming a prompt that you configure.
 * **is visiting a certain domain** — grants access if the visitor's domain matches a specific domain on your store. This is useful if your store has multiple domains scoped to different regions or audiences.
 
+[ip-address-keys.md](../keys/more/ip-address-keys.md "mention")
+
+[visitor-location-keys.md](../keys/visitor-location-keys.md "mention")
+
+[editing-the-confirmation-message.md](../tutorials/more/editing-the-confirmation-message.md "mention")
+
+[shopify-markets.md](../tutorials/more/shopify-markets.md "mention")
+
 #### _Based on time_
 
 * **is visiting before a certain date and time** — grants access if the current time is before a date and time you specify.
 * **is visiting after a certain date and time** — grants access if the current time is after a date and time you specify.
 * **if it's during a weekly schedule** — configure different schedules for each day with multiple time periods.
 
+[using-date-and-time-key-conditions.md](../tutorials/more/using-date-and-time-key-conditions.md "mention")
+
+[creating-weekly-schedules.md](../tutorials/more/creating-weekly-schedules.md "mention")
+
 #### _Special conditions_
 
 * **(always permit)** — forces a lock open, regardless of other conditions. This is most commonly used when you need to exclude certain content from another lock. For more detail, see: [Excluding Content from Locks](https://www.locksmith.guide/keys/more/excluding-content-from-locks) .
 * **(custom Liquid)** — allows you to write custom Liquid code that grants access when your condition evaluates to true. This is the most flexible key condition available, and is useful when no standard condition fits your needs. For more detail, see our guide on custom [Liquid Keys](https://www.locksmith.guide/keys/more/custom-liquid-key-condition-basics).
+
+
 
 ## Copying keys between locks
 
