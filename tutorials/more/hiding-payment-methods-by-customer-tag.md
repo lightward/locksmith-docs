@@ -1,12 +1,15 @@
 ---
 description: >-
-  Specify which payment methods are available at checkout based on customer
+  Control which payment methods are available at checkout based on customer
   tags, using Shopify's native payment customization functions.
 ---
 
 # Restricting access to payment methods with Locksmith
 
-Locksmith's payment customization feature lets you hide specific payment methods from customers who don't have a designated tag. For example, you could hide a "Net 30 / Invoice" payment option from regular customers, while making it available only to customers tagged as `wholesale`.
+Locksmith's payment customization feature lets you control payment method visibility at checkout based on customer tags. Each rule can work in one of two ways:
+
+* **Show only to tagged customers** — the payment method is hidden from everyone _except_ customers with the specified tag (e.g. show "Net 30 / Invoice" only to customers tagged `wholesale`)
+* **Hide from tagged customers** — the payment method is hidden _from_ customers with the specified tag, and visible to everyone else (e.g. hide "Cash on Delivery" from customers tagged `blocked`)
 
 ## How it works
 
@@ -34,12 +37,13 @@ Once access is approved, return to **Settings → Shopify Functions** to configu
 
 ## Step 3: Configure your rules
 
-Each rule hides one payment method from customers who **don't** have at least one of the specified tags.
-
 1. Click **Add payment method**
 2. Enter the **payment method name** as it appears at checkout (e.g. `Cash on Delivery (COD)`, `Bank Deposit`, `Net 30`)
-3. Enter one or more **customer tags** (comma-separated) — customers with at least one of these tags will see the payment method; everyone else won't
-4. Repeat for additional payment methods (up to 3 rules)
+3. Enter one or more **customer tags** (comma-separated)
+4. Choose the **Access** behavior for this rule:
+   * **Show only to tagged customers** — hides the payment method from customers who don't have the tag
+   * **Hide from tagged customers** — hides the payment method from customers who do have the tag
+5. Repeat for additional payment methods (up to 3 rules)
 
 {% hint style="info" %}
 Payment method names are matched against what Shopify displays at checkout. If you're not sure of the name, check your Shopify **Settings → Payments** page.
@@ -53,7 +57,16 @@ Click **Save**. Locksmith will create the payment customization in Shopify immed
 
 ## What customers experience
 
-* Customers **with** the required tag: see the payment method at checkout as normal
-* Customers **without** the required tag: the payment method doesn't appear — no error, no explanation, it's simply not offered
+**"Show only to tagged customers" mode:**
+
+* Customers **with** the tag: see the payment method at checkout as normal
+* Customers **without** the tag: the payment method doesn't appear
+
+**"Hide from tagged customers" mode:**
+
+* Customers **with** the tag: the payment method doesn't appear
+* Customers **without** the tag: see the payment method at checkout as normal
+
+In both cases there's no error or explanation shown — the payment method is simply not offered to customers who shouldn't see it.
 
 This works at the checkout level, so it applies regardless of how a customer reaches checkout.
