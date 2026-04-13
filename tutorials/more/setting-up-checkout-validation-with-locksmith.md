@@ -13,7 +13,9 @@ Checkout validation is great for preventing unauthorized purchases — stopping 
 
 ## How it works
 
-Locksmith's checkout validation blocks checkout for any cart that contains a tagged product unless the customer has one of the required customer tags. The check runs at checkout, so it catches direct-to-checkout links, cart permalink exploits, and other attempts to bypass storefront restrictions.
+Unlike Locksmith's locks and keys system — which controls access to storefront pages and content — checkout validation runs directly in checkout. This means it catches attempts to bypass storefront restrictions entirely, including direct-to-checkout links and cart permalink exploits. A tagged product cannot be purchased unless the customer has one of the required tags, regardless of how the cart was assembled.
+
+Because checkout needs to remain fast and efficient, Locksmith's checkout validation is limited to tag-based rules and cannot evaluate your full suite of key conditions. For more complex access control, use Locksmith's locks and keys on the storefront side in addition to checkout validation. Checkout validations are just a way to add a layer of extra checkout protection and, outside of specific circumstances, are often unneeded.
 
 Each rule targets up to two product tags and up to two customer tags. A product matches if it has **either** product tag; a customer passes if they have **either** customer tag. You can create up to 25 rules per store.
 
@@ -34,7 +36,7 @@ Each rule targets up to two product tags and up to two customer tags. A product 
 After saving, Locksmith will prompt you to approve the **write\_validations** permission. This is required for Locksmith to create and manage checkout rules in Shopify.
 
 {% hint style="warning" %}
-If you previously set up checkout validation rules directly in your Shopify admin (Settings → Checkout → Checkout rules), those rules will be automatically removed when you grant this permission. You will need to recreate them here in the Locksmith settings UI.
+Any existing Locksmith checkout validation rules (created via an older version of Locksmith) will be automatically removed when you grant this permission. You will need to recreate them here in the Locksmith settings UI. Checkout rules created by other apps or directly in the Shopify admin are not affected.
 {% endhint %}
 
 ## Step 2: Add a validation rule
