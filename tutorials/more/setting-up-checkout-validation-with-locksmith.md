@@ -1,52 +1,68 @@
 ---
 description: >-
   Protect against bots, cart permalink exploits, and other unauthorized orders
-  using our checkout validation feature.
+  by requiring specific customer tags to purchase products with specific product
+  tags.
 ---
 
 # Setting up checkout validation with Locksmith
 
 {% hint style="info" %}
-If you're seeing fraudulent orders on your free items, or challenges selling high-demand products to only approved customers, this is the solution for you!
+Checkout validation is great for preventing unauthorized purchases — stopping bots, restricting high-demand products to approved customers, or enforcing wholesale/access rules at the point of sale.
 {% endhint %}
 
-## Prerequisites:
+## How it works
 
-* You must have the **Locksmith app** installed.
-* Your products should be tagged appropriately in Shopify.
-* You'll want to have customer tags set up for specific customers.
+Locksmith's checkout validation blocks checkout for any cart that contains a tagged product unless the customer has one of the required customer tags. The check runs at checkout, so it catches direct-to-checkout links, cart permalink exploits, and other attempts to bypass storefront restrictions.
 
-## Step 1: Navigate to Checkout Rules in Shopify
+Each rule targets up to two product tags and up to two customer tags. A product matches if it has **either** product tag; a customer passes if they have **either** customer tag. You can create up to 25 rules per store.
 
-1. **Go to your Shopify admin** and click **Settings:**\
-   ![](<../../.gitbook/assets/Screenshot 2024-09-20 at 3.59.43 PM.png>)
-2. Scroll down and click **Checkout:**\
-   ![](<../../.gitbook/assets/Screenshot 2024-09-20 at 3.53.21 PM.png>)
-3. **Scroll down** to the bottom of the Checkout settings to find the **Checkout rules** section.
-4. Click **Add rule:**
+## Prerequisites
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-09-20 at 3.57.04 PM.png" alt=""><figcaption></figcaption></figure>
+* **Locksmith** installed on your store
+* Products tagged appropriately in Shopify
+* Customer tags set up for the customers you want to allow
 
-## Step 2: Add rule:
+## Step 1: Enable checkout validations in Locksmith
 
-1. From the "Add a checkout rule" dropdown list, select **Require customer tag to purchase specific products**. This rule will restrict purchases based on product and customer tags.
-2. In the **Product tag** field, add the product tag you want to use (e.g., `nobots`).
-3. In the **Customer tag** field, add the customer tag that will allow the product to be purchased (e.g., `notabot`).
-4. **Save** your changes:
+1. Open the **Locksmith** app from your Shopify admin.
+2. Click **Settings** in the navigation.
+3. Scroll down to the **Checkout validations** section.
+4. Check **Enable checkout validations**.
+5. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-09-23 at 11.42.31 AM.png" alt=""><figcaption></figcaption></figure>
+After saving, Locksmith will prompt you to approve the **write\_validations** permission. This is required for Locksmith to create and manage checkout rules in Shopify.
 
-5. Click the **Turn on** button to enable the rule:
+{% hint style="warning" %}
+If you previously set up checkout validation rules directly in your Shopify admin (Settings → Checkout → Checkout rules), those rules will be automatically removed when you grant this permission. You will need to recreate them here in the Locksmith settings UI.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/2025-09-23 11.49.58.gif" alt=""><figcaption></figcaption></figure>
+## Step 2: Add a validation rule
 
-You should be all set. :)\
-\
-Don't forget to test using a private browsing session to ensure the rule is working:\
-[how-to-use-a-private-browsing-session.md](how-to-use-a-private-browsing-session.md "mention")
+Once the permission is approved and you return to the Settings page:
+
+1. Under **Checkout validations**, click **Add checkout validation**.
+2. Fill in the rule:
+   * **Product tags** — the tag (or tags, comma-separated) on products that require validation. For example: `wholesale-only` or `restricted, members-only`.
+   * **Customer tags** — the tag (or tags, comma-separated) a customer must have to be allowed through. For example: `wholesale` or `approved, vip`.
+   * **Error message** *(optional)* — the message shown to blocked customers. You can use `{{product_title}}` to include the product name. Leave blank to use the default message.
+3. Make sure **Active** is checked.
+4. Click **Done**.
+5. Click **Save** at the top of the page.
 
 {% hint style="info" %}
-**Please note:** Currently, it's only possible to set up **one checkout validation rule** per store that allows a specific customer tag to purchase products that have a specific product tag.\
-\
-This means that if you have multiple requirements for different products or customer tags, you'll need to prioritize which rule is most important or add global product tag that can be used on all products you want to require validation for.&#x20;
+Each field supports up to **two** comma-separated tags. If you enter more, only the first two will be used.
 {% endhint %}
+
+## Step 3: Test your rule
+
+Use a private browsing session (without the customer tag) to verify the rule blocks checkout, and a second test with an account that has the tag to confirm it passes through.
+
+[how-to-use-a-private-browsing-session.md](how-to-use-a-private-browsing-session.md "mention")
+
+## Managing rules
+
+* Rules can be toggled on or off individually using the **Active** checkbox without deleting them.
+* Click **Edit** on any rule to update tags or the error message.
+* Click **Delete** to remove a rule entirely.
+* You can have up to **25 rules** active at once (a Shopify platform limit across all apps).
