@@ -32,21 +32,41 @@ To keep unlocked variants available while hiding locked ones, you can create dup
 
 This solution offers greater control but may increase inventory management complexity. For guidance on using duplicate products, refer to our tutorial on [price tiers](https://www.locksmith.guide/tutorials/more/price-tiers#using-product-duplicates-1). You can also explore [inventory management tips](https://www.locksmith.guide/tutorials/more/price-tiers#inventory).
 
+**Important: The Shop channel may be added to your store automatically**
+
+Shopify automatically adds the Shop sales channel to any store that meets their Shop Merchant Guidelines — including stores that have Shopify Payments (or Shop Pay) enabled and a chargeback rate of less than 1% in the last six months. This means the Shop channel can appear in your Shopify admin without you installing it yourself, and your eligible products may become listed in the Shop app without any action on your part.
+
+{% hint style="warning" %}
+If you're using Locksmith to lock variants, be aware that the Shop channel being auto-added could expose those locked variants to purchases through the Shop app — since Locksmith's Shop app protection only works at the product level, not the variant level.
+{% endhint %}
+
+If you **don't** want your store or products listed on Shop, you have a few options:
+
+* **Opt out of Sell with Shop:** In your Shopify admin, go to **Sales channels > Shop > Settings**, and change the **Sell with Shop** setting to "Link to online store" (this prevents direct purchases through Shop, though your products may still be discoverable).
+* **Remove the Shop channel entirely:** In your Shopify admin, go to **Settings > Sales channels**, find Shop, and click **Uninstall**. Note that orders may still come through Shop even without the channel installed — see Shopify's documentation below for details.
+* **Contact Shopify support** to request an account-level opt-out from the Shop App and/or Agentic Storefronts.
+
+For full details on Shop eligibility and how auto-enrollment works, refer to Shopify's documentation:
+
+* [Requirements for displaying your store in Shop](https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements)
+* [Setting up the Shop channel](https://help.shopify.com/en/manual/online-sales-channels/shop/setup)
+* [Activating Shop Pay](https://help.shopify.com/en/manual/payments/shop-pay/activating-shop-pay)
+
 ## Officially unsupported apps
 
 The following apps have known compatibility issues with Locksmith - although they _may_ work in some cases, with the correct settings.
 
 * Any other **access control apps** that work in a similar way to Locksmith will almost certainly not work well alongside Locksmith, as they tend to inject code into the same areas of your theme.
-* [Bold Custom Pricing: Wholesale](https://apps.shopify.com/customer-pricing) - but only when using [Locksmith's variant locking ](../tutorials/more/locking-variants/)and [manual locking](../tutorials/more/manual-mode.md) features.&#x20;
-* Any app that controls price at the variant level - but only when using [Locksmith's variant locking ](../tutorials/more/locking-variants/)and [manual locking](../tutorials/more/manual-mode.md) features.&#x20;
-* Locksmith's [manual locking](../tutorials/more/manual-mode.md) feature, and many times full-page locks, can _**not**_ generally be used to hide content being displayed by other third-party apps, including prices, buttons, widgets etc.&#x20;
+* [Bold Custom Pricing: Wholesale](https://apps.shopify.com/customer-pricing) - but only when using [Locksmith's variant locking ](../tutorials/more/locking-variants/)and [manual locking](../tutorials/more/manual-mode.md) features.
+* Any app that controls price at the variant level - but only when using [Locksmith's variant locking ](../tutorials/more/locking-variants/)and [manual locking](../tutorials/more/manual-mode.md) features.
+* Locksmith's [manual locking](../tutorials/more/manual-mode.md) feature, and many times full-page locks, can _**not**_ generally be used to hide content being displayed by other third-party apps, including prices, buttons, widgets etc.
 * [Gempages](https://apps.shopify.com/gempages) - while it is possible to use the apps together _in some cases_, there are still many compatibility issues between the two apps.
 * [Weglot](https://apps.shopify.com/weglot) - Locksmith's [location detection key condition](../keys/visitor-location-keys.md) is not compatible with Weglot, but you should otherwise be fine using both apps at the same time if not using location detection.
 
 ## Other areas of incompatibility
 
 * **Predictive searches** - Locksmith generally cannot remove products from searches that dynamically show search results as you type. This includes built-in theme searches, and most apps that add predictive searches to your theme. That being said, it is possible to manage the appearance of specific products in store searches using product metafields: [more information on that here](https://community.shopify.com/c/ecommerce-marketing/hiding-a-product-from-search-engine/td-p/484788).
-*   [The Checkout area](https://help.shopify.com/en/manual/checkout-settings) - Apps are pretty heavily limited in their ability to make changes to the checkout area, for security reasons. This means that Locksmith cannot restrict access to payment methods, shipping methods, shipping addresses, or anything else that is shown during the checkout process. If you wish to use Locksmith to restrict customers ability to check out,&#x20;
+*   [The Checkout area](https://help.shopify.com/en/manual/checkout-settings) - Apps are pretty heavily limited in their ability to make changes to the checkout area, for security reasons. This means that Locksmith cannot restrict access to payment methods, shipping methods, shipping addresses, or anything else that is shown during the checkout process. If you wish to use Locksmith to restrict customers ability to check out,
 
     you now have two options:
 
