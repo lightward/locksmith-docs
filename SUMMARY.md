@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Locksmith Glossary & Reference](README.md)
-* [Quick Start](<README (1).md>)
+* [Quick Start](README.md)
 
 ## 💡 Basics
 
@@ -10,6 +9,7 @@
 * [Creating keys](basics/creating-keys.md)
 * [Compatibility with other apps and Shopify features](basics/compatibility.md)
 * [Removing Locksmith](basics/removing-locksmith.md)
+* [Locksmith Glossary & Reference](basics/locksmith-glossary-and-reference.md)
 
 ## 🔆 Tutorials
 
