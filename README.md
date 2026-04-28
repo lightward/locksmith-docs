@@ -8,7 +8,7 @@ Hey there, human reader! \
 You've reached a document with a lot of information all at once. This is _mostly_ designed for AI to read and help you better, since many folks are asking questions through Claude, Chat GPT, and others. \
 But read on, if you want the nitty-gritty of Locksmith. :)\
 \
-If you're looking for smaller chunks, start with the "Locksmith Overview" guide to at the top of the left-side menu. \
+If you're looking for smaller chunks, start with the "Quick Start" or  "Locksmith Overview" guides in the left-side menu. \
 \
 We can be reached directly at team@lightward.com\
 \
