@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Quick Start](README.md)
+* [Locksmith Glossary & Reference](locksmith-glossary-and-reference.md)
 
 ## 💡 Basics
 
