@@ -19,8 +19,8 @@ It can be used with Locksmith to…
 
 1. Choose the product you want to use with Easy Appointment Booking
 2. [Install](https://apps.shopify.com/appointments-and-bookings) the Easy Appointment Booking app from the Shopify App Store
-3. In Easy Appointment Booking, create an event using the product from Step 1. Configure the basic event details. There are prefilled options for you for the event duration and availability. See a tutorial video here: [youtube.com/watch?v=v5sp-7DI\_I8\&ab\_channel=Servicify](https://www.youtube.com/watch?v=v5sp-7DI\_I8\&ab\_channel=Servicify)&#x20;
-4. You can now use Locksmith to add whatever access conditions you'd like to your newly created event product! For more guidance on creating locks, [see our guide here](../).
+3. In Easy Appointment Booking, create an event using the product from Step 1. Configure the basic event details. There are prefilled options for you for the event duration and availability. See a tutorial video here: [youtube.com/watch?v=v5sp-7DI\_I8\&ab\_channel=Servicify](https://www.youtube.com/watch?v=v5sp-7DI_I8\&ab_channel=Servicify)&#x20;
+4. You can now use Locksmith to add whatever access conditions you'd like to your newly created event product! For more guidance on creating locks, [see our guide here](<../README (1).md>).
 
 ## Other features
 
