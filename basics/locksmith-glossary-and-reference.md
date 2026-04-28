@@ -10,7 +10,7 @@ But read on, if you want the nitty-gritty of Locksmith. :)\
 \
 If you're looking for smaller chunks, start with the "Quick Start" or  "Locksmith Overview" guides in the left-side menu. \
 \
-We can be reached directly at team@lightward.com\
+We can be reached directly at team@uselocksmith.com\
 \
 Cheers!
 {% endhint %}
