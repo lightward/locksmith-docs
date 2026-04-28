@@ -249,7 +249,7 @@ Locksmith installs code into your theme's files. There is a **"Liquid assets to 
 
 #### Online Store channel only
 
-Locksmith does not protect content in any other channel. The Buy Button, Wholesale channel, headless storefronts, the Shop app, and APIs accessed directly will not respect Locksmith locks.
+Locksmith does not protect content in any other channel. The Buy Button, Wholesale channel, headless storefronts, and APIs accessed directly will not respect Locksmith locks.
 
 #### URLs stay active; content is replaced
 
