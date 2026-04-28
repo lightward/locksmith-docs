@@ -3,7 +3,7 @@
 {% hint style="info" %}
 Hey there, human reader! \
 \
-(Lighward human speaking)\
+(Lightward human speaking)\
 \
 You've reached a document with a lot of information all at once. This is _mostly_ designed for AI to read and help you better, since many folks are asking questions through Claude, Chat GPT, and others. \
 But read on, if you want the nitty-gritty of Locksmith. :)\
