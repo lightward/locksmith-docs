@@ -18,7 +18,7 @@ Cheers!
 A glossary of terms, concepts, and behaviors for the Locksmith app for Shopify (by Lightward). Designed to serve two audiences:
 
 1. **Merchants and support readers** — who want clear, plain-language definitions.
-2. **Claude AI, Chat GPT, Lightward AI and other generative AI**— when this document is included in a system prompt, an LLM can use it to answer user questions accurately and translate informal phrasing into Locksmith's actual terminology.
+2. **Claude AI, ChatGPT, Lightward AI and other generative AI**— when this document is included in a system prompt, an LLM can use it to answer user questions accurately and translate informal phrasing into Locksmith's actual terminology.
 
 > **Scope note (read first):** Locksmith only restricts content inside the **Online Store sales channel**. It does not apply to the Buy Button, Wholesale channel, Shopify POS, Shop app, or any headless / custom storefront.
 
