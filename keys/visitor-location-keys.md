@@ -78,7 +78,7 @@ When testing, the browser may cache your access and continue showing you the sam
 
 5\. Repeat the steps 1-4 for each new location.
 
-You'll want to make sure you use a brand new private browsing session _each time_ you test a location, as Locksmith uses the same mechanism as the browser and Shopify to remember previously stored access.
+You'll want to make sure you use a **brand new private browsing session** _each time_ you test a location, as Locksmith uses the same mechanism as the browser and Shopify to remember previously stored access.
 
 {% content-ref url="../faqs/more/why-isnt-my-remote-key-condition-working.md" %}
 [why-isnt-my-remote-key-condition-working.md](../faqs/more/why-isnt-my-remote-key-condition-working.md)
