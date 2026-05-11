@@ -31,6 +31,18 @@ So, when testing passcode keys, _be sure to use a new_ [_private browser window_
 * The passcode key is what we call a "remote key" which saves info in your cart attributes. That info gets passed through as a note on your orders. You can remove that following [the steps here](../faqs/more/why-is-locksmith-adding-information-to-my-orders.md).
 * Passcode entry is applied across your entire store, so if you set multiple locks with the same passcode, entering the passcode at any of those locked pages will also allow the customer to access the other locked resources--all without requiring another passcode entry. This also works to reveal navigation links pointing to those locked resources, when the "hide links" option is enabled on a lock.&#x20;
 
+#### Case sensitivity
+
+Passcodes are **case-sensitive by default** — so `mypass` and `MyPass` are treated as different passcodes. You can disable this by unchecking the **Case sensitive** option on the key condition, which will make matching case-insensitive.
+
+{% hint style="info" %}
+The **Input list** key condition does not have a case sensitivity option on the condition itself. Case sensitivity for input lists is configured on the input list, in your Locksmith settings.
+{% endhint %}
+
+#### Whitespace handling
+
+Leading and trailing whitespace is automatically stripped from what the customer types before it's compared to your passcode, so an accidental leading or trailing space won't cause a failed entry. However, whitespace **within** a passcode must match exactly — if your passcode is `hello world` (one space), `hello  world` (two spaces) will not work.
+
 ####
 
 ### Passcode key options
@@ -38,6 +50,26 @@ So, when testing passcode keys, _be sure to use a new_ [_private browser window_
 **Passcode uses left**
 
 Found in the single passcode key. Use this option only if you want the passcode to have a usage limit. The number will decrease by one each time the passcode is entered. When the number hits zero, the passcode will no longer work.
+
+**Case sensitive**
+
+Available on single and many passcodes. Enabled by default — uncheck to allow case-insensitive matching (e.g. so `mypass` and `MYPASS` both work). For input lists, this setting lives on the input list itself.
+
+**Hide the user's input as they type**
+
+Available on all passcode key types. When enabled, the passcode field behaves like a standard password input, masking the characters as the customer types. Note: this option is automatically disabled when "Show passcodes as dropdown" is turned on.
+
+**Show passcodes as dropdown**
+
+Found in the "many passcodes" key only. Instead of a free-text input, customers choose their passcode from a dropdown menu. Limited to 100 passcodes.
+
+{% hint style="danger" %}
+This option reveals all valid passcodes to anyone who visits the locked page. Use it only when that's intentional.
+{% endhint %}
+
+**Allow only one use per passcode**&#x20;
+
+Found in the "many passcodes" key only. When the customer gives a passcode from the list, it gets removed from the list and can't be used again (unless you re-add it). **Note:** If you want to add a usage limit to a passcode-from-input-list key condition, that is done on the input list itself. [More information on input lists here](../tutorials/more/input-lists.md).
 
 **Remember for signed in customers**
 
@@ -47,9 +79,13 @@ This option will remember a customer who was signed in when they entered the pas
 
 If the customer is logged into their account when they give the passcode, they'll get tagged with the tag you enter here.
 
-**Allow only one use per passcode**&#x20;
+**Custom input prompt**
 
-Found in the "many passcodes" key only. When the customer gives a passcode from the list, it gets removed from the list and can't be used again (unless you re-add it). **Note:** If you want to add a usage limit to a passcode-from-input-list key condition, that is done on the input list itself. [More information on input lists here](../tutorials/more/input-lists.md).
+An optional message shown to the customer when asking for their passcode. Supports HTML and Liquid. If you only need one message across all your passcode locks, it's simpler to set it at the lock level in the Messages area instead.
+
+**Automatic timeout**
+
+Grant access for a limited period of time after the passcode is entered. [More information here](../tutorials/more/grant-access-for-a-limited-time-when-using-passcodes-or-secret-links.md).
 
 ### Passcodes and manual locking
 
