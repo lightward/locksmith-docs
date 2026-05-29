@@ -14,6 +14,20 @@ If you have a large number of keys in your shop, this value can get quite large!
 **Note:** You may see Locksmith notes in the order even if the order came from a customer _that does not have access_ to any of your locked content. Depending on your Locksmith settings, it may be necessary to cache the fact that the current customer does indeed not have access, which still keeps server pings to a minimum (and helps speed things up, as per the above).
 {% endhint %}
 
+## What does the value actually mean?
+
+The Locksmith attribute value can tell you how a customer interacted with your locked content during their visit. There are two parts to look for: the colon and any numbers in front of it.
+
+When the value starts with a colon (for example, `:6e5deb114b44`), with no numbers in front, it means the customer interacted with a locked page during their browsing session but did not unlock it. Even just landing on a locked page is enough to generate this — it _doesn't_ mean they gained access.
+
+When there are numbers before the colon (for example, `471092:6e5deb114b44`), those numbers correspond to the key ID(s) the customer satisfied. In other words, the customer did use a key to open the lock, and the number points to which key. If a customer met the conditions of several keys, you may see more than one ID here.
+
+{% hint style="info" %}
+**Note:** This information is added for server-side key conditions (like passcodes, secret links, and location limits — any key that shows a loading spinner). It can appear whether or not the customer was ultimately granted access, so seeing a value here is not on its own a sign that a customer got past a lock.
+{% endhint %}
+
+This can be a useful diagnostic clue. For example, if you're investigating an order on a locked product and the value starts with a colon (no key ID), that tells you the customer likely never unlocked the product page itself — which can point to the item being added to the cart another way, such as through a cart permalink, a third-party app, or another sales channel.
+
 ## A (partial) solution
 
 To allow Locksmith to automatically remove its information from an order's "Additional Details", head to your Locksmith _**Settings**_ area, and **enable the "Remove Locksmith information from orders" setting** next to _Advanced_ on the page. The setting looks like this:
