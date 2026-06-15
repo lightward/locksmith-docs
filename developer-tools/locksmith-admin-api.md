@@ -55,9 +55,15 @@ All requests should be prefixed with **https://uselocksmith.com/api/:version**
 * <mark style="color:purple;">`GET`</mark> `/locks/:id.json` \
   Returns data for a single lock in your Locksmith account
 * <mark style="color:green;">`POST`</mark> `/lock/` \
-  Creates a lock.  [See full documentation](../more-developer-docs/using-the-admin-api-with-locks.md).
+  Creates a lock (single- or multi-resource).  [See full documentation](../more-developer-docs/using-the-admin-api-with-locks.md).
 * <mark style="color:red;">`DELETE`</mark> `/locks/:id` \
   Deletes the lock indicated by the ID
+* <mark style="color:green;">`POST`</mark> `/locks/:lock_id/resources` \
+  Attaches a resource to an existing lock.  [See documentation](../more-developer-docs/using-the-admin-api-with-locks.md).
+* <mark style="color:blue;">`PATCH`</mark> `/locks/:lock_id/resources/:lock_resource_id` \
+  Updates a resource attached to a lock
+* <mark style="color:red;">`DELETE`</mark> `/locks/:lock_id/resources/:lock_resource_id` \
+  Detaches a resource from a lock
 
 #### Shop
 

@@ -1,6 +1,12 @@
 # Locking multiple pages at once
 
-Because Shopify doesn't provide any way to group pages (in the way that collections work for products), we need to get down to the code level in order to protect more than one page at a time.
+{% hint style="success" %}
+**The simplest option first:** if you just want to protect a specific, known set of pages, you don't need any code. Create a lock on one page, then use the **Protected resources** section of the lock editor to **add the other pages** to the same lock. See [Creating locks → Protecting multiple resources with one lock](../../basics/creating-locks.md#protecting-multiple-resources-with-one-lock).
+
+The Liquid approaches below are still useful when you want pages to be locked by a *rule* — e.g. every page whose title contains a word, every page using a certain template, or every page carrying a metafield — so that pages added in the future are locked automatically without editing the lock.
+{% endhint %}
+
+Because Shopify doesn't provide any way to group pages (in the way that collections work for products), we need to get down to the code level in order to lock pages by a rule, or to protect a large or changing set of pages automatically.
 
 To get started, you'll need to begin a "Liquid lock:
 

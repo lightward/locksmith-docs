@@ -30,6 +30,10 @@ To restrict access to something in your store, simply type in the name of a prod
 **Note:**  This input does not work with URLs.
 {% endhint %}
 
+{% hint style="info" %}
+**Tip:** A lock isn't limited to a single resource. After creating it, you can attach more resources of the same type (e.g. several products) from the **Protected resources** section of the lock editor, and give the lock a name to find it easily later. [More here](basics/creating-locks.md).
+{% endhint %}
+
 More information on (and help troubleshooting) lock creation here:
 
 {% content-ref url="basics/creating-locks.md" %}

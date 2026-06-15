@@ -16,12 +16,19 @@ This guide covers information specific to creating locks. See our general Admin 
 
 ## Body Parameters
 
-Note that only the top 3 parameters are required. If left blank, the rest will use their defaults as noted.
+A lock can protect **one or more resources of the same type**. Set the lock's type with the top-level `resource_type`, and list the resources it protects in the `resources` array — each entry an object with its own `resource_type`, `resource_id`, and optional `resource_options`. Every resource on a lock must be the same type (the three collection flavors — manual `custom_collection`, automated `smart_collection`, and the all-products `liquid:collection-all` — count as one type and can be combined).
+
+A **shop lock** is the exception: pass `resource_type: "shop"` with no `resources` array, since it protects the entire storefront.
+
+After creation, a lock's resources can also be managed individually using the dedicated resource endpoints (see [Managing a lock's resources](#managing-a-locks-resources) below).
+
+Note that `resource_type` and `keys` are required. If left blank, the rest will use their defaults as noted.
 
 | Parameter                             | Type    | Description                                                                                                                                                                   | Required                                                                                                                                                                                                                                                                                                |
 | ------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `resource_id`                         | integer | Shopify resource ID. This number can be found at the end of the resource URL in your **Shopify Admin.**                                                                       | <p><mark style="color:red;">Required</mark>. Unless creating a shop lock, in which case it can be left out.<br><br><strong>Warning</strong>: Each resource can only have one lock. Using a resource_id for a lock that already exists will overwrite the previous lock and can result in data loss.</p> |
-| `resource_type`                       | string  | Required. Type of resource - `product`, `custom_collection`, `smart_collection` `page`, `blog` , or `shop` . Other types of locks unsupported.                                | <mark style="color:red;">Required</mark>                                                                                                                                                                                                                                                                |
+| `resource_type`                       | string  | The lock's resource type — `product`, `custom_collection`, `smart_collection`, `page`, `blog`, or `shop`. Determines how the lock is enforced; every entry in `resources` must be this same type. Other types of locks unsupported.                                | <mark style="color:red;">Required</mark>                                                                                                                                                                                                                                                                |
+| `resources`                           | array   | The resources this lock protects. Each entry is an object with `resource_type`, `resource_id`, and an optional `resource_options` object. The `resource_id` is the Shopify resource ID, found at the end of the resource URL in your **Shopify Admin.** All entries must be the same type as the lock. Omit for a shop lock. <br><br><strong>Note</strong>: a resource can belong to only one lock. Attaching one that's already locked elsewhere is rejected — to add a resource to an existing lock, use the resource endpoints below rather than re-posting. | <mark style="color:red;">Required</mark>, except for shop locks                                                                                                                                                                                                                                                                |
+| `name`                                | string  | An optional, human-friendly label for the lock, shown in the lock list. Has no effect on what the lock protects.                                                              | <p>Optional<br>Default: none</p>                                                                                                                                                                                                                                                                       |
 | `keys`                                | array   | List of key definitions that grant access; can be an empty array on creation.                                                                                                 | <mark style="color:red;">Required</mark>                                                                                                                                                                                                                                                                |
 | `enabled`                             | boolean | Whether the lock is active.                                                                                                                                                   | <p>Optional<br>Default: true</p>                                                                                                                                                                                                                                                                        |
 | `options`                             | object  | Lock behavior options. See below.                                                                                                                                             | Optional                                                                                                                                                                                                                                                                                                |
@@ -74,8 +81,10 @@ curl -X POST https://uselocksmith.com/api/unstable/lock \
   -H "x-locksmith-access-token: abcd1234" \
   -H "Content-Type: application/json" \
   -d '{
-    "resource_id": 1234567890,
     "resource_type": "product",
+    "resources": [
+      { "resource_type": "product", "resource_id": 1234567890 }
+    ],
     "keys": []
   }'
 ```
@@ -99,8 +108,10 @@ curl -X POST https://uselocksmith.com/api/unstable/lock \
   -H "x-locksmith-access-token: abcd1234" \
   -H "Content-Type: application/json" \
   -d '{
-    "resource_id": 1234567890,
     "resource_type": "product",
+    "resources": [
+      { "resource_type": "product", "resource_id": 1234567890 }
+    ],
     "enabled": true,
     "options": {
       "hide_links_to_resource": true,
@@ -120,8 +131,10 @@ curl -X POST "https://uselocksmith.com/api/unstable/lock" \
   -H "x-locksmith-access-token: abcd1234" \
   -H "Content-Type: application/json" \
   -d '{
-    "resource_id": 1234567890,
     "resource_type": "product",
+    "resources": [
+      { "resource_type": "product", "resource_id": 1234567890 }
+    ],
     "keys": [
       {
         "options": {
@@ -160,6 +173,47 @@ curl -X POST "https://uselocksmith.com/api/unstable/lock" \
         ]
       }
     ]
+  }'
+```
+
+```bash
+# Create a named lock protecting MULTIPLE products at once
+curl -X POST https://uselocksmith.com/api/unstable/lock \
+  -H "x-shopify-shop-domain: example-store.myshopify.com" \
+  -H "x-locksmith-access-token: abcd1234" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Wholesale catalog",
+    "resource_type": "product",
+    "resources": [
+      { "resource_type": "product", "resource_id": 1234567890 },
+      { "resource_type": "product", "resource_id": 1234567891 },
+      { "resource_type": "product", "resource_id": 1234567892 }
+    ],
+    "keys": []
+  }'
+```
+
+## Managing a lock's resources
+
+Once a lock exists, you can attach, update, or detach individual resources without re-posting the whole lock. Every resource on a lock must be the same type (the three collection flavors — manual `custom_collection`, automated `smart_collection`, and the all-products `liquid:collection-all` — count as one type and can be combined). A resource can belong to only one lock; attaching one that's already locked elsewhere is rejected.
+
+* <mark style="color:green;">`POST`</mark> `/locks/:lock_id/resources` \
+  Attaches a resource to the lock. Body: an object with `resource_type`, `resource_id`, and optional `resource_options`.
+* <mark style="color:blue;">`PATCH`</mark> `/locks/:lock_id/resources/:lock_resource_id` \
+  Updates an attached resource.
+* <mark style="color:red;">`DELETE`</mark> `/locks/:lock_id/resources/:lock_resource_id` \
+  Detaches a resource from the lock. A lock with no resources is inactive (its keys are preserved) until one is re-added.
+
+```bash
+# Attach another product to an existing lock
+curl -X POST https://uselocksmith.com/api/unstable/locks/55555/resources \
+  -H "x-shopify-shop-domain: example-store.myshopify.com" \
+  -H "x-locksmith-access-token: abcd1234" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "resource_type": "product",
+    "resource_id": 1234567893
   }'
 ```
 

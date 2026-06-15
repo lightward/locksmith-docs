@@ -20,6 +20,8 @@ A **lock** restricts access to something on your shop. You can lock:
 * The registration page (type 'register' into the Locksmith search bar)
 * Product variants
 
+A single lock can protect **multiple resources of the same type** — for example several products, or several collections — so one set of keys can cover a whole group at once. Manage a lock's resources from the **Protected resources** section of the lock editor, and give the lock an optional **name** (via the pencil icon in the header) to keep your lock list tidy. [More on creating locks →](https://www.locksmith.guide/basics/creating-locks)
+
 For more advanced use cases, you can also create **custom Liquid locks** — these let you lock content based on any condition you can express in Liquid. Create one by clicking the _Start a Liquid Lock_ link above the Locksmith search bar.
 
 #### Lock options

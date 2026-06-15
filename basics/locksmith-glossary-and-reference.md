@@ -51,8 +51,6 @@ A single permission rule attached to a lock. A lock with multiple keys grants ac
 
 The actual test inside a key — e.g. "customer is signed in", "gives the passcode", "is visiting from Canada". Locksmith ships with 20+ built-in conditions and supports custom conditions via Liquid.
 
-#### Resource
-
 The Shopify object a lock is attached to. Lockable things include:
 
 * Products
@@ -62,6 +60,8 @@ The Shopify object a lock is attached to. Lockable things include:
 * The shop (the entire storefront)
 * Product variants (a specialized lock — see "Variant lock")
 * Targets that aren't searchable from Locksmith's resource picker (handled via "Liquid lock")
+
+A single lock can protect **multiple resources of the same type** — for example several products, or several collections — not just one. Resources are managed from the **Protected resources** section of the lock editor. Mixing types in one lock is not supported: a products lock holds products, a collections lock holds collections, and so on. (See "Standard (resource) lock" in §3 for the permissions requirement and the single-resource fallback.)
 
 In the Admin API, the supported `resource_type` values are: `product`, `custom_collection`, `smart_collection`, `page`, `blog`, and `shop`.
 
@@ -75,7 +75,13 @@ What an unauthorized visitor sees instead of the locked content. Locksmith rende
 
 #### Standard (resource) lock
 
-A lock attached to a single Shopify resource by selecting it from Locksmith's search bar. The most common kind.
+A lock attached to one or more Shopify resources **of the same type** — one or several products, or one or several collections, etc. — selected from Locksmith's resource picker. The most common kind. Resources are managed in the lock editor's **Protected resources** section: use **Add [resource]** to attach more, or remove individual ones. (There is no separate "edit target" page; everything happens inline on the lock editor.) A lock with no resources is simply inactive — its keys are preserved — until a resource is re-added.
+
+**Permissions note:** protecting *multiple* resources with one lock requires the shop to have granted Locksmith updated permissions. Shops that have not re-granted are limited to a single resource per lock, and Locksmith prompts them to grant access where the "Add resource" affordance would otherwise appear. On those shops there is no "swap" affordance — to change which resource a single-resource lock protects, remove the existing one and add another.
+
+#### Lock name
+
+An optional, merchant-given label for a lock, edited inline (the pencil icon) in the lock editor header and shown in the lock list. When a lock has no name, Locksmith derives a display title from its resources — the first resource's title, plus a "+ N more" suffix for multi-resource locks — and shows a count badge (e.g. "4 collections"). A name is purely organizational; it does not affect what the lock protects.
 
 #### Shop lock
 
@@ -224,11 +230,11 @@ Locksmith works by writing Liquid into your published theme. Most key checks hap
 
 #### Admin API
 
-A REST-style API at `https://uselocksmith.com/api/unstable/lock` for creating, reading, and managing locks programmatically. Authenticated with `x-shopify-shop-domain` and `x-locksmith-access-token` headers. Supports a `dryrun` parameter for safe testing. Locksmith support cannot debug user-written API requests.
+A REST-style API at `https://uselocksmith.com/api/unstable/lock` for creating, reading, and managing locks programmatically. Authenticated with `x-shopify-shop-domain` and `x-locksmith-access-token` headers. Supports a `dryrun` parameter for safe testing. A lock's resources can be managed either by passing a `resources` array in the lock body, or via the dedicated endpoints `POST /locks/:lock_id/resources`, `PATCH /locks/:lock_id/resources/:lock_resource_id`, and `DELETE /locks/:lock_id/resources/:lock_resource_id`. Locksmith support cannot debug user-written API requests.
 
 #### Lock JSON shape (high level)
 
-A lock has a `resource_id`, `resource_type`, and an array of `keys`. Each key has an `options` object and a `conditions` array. Each condition has a `type`, `inverse`, and a type-specific `options` object. The recommended way to author a key configuration is to build it in the Locksmith UI and copy the JSON.
+A lock has an optional `name`, a `resource_type`, a `resources` array (each entry an attached resource with its own `resource_type`, `resource_id`, and `resource_options`), and an array of `keys`. The `resources` array is how a lock's protected resources are expressed, and is how multiple resources are attached to one lock. When creating a lock via the Admin API, set the top-level `resource_type` (required) and list the resources in the `resources` array; a lock response also exposes a top-level `resource_id` reflecting its primary resource. (See §7 → Admin API and the "Using the Admin API with Locks" guide for the resource-management endpoints.) Each key has an `options` object and a `conditions` array. Each condition has a `type`, `inverse`, and a type-specific `options` object. The recommended way to author a key configuration is to build it in the Locksmith UI and copy the JSON.
 
 Mapping between key-`options` JSON fields and their UI labels (see §5):
 
@@ -388,4 +394,4 @@ When in doubt, the right move is to ask — Lightward's docs lean toward "get in
 
 _Sources: Locksmith official documentation (locksmith.guide, docs.uselocksmith.com), Shopify App Store listing, and Lightward's developer docs. Verify specifics — particularly pricing, the full list of key conditions, and any setting names — against the live docs before relying on them in customer-facing copy._
 
-_Last reviewed: April 2026._
+_Last reviewed: June 2026._

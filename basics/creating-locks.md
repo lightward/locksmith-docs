@@ -4,7 +4,7 @@ description: How to use Locksmith's in-app search bar to create a lock
 
 # Creating locks
 
-Locks are how Locksmith controls access to content in your store. To create a lock, simply search for the resource you want to protect, select it, and then configure your access conditions (keys). This guide walks you through everything you need to know to get started.
+Locks are how Locksmith controls access to content in your store. To create a lock, simply search for the resource you want to protect, select it, and then configure your access conditions (keys). A single lock can protect more than one resource — see [Protecting multiple resources with one lock](#protecting-multiple-resources-with-one-lock) below. This guide walks you through everything you need to know to get started.
 
 ### **What Is Searchable**
 
@@ -43,6 +43,32 @@ If a search returns too many results, or returns an error, you can narrow things
 {% hint style="info" %}
 **Hint**: If you're searching for a resource, but not getting the result you're looking for, try updating Locksmith to re-sync. Head over to the Help page in the app, and click the Update Locksmith button.
 {% endhint %}
+
+### Protecting multiple resources with one lock
+
+A single lock can protect more than one resource at a time, as long as they're **the same type** — for example, several products, or several collections. This is handy when the same access rule should apply to a group of resources: you set up the keys once, on one lock, instead of recreating the same key over and over.
+
+Once you've created a lock, scroll to the **Protected resources** section of the lock editor. Use the **Add [resource]** button to search for and attach more resources of the same type, and use the remove control on any chip to detach one. These changes are staged and take effect when you **Save** the lock, alongside any other settings you've changed.
+
+<figure><img src="../.gitbook/assets/creating-locks-protected-resources.png" alt="The Protected resources section of the lock editor, showing two attached products and an Add product button"><figcaption>The Protected resources section lists everything a lock protects. Use Add to attach more.</figcaption></figure>
+
+Clicking **Add [resource]** opens a picker where you can search your store and select another resource to attach:
+
+<figure><img src="../.gitbook/assets/creating-locks-resource-picker-modal.png" alt="The resource picker modal, showing a product search and a list of products to select"><figcaption>The resource picker. Search, then select a resource to add it to the lock.</figcaption></figure>
+
+{% hint style="info" %}
+**Mixing types isn't supported.** A lock protects resources of a single type — a products lock holds products, a collections lock holds collections, and so on. To protect different kinds of resources, create a separate lock for each type.
+{% endhint %}
+
+{% hint style="warning" %}
+**Don't see an "Add resource" button?** Multi-resource locks require Locksmith to have updated permissions on your store. If you installed Locksmith before this feature shipped, you may see a prompt to grant access — follow it, and the **Add [resource]** affordance will appear. Until then, each lock is limited to a single resource.
+{% endhint %}
+
+### Naming your lock
+
+Locks can be given an optional **name** to make them easier to find in your lock list. Click the pencil icon next to the lock's title in the editor header, type a name, and confirm with Enter (or the checkmark). A name is purely for your own organization — it doesn't change what the lock protects.
+
+If you don't name a lock, Locksmith labels it automatically using its resources: the first resource's title, plus a "+ N more" suffix and a count badge (for example, "4 collections") when the lock protects several resources.
 
 ### Locking your entire store
 
