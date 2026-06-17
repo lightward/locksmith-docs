@@ -17,7 +17,7 @@ When testing your locks on unpublished or the currently published theme, we reco
 [how-to-use-a-private-browsing-session.md](how-to-use-a-private-browsing-session.md "mention")
 
 {% hint style="warning" %}
-⚠️ **Important:** If you're using a URL with the `shopifypreview.com` domain to test, Locksmith changes won't be reflected there. The Shopify theme editor's built-in preview bypasses Locksmith entirely, so locks, keys, and any manual locking code will appear as if they aren't in place.\
+**Important:** If you're using a URL with the `shopifypreview.com` domain to test, Locksmith changes won't be reflected there. The Shopify theme editor's built-in preview bypasses Locksmith entirely, so locks, keys, and any manual locking code will appear as if they aren't in place.\
 \
 For accurate testing, always use the preview URL that includes `?fts=0&preview_theme_id=` followed by your theme ID in the URL parameters — as described in this guide.
 {% endhint %}
