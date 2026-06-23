@@ -16,7 +16,7 @@ Locksmith's access messages can be modified using text, HTML, CSS, JavaScript an
 [customizing-messages.md](../../tutorials/more/customizing-messages.md)
 {% endcontent-ref %}
 
-## Adding a hero banner above your access content:&#x20;
+## Adding a hero banner above your access content:
 
 The following code can be added to your "Guest message content" field, above your existing message:
 
@@ -48,7 +48,7 @@ The above code is based on an example from W3 School, here: [https://www.w3schoo
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-12-11 at 8.10.56 pm.png" alt=""><figcaption><p>Example image of where the above example code can be added to the "Guest message content" field to include a hero banner above the lock's guest message content.</p></figcaption></figure>
 
-## Customising this example:&#x20;
+## Customising this example:
 
 * To replace the example image with your own, replace the URL with the quotes for the `background-image` with the URL of your banner image
 * Adjusting the height of the hero banner by changing the `height` value (300px in this example) to suit your needs
@@ -61,7 +61,7 @@ The above code is based on an example from W3 School, here: [https://www.w3schoo
 
 It’s possible to add some Liquid code if you would like to display a collection-specific banner image to multiple collections without needing to customise the above code for each image and then applying that to each collection lock.
 
-### To set this up:
+#### To set this up:
 
 1.  **Image titles:**
 
@@ -94,7 +94,7 @@ It’s possible to add some Liquid code if you would like to display a collectio
 
     [Locksmith’s default access messages](../../tutorials/more/customizing-messages.md#default-messages) are located in the Locksmith app’s Settings tab. By adding this modified hero banner image code to a message field in Locksmith’s settings—instead of a specific lock’s settings page—the code will apply to any lock that is using the default message.
 
-#### **(Optional) Limiting the scope of the hero banner code to collection and product pages:**
+**(Optional) Limiting the scope of the hero banner code to collection and product pages:**
 
 The banner code can be wrapped in some Liquid so that it runs only on collection and product pages. Here’s an example of Liquid for this purpose:
 
@@ -109,8 +109,6 @@ The banner code can be wrapped in some Liquid so that it runs only on collection
 ## Uploading and storing images:
 
 Shopify has some documentation on uploading and managing files here: [https://help.shopify.com/en/manual/shopify-admin/productivity-tools/file-uploads](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/file-uploads)
-
-
 
 ## Related articles:
 

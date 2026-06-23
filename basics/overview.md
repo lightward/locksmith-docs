@@ -14,7 +14,7 @@ A **lock** restricts access to something on your shop. You can lock:
 * Pages
 * Products
 * Collections
-* Prices  [more information here](https://www.locksmith.guide/tutorials/hiding-prices)
+* Prices [more information here](https://www.locksmith.guide/tutorials/hiding-prices)
 * The shopping cart (useful for preventing checkout until a condition is met)
 * The login page
 * The registration page (type 'register' into the Locksmith search bar)
@@ -28,20 +28,18 @@ For more advanced use cases, you can also create **custom Liquid locks** — the
 
 After selecting a resource and clicking Save, you'll see a set of options for that lock. The most commonly used ones are:
 
-* **Is the lock currently active?**  Toggle the lock on or off without deleting it.
-* **Should it also protect the products in this collection?**  Disabling this means only the collection page itself will be locked, not the individual product pages within it.
+* **Is the lock currently active?** Toggle the lock on or off without deleting it.
+* **Should it also protect the products in this collection?** Disabling this means only the collection page itself will be locked, not the individual product pages within it.
 * **Should it hide the collection, and its products, from search results and other lists?**
 * **Should it hide links to this resource from navigation?**
 
-You'll see different options depending on what type of resource you've locked. There are also additional options available under the **Advanced** section, including manual locking mode  [more on that here](https://www.locksmith.guide/keys/more/manual-mode).
+You'll see different options depending on what type of resource you've locked. There are also additional options available under the **Advanced** section, including manual locking mode [more on that here](https://www.locksmith.guide/keys/more/manual-mode).
 
 ### Keys
 
 A **key** permits access to the locked resource based on your criteria. Keys are created on the lock page using the "+ Add key" button.
 
 Keys allow you to specify the exact conditions that give your customers access to the locked resource. There are over 20 built-in key conditions to choose from. You can also create your own **custom Liquid keys** by choosing _custom Liquid_ from the keys menu.
-
-<figure><img src="../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces%2F-MUeGWHuijBPr8Og1Gta%2Fuploads%2FDUbHqg5YxcGUzOmOH3Di%2F2025-02-12%2015.32.53.gif" alt=""><figcaption></figcaption></figure>
 
 More information on creating keys here:
 

@@ -12,6 +12,14 @@ Shopify's policies prohibit the use of password control and age verification app
 
 When you use Locksmith to lock certain products, your store will still remain eligible to display on Shop, and your locked products will not be included in your Shop Store. This ensures that merchants can maintain the control Locksmith provides while remaining eligible for the Shop app.
 
+{% hint style="info" %}
+By default, Locksmith removes locked products and collections from the Shop channel using a product metafield.
+
+If you want a locked product or collection to stay visible on the Shop channel, open the lock's **Advanced settings** and enable **Allow \[this product / products in this collection] on the Shop channel**.:<br>
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/ShopAppIncludeSettingDisabled .png" alt="A checkbox labeled &#x27;Allow products in this collection on the Shop channel&#x27; in Locksmith&#x27;s Advanced settings. The checkbox is unchecked. The description reads: &#x27;Locksmith cannot enforce its access conditions on the Shop channel, so locked products are removed from the Shop channel via a product metafield that we automatically keep in sync. Use this setting to explicitly allow products in this collection to remain visible in the Shop channel."><figcaption></figcaption></figure>
+
 {% hint style="warning" %}
 Locksmith can only manage visibility in the Shop app at the **product level**. Products locked by product and collection locks will automatically be removed from the Shop app. However, variants locked by variant locks will still be purchasable in the Shop app. It is therefore your responsibility to manage desired visibility for your variants in the Shop app.
 {% endhint %}

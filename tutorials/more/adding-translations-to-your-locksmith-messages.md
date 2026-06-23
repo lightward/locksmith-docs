@@ -50,7 +50,7 @@ Then, similarly to above, you'll see a Locksmith section that you are free to ed
 
 **Do this for all of your store languages.**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-03-07 at 16.28.18 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-07 at 16.28.18 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Important caveat
 
@@ -66,10 +66,8 @@ To start, head into the language "locale" file you'd like to update in your them
 
 **Add this same entry into all desired locales files**, and update the "Enter Passcode" to the specific language.\
 \
-Next, in your passcode prompt message, use the translate filter on that variable. Here's an example: <br>
+Next, in your passcode prompt message, use the translate filter on that variable. Here's an example:<br>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-01-22 at 4.37.03 PM.png" alt=""><figcaption><p>Any html or styling will need to be around that, like the &#x3C;p>&#x3C;/p> in the above example. </p></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/Screenshot 2024-01-22 at 4.37.03 PM.png" alt=""><figcaption><p>Any html or styling will need to be around that, like the &#x3C;p>&#x3C;/p> in the above example.</p></figcaption></figure>
 
 <br>

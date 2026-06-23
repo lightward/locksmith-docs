@@ -28,7 +28,7 @@ While Locksmith itself cannot help here, there is a way you can prevent this fro
 
 So the general strategy here is to set your products up so that the _public_ price is something pretty high - **a price high enough so that the bots will ignore it**. Then, you'll use [Shopify's Discount feature](https://help.shopify.com/en/manual/discounts) to create a discount to bring the price back down to the original price that you'd like to sell at.
 
-Thankfully, Shopify allows you to create discounts that can _only_ be used by specific "customer segments". [More information on creating customer segments here](https://help.shopify.com/en/manual/customers/customer-segmentation/customer-segments).&#x20;
+Thankfully, Shopify allows you to create discounts that can _only_ be used by specific "customer segments". [More information on creating customer segments here](https://help.shopify.com/en/manual/customers/customer-segmentation/customer-segments).
 
 So, for example, you could create a customer segment that's based on a specific customer tag:
 
@@ -36,19 +36,19 @@ So, for example, you could create a customer segment that's based on a specific 
 
 And then give the customer segment a description name:
 
-![](<../../.gitbook/assets/Screen Shot 2022-07-29 at 12.16.00 PM (1).png>)
+![](<../../.gitbook/assets/Screen Shot 2022-07-29 at 12.16.00 PM.png>)
 
 When setting up the discount code, use the "Customer eligibility" section to select the customer segment that can use this discount:
 
 ![](<../../.gitbook/assets/Screen Shot 2022-07-29 at 12.17.24 PM.png>)
 
-The result of this is that you now have an avenue to make sure that only the customers you designate have a pathway to purchase that is secured all the way to the completion of the sale.&#x20;
+The result of this is that you now have an avenue to make sure that only the customers you designate have a pathway to purchase that is secured all the way to the completion of the sale.
 
 You can absolutely use this strategy without further involvement with any apps, including Locksmith. The customers will simply use the product pages as normal, and enter the discount codes at checkout.
 
 Again, the price they'll see here will be higher than what the customer is most likely expecting, so make sure you do everything you can to communicate with your customers about using the discount code. You can do this in the product description, in customer mailers, or when they contact you (more on that below).
 
-That's it for the basic setup!&#x20;
+That's it for the basic setup!
 
 ## How Locksmith _can_ help
 
@@ -73,7 +73,5 @@ Then, when signed in with an approved account, they will be able to add to cart 
 {% hint style="warning" %}
 **Remember**: Locksmith alone is not enough to prevent bots from purchasing the products out from under you - you'll need to combine this with the discount method outlined above.
 {% endhint %}
-
-
 
 For questions or help with setup, contact us via email at **team@uselocksmith.com!**

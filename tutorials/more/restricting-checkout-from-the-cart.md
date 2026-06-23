@@ -6,7 +6,7 @@ description: >-
 
 # Restricting checkout from the cart
 
-Locksmith allows you to restrict checkout by using a lock on the cart page in your store. **This is a good choice for merchants who want to allow customers to view all content in their store and browse fully,** only adding in restrictions on the last page before checkout. Or, to simply add extra restrictions for checking out, on top of other locks in the store.&#x20;
+Locksmith allows you to restrict checkout by using a lock on the cart page in your store. **This is a good choice for merchants who want to allow customers to view all content in their store and browse fully,** only adding in restrictions on the last page before checkout. Or, to simply add extra restrictions for checking out, on top of other locks in the store.
 
 ### **Limitations:**
 
@@ -19,8 +19,6 @@ Moving on, this is the checkout page without any locks in effect:
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5e731ab22c7d3a7e9ae96a46/file-LTWtPLdeVV.png)
 
 You can lock the entire cart page if preferred. This will work just like any other Locksmith lock. However, it is also possible to take it further and lock only the "Check out" button. Once Locksmith is set up, the result will be something like one of these screenshots (depending on your settings):
-
-&#x20;
 
 ![](../../.gitbook/assets/CartLock-CheckoutButton.png)
 
@@ -55,7 +53,7 @@ Use the following steps
 \
 3\. If you just want to lock the entire cart page, click "Save" to finish. If you want to lock _only_ the "Checkout" button, make sure "enable manual locking" is checked under Advanced Settings before saving:
 
-![](<../../.gitbook/assets/manualLockingEnabled (1).png>)
+![](../../.gitbook/assets/manualLockingEnabled.png)
 
 Done with part one!
 
@@ -81,7 +79,7 @@ In this portion, you'll update your shop's theme to protect _just_ the checkout 
 
 1. From your Shopify admin area, navigate to "Online Store" -> "Themes". Then, click the three-dots button in the upper-right corner for your theme, and select the "Edit HTML/CSS" option.
 2. Open the "cart.liquid" file (under "Templates"). If you have a newer "sectioned" theme, you may actually need to edit the "cart-template.liquid" file (under "Sections")
-3. Add the following to the very top of the file:`{% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: cart %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}`&#x20;
+3. Add the following to the very top of the file:`{% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: cart %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}`
 4. Find the checkout submit button(s), and wrap this code with `{% if locksmith_access_granted %} ... {% endif %}` . You can also add an "else" section to show a message to anyone who's been prevented from checking out.Here's a pretty typical example:
 
 Before:
@@ -147,8 +145,8 @@ If this script doesn't work in your theme, your theme may not include jQuery lib
 
 ## A note about Abandoned Cart emails
 
-If you have abandoned cart emails enabled on your shop, either through the built-in Shopify feature or an app, those emails may allow the customer to circumvent checkout restrictions.&#x20;
+If you have abandoned cart emails enabled on your shop, either through the built-in Shopify feature or an app, those emails may allow the customer to circumvent checkout restrictions.
 
-These emails can send the customer directly to the checkout process without touching the cart page. The customer will be able to check out with whatever amount was in the abandoned cart, whether or not it passes your restrictions.&#x20;
+These emails can send the customer directly to the checkout process without touching the cart page. The customer will be able to check out with whatever amount was in the abandoned cart, whether or not it passes your restrictions.
 
 **Your checkout restrictions will not work 100% of the time if you're sending abandoned cart emails**_,_ so keep that in mind when you're setting this up. :)

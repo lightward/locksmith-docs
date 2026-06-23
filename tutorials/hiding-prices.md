@@ -50,7 +50,7 @@ That's the most common way to set it up, but you have the freedom to choose what
 
 Before saving, turn on "Enable manual mode" right there in the lock (Clicking "Advanced" will show the option):
 
-![](<../.gitbook/assets/manualLockingEnabled (2).png>)
+![](../.gitbook/assets/manualLockingEnabled.png)
 
 Done with step one!
 
@@ -60,9 +60,9 @@ You'll now need to let Locksmith know which parts of the page should be hidden. 
 
 ### Theme hiding profiles:
 
-This method allows you define sections, blocks, or snippets which Locksmith will hide based on locks that have the Manual Locking option enabled.&#x20;
+This method allows you define sections, blocks, or snippets which Locksmith will hide based on locks that have the Manual Locking option enabled.
 
-This method shouldn't require any coding in your theme, _if_ your theme is fully compatible. (Most modern themes are.) This is a newer feature, and we recommend trying this method first.&#x20;
+This method shouldn't require any coding in your theme, _if_ your theme is fully compatible. (Most modern themes are.) This is a newer feature, and we recommend trying this method first.
 
 Here's a complete guide to setting this up:
 
@@ -70,16 +70,16 @@ Here's a complete guide to setting this up:
 Theme hiding profiles: Hide prices without coding.
 {% endembed %}
 
-### &#x20;Using manual locking code in your theme:
+### Using manual locking code in your theme:
 
-**Because each theme is a bit different, adding manual locking code will require manually editing your theme to hide your pricing or add to cart buttons.**&#x20;
+**Because each theme is a bit different, adding manual locking code will require manually editing your theme to hide your pricing or add to cart buttons.**
 
 **If you install a new theme down the road, these changes will need to be re-applied.** Try the the Theme Hiding Profiles method first (outlined above), to avoid these limitations.
 
 The rest of this guide gets a bit technical, we'll happily to the coding portion for you! If you've already created the lock described in step 1, simply write us a message at **team@uselocksmith.com** to request help.
 
 {% hint style="danger" %}
-**Note:** Locksmith's manual locking feature generally can _**not**_ hide elements or sections that are being managed or displayed by other third-party apps, including page builder apps. \
+**Note:** Locksmith's manual locking feature generally can _**not**_ hide elements or sections that are being managed or displayed by other third-party apps, including page builder apps.\
 \
 Manual locking is only compatible with full-page locks, and is _**not**_ compatible with variant locks.
 {% endhint %}
@@ -97,11 +97,13 @@ Each theme is very different, so those are simply examples. You'll need to go to
 
 1.  Open up the Liquid file, and add this to the very top of the file:
 
-    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
+    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">
+
     </code></pre>
 2.  Find the code you want to hide from unauthorized viewers, and wrap it with:
 
-    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% if locksmith_access_granted %}...{% endif %}
+    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">...
+
     </code></pre>
 3.  To hide prices, you'll be looking for elements like:
 
@@ -132,7 +134,7 @@ In many cases, the above code only needs to be added to two or three files. Whic
 
 You can still restrict purchasing products, while leaving the product details visible to the customer. This also a good option for those wanting to make sure that products are **available for search engines to index**.
 
-**As a reminder**, we can help guide you through this process, including adding the code, so don't hesitate to get in touch.&#x20;
+**As a reminder**, we can help guide you through this process, including adding the code, so don't hesitate to get in touch.
 
 Step 1 is exactly the same, but the code you add in step 2 will be slightly different.
 
@@ -154,7 +156,7 @@ Find the product-template or product-form file in your theme, and locate the cod
 
 This results in the add-to-cart button being replaced, in cases where the customer doesn't have access. What is shown depends on what is added above. Just make sure your key conditions on the lock match the conditions that you want your customers to meet before being able to purchase.
 
-#### For stores using Shopify's [legacy customer account system](https://help.shopify.com/en/manual/customers/customer-accounts/legacy-customer-accounts) (formerly "Classic customer accounts"):&#x20;
+#### For stores using Shopify's [legacy customer account system](https://help.shopify.com/en/manual/customers/customer-accounts/legacy-customer-accounts) (formerly "Classic customer accounts"):
 
 If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button includes a redirect to return customers after login:
 
@@ -200,21 +202,27 @@ You can add an access denied message of location keys by adding paragraph tags a
 
 The following example includes an "else" statement that will:
 
-* display an access denied message to customers who _are_ signed in and _don't_ have access to the lock.&#x20;
+* display an access denied message to customers who _are_ signed in and _don't_ have access to the lock.
 * or a "Login to purchase" button for customers who aren't signed in.
 
-<pre><code><strong>{% if locksmith_access_granted %}
-</strong>  &#x3C;button type="submit">
+```
+
+
+  <button type="submit">
     Add to cart button example
-  &#x3C;/button>
-{% else %}
-  {% if customer %}
-    &#x3C;p style="font-weight: bold; padding-top:20px; padding-bottom:20px;">You do not have access to this resource.&#x3C;/p>
-  {% else %}  
-    &#x3C;a style="width: 100%;" href="/customer_identity/sso_hint" class="btn button" data-locksmith>Log in to purchase&#x3C;/a>
-  {% endif %}  
-{% endif %}
-</code></pre>
+  </button>
+
+
+  
+  
+
+    <p style="font-weight: bold; padding-top:20px; padding-bottom:20px;">You do not have access to this resource.</p>
+
+      <a style="width: 100%;" href="/customer_identity/sso_hint" class="btn button" data-locksmith>Log in to purchase</a>
+
+  
+
+```
 
 **Note:** The above example uses a "Login to purchase" button for Shopify's [standard customer accounts](hiding-prices.md#for-stores-using-shopifys-customer-account-system-formerly-new-customer-accounts) system.
 
@@ -239,8 +247,6 @@ Please note: since the custom liquid code is added manually to the store theme, 
 \
 We recommend leaving the new theme _unpublished_ while you wait for the code to be added, so that nothing is exposed in the meantime. :)
 {% endhint %}
-
-
 
 {% hint style="info" %}
 If Locksmith's custom manual locking code is added to an _**unpublished**_ theme, please be sure to visit our guide below for instructions on testing:\

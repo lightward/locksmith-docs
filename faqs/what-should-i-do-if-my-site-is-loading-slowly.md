@@ -1,6 +1,6 @@
 # What should I do if my site is loading slowly?
 
-If your online storefront is showing poor performance _after_ installing Locksmith or adjusting Locksmith settings, it's possible that an unintentionally aggressive Locksmith configuration is to blame.&#x20;
+If your online storefront is showing poor performance _after_ installing Locksmith or adjusting Locksmith settings, it's possible that an unintentionally aggressive Locksmith configuration is to blame.
 
 Start by using the following troubleshooting steps:
 
@@ -16,7 +16,7 @@ Disabling Locksmith is done from with the **Disable Locksmith** button on the Se
 
 There are two lock settings known in Locksmith to _potentially_ cause speed issues in certain circumstances:
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-08-27 at 15.32.48 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-08-27 at 15.32.48.png" alt=""><figcaption></figcaption></figure>
 
 _The exact labels might differ slightly depending on if this is a product lock, collection lock, page lock etc._
 
@@ -36,7 +36,7 @@ Try disabling this setting (on all locks) and then check if your site is loading
 
 ### The 'hide from searches and collections' setting
 
-It is more rare that this setting will slow down your site. However, with certain themes, there may be unexpected loops in product or collection templates where Locksmith inserts its checks.&#x20;
+It is more rare that this setting will slow down your site. However, with certain themes, there may be unexpected loops in product or collection templates where Locksmith inserts its checks.
 
 If you see Locksmith _only_ loading slowly on collections or search results pages, that could be the signal that this setting is the issue.
 
@@ -46,15 +46,14 @@ If you see Locksmith _only_ loading slowly on collections or search results page
 
 ## 3. If you have any developers working with you...
 
-Enlist their help to find the specific assets in your storefront theme which contains Locksmith code that might be unnecessarily running too many times. It's simple to tell Locksmith to ignore specific files in your theme, and this fact can be used to your advantage here.&#x20;
+Enlist their help to find the specific assets in your storefront theme which contains Locksmith code that might be unnecessarily running too many times. It's simple to tell Locksmith to ignore specific files in your theme, and this fact can be used to your advantage here.
 
 To do this use the Settings > Advanced > "Liquid ignore list" field:
 
-![](<../.gitbook/assets/Screen Shot 2022-08-02 at 7.25.25 PM (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-08-02 at 7.25.25 PM.png>)
 
 Using this settings will mean that Locksmith will strip itself out of that asset.
 
 ## Contact us for help!
 
 If the above strategies do not provide anything useful, please do not hesitate to contact us via email at **team@uselocksmith.com**, and we'd be happy to help you troubleshoot this.
-

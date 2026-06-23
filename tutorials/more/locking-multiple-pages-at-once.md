@@ -3,7 +3,7 @@
 {% hint style="success" %}
 **The simplest option first:** if you just want to protect a specific, known set of pages, you don't need any code. Create a lock on one page, then use the **Protected resources** section of the lock editor to **add the other pages** to the same lock. See [Creating locks → Protecting multiple resources with one lock](../../basics/creating-locks.md#protecting-multiple-resources-with-one-lock).
 
-The Liquid approaches below are still useful when you want pages to be locked by a *rule* — e.g. every page whose title contains a word, every page using a certain template, or every page carrying a metafield — so that pages added in the future are locked automatically without editing the lock.
+The Liquid approaches below are still useful when you want pages to be locked by a _rule_ — e.g. every page whose title contains a word, every page using a certain template, or every page carrying a metafield — so that pages added in the future are locked automatically without editing the lock.
 {% endhint %}
 
 Because Shopify doesn't provide any way to group pages (in the way that collections work for products), we need to get down to the code level in order to lock pages by a rule, or to protect a large or changing set of pages automatically.
@@ -48,7 +48,7 @@ To lock a list of pages based on page handles using one lock:
 
 <figure><img src="../../.gitbook/assets/liquidLockingBasics-locking_a_list_of_pages.png" alt=""><figcaption></figcaption></figure>
 
-To list pages handles that you would like to lock, you can do that by listing each handle in the "Liquid prelude" field where the "page\_handles" variable is defined (see image below).&#x20;
+To list pages handles that you would like to lock, you can do that by listing each handle in the "Liquid prelude" field where the "page\_handles" variable is defined (see image below).
 
 <figure><img src="../../.gitbook/assets/liquidLockingBasics-list_page_handles.png" alt=""><figcaption></figcaption></figure>
 
@@ -110,7 +110,7 @@ Follow the steps in our [Liquid locking basics](https://www.locksmith.guide/tuto
 page and page.metafields.custom.locksmith_locked != blank
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-03-04 at 4.17.28 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-03-04 at 4.17.28 PM.png" alt=""><figcaption></figcaption></figure>
 
 \
 No Liquid prelude is needed for this approach.

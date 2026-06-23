@@ -16,7 +16,7 @@ You'll notice that Locksmith also supports _only_ checking if a customer is alre
 
 You'll need to create a Klaviyo API key and give it to Locksmith (see below). Once you do that, you'll be presented with your Klaviyo lists, and you'll be able to choose which one to use like so:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 12.23.54 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-31 at 12.23.54.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 As noted within the key condition setup, Klaviyo has their own policies regarding double opt in, and it is typically enabled by default. This setting is adjusted in your Klaviyo dashboard - it is not a setting that is controlled by Locksmith.
@@ -32,21 +32,15 @@ In your Klaviyo dashboard, go to Settings > Account > API Keys. You can also use
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-11-03 at 7.17.58 PM.png" alt=""><figcaption></figcaption></figure>
 
-
-
-Click the  "Create Private API Key" button to create a key for Locksmith. You'll see the new key on the next screen.&#x20;
+Click the "Create Private API Key" button to create a key for Locksmith. You'll see the new key on the next screen.
 
 The scopes that Locksmith needs _full access_ to from the Klaviyo API key are "List", "Profiles", "Segments", and "Subscriptions":
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-10-27 at 12.52.02 PM.png" alt=""><figcaption></figcaption></figure>
 
-
-
 Copy the API key:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-11-03 at 7.32.15 PM.png" alt=""><figcaption></figcaption></figure>
-
-
 
 Then, head back to Locksmith, where you'll be able to paste in the key. Click "Continue", and Locksmith will present you with a list of Klaviyo lists, to which your new subscribers will be saved.
 
@@ -69,4 +63,3 @@ Once your Locksmith configuration is to your liking, hit the "Save" button. From
 {% content-ref url="../../keys/more/newsletter-keys.md" %}
 [newsletter-keys.md](../../keys/more/newsletter-keys.md)
 {% endcontent-ref %}
-

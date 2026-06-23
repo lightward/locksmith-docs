@@ -8,7 +8,7 @@ This is an advanced guide that requires knowledge of [Shopify's Liquid language]
 
 Moving on - to begin, click in the "Add a new lock" search field and select "Start a Liquid lock", or type "Liquid" in the search field:
 
-![](../../.gitbook/assets/liquidLockingBasics-start_a_liquid_lock.png)
+![](<../../.gitbook/assets/Screenshot 2024-05-27 at 9.43.07 AM.png>)
 
 Then click "Start a new lock":
 
@@ -60,13 +60,20 @@ For example, if you have a large number of pages that you want to lock at once, 
 
 In your Liquid **prelude**:
 
-<pre><code><strong>{% assign page_is_locked = false %}
-</strong>{% if scope == "page" %}
- {% if page.handle contains "member" or page.handle contains "secret" %}
-  {% assign page_is_locked = true %}
- {% endif %}
-{% endif %}
-</code></pre>
+```
+
+
+
+ 
+ 
+  
+  
+ 
+ 
+
+
+
+```
 
 In your Liquid **condition**:
 

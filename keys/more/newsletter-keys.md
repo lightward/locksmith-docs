@@ -38,7 +38,7 @@ Or, you can also use Klaviyo to grant access only to those who are _already_ sub
 
 ## Using your default Shopify mailing list
 
-Shopify ships out of the box with a marketing mailing list service. If you would like to use Locksmith to grant access to those who have already subscribed to this, you can do so using a custom Liquid key condition.&#x20;
+Shopify ships out of the box with a marketing mailing list service. If you would like to use Locksmith to grant access to those who have already subscribed to this, you can do so using a custom Liquid key condition.
 
 This is slightly different than the above options, in that **it will only grant access to a signed in customers - if the customer is already subscribed**! To start, check out our guide on this here:
 
@@ -52,7 +52,7 @@ The condition you're looking for is:
 
 When set up, this will present the customer will the regular prompt to sign in (as opposed to the subscription prompt):
 
-![](<../../.gitbook/assets/Screen Shot 2022-07-27 at 2.45.59 PM (1).png>)
+![](<../../.gitbook/assets/Screen Shot 2022-07-27 at 2.45.59 PM.png>)
 
 If desired, you can adjust your message prompt to direct your customers to the page footer(in most stores) to subscribe to your newsletter. More information on editing messages here:
 
@@ -62,15 +62,13 @@ If desired, you can adjust your message prompt to direct your customers to the p
 
 ## Using other mail services
 
-Locksmith does not support other mail services at this time.&#x20;
+Locksmith does not support other mail services at this time.
 
 However, if you have a mail service that automatically tags customers that are subscribed, you can use Locksmith to check for a customer tag:
 
 {% content-ref url="../customer-account-keys.md" %}
 [customer-account-keys.md](../customer-account-keys.md)
 {% endcontent-ref %}
-
-
 
 Please feel free to contact us via email at **team@uselocksmith.com** if you have any questions!
 

@@ -20,12 +20,12 @@ The lock setting to **"Enable manual locking"** (which disables full page protec
 
 ## 1. Accessing theme hiding profiles
 
-Because each theme is different, hiding profiles are added **per theme**. So, this feature is accessed via the Themes tab. Once there, press the "Edit theme hiding profile" button.&#x20;
+Because each theme is different, hiding profiles are added **per theme**. So, this feature is accessed via the Themes tab. Once there, press the "Edit theme hiding profile" button.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-12-05 at 14.54.00 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-12-05 at 14.54.00.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-You can also edit hiding profiles for unpublished themes by using the ellipses ("...")  button next to each unpublished theme shown.
+You can also edit hiding profiles for unpublished themes by using the ellipses ("...") button next to each unpublished theme shown.
 {% endhint %}
 
 ## 2. Adding a hiding definition
@@ -38,7 +38,7 @@ A hiding definition hides a section, block, or snippet in your theme. One of the
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-12-05 at 15.13.05.png" alt=""><figcaption></figcaption></figure>
 
-4. &#x20;Add each of the desired definitions. You'll need to repeat the search for each one.
+4. Add each of the desired definitions. You'll need to repeat the search for each one.
 5. Repeat the above 4 steps for every type that you want to hide. E.g. "quantity", "buy", etc. If you are hiding price and buy buttons, you will likely end up with something like this:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-12-05 at 15.21.24.png" alt=""><figcaption></figcaption></figure>
@@ -49,7 +49,7 @@ If your theme is one of the free themes made by Shopify from the Shopify theme s
 
 ## 3. What to use for "Liquid variable"
 
-"Liquid variable" is how you specify which Liquid object in the theme Locksmith should base the hiding on. Most use-cases for this feature are geared towards products and _most of the time_, theme developers simply use `product`. However, there are some exceptions. A "card product" file might assign to a variable called `card_product`, or a "featured product" file might use `featured_product`. \
+"Liquid variable" is how you specify which Liquid object in the theme Locksmith should base the hiding on. Most use-cases for this feature are geared towards products and _most of the time_, theme developers simply use `product`. However, there are some exceptions. A "card product" file might assign to a variable called `card_product`, or a "featured product" file might use `featured_product`.\
 \
 If you are not locking a product, you'll want to use the applicable variable (`collection`, `cart`, `blog`, `shop`, etc).
 
@@ -91,14 +91,14 @@ If you are using a passcode key and need to render a passcode prompt button, use
 
 ## 5. Save and test!
 
-Once you've added all of your hiding definitions, save your hiding profile. Locksmith will perform an installation to the theme. Once the installation finishes, make sure to verify that everything is working as expected on the frontend of your store! \
+Once you've added all of your hiding definitions, save your hiding profile. Locksmith will perform an installation to the theme. Once the installation finishes, make sure to verify that everything is working as expected on the frontend of your store!\
 \
 Make sure you have the setting checked to "Enable manual locking" before testing:<br>
 
-<figure><img src="../../.gitbook/assets/manualLockingEnabled (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/manualLockingEnabled.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-You can head back to the themes tab to check the status of a specific installation, whether it be for a published theme or not.&#x20;
+You can head back to the themes tab to check the status of a specific installation, whether it be for a published theme or not.
 {% endhint %}
 
 ## How is this different from Locksmith's standard "manual locking"
@@ -111,10 +111,9 @@ Hiding profiles are intended to work alongside - or in many cases as a replaceme
 * If the hiding target is not contained within a section, block, or snippet, manual locking will still be necessary.<br>
 
 {% hint style="warning" %}
-**Note**: While this method does hide elements like prices visually, it may still be possible for someone viewing the source (or interacting with the browser console) to see the price. This is because of the presence of things like Google Analytics and other tools, which reproduce the price in the source - but not visually on the page - for their own usage. **These are out of control of the Locksmith app.**&#x20;
+**Note**: While this method does hide elements like prices visually, it may still be possible for someone viewing the source (or interacting with the browser console) to see the price. This is because of the presence of things like Google Analytics and other tools, which reproduce the price in the source - but not visually on the page - for their own usage. **These are out of control of the Locksmith app.**
 {% endhint %}
 
 {% hint style="danger" %}
 **Also note:** Locksmith's manual locking feature generally can _**not**_ hide elements or sections that are being managed or displayed by other third-party apps, including page builder apps. Manual locking is only compatible with full-page locks, and is _**not**_ compatible with variant locks.
 {% endhint %}
-
