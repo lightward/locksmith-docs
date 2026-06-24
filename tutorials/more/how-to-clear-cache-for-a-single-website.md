@@ -10,6 +10,8 @@ If you are using Locksmith's passcode, secret link, newsletter, or location key-
 
 If you want to re-test what a new user would, you will need to use a browser with clean cache. Keep in mind that you may find it easier to simply open up an **incognito window,** or use a **different browser or device**. However, those steps can be tedious if you would like to test multiple times in quick succession.
 
+{% include "../../.gitbook/includes/theme-preview-testing-warning.md" %}
+
 Following the steps in this guide will help you clear the cache for a single website, **without needing to clear the cache for all websites**. GIFs included!
 
 ## Browser-specific steps

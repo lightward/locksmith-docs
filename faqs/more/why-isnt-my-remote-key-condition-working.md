@@ -16,6 +16,8 @@ For background, Locksmith remembers your previous access using the same mechanis
 
 The easiest way to move forward is by opening a private browsing session (sometimes called "incognito mode"), and _then_ proceeding to test Locksmith in your online storefront.
 
+{% include "../../.gitbook/includes/theme-preview-testing-warning.md" %}
+
 Detailed information on using private/incognito mode here:
 
 {% content-ref url="../../tutorials/more/how-to-use-a-private-browsing-session.md" %}
@@ -46,10 +48,6 @@ _If you were signed into a customer account when you opened the key_, Locksmith 
 
 To turn this setting off, head into the lock and click on the link to the key condition. Next, scroll down in the pop up and disable the option "Remember for signed in customer":
 
-<div align="center">
-
-<img src="../../.gitbook/assets/Screen Shot 2022-08-02 at 9.42.52 PM.png" alt="">
-
-</div>
+<div align="center"><img src="../../.gitbook/assets/Screen Shot 2022-08-02 at 9.42.52 PM.png" alt=""></div>
 
 Toggle the setting OFF, and **don't forget to save your lock**!
