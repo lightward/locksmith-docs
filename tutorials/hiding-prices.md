@@ -102,7 +102,7 @@ Each theme is very different, so those are simply examples. You'll need to go to
 2.  Find the code you want to hide from unauthorized viewers, and wrap it with:
 
     <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% if locksmith_access_granted %}
-      &#x3C;!-- your price / add-to-cart code here -->
+      &#x3C;!-- your price code here -->
     {% endif %}
     </code></pre>
 3.  To hide prices, you'll be looking for elements like:
