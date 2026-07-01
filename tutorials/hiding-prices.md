@@ -97,13 +97,13 @@ Each theme is very different, so those are simply examples. You'll need to go to
 
 1.  Open up the Liquid file, and add this to the very top of the file:
 
-    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">
-
+    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
     </code></pre>
 2.  Find the code you want to hide from unauthorized viewers, and wrap it with:
 
-    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">...
-
+    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% if locksmith_access_granted %}
+      &#x3C;!-- your price / add-to-cart code here -->
+    {% endif %}
     </code></pre>
 3.  To hide prices, you'll be looking for elements like:
 
