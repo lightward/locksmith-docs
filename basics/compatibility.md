@@ -74,7 +74,7 @@ The following apps have known compatibility issues with Locksmith - although the
 ## Other areas of incompatibility
 
 * **Predictive searches** - Locksmith generally cannot remove products from searches that dynamically show search results as you type. This includes built-in theme searches, and most apps that add predictive searches to your theme. That being said, it is possible to manage the appearance of specific products in store searches using product metafields: [more information on that here](https://community.shopify.com/c/ecommerce-marketing/hiding-a-product-from-search-engine/td-p/484788).
-*   [The Checkout area](https://help.shopify.com/en/manual/checkout-settings) - Apps are pretty heavily limited in their ability to make changes to the checkout area, for security reasons. This means that Locksmith cannot restrict access to payment methods, shipping methods, shipping addresses, or anything else that is shown during the checkout process. If you wish to use Locksmith to restrict customers ability to check out,
+*   [The Checkout area](https://help.shopify.com/en/manual/checkout-settings) - Apps are heavily limited in their ability to change checkout, for security reasons. Locksmith cannot restrict shipping methods, shipping addresses, or most other checkout elements. However, you can [hide payment methods by customer tag](https://www.locksmith.guide/tutorials/more/hiding-payment-methods-by-customer-tag). If you need to restrict a customer's ability to check out,
 
     you now have two options:
 
