@@ -44,6 +44,14 @@ Sets a maximum allowed purchase amount. When used, Locksmith will only grant acc
 
 Allows to you specify how far back, in days, you would like Locksmith to check for the purchase of the specified product. E.g. you may want to only allow access for 30 days after purchase.
 
+{% hint style="warning" %}
+**Leaving this field blank is not the same as entering 0.**
+
+A **blank** field means there is no time limit — Locksmith will check the customer's order history regardless of how long ago the purchase was made. Leave this field blank if access should last indefinitely.
+
+Entering **0** tells Locksmith to look back zero days, which means **no order will ever qualify, and the key will never grant access**. Because a key configured this way looks valid and produces no error, it can be difficult to spot when troubleshooting a lock that isn't opening.
+{% endhint %}
+
 #### Ignore cancelled orders
 
 When ON - Cancelled orders will not fulfill the requirements for access. Default: ON.
