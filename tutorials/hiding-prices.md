@@ -1,14 +1,16 @@
 ---
 description: >-
-  How to use the Locksmith app to hide or "lock" specific page content on your
+  How to use the Locksmith app to hide product prices and buy buttons on your
   Shopify Online Store
 ---
 
 # Hiding product prices and/or the add to cart button
 
-Locksmith's [manual mode](more/manual-mode.md) feature can be used to hide your product prices so that customers can still browse your shop, but can only see prices and purchase products if certain conditions are met.
+Locksmith can hide prices and buy buttons for locked products, so that customers can still browse your shop, but can only see prices and purchase products if certain conditions are met.
 
-Here is an example of a product page that has been setup properly with Locksmith to hide prices:
+This is built into every lock's settings — no theme code required. Locksmith integrates directly with your theme's own price and buy-button code, so hiding follows the locked products wherever your theme displays them.
+
+Here is an example of a product page that has been set up with Locksmith to hide prices:
 
 ![](../.gitbook/assets/HidingProductPrices-LoginToPurchase.png)
 
@@ -20,153 +22,116 @@ Then, when the customer meets the conditions, the product pages will appear norm
 **Note:** The results may look different depending on your Locksmith conditions, theme, or other settings.
 {% endhint %}
 
-{% hint style="warning" %}
-**Also note**: While this method does hide the price visually, it may still be possible for someone viewing the source (or interacting with the browser console) to see the price. This is because of the presence of things like Google Analytics and other tools, which reproduce the price in the source - but not visually on the page - for their own usage. These are out of control of the Locksmith app.
-{% endhint %}
-
-You can also setup Locksmith to hide from collection pages and searches (as long as the default Shopify search is used).
-
-You have flexibility! For example, you can require accounts to be approved in addition to signed in. Our whole library of key conditions is at your disposal here. You can also set it up on only some of your products if you want to leave some products available. Or, you can simply hide the add-to-cart button and leave the product prices visible.
-
 Use the following two steps to set it all up:
 
-## 1. Create lock
+## 1. Create a lock
 
-The first step to hiding your prices using Locksmith is to create a lock that covers the products that you would like to hide prices on. To do this, open up Locksmith and use the search bar on the main page of the app. If this is all of your products (most common), you can simply search for "all" and choose the "All Products" collection:
+The first step is to create a lock that covers the products that you would like to hide prices on. To do this, open up Locksmith and use the search bar on the main page of the app. If this is all of your products (most common), you can simply search for "all" and choose the "All Products" collection:
 
-![](<../.gitbook/assets/Screenshot 2025-06-18 at 4.50.31 PM.png>)
+![](<../.gitbook/assets/Screenshot 2025-06-18 at 4.50.31 PM.png>)
 
 {% hint style="warning" %}
 **Warning**: make sure to choose "Collection: All" and **not** "Collections Listing"
 {% endhint %}
 
-If you are only wanting to apply pricing hiding to some of your products, you can instead create a lock on different collection(s) or products that you want prices hidden for
+If you are only wanting to apply price hiding to some of your products, you can instead create a lock on different collection(s) or products that you want prices hidden for.
 
 Once you've created the lock, you'll choose the conditions for access. Many merchants use the "Permit if customer is tagged with..." key condition, which lets you manually approve accounts for price access by adding a customer tag:
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-06-18 at 4.49.00 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-06-18 at 4.49.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 That's the most common way to set it up, but you have the freedom to choose whatever key conditions work for your setup.
 
-Before saving, turn on "Enable manual mode" right there in the lock (Clicking "Advanced" will show the option):
+## 2. Turn on hiding
 
-![](<../.gitbook/assets/manualLockingEnabled (2).png>)
+In the lock editor, find the **Price & add-to-cart hiding** card, just below your keys. It has two settings:
 
-Done with step one!
+* **Hide buy buttons** — hides the add-to-cart button, dynamic checkout buttons (like "Buy it now"), and quantity selectors for the locked products. This is what keeps locked products out of the cart.
+* **Hide price** — hides the locked products' prices.
 
-## 2. Updating your theme for manual locking
+When you turn either setting on, Locksmith scans your published theme to find the places where it can integrate, and shows you a compatibility result for each setting. Save your lock, and Locksmith updates your theme automatically — and re-checks your theme every time it installs from then on, so theme updates are picked up on their own.
 
-You'll now need to let Locksmith know which parts of the page should be hidden. There are two methods to handling this:<br>
+Where the buy buttons were, your visitors will see your lock's message content instead (a "Log in to purchase" button, a passcode prompt, or whatever fits your key conditions) — styled to match your theme.
 
-### Theme hiding profiles:
+## What gets hidden
 
-This method allows you define sections, blocks, or snippets which Locksmith will hide based on locks that have the Manual Locking option enabled.&#x20;
+Wherever your theme renders the locked products through its own templates: the product page, collection and search grids, featured-product sections, and quick-view popups. Unlocked products are never affected — hiding follows the locked products individually.
 
-This method shouldn't require any coding in your theme, _if_ your theme is fully compatible. (Most modern themes are.) This is a newer feature, and we recommend trying this method first.&#x20;
+## Good to know
 
-Here's a complete guide to setting this up:
+{% hint style="warning" %}
+**Hiding prices without hiding buy buttons?** Prices always appear in the cart and at checkout — Shopify doesn't provide a way to hide them there. If you're hiding prices, we recommend hiding buy buttons too, so locked products can't reach the cart in the first place. The app will remind you about this combination.
+{% endhint %}
+
+{% hint style="warning" %}
+While Locksmith hides the price visually, it may still be possible for someone viewing the page source (or using the browser console) to find it. This is because of things like SEO markup and analytics tools, which reproduce the price in the source — but not visually on the page — for their own usage.
+{% endhint %}
+
+{% hint style="info" %}
+Prices displayed by **third-party apps** (page builders, currency converters, wishlist apps, and so on) render outside your theme's own code, so they aren't hidden automatically — but Locksmith support may still be able to help with these. Feel free to reach out.
+{% endhint %}
+
+{% hint style="info" %}
+If your theme already contains **hand-written Locksmith code** (from the manual methods below), the automatic settings may not work well alongside it — the app will show a warning if it detects this. Write to us if you'd like help transitioning.
+{% endhint %}
+
+## If your theme shows "Incompatible"
+
+Every theme is different, and occasionally Locksmith won't find a spot it can safely integrate with. If that happens, the app will say so rather than guessing — and this is exactly the kind of thing our support team is here for. [Write to us](../policies/contact.md) and we'll work with you to get your theme set up.
+
+## Advanced: adjusting what Locksmith found
+
+The scan's results are visible — and editable — on your theme's hiding profile page (**Themes → your theme → hiding profile**). Each automatic definition can be adjusted (its Liquid variable, whether it shows your replacement message), removed, or restored, and there's a reset if you'd like to return to the theme defaults. Your edits survive re-scans.
+
+## Manual alternatives
+
+Before these built-in settings existed, price hiding was set up through [manual mode](more/manual-mode.md) — either with theme hiding profiles or with hand-written code. These methods still work, and remain useful for special cases:
+
+### Theme hiding profiles
+
+This method allows you to define sections, blocks, or snippets which Locksmith will hide based on locks that have the Manual Locking option enabled. Here's a complete guide:
 
 {% embed url="https://www.locksmith.guide/tutorials/more/how-to-hide-theme-sections-blocks-and-snippets" %}
 Theme hiding profiles: Hide prices without coding.
 {% endembed %}
 
-### &#x20;Using manual locking code in your theme:
+### Manual locking code
 
-**Because each theme is a bit different, adding manual locking code will require manually editing your theme to hide your pricing or add to cart buttons.**&#x20;
+Hand-written Locksmith code in your theme offers the most control, at the cost of needing to be re-applied whenever you switch themes. We'll happily do the coding portion for you — just write us at [team@uselocksmith.com](../policies/contact.md).
 
-**If you install a new theme down the road, these changes will need to be re-applied.** Try the the Theme Hiding Profiles method first (outlined above), to avoid these limitations.
+<details>
 
-The rest of this guide gets a bit technical, we'll happily to the coding portion for you! If you've already created the lock described in step 1, simply write us a message at **team@uselocksmith.com** to request help.
+<summary>Click here for the technical details</summary>
 
-{% hint style="danger" %}
-**Note:** Locksmith's manual locking feature generally can _**not**_ hide elements or sections that are being managed or displayed by other third-party apps, including page builder apps. \
-\
-Manual locking is only compatible with full-page locks, and is _**not**_ compatible with variant locks.
-{% endhint %}
+You'll need to locate the places in your theme that show the price — for example files like `snippets/product-card-grid.liquid`, `templates/product.liquid`, or `snippets/product-price.liquid`. In each file:
 
-If you are a developer type, and prefer to do the coding portion yourself, read on...\
-\
-You'll need to start by locating the places in your theme that show the price. Here are some examples of files that you might find the price in:
+1.  Add this to the very top of the file:
 
-* snippets/product-card-grid.liquid
-* templates/product.liquid
-* snippets/product-card-list.liquid
-* snippets/product-price.liquid
-
-Each theme is very different, so those are simply examples. You'll need to go to each of the files that display price, and do the following steps:
-
-1.  Open up the Liquid file, and add this to the very top of the file:
-
-    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
-    </code></pre>
-2.  Find the code you want to hide from unauthorized viewers, and wrap it with:
-
-    <pre class="language-liquid" data-overflow="wrap"><code class="lang-liquid">{% if locksmith_access_granted %}...{% endif %}
-    </code></pre>
-3.  To hide prices, you'll be looking for elements like:
+    {% code overflow="wrap" %}
+    ```liquid
+    {% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
+    ```
+    {% endcode %}
+2.  Wrap the code you want to hide with:
 
     ```liquid
-    {{ product.price }}
+    {% if locksmith_access_granted %}...{% endif %}
     ```
+3.  For prices, look for elements like `{{ product.price }}` or `{{ item.price }}`. For the add-to-cart button, find the product form and use an `else` branch to show replacement content:
 
-    ... or:
-
+    {% code overflow="wrap" %}
+    ```liquid
+    {% if locksmith_access_granted %}
+      <button type="submit">
+        Add to cart button example
+      </button>
+    {% else %}
+      <p><strong>Product not available</strong></p>
+    {% endif %}
     ```
-    {{ item.price }}
-    ```
+    {% endcode %}
 
-    **Example:**
-
-    <img src="https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/5e27859c04286364bc9436f7/5e27859cb1aeb.png" alt="" data-size="original">
-
-    This shows Locksmith manual locking code wrapping an entire price section, which I've highlighted.
-4. Save!
-
-Remember, those 4 steps need to be done for each file that display the price.
-
-{% hint style="info" %}
-In many cases, the above code only needs to be added to two or three files. Whichever file is in charge of displaying the price on **product** pages, **collection** pages, and **searches**. The latter two are oftentimes the same.
-{% endhint %}
-
-### Configuring Locksmith to hide the add-to-cart button only <a href="#hide-add-to-cart" id="hide-add-to-cart"></a>
-
-You can still restrict purchasing products, while leaving the product details visible to the customer. This also a good option for those wanting to make sure that products are **available for search engines to index**.
-
-**As a reminder**, we can help guide you through this process, including adding the code, so don't hesitate to get in touch.&#x20;
-
-Step 1 is exactly the same, but the code you add in step 2 will be slightly different.
-
-Find the product-template or product-form file in your theme, and locate the code that generates the "add-to-cart" button. This is different for all themes, so it won't be possible to give you an exact location for this. Then, add the code that you want to render, inside of a Liquid "else" statement. For example:
-
-{% code overflow="wrap" %}
-```liquid
-{% capture var %}{% render 'locksmith-variables', variable: 'access_granted', scope: 'subject', subject: product %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_access_granted = true %}{% else %}{% assign locksmith_access_granted = false %}{% endif %}
-
-{% if locksmith_access_granted %}
-  <button type="submit">
-    Add to cart button example
-  </button>
-{% else %}
-  <p><strong>Product not available</strong></p>
-{% endif %}
-```
-{% endcode %}
-
-This results in the add-to-cart button being replaced, in cases where the customer doesn't have access. What is shown depends on what is added above. Just make sure your key conditions on the lock match the conditions that you want your customers to meet before being able to purchase.
-
-#### For stores using Shopify's [legacy customer account system](https://help.shopify.com/en/manual/customers/customer-accounts/legacy-customer-accounts) (formerly "Classic customer accounts"):&#x20;
-
-If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button includes a redirect to return customers after login:
-
-{% code overflow="wrap" %}
-```html
-<a href="/account/login?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase</a>
-```
-{% endcode %}
-
-#### For stores using Shopify's [customer account](https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts) system (formerly "New customer accounts":
-
-If you need to render a "Login to purchase" button, use the following code (the button classes may need to be edited). This button will return customers after login:
+For a "Log in to purchase" button in the `else` branch, on Shopify's [customer accounts](https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts) system:
 
 {% code overflow="wrap" %}
 ```html
@@ -174,9 +139,15 @@ If you need to render a "Login to purchase" button, use the following code (the 
 ```
 {% endcode %}
 
-#### For locks using passcode keys:
+... or on the [legacy customer account system](https://help.shopify.com/en/manual/customers/customer-accounts/legacy-customer-accounts):
 
-If you need to render a passcode prompt button, use the following code (the button classes may need to be edited):
+{% code overflow="wrap" %}
+```html
+<a href="/account/login?return_url={{ request.path }}" class="btn button button button--full-width button--secondary">Log in to purchase</a>
+```
+{% endcode %}
+
+For locks using passcode keys, a passcode prompt trigger:
 
 {% code overflow="wrap" %}
 ```html
@@ -184,66 +155,14 @@ If you need to render a passcode prompt button, use the following code (the butt
 ```
 {% endcode %}
 
-#### For locks using location keys:
-
-You can add an access denied message of location keys by adding paragraph tags and some text within the Liquid "else" statement, for example:
-
-```html
-<p><strong>Product not available in your country.</strong></p>
-```
-
-#### When using the "is tagged with..." key condition you can display a "Login to purchase" button _or_ an access denied message depending on a visitors access:
-
-<details>
-
-<summary>Click here for an example</summary>
-
-The following example includes an "else" statement that will:
-
-* display an access denied message to customers who _are_ signed in and _don't_ have access to the lock.&#x20;
-* or a "Login to purchase" button for customers who aren't signed in.
-
-<pre><code><strong>{% if locksmith_access_granted %}
-</strong>  &#x3C;button type="submit">
-    Add to cart button example
-  &#x3C;/button>
-{% else %}
-  {% if customer %}
-    &#x3C;p style="font-weight: bold; padding-top:20px; padding-bottom:20px;">You do not have access to this resource.&#x3C;/p>
-  {% else %}  
-    &#x3C;a style="width: 100%;" href="/customer_identity/sso_hint" class="btn button" data-locksmith>Log in to purchase&#x3C;/a>
-  {% endif %}  
-{% endif %}
-</code></pre>
-
-**Note:** The above example uses a "Login to purchase" button for Shopify's [standard customer accounts](hiding-prices.md#for-stores-using-shopifys-customer-account-system-formerly-new-customer-accounts) system.
-
 </details>
 
-### Here are some visual examples of the result
-
-#### Requiring, a sign-in:
-
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/600d05382e764327f87c1b63/file-5T8frc6HsP.png)
-
-#### **A passcode:**
-
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/600d056e1c64ad47e4b724f8/Screen-Shot-2021-01-23-at-10.17.02-PM.png)
-
-#### **A country-specific visitor:**
-
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5ddd799f2c7d3a7e9ae472fc/images/600d05bf1c64ad47e4b724f9/file-tT77eLbVWn.png)
-
 {% hint style="warning" %}
-Please note: since the custom liquid code is added manually to the store theme, anytime you switch to a _**new**_ or _**updated**_ theme the custom code has to be manually added again to the new theme. We're always happy to add code to new or updated themes if you write into [team@uselocksmith.com](../policies/contact.md)\
-\
-We recommend leaving the new theme _unpublished_ while you wait for the code to be added, so that nothing is exposed in the meantime. :)
+Please note: since manual locking code is added by hand to the store theme, anytime you switch to a _**new**_ or _**updated**_ theme the custom code has to be added again. (The built-in settings at the top of this guide re-apply themselves automatically — one more reason to prefer them.) We're always happy to add code to new or updated themes if you write into [team@uselocksmith.com](../policies/contact.md)
 {% endhint %}
 
-
-
 {% hint style="info" %}
-If Locksmith's custom manual locking code is added to an _**unpublished**_ theme, please be sure to visit our guide below for instructions on testing:\
+If Locksmith is set up on an _**unpublished**_ theme, please be sure to visit our guide below for instructions on testing:\
 \
 [testing-locksmith-on-unpublished-themes.md](more/testing-locksmith-on-unpublished-themes.md "mention")
 {% endhint %}
