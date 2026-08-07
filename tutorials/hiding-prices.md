@@ -1,14 +1,16 @@
 ---
 description: >-
-  How to use the Locksmith app to hide or "lock" specific page content on your
+  How to use the Locksmith app to hide product prices and buy buttons on your
   Shopify Online Store
 ---
 
 # Hiding product prices and/or the add to cart button
 
-Locksmith's [manual mode](more/manual-mode.md) feature can be used to hide your product prices so that customers can still browse your shop, but can only see prices and purchase products if certain conditions are met.
+Locksmith can hide prices and buy buttons for locked products, so that customers can still browse your shop, but can only see prices and purchase products if certain conditions are met.
 
-Here is an example of a product page that has been setup properly with Locksmith to hide prices:
+This is built into every lock's settings — no theme code required. Locksmith integrates directly with your theme's own price and buy-button code, so hiding follows the locked products wherever your theme displays them.
+
+Here is an example of a product page that has been set up with Locksmith to hide prices:
 
 ![](../.gitbook/assets/HidingProductPrices-LoginToPurchase.png)
 
@@ -20,41 +22,78 @@ Then, when the customer meets the conditions, the product pages will appear norm
 **Note:** The results may look different depending on your Locksmith conditions, theme, or other settings.
 {% endhint %}
 
-{% hint style="warning" %}
-**Also note**: While this method does hide the price visually, it may still be possible for someone viewing the source (or interacting with the browser console) to see the price. This is because of the presence of things like Google Analytics and other tools, which reproduce the price in the source - but not visually on the page - for their own usage. These are out of control of the Locksmith app.
-{% endhint %}
-
-You can also setup Locksmith to hide from collection pages and searches (as long as the default Shopify search is used).
-
-You have flexibility! For example, you can require accounts to be approved in addition to signed in. Our whole library of key conditions is at your disposal here. You can also set it up on only some of your products if you want to leave some products available. Or, you can simply hide the add-to-cart button and leave the product prices visible.
-
 Use the following two steps to set it all up:
 
-## 1. Create lock
+## 1. Create a lock
 
-The first step to hiding your prices using Locksmith is to create a lock that covers the products that you would like to hide prices on. To do this, open up Locksmith and use the search bar on the main page of the app. If this is all of your products (most common), you can simply search for "all" and choose the "All Products" collection:
+The first step is to create a lock that covers the products that you would like to hide prices on. To do this, open up Locksmith and use the search bar on the main page of the app. If this is all of your products (most common), you can simply search for "all" and choose the "All Products" collection:
 
-![](<../.gitbook/assets/Screenshot 2025-06-18 at 4.50.31 PM.png>)
+![](<../.gitbook/assets/Screenshot 2025-06-18 at 4.50.31 PM.png>)
 
 {% hint style="warning" %}
 **Warning**: make sure to choose "Collection: All" and **not** "Collections Listing"
 {% endhint %}
 
-If you are only wanting to apply pricing hiding to some of your products, you can instead create a lock on different collection(s) or products that you want prices hidden for
+If you are only wanting to apply price hiding to some of your products, you can instead create a lock on different collection(s) or products that you want prices hidden for.
 
 Once you've created the lock, you'll choose the conditions for access. Many merchants use the "Permit if customer is tagged with..." key condition, which lets you manually approve accounts for price access by adding a customer tag:
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-06-18 at 4.49.00 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-06-18 at 4.49.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 That's the most common way to set it up, but you have the freedom to choose whatever key conditions work for your setup.
 
-Before saving, turn on "Enable manual mode" right there in the lock (Clicking "Advanced" will show the option):
+## 2. Turn on hiding
+
+In the lock editor, find the **Price & add-to-cart hiding** card, just below your keys. It has two settings:
+
+* **Hide buy buttons** — hides the add-to-cart button, dynamic checkout buttons (like "Buy it now"), and quantity selectors for the locked products. This is what keeps locked products out of the cart.
+* **Hide price** — hides the locked products' prices.
+
+When you turn either setting on, Locksmith scans your published theme to find the places where it can integrate, and shows you a compatibility result for each setting. Save your lock, and Locksmith updates your theme automatically — and re-checks your theme every time it installs from then on, so theme updates are picked up on their own.
+
+Where the buy buttons were, your visitors will see your lock's message content instead (a "Log in to purchase" button, a passcode prompt, or whatever fits your key conditions) — styled to match your theme.
+
+## What gets hidden
+
+Wherever your theme renders the locked products through its own templates: the product page, collection and search grids, featured-product sections, and quick-view popups. Unlocked products are never affected — hiding follows the locked products individually.
+
+## Good to know
+
+{% hint style="warning" %}
+**Hiding prices without hiding buy buttons?** Prices always appear in the cart and at checkout — Shopify doesn't provide a way to hide them there. If you're hiding prices, we recommend hiding buy buttons too, so locked products can't reach the cart in the first place. The app will remind you about this combination.
+{% endhint %}
+
+{% hint style="warning" %}
+While Locksmith hides the price visually, it may still be possible for someone viewing the page source (or using the browser console) to find it. This is because of things like SEO markup and analytics tools, which reproduce the price in the source — but not visually on the page — for their own usage.
+{% endhint %}
+
+{% hint style="info" %}
+Prices displayed by **third-party apps** (page builders, currency converters, wishlist apps, and so on) render outside your theme's own code, so they aren't hidden automatically — but Locksmith support may still be able to help with these. Feel free to reach out.
+{% endhint %}
+
+{% hint style="info" %}
+If your theme already contains **hand-written Locksmith code** (from the manual methods below), the automatic settings may not work well alongside it — the app will show a warning if it detects this. Write to us if you'd like help transitioning.
+{% endhint %}
+
+## If your theme shows "Incompatible"
+
+Every theme is different, and occasionally Locksmith won't find a spot it can safely integrate with. If that happens, the app will say so rather than guessing — and this is exactly the kind of thing our support team is here for. [Write to us](../policies/contact.md) and we'll work with you to get your theme set up.
+
+## Advanced: adjusting what Locksmith found
+
+The scan's results are visible — and editable — on your theme's hiding profile page (**Themes → your theme → hiding profile**). Each automatic definition can be adjusted (its Liquid variable, whether it shows your replacement message), removed, or restored, and there's a reset if you'd like to return to the theme defaults. Your edits survive re-scans.
+
+## Manual setup
+
+The rest of this guide shows how to set up price hiding manually in your theme, using Locksmith's [manual mode](more/manual-mode.md) feature — an approach that can still be useful for special cases.
+
+### Enable manual mode
+
+Before saving your lock, turn on "Enable manual mode" right there in the lock (Clicking "Advanced" will show the option):
 
 ![](../.gitbook/assets/manualLockingEnabled.png)
 
-Done with step one!
-
-## 2. Updating your theme for manual locking
+### Updating your theme for manual locking
 
 You'll now need to let Locksmith know which parts of the page should be hidden. There are two methods to handling this:<br>
 
