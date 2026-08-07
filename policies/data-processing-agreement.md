@@ -10,8 +10,6 @@ This Data Processing Addendum is part of the agreement between Lightward and the
 
 By using Locksmith, the customer agrees to this DPA.
 
-
-
 ## 1. Roles
 
 The customer (as the controller) determines why and how Personal Data is processed.
@@ -56,15 +54,14 @@ Lightward will notify the customer without undue delay if we become aware of a P
 
 ### Sub-Processors for Locksmith
 
-### Last updated: 18 November 2025
+### Last updated: 7 August 2026
 
 Lightward works with a small group of trusted service providers to operate Locksmith. These companies may process limited Personal Data as part of providing the service.
-
-
 
 **Infrastructure & Hosting**
 
 * Fly.io — application hosting and managed database services
+* crunchybridge — Storage, hosting, retrieval, backup, replication, and transmission of data
 
 **Platform Integrations**
 
