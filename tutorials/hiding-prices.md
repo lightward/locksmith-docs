@@ -85,7 +85,7 @@ The scan's results are visible — and editable — on your theme's hiding profi
 
 ## Manual setup
 
-Before the built-in settings above existed, price hiding was set up through Locksmith's [manual mode](more/manual-mode.md) feature. Everything below still works, and remains useful for special cases. The lock setup from step 1 above is the same; then:
+The rest of this guide shows how to set up price hiding manually in your theme, using Locksmith's [manual mode](more/manual-mode.md) feature — an approach that can still be useful for special cases.
 
 ### Enable manual mode
 
