@@ -62,23 +62,23 @@ You'll need to **use a third party app** to set up the subscription service. We 
 
 ## Step 4: Making sure your customers are signed in when purchasing your "access product"
 
-In order for Locksmith to register that a customer has actually purchased your "access product", it is important that you require that customers are actually signed in when the purchase is made.&#x20;
+In order for Locksmith to register that a customer has actually purchased your "access product", it is important that you require that customers are actually signed in when the purchase is made.
 
 You can do that with either of the following ways:
 
-**Make customer accounts required for your entire store**: This means that everyone must be signed into your store when they check out. [More information from Shopify on doing this](https://help.shopify.com/en/manual/checkout-settings/customer-accounts#set-your-customer-account-preferences). This might be considered overkill for some merchants, so if that's the case, use the next option.
+**Make customer accounts required for your entire store**: This means that everyone must be signed into your store when they check out. [More information from Shopify on doing this](https://help.shopify.com/en/manual/checkout-settings/checkout-form-options). This might be considered overkill for some merchants, so if that's the case, use the next option.
 
 **Use Locksmith to require that a customer is signed in when purchasing your "access product"**: Pretty simple - just add a lock directly to the "access product" and use "Permit if customer is signed in" as the key condition. You can [edit the locked landing page for this product](more/customizing-messages.md) by editing the "Guest message content" message to let the customer know that they need to sign in before access. Or, if you prefer, you can even [employ manual locking](hiding-prices.md) if you just want to hide the add-to-cart button instead of the whole page.
 
 ## Optional: Directing customers to your content after purchase
 
-You may wish to direct customers to the content that they just purchased.&#x20;
+You may wish to direct customers to the content that they just purchased.
 
 ### ... in order confirmation emails
 
 We can use some custom code to conditionally add a link to your locked content if the customer has purchased the right product.
 
-To set this up: head to **Settings -> Notifications** in your Shopify admin, then select  "**Customer notifications**" and click the link for "**Order confirmation**". To edit the code for this email, you'll need to click the "**Edit code**" button in the top right of the page. Insert this code and adjust as needed:
+To set this up: head to **Settings -> Notifications** in your Shopify admin, then select "**Customer notifications**" and click the link for "**Order confirmation**". To edit the code for this email, you'll need to click the "**Edit code**" button in the top right of the page. Insert this code and adjust as needed:
 
 ```
 {% for line_item in line_items %}
@@ -114,7 +114,7 @@ Feel free to add multiple copies of this code, if you need to send the customer 
 
 Let's say you want to grant access based on the purchase, but not immediately. You can grant access later using two conditions in your key.\
 \
-For example, this key will grant access 12 weeks (84 days) after the purchase of the Starter Pack:&#x20;
+For example, this key will grant access 12 weeks (84 days) after the purchase of the Starter Pack:
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 1.52.38 PM.png" alt=""><figcaption></figcaption></figure>
 
