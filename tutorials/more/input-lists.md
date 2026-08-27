@@ -35,7 +35,7 @@ In addition to Google Sheets, sources may be of the following formats:
 {% hint style="warning" %}
 **Important**: The source file must be either unauthenticated OR must be a Google Sheet or Google Doc that has been shared with the following email address: **input-lists@locksmith-app.iam.gserviceaccount.com.** \
 \
-&#xNAN;_&#x49;f you send a notification directly to this email address, it may bounce. However, as long as the document is properly shared with that email address, Locksmith will be able to access it._
+_If you send a notification directly to this email address, it may bounce. However, as long as the document is properly shared with that email address, Locksmith will be able to access it._
 {% endhint %}
 
 ## Step 2: Locksmith Configuration
