@@ -74,6 +74,7 @@
   * [Setting up checkout validation with Locksmith](tutorials/more/setting-up-checkout-validation-with-locksmith.md)
   * [Restricting access to payment methods with Locksmith](tutorials/more/hiding-payment-methods-by-customer-tag.md)
   * [How to hide theme sections, blocks, and snippets](tutorials/more/how-to-hide-theme-sections-blocks-and-snippets.md)
+  * [Hiding prices with manual code](tutorials/more/hiding-prices-manually.md)
   * [Creating weekly schedules](tutorials/more/creating-weekly-schedules.md)
   * [Using date and time key conditions](tutorials/more/using-date-and-time-key-conditions.md)
 
