@@ -16,7 +16,7 @@ Learn about collection conditions: [https://help.shopify.com/en/manual/products/
 
 5\. Click _Save_.
 
-<figure><img src="../../.gitbook/assets/2026-09-28 13.43.32.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2026-09-28 13.48.48.gif" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If your store still uses Shopify's older collections model, choose _Smart_ when creating the collection. Set the condition to _Product tag is equal to_, then save the collection. More details: [https://help.shopify.com/en/manual/products/collections/smart-collections](https://help.shopify.com/en/manual/products/collections/smart-collections)
