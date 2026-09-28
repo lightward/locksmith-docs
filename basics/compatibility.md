@@ -10,21 +10,23 @@ We're pleased to announce that Locksmith is now compatible with the Shop app. Sh
 
 Shopify's policies prohibit the use of password control and age verification apps, such as Advanced Registration, B2B Login Access Management, Login to View Price, and MagicPass Wholesale, for stores wishing to use the Shop app. However, Locksmith is now explicitly listed as an exception to this rule.
 
-When you use Locksmith to lock certain products, your store will still remain eligible to display on Shop, and your locked products will not be included in your Shop Store. This ensures that merchants can maintain the control Locksmith provides while remaining eligible for the Shop app.
+When you use Locksmith to lock products or collections, your store remains eligible to display on Shop. By default, Locksmith removes locked products from Shop using a product metafield.
+
+Product and collection locks remove locked products from Shop. Vendor and variant locks do not show the **Allow ... on the Shop channel** setting.
+
+Locksmith can only remove products from Shop entirely. It cannot apply keys, manual locking, or price hiding inside Shop. Locksmith works through the merchant's theme.
 
 {% hint style="info" %}
-By default, Locksmith removes locked products and collections from the Shop channel using a product metafield.
-
-If you want a locked product or collection to stay visible on the Shop channel, open the lock's **Advanced settings** and enable **Allow \[this product / products in this collection] on the Shop channel**.:<br>
+If you want those products to stay visible on Shop, open the lock's **Advanced settings** and enable **Allow \[this product / products in this collection] on the Shop channel**.<br>
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/ShopAppIncludeSettingDisabled .png" alt="A checkbox labeled &#x27;Allow products in this collection on the Shop channel&#x27; in Locksmith&#x27;s Advanced settings. The checkbox is unchecked. The description reads: &#x27;Locksmith cannot enforce its access conditions on the Shop channel, so locked products are removed from the Shop channel via a product metafield that we automatically keep in sync. Use this setting to explicitly allow products in this collection to remain visible in the Shop channel."><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-Locksmith can only manage visibility in the Shop app at the **product level**. Products locked by product and collection locks will automatically be removed from the Shop app. However, variants locked by variant locks will still be purchasable in the Shop app. It is therefore your responsibility to manage desired visibility for your variants in the Shop app.
+Locksmith can only manage visibility in the Shop app at the **product level**. Products locked by product and collection locks will automatically be removed from the Shop app. However, **variants** locked by variant locks will still be purchasable in the Shop app. It is therefore your responsibility to manage desired visibility for your variants in the Shop app.
 {% endhint %}
 
-For more details on Shop app eligibility requirements, including prohibited product types or other restrictions, please refer to Shopify's [Shop app eligibility requirements](https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements).\
+For **vendor locks**, you can use a collection lock instead. Create an automated collection that filters by vendor, then lock that collection. Collection locks remove products from Shop. See Shopify's current collection guide: [https://help.shopify.com/en/manual/products/collections/create-collection](https://help.shopify.com/en/manual/products/collections/create-collection).\
 \
 **Variant Locks and the Shop App**
 
@@ -50,15 +52,21 @@ If you're using Locksmith to lock variants, be aware that the Shop channel being
 
 If you **don't** want your store or products listed on Shop, you have a few options:
 
-* **Opt out of Sell with Shop:** In your Shopify admin, go to **Sales channels > Shop > Settings**, and change the **Sell with Shop** setting to "Link to online store" (this prevents direct purchases through Shop, though your products may still be discoverable).
-* **Remove the Shop channel entirely:** In your Shopify admin, go to **Settings > Sales channels**, find Shop, and click **Uninstall**. Note that orders may still come through Shop even without the channel installed — see Shopify's documentation below for details.
+* **Opt out of Sell with Shop:** In your Shopify admin, go to **Sales channels > Shop > Settings**, and change the **Sell with Shop** setting to "Link to online store". This changes where checkout happens. It does not keep products out of Shop. Products published to the Online Store can still appear in Shop through Shopify Catalog. Their Shop product pages still show images, descriptions, and prices.
+* **Remove the Shop channel entirely:** In your Shopify admin, go to **Settings > Sales channels**, find Shop, and click **Uninstall**. This does not keep products out of Shop. Products published to the Online Store can still appear in Shop through Shopify Catalog. Orders may still come through Shop without the channel installed.
 * **Contact Shopify support** to request an account-level opt-out from the Shop App and/or Agentic Storefronts.
 
-For full details on Shop eligibility and how auto-enrollment works, refer to Shopify's documentation:
+Shopify's unlisted product status and SEO hidden metafield also hide products from Catalog, internet search, and Online Store search.
 
-* [Requirements for displaying your store in Shop](https://help.shopify.com/en/manual/online-sales-channels/shop/eligibility/requirements)
-* [Setting up the Shop channel](https://help.shopify.com/en/manual/online-sales-channels/shop/setup)
-* [Activating Shop Pay](https://help.shopify.com/en/manual/payments/shop-pay/activating-shop-pay)
+Locksmith can manage the SEO hidden (`seo.hidden`) metafield for you. Turn on **Hide from sitemaps** under a product, collection, blog, or page lock's **Advanced settings**. Locksmith adds the metafield to the locked products.
+
+This is separate from the metafield Locksmith uses to remove locked products from the Shop channel. Products covered by this setting do not appear in your Online Store search, including for customers with access. See [Automatically hide from sitemaps and manage SEO metafield](https://www.locksmith.guide/tutorials/more/automatically-hide-from-sitemaps-and-manage-seo-metafield).
+
+For Shopify's Catalog discovery and Shop settings, see:
+
+* [https://help.shopify.com/en/manual/online-sales-channels/shop/setup#sell-with-shop](https://help.shopify.com/en/manual/online-sales-channels/shop/setup#sell-with-shop)
+* [https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections#publish-products](https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections#publish-products)
+* [https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections#hiding-products](https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections#hiding-products)
 
 ## Officially unsupported apps
 
