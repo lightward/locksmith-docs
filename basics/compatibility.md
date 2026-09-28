@@ -47,7 +47,7 @@ This solution offers greater control but may increase inventory management compl
 Shopify automatically adds the Shop sales channel to any store that meets their Shop Merchant Guidelines — including stores that have Shopify Payments (or Shop Pay) enabled and a chargeback rate of less than 1% in the last six months. This means the Shop channel can appear in your Shopify admin without you installing it yourself, and your eligible products may become listed in the Shop app without any action on your part.
 
 {% hint style="warning" %}
-If you're using Locksmith to lock variants, be aware that the Shop channel being auto-added could expose those locked variants to purchases through the Shop app — since Locksmith's Shop app protection only works at the product level, not the variant level.
+If you're using Locksmith to lock **variants**, be aware that the Shop channel being auto-added could expose those locked variants to purchases through the Shop app — since Locksmith's Shop app protection only works at the product level, not the variant level.
 {% endhint %}
 
 If you **don't** want your store or products listed on Shop, you have a few options:
