@@ -20,13 +20,11 @@ Appfox applies a single tag, exactly as written here: **Active Subscriber**
 
 As long as a customer has at least one active subscription, they keep the tag. If they pause, cancel, or let one subscription end while another is still active, the tag stays and so does their Locksmith access.
 
-Subscriptions normally end through a pause, a cancel, or an expiry, and the tag is removed once the last active one ends.
-
 **There is nothing to enable or configure.** Appfox applies and removes the tag automatically as soon as the app is installed and subscriptions start coming in.
 
 Appfox's own documentation on the tag is here: [Active Subscriber customer tag](https://subscriptions-docs.getappfox.com/active-subscriber-tag)
 
-This is the simplest possible pattern for Locksmith: one tag, present while the subscription is active, gone when it isn't. That means **a single key condition is all you need** — no inverted conditions, and no combo keys.
+This is the simplest possible pattern for Locksmith: one tag, present while any subscription is active, gone when none are. That means **a single key condition is all you need** — no inverted conditions, and no combo keys.
 
 ### Appfox setup
 
