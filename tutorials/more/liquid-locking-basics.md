@@ -3,7 +3,7 @@
 Locksmith has a feature to create "Liquid" locks, which allows you to lock pages in your store that are otherwise not searchable using the basic "Add lock" resource search in Locksmith.
 
 {% hint style="warning" %}
-This is an advanced guide that requires knowledge of [Shopify's Liquid language](https://shopify.dev/api/liquid). If you're a developer type, read on! Otherwise, please note that Locksmith support is not able to write advanced custom Liquid locks for you. While we are happy to answer any questions you have along the way, if you need help writing these, you'll need to hire a paid Shopify expert. [Our list of partners is here](https://locksmith.partnerpage.io/). Alternatively, you can check [Shopify's own list of Shopify experts](https://www.shopify.com/partners/directory).
+This is an advanced guide that requires knowledge of [Shopify's Liquid language](https://shopify.dev/api/liquid). If you're a developer type, read on! Otherwise, please note that Locksmith support is not able to write advanced custom Liquid locks for you. While we are happy to answer any questions you have along the way, if you need help writing these, you'll need to hire a paid Shopify expert. [Our list of partners is here](https://partners.uselocksmith.com/). Alternatively, you can check [Shopify's own list of Shopify experts](https://www.shopify.com/partners/directory).
 {% endhint %}
 
 Moving on - to begin, click in the "Add a new lock" search field and select "Start a Liquid lock", or type "Liquid" in the search field:
