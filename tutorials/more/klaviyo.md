@@ -59,7 +59,7 @@ Once your Locksmith configuration is to your liking, hit the "Save" button. From
 
 Disconnect the existing Klaviyo connection from the **Settings** page in the Locksmith app:
 
-<figure><img src="/broken/files/OKp6VLxqtUT1AYfZfKil" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-14 at 12.29.13 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 The Settings page does not offer a reconnect control.\
 \
