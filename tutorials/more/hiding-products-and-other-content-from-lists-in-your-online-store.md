@@ -27,7 +27,7 @@ Although less commonly needed, you can also turn this feature on for page, blog,
 * Using **third party apps** that take over the display of your collections or searches will likely prevent Locksmith from hiding products correctly. Most filtering/search/display apps are **not compatible** with hiding products via Locksmith.
 * Hiding a large number of products this way can introduce **blank spaces** to your collections. [More information and workarounds here](../../faqs/faq-i-see-blank-spaces-in-my-collections-and-or-searches-when-locking.md).
 * While this setting is capable of hiding products from the search results _page_, it cannot always remove products from search results that are fetched dynamically (i.e. shows results as you type).
-* This setting cannot hide filtering options in your theme's filter menu (shown on collection pages), as filter items are displayed differently from product grids and navigation menus.
+* This setting cannot hide filtering options in your theme's filter menu (shown on collection and search pages). Shopify builds the filter options, and their counts, from every matching product, locked or not, before your theme displays them. If your theme draws its filter menu itself, Locksmith's manual code can often hide a particular filter, or the whole filter area, from visitors who don't have access: write to us at **team@uselocksmith.com** and we'll add it for you. Filter counts will still include locked products, and filters displayed by a third-party filter app are out of Locksmith's reach.
 
 For more specific information regarding how locksmith works with your in-store search, including some troubleshooting steps, see our guide here:
 
