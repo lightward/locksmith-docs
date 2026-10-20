@@ -113,6 +113,7 @@
   * [I switched themes, and Locksmith isn't working](faqs/more/i-switched-themes-and-locksmith-isnt-working.md)
   * [Why isn't my passcode, secret link, newsletter, or location key working?](faqs/more/why-isnt-my-remote-key-condition-working.md)
   * [Can Locksmith lock Shopify's public JSON API for my online store?](faqs/more/can-locksmith-lock-shopifys-public-json-api-for-my-online-store.md)
+  * [Do you have a plan for development stores?](faqs/more/do-you-have-a-plan-for-development-stores.md)
   * [Why are my customers seeing a reCAPTCHA when logging in?](faqs/more/why-are-my-customers-seeing-a-recaptcha-when-logging-in.md)
   * [My passcode or newsletter prompt is not updating on my store when I change it.](faqs/more/passcode-prompt-issues.md)
   * [My featured collections on my home page only show one product.](faqs/more/my-featured-collections-on-my-home-page-only-show-one-product..md)
