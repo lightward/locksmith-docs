@@ -60,20 +60,13 @@ For example, if you have a large number of pages that you want to lock at once, 
 
 In your Liquid **prelude**:
 
-```
-
-
-
- 
- 
-  
-  
- 
- 
-
-
-
-```
+<pre><code><strong>{% assign page_is_locked = false %}
+</strong>{% if scope == "page" %}
+ {% if page.handle contains "member" or page.handle contains "secret" %}
+  {% assign page_is_locked = true %}
+ {% endif %}
+{% endif %}
+</code></pre>
 
 In your Liquid **condition**:
 
@@ -81,7 +74,7 @@ In your Liquid **condition**:
 {% if page_is_locked %}
 ```
 
-This would result in all "Pages" in your store that contain "member" or "secret" in the title becoming locked.
+This would result in all "Pages" in your store that contain "member" or "secret" in their handle becoming locked.
 
 ## Related resources
 
