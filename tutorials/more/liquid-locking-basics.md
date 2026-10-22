@@ -60,13 +60,16 @@ For example, if you have a large number of pages that you want to lock at once, 
 
 In your Liquid **prelude**:
 
-<pre><code><strong>{% assign page_is_locked = false %}
-</strong>{% if scope == "page" %}
+```liquid
+{% raw %}
+{% assign page_is_locked = false %}
+{% if scope == "page" %}
  {% if page.handle contains "member" or page.handle contains "secret" %}
   {% assign page_is_locked = true %}
  {% endif %}
 {% endif %}
-</code></pre>
+{% endraw %}
+```
 
 In your Liquid **condition**:
 
