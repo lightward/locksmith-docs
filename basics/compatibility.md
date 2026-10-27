@@ -78,6 +78,7 @@ The following apps have known compatibility issues with Locksmith - although the
 * Locksmith's [manual locking](../tutorials/more/manual-mode.md) feature, and many times full-page locks, can _**not**_ generally be used to hide content being displayed by other third-party apps, including prices, buttons, widgets etc.
 * [Gempages](https://apps.shopify.com/gempages) - while it is possible to use the apps together _in some cases_, there are still many compatibility issues between the two apps.
 * [Weglot](https://apps.shopify.com/weglot) - Locksmith's [location detection key condition](../keys/visitor-location-keys.md) is not compatible with Weglot, but you should otherwise be fine using both apps at the same time if not using location detection.
+* [Booster SEO](https://apps.shopify.com/booster-apps-seo-optimizer) - Both apps comment out an area in theme.liquid, causing a "nested comments" Liquid syntax error.&#x20;
 
 ## Other areas of incompatibility
 
