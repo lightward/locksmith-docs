@@ -116,6 +116,7 @@
   * [Someone bought a locked product. How?](faqs/more/someone-bought-a-locked-product-how.md)
   * [Do you have a plan for development stores?](faqs/more/do-you-have-a-plan-for-development-stores.md)
   * [Why are my customers seeing a reCAPTCHA when logging in?](faqs/more/why-are-my-customers-seeing-a-recaptcha-when-logging-in.md)
+  * [My customers sign in, then seem to get logged out](faqs/more/my-customers-seem-to-get-logged-out.md)
   * [My passcode or newsletter prompt is not updating on my store when I change it.](faqs/more/passcode-prompt-issues.md)
   * [My featured collections on my home page only show one product.](faqs/more/my-featured-collections-on-my-home-page-only-show-one-product..md)
   * [My infinite scrolling doesn't show all of my products.](faqs/more/my-infinite-scrolling-doesnt-show-all-of-my-products..md)
