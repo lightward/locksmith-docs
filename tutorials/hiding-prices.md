@@ -40,7 +40,7 @@ That's the most common way to set it up, but you have the freedom to choose what
 
 ## 2. Turn on hiding
 
-In the lock editor, find the **Price & add-to-cart hiding** card, just below your keys. It has two settings:
+In the lock editor, find the **Price and buy buttons** card, just below your keys. It has two settings:
 
 * **Hide buy buttons** — hides the add-to-cart button, dynamic checkout buttons (like "Buy it now"), and quantity selectors for the locked products. This is what keeps locked products out of the cart.
 * **Hide price** — hides the locked products' prices.
