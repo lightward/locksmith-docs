@@ -20,7 +20,7 @@ Shopify keeps a customer's sign-in for the address of your store they were using
 
 In Shopify, **Settings** → **Domains** shows your domains and which ones redirect. Then check your menu links (**Content** → **Menus**) and any buttons in your theme for full addresses, and point them at your store's own pages instead.
 
-### It isn't a sign-out, it's a different lock
+### It isn't a sign-out, it's a lock that needs more
 
 If a customer is signed in but a page tells them they don't have access (rather than asking them to log in), the lock on that page, or another lock covering it, needs more than signing in, like a customer tag. By default, Locksmith's message for signed-in customers who don't qualify is different from the one guests see, which is a good way to tell these apart (unless you've customized them to read alike).
 
