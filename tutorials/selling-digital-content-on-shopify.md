@@ -52,7 +52,7 @@ You'll need to **use a third party app** to set up the subscription service. We 
 
 ## Step 3: Setting up the lock
 
-[Create a lock](../basics/creating-locks.md) on your subscription product (the one created in the previous step). For your key, use the condition labelled **"has purchased...**" to create a key condition that permits access if the customer has purchased the appropriate product:
+[Create a lock](../basics/creating-locks.md) on your restricted content (the page or blog from Step 1). For your key, use the condition labelled **"has purchased...**", pointing at your "access product" (the one created in the previous step), so that the lock permits access if the customer has purchased it:
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-03-20 at 5.24.25 PM.png" alt=""><figcaption></figcaption></figure>
 
