@@ -9,9 +9,9 @@ description: >-
 
 Locksmith includes two key conditions for controlling access by date and time.
 
-* **Is visiting before a certain date and time**\
+* **If it's before a certain date and time**\
   Grants access if the current time is _before_ your chosen date.
-* **Is visiting after a certain date and time**\
+* **If it's after a certain date and time**\
   Grants access if the current time is _after_ your chosen date.
 
 These are best for _one-off_ moments. Think launches, limited sales, or short blackout periods.
@@ -20,7 +20,7 @@ If you need a recurring weekly schedule, use a weekly schedule key. See [Creatin
 
 ## How each condition works
 
-### "Permit if the customer is visiting **after** a certain date and time"
+### "Permit if it's **after** a certain date and time"
 
 This grants access once the date and time has passed. Before that moment, access is denied.
 
@@ -32,7 +32,7 @@ You're launching a collection on March 15 at 9:00 AM. Add a key that permits acc
 
 Before 9:00 AM, visitors see your lock's denial message. After 9:00 AM, the collection opens automatically.
 
-### "Permit if the customer is visiting **before** a certain date and time"
+### "Permit if it's **before** a certain date and time"
 
 This grants access until the date and time arrives. After that moment, access is denied.
 

@@ -20,8 +20,8 @@ Key conditions are evaluated in the following order:
 12. **has a certain variant in their cart**
 13. **has at least $x in their cart**
 14. **(custom Liquid)**
-15. **is visiting after a certain date and time**
-16. **is visiting before a certain date and time**
+15. **if it's after a certain date and time**
+16. **if it's before a certain date and time**
 17. **is visiting a certain domain**
 18. **is visiting from a certain location (city, country, etc)**
 19. **has a certain IP address**

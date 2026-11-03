@@ -82,8 +82,8 @@ Locksmith supports two secret link conditions:
 
 #### _Based on time_
 
-* **is visiting before a certain date and time** — grants access if the current time is before a date and time you specify.
-* **is visiting after a certain date and time** — grants access if the current time is after a date and time you specify.
+* **if it's before a certain date and time** — grants access if the current time is before a date and time you specify.
+* **if it's after a certain date and time** — grants access if the current time is after a date and time you specify.
 * **if it's during a weekly schedule** — configure different schedules for each day with multiple time periods.
 
 [using-date-and-time-key-conditions.md](../tutorials/more/using-date-and-time-key-conditions.md "mention")
