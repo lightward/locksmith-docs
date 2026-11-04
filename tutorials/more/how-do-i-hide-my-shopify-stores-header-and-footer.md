@@ -84,7 +84,7 @@ In some themes, this can be used to hide the header and footer sections. To set 
 2. Click the Add new definition button at the bottom of the page. In the Name of section, block, or snippet field, search for header.
 3. From the dropdown results, select the theme’s section file for the header, then click Add.
 4. Repeat steps 2 and 3 for the footer.
-5. In the Liquid variable field for each definition, enter "item".
+5. In the Liquid variable field for each definition, enter the variable that matches your lock: "item" for a lock on your whole store, "collection" for a collection lock, or "product" for a product lock. (The variable tells Locksmith which resource to check. "item" isn't set in a header or footer, so with it only a store-wide lock is matched.)
 6. When you’re done, click the Save button at the top of the page.
 
 {% hint style="info" %}
