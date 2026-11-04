@@ -33,7 +33,7 @@ In addition to Google Sheets, sources may be of the following formats:
 * JSON array provided by a Mechanic cache endpoint ([read more about Mechanic here](https://apps.shopify.com/mechanic))
 
 {% hint style="warning" %}
-**Important**: The source file must be either unauthenticated OR must be a Google Sheet or Google Doc that has been shared with the following email address: **input-lists@locksmith-app.iam.gserviceaccount.com.** \
+**Important**: The source file must be either unauthenticated OR must be a Google Sheet, or a TXT, CSV, JSON or Excel file stored in Google Drive, that has been shared with the following email address: **input-lists@locksmith-app.iam.gserviceaccount.com.** \
 \
 _If you send a notification directly to this email address, it may bounce. However, as long as the document is properly shared with that email address, Locksmith will be able to access it._
 {% endhint %}
