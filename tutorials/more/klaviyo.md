@@ -57,13 +57,9 @@ Once your Locksmith configuration is to your liking, hit the "Save" button. From
 
 #### Replacing your Klaviyo API key
 
-Disconnect the existing Klaviyo connection from the **Settings** page in the Locksmith app:
+On the **Settings** page in the Locksmith app, find Klaviyo and click **Change API key**. Paste the new key and click **Save**. Every Klaviyo key condition keeps the list or segment it already uses.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-10-14 at 12.29.13 PM (1).png" alt=""><figcaption></figcaption></figure>
-
-The Settings page does not offer a reconnect control.\
-\
-To reconnect, open a lock that uses a Klaviyo key. Return to its Klaviyo key condition. Locksmith prompts you to enter a private API key there. Enter the new key in that prompt.
+If you disconnect Klaviyo instead (**Disconnect Klaviyo**, on the same card), the Settings page shows a field to connect again with a new key and **Connect**. A lock's Klaviyo key condition also asks for a key while none is connected.
 
 {% hint style="info" %}
 **Note**: any customers who are already in your list will be seamlessly granted access when they enter their email address, and will not be added as a duplicate.
