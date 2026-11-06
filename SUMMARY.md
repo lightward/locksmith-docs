@@ -106,6 +106,7 @@
 * [Locksmith is not working with my page builder app](faqs/locksmith-is-not-working-with-my-page-builder-app.md)
 * [What should I do if my site is loading slowly?](faqs/what-should-i-do-if-my-site-is-loading-slowly.md)
 * [I'm the administrator of my site and I cannot access pages because of Locksmith locks.](faqs/im-the-administrator-of-my-site-and-cannot-access.md)
+* [Locksmith won't open!](faqs/locksmith-wont-open.md)
 * [More FAQs...](faqs/more/README.md)
   * [I'm having trouble using Locksmith with a site speed optimization app.](faqs/more/site-speed-apps.md)
   * [The app isn't loading. What do I do?](faqs/more/app-not-loading.md)
