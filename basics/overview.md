@@ -29,7 +29,7 @@ For more advanced use cases, you can also create **custom Liquid locks** — the
 After selecting a resource and clicking Save, you'll see a set of options for that lock. The most commonly used ones are:
 
 * **Is the lock currently active?** Toggle the lock on or off without deleting it.
-* **Should it also protect the products in this collection?** Disabling this means only the collection page itself will be locked, not the individual product pages within it.
+* **Protect products in this collection.** On by default. Disabling this means only the collection page itself will be locked, not the individual product pages within it.
 * **Should it hide the collection, and its products, from search results and other lists?**
 * **Should it hide links to this resource from navigation?**
 
