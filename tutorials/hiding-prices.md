@@ -22,7 +22,7 @@ Then, when the customer meets the conditions, the product pages will appear norm
 **Note:** The results may look different depending on your Locksmith conditions, theme, or other settings.
 {% endhint %}
 
-Use the following two steps to set it all up:
+Use the following three steps to set it all up:
 
 ## 1. Create a lock
 
@@ -48,6 +48,21 @@ In the lock editor, find the **Price and buy buttons** card, just below your key
 When you turn either setting on, Locksmith scans your published theme to find the places where it can integrate, and shows you a compatibility result for each setting. Save your lock, and Locksmith updates your theme automatically — and re-checks your theme every time it installs from then on, so theme updates are picked up on their own.
 
 Where the buy buttons were, your visitors will see your lock's message content instead (a "Log in to purchase" button, a passcode prompt, or whatever fits your key conditions) — styled to match your theme.
+
+## 3. Keep your pages visible
+
+By default, a lock blocks its pages entirely. With only the two settings above turned on, prices and buy buttons are hidden wherever your theme lists the locked products (collection grids, search results, featured-product sections), but the locked pages themselves show your lock's message instead of their content. That means each product page, and the collection page too if you locked a collection.
+
+To get the result shown at the top of this guide, where visitors can open the product page and only the price and buy buttons are hidden, turn on **Enable manual locking** for the lock. Once either hiding setting is on, the **Price and buy buttons** card shows a note with an **enable manual locking** link that ticks it for you. The same checkbox is under **Advanced settings**, further down the lock editor. Then save your lock.
+
+No theme code is needed for this. Manual locking tells Locksmith to stop blocking the lock's pages, and the hiding settings from step 2 take care of the price and buy buttons.
+
+{% hint style="info" %}
+**Two things to know about manual locking:**
+
+* It applies to the whole lock. With it on, this lock doesn't block any pages; it only hides prices and buy buttons. If some of your products need their pages blocked outright, put those in a separate lock that doesn't use manual locking.
+* If a product is also covered by another lock that doesn't use manual locking, that other lock still blocks the product's page for visitors who can't open it. See [Manual mode](more/manual-mode.md) for more on this; the custom code that guide describes isn't needed for price hiding.
+{% endhint %}
 
 ## What gets hidden
 
