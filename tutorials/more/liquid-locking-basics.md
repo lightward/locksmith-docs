@@ -20,7 +20,7 @@ This will bring up the following form:
 
 ## The "Liquid condition"
 
-The "Liquid condition" is the condition that is evaluated to decide if the lock will be engaged on the current page. The Liquid condition simply needs to evaluate to true or false.
+The "Liquid condition" is the condition that is evaluated to decide if the lock will be engaged on the current page. The Liquid condition simply needs to evaluate to true or false. The field already wraps what you enter in `{% if` and `%}`, so enter only the expression itself; it won't accept Liquid tag delimiters (`{% %}` or `{{ }}`).
 
 All liquid objects in Shopify are fair game here, [more info on Liquid objects here](https://shopify.dev/api/liquid/objects).
 
@@ -28,8 +28,8 @@ All liquid objects in Shopify are fair game here, [more info on Liquid objects h
 
 Any condition that evaluates to true will result in a locked page. So, imagine if you created a lock with this condition:
 
-```
-{% if true %}
+```liquid
+true
 ```
 
 That would result in every single page in your store becoming locked. This isn't advisable, it's just a proof of concept :)
@@ -38,16 +38,16 @@ That would result in every single page in your store becoming locked. This isn't
 
 One of the most useful variables that you can use is the **canonical\_url** variable. This variable contains the full url of the current page, so it is a good way to lock pages that aren't usually searchable. For example you have an app that lives at _my-store.myshopify.com/apps/bulk-order-form-app_, you could lock it with the following condition:
 
-```
-{% if canonical_url contains "apps/bulk-order-form-app" %}
+```liquid
+canonical_url contains "apps/bulk-order-form-app"
 ```
 
 ***
 
 Another useful variable is the **template** variable. For example, an easy way to lock _only_ the home page would be:
 
-```
-{% if template == "index" %}
+```liquid
+template == "index"
 ```
 
 If your home page template is called something else, you have the flexibility to lock it by adjusting the condition above.
@@ -71,8 +71,8 @@ In your Liquid **prelude**:
 
 In your Liquid **condition**:
 
-```
-{% if page_is_locked %}
+```liquid
+page_is_locked
 ```
 
 This would result in all "Pages" in your store that contain "member" or "secret" in their handle becoming locked.

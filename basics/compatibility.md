@@ -88,7 +88,7 @@ The following apps have known compatibility issues with Locksmith - although the
     you now have two options:
 
     1. **Use Locksmith on the cart page**, before checkout begins. This is the traditional approach—more on that [here](https://www.locksmith.guide/tutorials/more/protecting-against-bots).
-    2. **Use our checkout validation feature**, which allows you to set up a single rule: products with a specific tag can only be purchased by customers who have a specific customer tag. This can help block unauthorized purchases—_without_ modifying the checkout UI itself. Learn how to set that up [here](https://www.locksmith.guide/tutorials/more/setting-up-checkout-validation-with-locksmith).
+    2. **Use our checkout validation feature**, which lets you set up tag-based rules (up to 25 per store): products with a given product tag can only be purchased by customers who have one of the rule's customer tags. This can help block unauthorized purchases—_without_ modifying the checkout UI itself. Learn how to set that up [here](https://www.locksmith.guide/tutorials/more/setting-up-checkout-validation-with-locksmith).
 * Protecting against bot/resellers - Locksmith can’t fully prevent purchases made by bots or resellers—especially when they’re using direct-to-checkout links, which bypass the Online Store entirely. Since Locksmith works within the Online Store channel, it can’t intervene at the checkout layer directly.\
   \
   However, we _do_ now offer a **checkout validation** feature, which can help you block unwanted purchases **after** a customer reaches checkout. This is a powerful way to add another layer of control over who gets to buy what. Learn how to set it up here:\
