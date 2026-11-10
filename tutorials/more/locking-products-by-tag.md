@@ -1,6 +1,10 @@
 # Locking products by tag
 
-Locksmith won't lock by tag using the Locksmith search bar. Create a collection that automatically includes products with a given tag, using conditions. Shopify previously called this a smart collection.
+{% hint style="info" %}
+Locksmith can lock products by tag directly: click into the search bar, select "Products by tag" from the dropdown, and search for the tag. See [Creating locks](../../basics/creating-locks.md). The method on this page, through a collection, is the older way and still works.
+{% endhint %}
+
+Another way to lock products by tag is to create a collection that automatically includes products with a given tag, using conditions. Shopify previously called this a smart collection.
 
 Learn how to create a collection: [https://help.shopify.com/en/manual/products/collections/create-collection](https://help.shopify.com/en/manual/products/collections/create-collection)
 

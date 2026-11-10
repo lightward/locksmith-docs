@@ -35,7 +35,7 @@ A glossary of terms, concepts, and behaviors for the Locksmith app for Shopify (
 
 Locksmith is built around two concepts:
 
-* A **lock** is placed on one or more pieces of store content of the same type. Without a lock, content is public; with a lock, access is restricted.
+* A **lock** is placed on one or more pieces of store content. Products, collections and product tags can share a lock with each other; every other kind of content shares a lock only with its own kind. Without a lock, content is public; with a lock, access is restricted.
 * A **key** describes a way someone is allowed in. A lock can have many keys, and any one of them is enough to grant access (keys are OR'd together by default).
 
 Each key is made up of one or more **key conditions** — the actual rules being checked (a customer tag, a passcode, a location, etc.). Within a single key, multiple conditions are AND'd together.
@@ -54,8 +54,8 @@ A restriction placed on one or more pieces of store content. A lock is enabled o
 
 A single lock can protect **more than one resource** at a time — for example, ten products under the same access rules. Rather than creating ten identical locks, the merchant creates one lock and attaches all ten products to it. Key facts:
 
-* **Single-type only.** A lock's protected resources must all be of the same type. A products lock holds products, a collections lock holds collections, and so on. To protect a mix of types (e.g. some products _and_ some pages) under the same access rules, create a separate lock per type.
-* **Managed via the "Protected resources" section** of the lock editor. After creating the lock with its first resource, the merchant uses this section to attach additional resources of the same type.
+* **Which resources can share a lock.** Products, collections and product tags can be combined with each other in one lock, in any mix — a collection plus a few extra products plus every product carrying a tag, for example. Every other kind of resource only goes with its own kind: a pages lock holds pages, a blogs lock holds blogs, and so on. To put the same access rules on kinds that can't share a lock (e.g. some products _and_ some pages), create a separate lock per kind.
+* **Managed via the "Protected resources" section** of the lock editor. After creating the lock with its first resource, the merchant uses this section to attach additional resources. On a lock that holds products, collections or product tags, the section has an add button for each of the three (**Add product**, **Add collection**, **Add product tag**).
 * **Optional lock name.** Because multi-resource locks aren't identified by "the one product they lock," locks can be given a name via the pencil icon next to the lock's title in the editor header. Names make locks easier to find in the lock list. Single-resource locks can be named too.
 * **Requires updated app permissions.** Multi-resource locking shipped after Locksmith's original permissions were set. Merchants who installed Locksmith before this feature shipped may see a prompt to grant Locksmith updated store permissions the first time they try to add a second resource. Until they accept it, the "Add resource" affordance won't appear and each lock stays limited to one resource.
 * **Related to Force open other locks.** Multi-resource locking replaces many of the cases that previously required "Force open other locks" — instead of two locks with a force-open key, the merchant can put both resources on the same lock. Force open other locks remains relevant for cases where the _access rules_ differ between locks that happen to cover overlapping resources (see §5).
@@ -70,10 +70,11 @@ The actual test inside a key — e.g. "customer is signed in", "gives the passco
 
 #### Resource
 
-An individual Shopify object attached to a lock. A single lock can hold one resource or several of the same type (see "Multi-resource lock" above). Lockable things include:
+An individual Shopify object attached to a lock. A single lock can hold one resource or several (see "Multi-resource lock" above for which kinds can share a lock). Lockable things include:
 
 * Products
 * Collections (custom or smart)
+* Products by tag (every product carrying a given tag)
 * Pages
 * Blogs (and, by extension, the articles inside them)
 * The shop (the entire storefront)
@@ -92,7 +93,7 @@ What an unauthorized visitor sees instead of the locked content. Locksmith rende
 
 #### Standard (resource) lock
 
-A lock attached to one or more Shopify resources of the same type, selected from Locksmith's search bar. The most common kind. A standard lock with a single resource is the classic case; a standard lock with multiple resources of the same type is a "multi-resource lock" (§2).
+A lock attached to one or more Shopify resources, selected from Locksmith's search bar. The most common kind. A standard lock with a single resource is the classic case; a standard lock with several resources is a "multi-resource lock" (§2), which can mix products, collections and product tags but otherwise holds one kind of resource.
 
 #### Shop lock
 
@@ -360,8 +361,9 @@ The phrasing customers and merchants use rarely matches Locksmith's official ter
 | "password-protect a page / product"                                                                                   | A lock with a **passcode** key                                                                                                                     |
 | "members-only" / "logged-in customers only"                                                                           | A lock with an **is signed in** key                                                                                                                |
 | "wholesale customers only" / "trade only"                                                                             | A lock with an **is tagged with `wholesale`** key (or whatever your tag is)                                                                        |
-| "lock these ten products with the same rule" / "one lock for a bunch of products" / "apply this to multiple products" | A **multi-resource lock** — one lock with all the resources (of the same type) attached via the Protected resources section (see §2)               |
-| "lock some products _and_ some pages together"                                                                        | Not possible in a single lock — locks are single-type. Create one lock per type with the same key configuration.                                   |
+| "lock these ten products with the same rule" / "one lock for a bunch of products" / "apply this to multiple products" | A **multi-resource lock** — one lock with all the resources attached (products, collections and product tags can be mixed; other kinds only with their own kind) via the Protected resources section (see §2)               |
+| "lock a collection _and_ a few extra products together" / "one lock for these products and everything tagged X" | One **multi-resource lock** — products, collections and product tags can be combined in a single lock via the Protected resources section (see §2) |
+| "lock some products _and_ some pages together"                                                                        | Not possible in a single lock — pages can't share a lock with products. Only products, collections and product tags can be combined. Create one lock per kind with the same key configuration.                                   |
 | "VIP / exclusive access"                                                                                              | A lock with an **is tagged with…** key, often combined with **customer auto-tagging** elsewhere                                                    |
 | "hide prices until login"                                                                                             | A lock with **manual locking** enabled and a **theme hiding profile** (Price preset on supported themes), paired with an **is signed in** key      |
 | "hide the buy button" / "hide add-to-cart"                                                                            | Same as above, with the **Buy buttons** preset (or hiding definitions matching the buy-button section/block)                                       |
