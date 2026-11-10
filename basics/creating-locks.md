@@ -12,6 +12,7 @@ Use the search bar within Locksmith to find and lock any of the following resour
 
 * **Products**
 * **Collections**
+* **Products by tag** — every product that carries a given tag. Click into the search bar, select "Products by tag" from the dropdown, and search for the tag.
 * **Pages** — more info on Shopify pages here: [Pages](https://help.shopify.com/en/manual/online-store/os/pages)
 * **Variants** — more info on Shopify product variants here: [Variants](https://help.shopify.com/en/manual/products/variants)
 * **Blogs** — more info on Shopify blogs here: [Blogs](https://help.shopify.com/en/manual/online-store/os/blogs)
@@ -26,7 +27,6 @@ To search, type the name of your resource into the search bar. Use specific term
 
 The following cannot be directly locked via search:
 
-* **Product tags** — to lock products that share a tag, create an Automated Collection and lock that instead.
 * **Third-party app pages —** sometimes, a liquid lock can handle this, using the canonical\_url object.
 * **Any page outside of your Online Store**
 * **Menus and menu links** — menu links aren't directly lockable, but links pointing to lockable resources (such as products or collections) can be hidden from unauthorized visitors. To enable this, turn on the "Hide any links to this \[resource] in your shop's navigation menus" option under the lock's Settings.
@@ -46,9 +46,14 @@ If a search returns too many results, or returns an error, you can narrow things
 
 ### Protecting multiple resources with one lock
 
-A single lock can protect more than one resource at a time, as long as they're **the same type** — for example, several products, or several collections. This is handy when the same access rule should apply to a group of resources: you set up the keys once, on one lock, instead of recreating the same key over and over.
+A single lock can protect more than one resource at a time. This is handy when the same access rule should apply to a group of resources: you set up the keys once, on one lock, instead of recreating the same key over and over.
 
-Once you've created a lock, scroll to the **Protected resources** section of the lock editor. Use the **Add \[resource]** button to search for and attach more resources of the same type, and use the remove control on any chip to detach one. These changes are staged and take effect when you **Save** the lock, alongside any other settings you've changed.
+Which resources can share a lock:
+
+* **Products, collections and product tags can be combined with each other.** One lock can hold any mix of the three — for example a collection, a few extra products, and every product tagged "wholesale".
+* **Every other kind of resource only goes with its own kind.** Several pages can share a lock, and so can several blogs, but a page can't share a lock with a blog, or with a product, collection or product tag.
+
+Once you've created a lock, scroll to the **Protected resources** section of the lock editor. Use the **Add \[resource]** button to search for and attach more resources, and use the remove control on any chip to detach one. A lock on products, collections or product tags has a button for each of the three: **Add product**, **Add collection** and **Add product tag**. These changes are staged and take effect when you **Save** the lock, alongside any other settings you've changed.
 
 <figure><img src="../.gitbook/assets/creating-locks-protected-resources.png" alt="The Protected resources section of the lock editor, showing two attached products and an Add product button"><figcaption><p>The Protected resources section lists everything a lock protects. Use Add to attach more.</p></figcaption></figure>
 
@@ -57,7 +62,7 @@ Clicking **Add \[resource]** opens a picker where you can search your store and 
 <figure><img src="../.gitbook/assets/creating-locks-resource-picker-modal.png" alt="The resource picker modal, showing a product search and a list of products to select"><figcaption><p>The resource picker. Search, then select a resource to add it to the lock.</p></figcaption></figure>
 
 {% hint style="info" %}
-**Mixing types isn't supported.** A lock protects resources of a single type — a products lock holds products, a collections lock holds collections, and so on. To protect different kinds of resources, create a separate lock for each type.
+**Need the same rule on kinds that can't share a lock?** Create a separate lock for each kind — one for your pages and one for your products, for example — and give them the same keys.
 {% endhint %}
 
 {% hint style="warning" %}
