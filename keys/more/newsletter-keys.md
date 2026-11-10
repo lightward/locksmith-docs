@@ -48,7 +48,7 @@ This is slightly different than the above options, in that **it will only grant 
 
 The condition you're looking for is:
 
-`{% if customer.accepts_marketing %}`
+`customer.accepts_marketing`
 
 When set up, this will present the customer will the regular prompt to sign in (as opposed to the subscription prompt):
 

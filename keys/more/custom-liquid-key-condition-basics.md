@@ -20,9 +20,11 @@ To create a Liquid key condition, start by selecting it from the key condition l
 
 This is where you'll write the primary condition, using Liquid. The condition simply needs to evaluate to true or false.
 
+The field already wraps what you enter in `{% if` and `%}`, so enter only the expression itself. The field won't accept Liquid tag delimiters (`{% %}` or `{{ }}`).
+
 For example, consider if you simply wrote the following:
 
-`{% if`**`false`**`%}`
+`false`
 
 This would result in this particular key never opening, since it's always false. This is not necessarily advisable(it would be the equivalent of adding no keys at all), but it's a proof of concept.
 
@@ -30,7 +32,7 @@ So, here are some examples of useful conditions.
 
 #### **To check for a metafield**
 
-`{% if customer.metafields.namespace.key == "matching-value" %}`
+`customer.metafields.namespace.key == "matching-value"`
 
 {% hint style="info" %}
 The metafield must be public in order for it to be accessed this way. [More information on Shopify meta-fields here](https://shopify.dev/api/liquid/objects#metafield).
@@ -38,15 +40,15 @@ The metafield must be public in order for it to be accessed this way. [More info
 
 #### To check if the customer has at least 5 items in the cart currently
 
-`{% if cart.item_count > 4 %}`
+`cart.item_count > 4`
 
 #### To check if the customer has spent at least $50 in the past
 
-`{% if customer.total_spent > 5000 %}`
+`customer.total_spent > 5000`
 
 #### To check if the current page is a using the "collection" template
 
-`{% if template == "collection" %}`
+`template == "collection"`
 
 {% hint style="info" %}
 For most themes, this should match any collection pages unless you've created custom templates. You can use this strategy for other resource types as well (products, pages, etc).
@@ -54,7 +56,7 @@ For most themes, this should match any collection pages unless you've created cu
 
 #### To check for a specific sub-string inside of the current URL
 
-`{% if canonical_url contains "/special-product-handle" %}`
+`canonical_url contains "/special-product-handle"`
 
 {% hint style="info" %}
 The **canonical\_url** global Liquid object is accessible anywhere in the theme and always contains the entire URL of the current page, but does NOT contain any URL parameters. [More information from Shopify on it here](https://shopify.dev/api/liquid/objects#canonical_url).
@@ -62,7 +64,7 @@ The **canonical\_url** global Liquid object is accessible anywhere in the theme 
 
 #### To check for some attribute of the request object
 
-`{% if request.page_type == "index" %}`
+`request.page_type == "index"`
 
 {% hint style="info" %}
 As seen here, another Liquid global object of note is the **request** object, and it can very useful in this context. [Check out Shopify's documentation on it here](https://shopify.dev/api/liquid/objects#request).
@@ -76,17 +78,18 @@ Basically, you can assign to any custom variable in the prelude, and then use th
 
 For example, your prelude could look something like this:
 
-<pre><code>{% assign purchase_allowed = true %}
-<strong>{% for item in cart.items %}
-</strong>  {% if item.product.handle contains "members-only" %}
+```liquid
+{% assign purchase_allowed = true %}
+{% for item in cart.items %}
+  {% if item.product.handle contains "members-only" %}
     {% assign purchase_allowed = false %}
   {% endif %}
 {% endfor %}
-</code></pre>
+```
 
 So now, in the "Liquid condition", you would have access to the `purchase_allowed` variable, so it would simply look like this:
 
-`{% if purchase_allowed %}`
+`purchase_allowed`
 
 So that would give you even more flexibility to write different Liquid conditions that can be used to set up your locks and keys.
 
