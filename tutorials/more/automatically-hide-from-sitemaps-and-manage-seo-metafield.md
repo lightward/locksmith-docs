@@ -42,6 +42,8 @@ Locksmith will **remove** this metafield if you:
 
 * This setting can be convenient to remove locked products from all storefront searches, but just keep in mind that **products covered by this setting won't show up in storefront search at all, even for customers that have access**. If this is an issue for you, stick to [hiding from product grids ](https://www.locksmith.guide/tutorials/more/hiding-products-from-product-grids)whenever possible.
 * Products in more that one locked collection: if you have the "Hide from sitemaps" setting turned on for more than one collection lock, products will retain the metafield as long as at least one locked collection with this setting turned on remains.
+* Products in an unpublished collection: the metafield follows the lock. If your store's **Protect products in unpublished collections** setting (Settings → Locks) is on, the products in a locked collection get the metafield whether or not the collection is published to your Online Store. If it's off, products in an unpublished collection are left alone, because the lock doesn't reach them.
+* Timing: Locksmith updates a product's metafield within a few minutes of the product being published, tagged, or added to or removed from a locked collection, and re-checks every product nightly.
 
 ## Alternative setting: Add the "noindex" meta tag to any pages protected by this lock
 

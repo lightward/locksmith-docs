@@ -46,7 +46,7 @@ Behind the scenes, this setting uses [Shopify's "seo" metafield](https://shopify
 **Note**: When enabled, his setting will remove products completely from in-store searches. In other words, **even visitors that have access to the content via Locksmith&#x20;**_**won't**_**&#x20;see the products appear in searches.** Because of that, this setting may not work for everyone, but is still available as an option.
 {% endhint %}
 
-On collection locks, as long as the '_protect products in this collection_' option is enabled, the setting will also be applied to each product in the collection.
+On collection locks, as long as the '_protect products in this collection_' option is enabled, the setting will also be applied to each product in the collection. That includes products in a collection that isn't published to your Online Store, when the **Protect products in unpublished collections** setting (Settings → Locks) is on.
 
 ## Related topics
 
