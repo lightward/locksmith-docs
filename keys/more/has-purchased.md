@@ -29,7 +29,7 @@ Once you [create a lock](../../basics/creating-locks.md) that covers the content
 Locksmith will examine the customer's order history for products matching what you enter.
 
 {% hint style="warning" %}
-**Important**: Whether you choose to enter the SKU, title (shown above), variant ID, or product tag, **they are all case sensitive**!
+**Important**: A product tag is **case sensitive**, so enter it exactly as it appears on the product. SKUs and titles aren't: Locksmith compares them without regard to case.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-05-29 at 2.31.22 PM.png" alt=""><figcaption></figcaption></figure>
@@ -38,7 +38,7 @@ Locksmith will examine the customer's order history for products matching what y
 
 #### Maximum quantity purchased
 
-Sets a maximum allowed purchase amount. When used, Locksmith will only grant access if the customer has not yet purchased _this many_ units of the product
+Sets a maximum allowed purchase amount. When used, Locksmith will only grant access while the customer has purchased _this many_ units of the product or fewer; buying one more than this closes the lock to them.
 
 #### Only look at orders in the last...
 

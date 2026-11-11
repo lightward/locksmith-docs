@@ -47,7 +47,7 @@ In the lock editor, find the **Price and buy buttons** card, just below your key
 
 When you turn either setting on, Locksmith scans your published theme to find the places where it can integrate, and shows you a compatibility result for each setting. Save your lock, and Locksmith updates your theme automatically — and re-checks your theme every time it installs from then on, so theme updates are picked up on their own.
 
-Where the buy buttons were, your visitors will see your lock's message content instead (a "Log in to purchase" button, a passcode prompt, or whatever fits your key conditions) — styled to match your theme.
+Where the buy buttons were, your visitors will see your lock's message content instead (a log-in button, a passcode prompt, or whatever fits your key conditions; the log-in button uses your theme's own "Log in" text, or reads "Log in to purchase" on stores still using Locksmith's earlier styling) — styled to match your theme.
 
 ## 3. Keep your pages visible
 
