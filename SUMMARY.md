@@ -27,6 +27,7 @@
   * [Customizing the email list signup form](tutorials/more/customizing-the-email-list-signup-form.md)
   * [Showing multiple prompts on the same page](tutorials/more/showing-multiple-prompts-on-the-same-page.md)
   * [Showing content only to specific Markets](tutorials/more/shopify-markets.md)
+  * [Granting access when customer tags match product tags](tutorials/more/granting-access-when-customer-tags-match-product-tags.md)
   * [Input lists](tutorials/more/input-lists.md)
   * [Protecting against bots](tutorials/more/protecting-against-bots.md)
   * [Earn recurring revenue on your exclusive content using ReCharge](tutorials/more/recharge.md)
