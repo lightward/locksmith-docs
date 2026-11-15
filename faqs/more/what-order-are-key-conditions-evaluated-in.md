@@ -10,7 +10,7 @@ Key conditions are evaluated in the following order:
 2. **is signed in**
 3. **is tagged with...**
 4. **(the product) is tagged with...**
-5. **has one of many email addresses**
+5. **has a certain email address**
 6. **has a list of email addresses**
 7. **the customer's email contains...**
 8. **has purchased...**

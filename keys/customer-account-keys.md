@@ -22,10 +22,10 @@ Some of the options available to you include checking **if the customer**...
   This condition requires the visitor to be logged in with their customer account, prompting them to log in if they aren't already. If their last 50 orders contain a certain product (identified by SKU, title, or by product tag), they'll be granted access.
 * **the customer's email contains…**\
   This condition requires the visitor to be logged in with their customer account. If their email address matches some text that you specify (say, "@mycompany.com"), they'll be granted access.
-* **has one of many email addresses**\
+* **has a certain email address**\
   This condition requires the visitor to be logged in with their customer account. If their email address is on the list that you specify, they'll be granted access. Simply to set up, but not recommend if you have a large number of email addresses. See below for an alternate option.
 * **has an email from an input list**\
-  This condition requires the visitor to be logged in with their customer account. If their email address is on the list that you specify, they'll be granted access. This key condition is different than the above, in that it leverages [Locksmith's input list feature](../tutorials/more/input-lists.md), which lets you use a very large number of of email addresses. While not hard to set up, it does require a few more steps than the one-of-many-email-addresses key condition above.
+  This condition requires the visitor to be logged in with their customer account. If their email address is on the list that you specify, they'll be granted access. This key condition is different than the above, in that it leverages [Locksmith's input list feature](../tutorials/more/input-lists.md), which lets you use a very large number of of email addresses. While not hard to set up, it does require a few more steps than the certain-email-address key condition above.
 
 ## Creating keys
 

@@ -156,7 +156,7 @@ Grouped by category. Each can typically be **inverted** — flipping a "grant ac
 
 * **Is signed in** — visitor must be logged into a Shopify customer account.
 * **Is tagged with…** — customer account must carry the specified tag. Requires sign-in.
-* **Has one of many email addresses** — customer's account email must be in a list you provide. Requires sign-in.
+* **Has a certain email address** — customer's account email must be in a list you provide. Requires sign-in.
 * **Has an email address from an input list** — same as above but sourced from an input list (see §6). Requires sign-in.
 * **The customer's email contains…** — substring match on the customer's email (e.g. `@mycompany.com`). Requires sign-in.
 
