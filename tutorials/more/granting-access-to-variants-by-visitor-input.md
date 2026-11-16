@@ -22,7 +22,7 @@ A bonus, if you're using multiple variant locks: Because locks can have multiple
 
 ### 4. Optional: configure the key to redirect to your product
 
-If you like, use the key's advanced settings to add an automatic redirect, routing the customer to the right product page when they enter the right passcode. You can find this setting by clicking the triple-dot icon, to the right of the key condition.
+If you like, add an automatic redirect to the key, routing the customer to the right product page when they enter the right passcode. Click the pencil icon on the key to edit it, and fill in **Redirect URL (optional)** at the bottom.
 
 As noted in step 3, this _also_ works with multiple passcode keys. Simply add the right redirect to each passcode key, and the customers will be routed to the right place after entering their passcode.
 
