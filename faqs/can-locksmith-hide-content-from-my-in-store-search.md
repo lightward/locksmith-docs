@@ -9,7 +9,7 @@ description: >-
 Locksmith includes a checkbox inside of the "Settings" area, on lock pages, that will remove products and other resources from searches - but only from the default and static searches in your store.&#x20;
 
 {% hint style="warning" %}
-**Note**: Locksmith can NOT remove products from display **in other apps**, nor can it remove products from **dynamic (shows results as you type) searches**. In these cases, see suggestions below...
+**Note**: Locksmith can NOT remove products from display **in other apps**, and it cannot always remove products from **dynamic (shows results as you type) searches**: that depends on how your theme builds them. In these cases, see suggestions below...
 {% endhint %}
 
 You'll find the hide-from-lists setting on each of your lock pages, like so:
@@ -18,7 +18,7 @@ You'll find the hide-from-lists setting on each of your lock pages, like so:
 
 ## Suggestions for third-party or dynamic searches
 
-Using the above Locksmith setting to 'hide from search results' will _not_ remove the search results when a third party or dynamic search is enabled in your store, so we have some suggestions for alternatives.
+Using the above Locksmith setting to 'hide from search results' will _not_ remove the search results when a third-party search is enabled in your store, and may not remove them from a dynamic search, so we have some suggestions for alternatives. To see what your own search shows, try it in a private browsing window while signed out.
 
 ### **Dynamic searches(show results as you type) enabled from within the theme settings**
 
