@@ -35,7 +35,7 @@ A glossary of terms, concepts, and behaviors for the Locksmith app for Shopify (
 
 Locksmith is built around two concepts:
 
-* A **lock** is placed on one or more pieces of store content. Products, collections and product tags can share a lock with each other; every other kind of content shares a lock only with its own kind. Without a lock, content is public; with a lock, access is restricted.
+* A **lock** is placed on one or more pieces of store content of the same type. Without a lock, content is public; with a lock, access is restricted.
 * A **key** describes a way someone is allowed in. A lock can have many keys, and any one of them is enough to grant access (keys are OR'd together by default).
 
 Each key is made up of one or more **key conditions** — the actual rules being checked (a customer tag, a passcode, a location, etc.). Within a single key, multiple conditions are AND'd together.
@@ -54,8 +54,8 @@ A restriction placed on one or more pieces of store content. A lock is enabled o
 
 A single lock can protect **more than one resource** at a time — for example, ten products under the same access rules. Rather than creating ten identical locks, the merchant creates one lock and attaches all ten products to it. Key facts:
 
-* **Which resources can share a lock.** Products, collections and product tags can be combined with each other in one lock, in any mix — a collection plus a few extra products plus every product carrying a tag, for example. Every other kind of resource only goes with its own kind: a pages lock holds pages, a blogs lock holds blogs, and so on. To put the same access rules on kinds that can't share a lock (e.g. some products _and_ some pages), create a separate lock per kind.
-* **Managed via the "Protected resources" section** of the lock editor. After creating the lock with its first resource, the merchant uses this section to attach additional resources. On a lock that holds products, collections or product tags, the section has an add button for each of the three (**Add product**, **Add collection**, **Add product tag**).
+* **Single-type only.** A lock's protected resources must all be of the same type. A products lock holds products, a collections lock holds collections, and so on. To protect a mix of types (e.g. some products _and_ some pages) under the same access rules, create a separate lock per type.
+* **Managed via the "Protected resources" section** of the lock editor. After creating the lock with its first resource, the merchant uses this section to attach additional resources of the same type.
 * **Optional lock name.** Because multi-resource locks aren't identified by "the one product they lock," locks can be given a name via the pencil icon next to the lock's title in the editor header. Names make locks easier to find in the lock list. Single-resource locks can be named too.
 * **Requires updated app permissions.** Multi-resource locking shipped after Locksmith's original permissions were set. Merchants who installed Locksmith before this feature shipped may see a prompt to grant Locksmith updated store permissions the first time they try to add a second resource. Until they accept it, the "Add resource" affordance won't appear and each lock stays limited to one resource.
 * **Related to Force open other locks.** Multi-resource locking replaces many of the cases that previously required "Force open other locks" — instead of two locks with a force-open key, the merchant can put both resources on the same lock. Force open other locks remains relevant for cases where the _access rules_ differ between locks that happen to cover overlapping resources (see §5).
@@ -70,11 +70,10 @@ The actual test inside a key — e.g. "customer is signed in", "gives the passco
 
 #### Resource
 
-An individual Shopify object attached to a lock. A single lock can hold one resource or several (see "Multi-resource lock" above for which kinds can share a lock). Lockable things include:
+An individual Shopify object attached to a lock. A single lock can hold one resource or several of the same type (see "Multi-resource lock" above). Lockable things include:
 
 * Products
 * Collections (custom or smart)
-* Products by tag (every product carrying a given tag)
 * Pages
 * Blogs (and, by extension, the articles inside them)
 * The shop (the entire storefront)
@@ -93,7 +92,7 @@ What an unauthorized visitor sees instead of the locked content. Locksmith rende
 
 #### Standard (resource) lock
 
-A lock attached to one or more Shopify resources, selected from Locksmith's search bar. The most common kind. A standard lock with a single resource is the classic case; a standard lock with several resources is a "multi-resource lock" (§2), which can mix products, collections and product tags but otherwise holds one kind of resource.
+A lock attached to one or more Shopify resources of the same type, selected from Locksmith's search bar. The most common kind. A standard lock with a single resource is the classic case; a standard lock with multiple resources of the same type is a "multi-resource lock" (§2).
 
 #### Shop lock
 
@@ -139,7 +138,6 @@ A lock created against a target that isn't searchable through Locksmith's resour
 
 #### Lock-level options
 
-* **Protect products in this collection** — on by default on collection locks. The lock applies to every product in the collection, not just the collection page. For a collection that isn't published to the Online Store, see _Products in an unpublished collection_ under §8.
 * **Hide from navigation** — removes links to the resource from theme nav menus when the visitor doesn't have access.
 * **Hide from product grids** — removes the product from collection pages, search results, and other product lists for unauthorized visitors.
 * **Remove from sitemap** — excludes the resource from `sitemap.xml`.
@@ -156,9 +154,23 @@ Grouped by category. Each can typically be **inverted** — flipping a "grant ac
 
 * **Is signed in** — visitor must be logged into a Shopify customer account.
 * **Is tagged with…** — customer account must carry the specified tag. Requires sign-in.
-* **Has a certain email address** — customer's account email must be in a list you provide. Requires sign-in.
+* **Has one of many email addresses** — customer's account email must be in a list you provide. Requires sign-in.
 * **Has an email address from an input list** — same as above but sourced from an input list (see §6). Requires sign-in.
 * **The customer's email contains…** — substring match on the customer's email (e.g. `@mycompany.com`). Requires sign-in.
+
+#### Tag-matching conditions
+
+*   **Permit if any product tag matches any customer account tag** — grants access when a signed-in customer has at least one tag that matches at least one tag on the locked product. Requires sign-in.
+
+    Unique among key conditions in that it reads tags from **both** sides of the relationship — the customer record and the resource — and grants access on any intersection. One such key on one lock can therefore cover many customer-to-product pairings without a lock per group. Typical setup: define a shared tag (e.g. `org-acme`) and apply it to the relevant customer accounts _and_ the relevant products.
+
+    Key facts:
+
+    * **Primary use case: scale.** This key is the recommended path for stores that would otherwise need very large numbers of locks (see §8). One lock with this key can replace many per-customer or per-product locks.
+    * **Resource types.** Works with **product** locks, **collection** locks, and the **Collection: All** lock. On a collection lock, the collection page itself stays locked; the key unlocks the individual products inside — which also then become visible wherever they appear in other, unlocked collections.
+    * **Any match is enough.** A customer with several tags can reach several product groups; a product with several tags can be opened to several customer groups.
+    * **Tag hygiene matters.** Locksmith doesn't distinguish "access tags" from any other tags, so an accidentally shared tag (e.g. a `sale` tag on both a product and a customer) will grant access. Use distinctive prefixes like `org-` or `access-`, audit existing tags, and watch for tags written by other apps.
+    * **Known visual side effect.** In collections that mix locked and unlocked products, customers may see blank spaces or short pages — Locksmith filters within each Shopify pagination page. A separate collection per customer group, or an infinite-scrolling app, reduces this.
 
 #### Passcode conditions
 
@@ -288,8 +300,6 @@ A locked resource's URL is **not blocked** — it still resolves and returns a 2
 
 Locksmith only grants access to resources that are published to the **Online Store** sales channel. If a product, page, or collection is unpublished from Online Store, the visitor will see a Shopify **404** at that URL — even if they have a perfectly good key. From Locksmith's perspective there's nothing to unlock, because Shopify isn't serving the resource in the first place. If customers report 404s on a locked resource, the publish state is the first thing to check.
 
-**Products in an unpublished collection** are the one exception. A collection lock with **Protect products in this collection** turned on can keep protecting the collection's products while the collection itself is unpublished from the Online Store: the collection page 404s, but each product page still shows the lock. Whether it does is a store-wide setting, **Protect products in unpublished collections**, in the **Locks** section of Locksmith's Settings page. It is on for stores that installed Locksmith from November 2026, and off for older stores until they turn it on. With it on, an unpublished collection works as a way to group products for locking without adding a collection page to the storefront, and the lock shows an info notice saying the products stay protected. With it off, products in an unpublished collection are not protected by that lock, and the lock shows a warning until the collection is published. The setting only appears once Locksmith has permission to manage your store's products and content, which is what it relies on.
-
 #### Cannot bypass Shopify's native storefront password protection
 
 Shopify itself offers a native **storefront password protection** feature in the Online Store preferences (the one that puts a single password on the entire storefront before anyone can see it). This runs _before_ the storefront loads, at a layer Locksmith doesn't reach. If that feature is enabled, every visitor must clear it first; Locksmith cannot let anyone past it, even with a valid key. If you're using Locksmith to control access, the native storefront password should normally be off.
@@ -300,7 +310,7 @@ Because Shopify doesn't allow apps to clean up their theme code automatically on
 
 #### Trial expiration / suspended mode
 
-If the free trial ends without a paid plan — or if a paid subscription lapses — Locksmith enters **suspended mode**. Locks remain active and continue to block content, but **keys stop working**: even authorized visitors who would normally have access cannot open the locks. Merchants can still disable or delete existing locks. They cannot fully edit existing locks or create new ones. Resolving this requires either subscribing or disabling Locksmith. Note that Locksmith does **not** auto-subscribe the merchant when the trial ends — the merchant must click **Subscribe** in the app (see §9). The safe path, if you don't intend to subscribe, is to use the in-app **"Disable Locksmith"** button before the trial ends.
+If the free trial ends without a paid plan — or if a paid subscription lapses — Locksmith enters **suspended mode**. Locks remain active and continue to block content, but **keys stop working**: even authorized visitors who would normally have access cannot open the locks. Resolving this requires either subscribing or disabling Locksmith. Note that Locksmith does **not** auto-subscribe the merchant when the trial ends — the merchant must click **Subscribe** in the app (see §9). The safe path, if you don't intend to subscribe, is to use the in-app **"Disable Locksmith"** button before the trial ends.
 
 #### Caching and "the key stopped prompting me"
 
@@ -320,7 +330,11 @@ Locksmith itself does **not** impose a cap on the number of locks or keys a stor
 
 As a rough ballpark, most merchants can reach **around 200 locks with one key each** without running into this limit. This is a practical observation, not a guarantee — actual headroom varies with the theme (some leave more room in the relevant files than others) and with the mix of key types (some generate more verbose Liquid than others).
 
-For merchants approaching this scale, the recommended paths are: use the **Admin API** to manage locks programmatically rather than maintaining many similar locks by hand, and contact Locksmith support — they can advise on theme-side strategies for staying under the limit.
+For merchants approaching this scale, the recommended paths are:
+
+* **Use the "Permit if any product tag matches any customer account tag" key** (see §4). This is explicitly designed for the "many locks" problem — one lock with this key, driven by a shared tag convention, can replace a large number of per-customer or per-product locks.
+* **Use the Admin API** to manage remaining locks programmatically rather than by hand.
+* **Contact Locksmith support** — they can advise on theme-side strategies for staying under the limit.
 
 #### Manual locks with passcodes need a trigger button
 
@@ -359,55 +373,56 @@ A free trial is available. (Always confirm current pricing on the Shopify App St
 
 The phrasing customers and merchants use rarely matches Locksmith's official terms. This table maps common informal phrasings to the right concept — useful both for support staff and for Claude when answering questions.
 
-| User says…                                                                                                            | Locksmith concept                                                                                                                                                                                             |
-| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| "password-protect a page / product"                                                                                   | A lock with a **passcode** key                                                                                                                                                                                |
-| "members-only" / "logged-in customers only"                                                                           | A lock with an **is signed in** key                                                                                                                                                                           |
-| "wholesale customers only" / "trade only"                                                                             | A lock with an **is tagged with `wholesale`** key (or whatever your tag is)                                                                                                                                   |
-| "lock these ten products with the same rule" / "one lock for a bunch of products" / "apply this to multiple products" | A **multi-resource lock** — one lock with all the resources attached (products, collections and product tags can be mixed; other kinds only with their own kind) via the Protected resources section (see §2) |
-| "lock a collection _and_ a few extra products together" / "one lock for these products and everything tagged X"       | One **multi-resource lock** — products, collections and product tags can be combined in a single lock via the Protected resources section (see §2)                                                            |
-| "lock some products _and_ some pages together"                                                                        | Not possible in a single lock — pages can't share a lock with products. Only products, collections and product tags can be combined. Create one lock per kind with the same key configuration.                |
-| "VIP / exclusive access"                                                                                              | A lock with an **is tagged with…** key, often combined with **customer auto-tagging** elsewhere                                                                                                               |
-| "hide prices until login"                                                                                             | A lock with **manual locking** enabled and a **theme hiding profile** (Price preset on supported themes), paired with an **is signed in** key                                                                 |
-| "hide the buy button" / "hide add-to-cart"                                                                            | Same as above, with the **Buy buttons** preset (or hiding definitions matching the buy-button section/block)                                                                                                  |
-| "geo-block" / "region restriction" / "block country X"                                                                | A **shop lock** (or resource lock) with an **inverse** location key                                                                                                                                           |
-| "country-specific catalog"                                                                                            | Multiple resource locks each with a location key                                                                                                                                                              |
-| "a hidden collection" / "a collection that isn't on my site" / "lock products without publishing the collection"      | A collection lock with **Protect products in this collection** on, plus the **Protect products in unpublished collections** setting (see §8)                                                                  |
-| "secret URL" / "private link"                                                                                         | A **secret link** key                                                                                                                                                                                         |
-| "coming soon page" / "site under construction"                                                                        | A **shop lock** with whatever access rule you want for previewers                                                                                                                                             |
-| "drop at midnight" / "scheduled launch"                                                                               | A **schedule** (date/time) key                                                                                                                                                                                |
-| "buy this to unlock that"                                                                                             | A **has purchased…** key on the second product                                                                                                                                                                |
-| "free shipping over $X" — type cart logic                                                                             | A **has at least $X in their cart** key                                                                                                                                                                       |
-| "newsletter signup wall"                                                                                              | A **Mailchimp** or **Klaviyo** key                                                                                                                                                                            |
-| "remove from Google" / "stop indexing this page"                                                                      | The **noindex** lock-level option                                                                                                                                                                             |
-| "hide from menu / collection / search"                                                                                | The **hide from navigation** and **hide from product grids** lock options                                                                                                                                     |
-| "I want to grant access via API / from another app"                                                                   | The **Admin API** for direct lock manipulation, or have the other app tag the Shopify customer record and use an **is tagged with** key                                                                       |
-| "block bots at checkout"                                                                                              | **Checkout Validation** (separate from lock/key system)                                                                                                                                                       |
-| "I deleted Locksmith and my products are still locked"                                                                | Locksmith was uninstalled without first using **Disable Locksmith** — theme code remains. Reinstall, then click Disable Locksmith, then uninstall.                                                            |
+| User says…                                                                                                                                                            | Locksmith concept                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| "password-protect a page / product"                                                                                                                                   | A lock with a **passcode** key                                                                                                                     |
+| "members-only" / "logged-in customers only"                                                                                                                           | A lock with an **is signed in** key                                                                                                                |
+| "wholesale customers only" / "trade only"                                                                                                                             | A lock with an **is tagged with `wholesale`** key (or whatever your tag is)                                                                        |
+| "lock these ten products with the same rule" / "one lock for a bunch of products" / "apply this to multiple products"                                                 | A **multi-resource lock** — one lock with all the resources (of the same type) attached via the Protected resources section (see §2)               |
+| "each wholesale customer should see their own products" / "customer-specific catalogs" / "organization-based access" / "tag customers and products and match them up" | The **"Permit if any product tag matches any customer account tag"** key (see §4) — one lock, shared tag convention like `org-acme` on both sides  |
+| "I need hundreds of per-customer locks" / "we're hitting the file-size limit with too many locks"                                                                     | Before creating more locks, use the **tag-matching key** (see §4, §8) to collapse many locks into one                                              |
+| "lock some products _and_ some pages together"                                                                                                                        | Not possible in a single lock — locks are single-type. Create one lock per type with the same key configuration.                                   |
+| "VIP / exclusive access"                                                                                                                                              | A lock with an **is tagged with…** key, often combined with **customer auto-tagging** elsewhere                                                    |
+| "hide prices until login"                                                                                                                                             | A lock with **manual locking** enabled and a **theme hiding profile** (Price preset on supported themes), paired with an **is signed in** key      |
+| "hide the buy button" / "hide add-to-cart"                                                                                                                            | Same as above, with the **Buy buttons** preset (or hiding definitions matching the buy-button section/block)                                       |
+| "geo-block" / "region restriction" / "block country X"                                                                                                                | A **shop lock** (or resource lock) with an **inverse** location key                                                                                |
+| "country-specific catalog"                                                                                                                                            | Multiple resource locks each with a location key                                                                                                   |
+| "secret URL" / "private link"                                                                                                                                         | A **secret link** key                                                                                                                              |
+| "coming soon page" / "site under construction"                                                                                                                        | A **shop lock** with whatever access rule you want for previewers                                                                                  |
+| "drop at midnight" / "scheduled launch"                                                                                                                               | A **schedule** (date/time) key                                                                                                                     |
+| "buy this to unlock that"                                                                                                                                             | A **has purchased…** key on the second product                                                                                                     |
+| "free shipping over $X" — type cart logic                                                                                                                             | A **has at least $X in their cart** key                                                                                                            |
+| "newsletter signup wall"                                                                                                                                              | A **Mailchimp** or **Klaviyo** key                                                                                                                 |
+| "remove from Google" / "stop indexing this page"                                                                                                                      | The **noindex** lock-level option                                                                                                                  |
+| "hide from menu / collection / search"                                                                                                                                | The **hide from navigation** and **hide from product grids** lock options                                                                          |
+| "I want to grant access via API / from another app"                                                                                                                   | The **Admin API** for direct lock manipulation, or have the other app tag the Shopify customer record and use an **is tagged with** key            |
+| "block bots at checkout"                                                                                                                                              | **Checkout Validation** (separate from lock/key system)                                                                                            |
+| "I deleted Locksmith and my products are still locked"                                                                                                                | Locksmith was uninstalled without first using **Disable Locksmith** — theme code remains. Reinstall, then click Disable Locksmith, then uninstall. |
 
 ***
 
 ### 11. Quick troubleshooting reference
 
-| Symptom                                                                                         | Likely cause                                                                                                                                                                                      |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Lock not enforcing on Buy Button / wholesale channel / headless                                 | Locksmith locks only protect the **Online Store channel** (see §8)                                                                                                                                |
-| Locked product unexpectedly missing from the Shop app                                           | Expected — locked products are auto-removed from the Shop app by default (see §8). Not a bug.                                                                                                     |
-| Need per-visitor access control inside the Shop app                                             | Not supported — Locksmith can't conditionally show/hide in the Shop app, only globally remove locked products (see §8)                                                                            |
-| Passcode prompt no longer appears                                                               | Browser is caching prior unlock — test in incognito                                                                                                                                               |
-| Location key inconsistent                                                                       | IP geolocation imprecision, or VPN; clear cache + use incognito                                                                                                                                   |
-| Customer keeps getting asked for newsletter email                                               | They aren't signed in, so Locksmith can't remember them                                                                                                                                           |
-| Customer sees a 404 at a locked resource                                                        | Resource isn't published to the Online Store sales channel — Locksmith can't grant access to something Shopify isn't serving                                                                      |
-| Products in a locked collection aren't locked, and the lock warns the collection is unpublished | The collection isn't published to the Online Store and **Protect products in unpublished collections** (Settings → Locks) is off. Publish the collection, or turn the setting on                  |
-| Analytics still shows traffic to a locked URL                                                   | Expected — the URL stays active, Locksmith just replaces the rendered content. Hits do not mean the content was seen.                                                                             |
-| Whole storefront prompts for a single password before Locksmith ever appears                    | Shopify's native **storefront password protection** is enabled in Online Store preferences — Locksmith runs after that, not before. Disable the native feature if Locksmith is your access layer. |
-| Products show "out of stock" or behave oddly after install                                      | Theme code conflict — contact Lightward support                                                                                                                                                   |
-| Locks still active after uninstall                                                              | Theme code wasn't removed; reinstall → "Disable Locksmith" → uninstall                                                                                                                            |
-| Admin can't reach pages                                                                         | Admin caught by their own locks — disable the offending locks via the Locksmith app in the Shopify admin (see §8)                                                                                 |
-| Manual lock with passcode doesn't prompt                                                        | Manual locks need a trigger button in theme code                                                                                                                                                  |
-| No "Add resource" button on a lock (can't add a second resource)                                | Locksmith needs updated store permissions granted after multi-resource locking shipped — follow the in-app prompt to grant them (see §2)                                                          |
-| Errors when saving or installing at very high lock/key counts                                   | Likely hitting Shopify's theme file size limit — most stores can reach \~200 locks before this becomes a concern (see §8)                                                                         |
-| Variant lock + passcode not working                                                             | Default incompatibility — use a separate locked landing page for the passcode (see §8)                                                                                                            |
+| Symptom                                                                      | Likely cause                                                                                                                                                                                          |
+| ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lock not enforcing on Buy Button / wholesale channel / headless              | Locksmith locks only protect the **Online Store channel** (see §8)                                                                                                                                    |
+| Locked product unexpectedly missing from the Shop app                        | Expected — locked products are auto-removed from the Shop app by default (see §8). Not a bug.                                                                                                         |
+| Need per-visitor access control inside the Shop app                          | Not supported — Locksmith can't conditionally show/hide in the Shop app, only globally remove locked products (see §8)                                                                                |
+| Passcode prompt no longer appears                                            | Browser is caching prior unlock — test in incognito                                                                                                                                                   |
+| Location key inconsistent                                                    | IP geolocation imprecision, or VPN; clear cache + use incognito                                                                                                                                       |
+| Customer keeps getting asked for newsletter email                            | They aren't signed in, so Locksmith can't remember them                                                                                                                                               |
+| Customer sees a 404 at a locked resource                                     | Resource isn't published to the Online Store sales channel — Locksmith can't grant access to something Shopify isn't serving                                                                          |
+| Analytics still shows traffic to a locked URL                                | Expected — the URL stays active, Locksmith just replaces the rendered content. Hits do not mean the content was seen.                                                                                 |
+| Whole storefront prompts for a single password before Locksmith ever appears | Shopify's native **storefront password protection** is enabled in Online Store preferences — Locksmith runs after that, not before. Disable the native feature if Locksmith is your access layer.     |
+| Products show "out of stock" or behave oddly after install                   | Theme code conflict — contact Lightward support                                                                                                                                                       |
+| Locks still active after uninstall                                           | Theme code wasn't removed; reinstall → "Disable Locksmith" → uninstall                                                                                                                                |
+| Admin can't reach pages                                                      | Admin caught by their own locks — disable the offending locks via the Locksmith app in the Shopify admin (see §8)                                                                                     |
+| Manual lock with passcode doesn't prompt                                     | Manual locks need a trigger button in theme code                                                                                                                                                      |
+| No "Add resource" button on a lock (can't add a second resource)             | Locksmith needs updated store permissions granted after multi-resource locking shipped — follow the in-app prompt to grant them (see §2)                                                              |
+| Errors when saving or installing at very high lock/key counts                | Likely hitting Shopify's theme file size limit — most stores can reach \~200 locks before this becomes a concern. Consider collapsing many locks into one using the **tag-matching key** (see §4, §8) |
+| Blank spaces or short pages in a collection using the tag-matching key       | Expected side effect — Locksmith filters within each Shopify pagination page. Use a per-group collection or an infinite-scrolling app (see §4)                                                        |
+| Customer getting unexpected access via tag matching                          | A tag is shared between a product and the customer unintentionally (e.g. a `sale` tag). Audit tags and prefix access tags distinctively (see §4)                                                      |
+| Variant lock + passcode not working                                          | Default incompatibility — use a separate locked landing page for the passcode (see §8)                                                                                                                |
 
 ***
 
@@ -424,4 +439,4 @@ When in doubt, the right move is to ask — Lightward's docs lean toward "get in
 
 _Sources: Locksmith official documentation (locksmith.guide, docs.uselocksmith.com), Shopify App Store listing, and Lightward's developer docs. Verify specifics — particularly pricing, the full list of key conditions, and any setting names — against the live docs before relying on them in customer-facing copy._
 
-_Last reviewed: April 2026._
+_Last reviewed: October 2026._
