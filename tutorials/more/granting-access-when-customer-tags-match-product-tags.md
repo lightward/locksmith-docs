@@ -43,8 +43,6 @@ This key only applies to **products**. When you add it to a collection lock (inc
 
 What the key does is unlock the individual products inside the locked collection. Customers with a matching tag will be able to see those products wherever they appear in other, unlocked collections.
 
-If customers need to be able to open a collection page, that collection needs to be unlocked for them in some other way, or left unlocked.
-
 #### Any matching tag grants access
 
 Locksmith doesn't know which tags are meant for access control. **If any tag on the customer matches any tag on the product, the customer gets access**, even if the match is accidental.
