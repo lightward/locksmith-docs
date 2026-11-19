@@ -6,7 +6,7 @@ description: >-
 
 # Can Locksmith hide content from my in-store search?
 
-Locksmith includes a checkbox inside of the "Settings" area, on lock pages, that will remove products and other resources from searches - reliably from your store's default search results page, and from results that appear as you type only when your theme builds them in a way Locksmith can reach.&#x20;
+Locksmith includes a checkbox inside of the "Settings" area, on lock pages, that will remove products and other resources from searches - from your store's search results page, and from results that appear as you type only when your theme builds them in a way Locksmith can reach.&#x20;
 
 {% hint style="warning" %}
 **Note**: Locksmith can NOT remove products from display **in other apps**, and it cannot always remove products from **dynamic (shows results as you type) searches**: that depends on how your theme builds them. In these cases, see suggestions below...
