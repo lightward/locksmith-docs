@@ -28,6 +28,15 @@ Once you [create a lock](../../basics/creating-locks.md) that covers the content
 
 Locksmith will examine the customer's order history for products matching what you enter.
 
+#### What to enter
+
+* **A product's SKU, title, product ID or variant ID.** Locksmith compares it with each item in the customer's orders. A title can be the product's title as it was when the order was placed, or its title today. A product ID won't change if you rename the product, so it's the steadiest choice.
+* **`tag:` followed by a product tag**, like `tag:vip`, to count any product carrying that tag.
+* **`*`**, to count any product at all.
+* **Nothing**, to count purchases of the product being viewed. This only works on product pages.
+
+A product's handle (the last part of its web address) isn't matched, so a handle on its own won't open the lock.
+
 {% hint style="warning" %}
 **Important**: A product tag is **case sensitive**, so enter it exactly as it appears on the product. SKUs and titles aren't: Locksmith compares them without regard to case.
 {% endhint %}

@@ -64,9 +64,9 @@ When an input list is synchronized with its source, any new items found in the s
 
 Input lists that are sourced from Google Drive will be automatically synchronized whenever the source file is changed. (When used with Google Sheets, this allows for interesting flexibility: one could use a Google Form that saves data to a Google Sheets file, which then feeds into an input list. Whenever the form is submitted, Locksmith would automatically sync a new value into the input list.)
 
-All other input lists are automatically synchronized on a regular basis (currently at [midnight UTC](https://time.is/UTC), subject to change without notice).
+All input lists, including those from Google Drive, are also synchronized automatically about once an hour (subject to change without notice).
 
-All input lists may be synchronized manually, by using the "Sync input list" button for the respective list.
+All input lists may be synchronized manually, by using the "Sync" button for the respective list on Locksmith's Settings page.
 
 ## Step 3: Use with specific key conditions
 
