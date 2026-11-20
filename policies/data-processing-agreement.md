@@ -54,7 +54,7 @@ Lightward will notify the customer without undue delay if we become aware of a P
 
 ### Sub-Processors for Locksmith
 
-### Last updated: 5 November 2026
+### Last updated: 20 November 2026
 
 Lightward works with a small group of trusted service providers to operate Locksmith. These companies may process limited Personal Data as part of providing the service.
 
@@ -71,7 +71,12 @@ Lightward works with a small group of trusted service providers to operate Locks
 **Monitoring**
 
 * Rollbar, Inc. — error monitoring and diagnostics
+* New Relic, Inc. — application performance monitoring and diagnostics
 * Cronitor — scheduled job monitoring
+
+**Customer Support**
+
+* Help Scout PBC — customer support correspondence, when the customer contacts Locksmith support
 
 **Optional Service Providers (enabled only when the merchant connects these integrations or uses these features)**
 
