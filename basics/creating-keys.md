@@ -22,7 +22,7 @@ These conditions require the visitor to be logged into a customer account. If th
 * **is tagged with...** — grants access if the customer's account carries a specific tag. If your store's login form includes a registration link, that will be shown too.
 * **has a certain email address** — grants access if the customer's email address matches one from a list you specify (one per line; letter case doesn't matter).
 * **has an email address from an input list** — works the same way, but draws from an input list that has been synced with Locksmith. (For more on this, see [Input Lists](../tutorials/more/input-lists.md).)
-* **email contains...** — grants access if the customer's email address contains specific text you define — for example, "@mycompany.com".
+* **email contains...** — grants access if the customer's email address contains specific text you define — for example, "@mycompany.com". Letter case matters for this one: the text has to match the address's capitals exactly where it appears.
 * **has purchased...** — grants access if the customer's last 50 orders include a specific product, identified by SKU, title, or product tag.
 * **has placed at least x orders** — grants access if the customer's lifetime order count meets a minimum number you set.
 

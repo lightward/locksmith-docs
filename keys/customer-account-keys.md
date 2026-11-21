@@ -21,7 +21,7 @@ Some of the options available to you include checking **if the customer**...
 * **has purchased…**\
   This condition requires the visitor to be logged in with their customer account, prompting them to log in if they aren't already. If their last 50 orders contain a certain product (identified by SKU, title, or by product tag), they'll be granted access.
 * **the customer's email contains…**\
-  This condition requires the visitor to be logged in with their customer account. If their email address matches some text that you specify (say, "@mycompany.com"), they'll be granted access.
+  This condition requires the visitor to be logged in with their customer account. If their email address matches some text that you specify (say, "@mycompany.com"), they'll be granted access. Letter case matters here: the text is compared exactly as you type it against the address as it's saved on the customer's account, so "@mycompany.com" matches "Alice@mycompany.com" but not "alice@MyCompany.com". To ignore case entirely, a custom Liquid key can lowercase the address before comparing; see [Custom Liquid key-condition basics](more/custom-liquid-key-condition-basics.md).
 * **has a certain email address**\
   This condition requires the visitor to be logged in with their customer account. If their email address is on the list that you specify, they'll be granted access. Simply to set up, but not recommend if you have a large number of email addresses. See below for an alternate option.
 * **has an email from an input list**\
