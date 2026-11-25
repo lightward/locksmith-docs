@@ -50,8 +50,6 @@ You can still fully customize the message that Locksmith shows _before_ the sign
 
 [Customizing the customer login page →](https://www.locksmith.guide/tutorials/more/customizing-the-customer-login-page)
 
-If you require both sign-in and a secret link, the secret link condition offers a link that takes customers through Shopify sign-in before opening the locked page. [Using secret link keys](keys/secret-link-keys.md#regular-secret-links)
-
 #### The registration form cannot be locked
 
 With legacy customer accounts, it's possible to place a Locksmith lock directly on the customer registration form — for example, to prevent customers from signing up without an invitation. This is **not possible with new customer accounts**, because there is no traditional registration form. Accounts are created automatically when a customer verifies their email.
