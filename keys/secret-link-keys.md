@@ -30,6 +30,8 @@ Then, in the lock settings, follow the prompts to create a secret link key:
 
 This will generate a single secret link for you that can immediately copy and use. You can also enter a custom secret link code if preferred. The setup is very straightforward (shown in the screenshot above).
 
+If your store uses Shopify’s new customer accounts and your key also requires sign-in, use **Copy sign-in link** in the secret link condition. Customers who open it while signed out go through Shopify sign-in and return to the locked page with the secret code. Test the link in a fresh private window with a customer account that hasn’t used the link before.
+
 #### **Secret links from an input list**
 
 It is also possible to use secret links in conjunction with our input list feature. Input lists allow you to store a list of links in a google sheet or other outside file source. This is great for merchants that want to easily create a large list of unique secret links that can be used. [Go here for information on setting up input lists](../tutorials/more/input-lists.md). To use the input list version, select it instead of the regular secret link key condition type.
