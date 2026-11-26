@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="warning" %}
-**Testing:** We strongly recommend testing your secret links in the same manner they will be sent to customers before launching a marketing campaign or exclusive sale. This ensures that customers receive a functioning link. \
+**Testing:** We strongly recommend testing your secret links in the same manner they will be sent to customers before launching a marketing campaign or exclusive sale. If the key also requires sign-in, open the link while signed out in a fresh private window. Sign in with a customer account that hasn’t used the link before and check that the locked page opens. \
 See our guide that covers testing troubleshooting tips below:\
 [why-isnt-my-remote-key-condition-working.md](../faqs/more/why-isnt-my-remote-key-condition-working.md "mention")
 {% endhint %}
